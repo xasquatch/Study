@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h1{
+	width : 50px;
+	height : 30px;
+	background-color : red; 
+	font-size : 100%;
+	}
+
+	h2{
+	width : 50px;
+	height : 30px;
+	background-color : orange; 
+	font-size : 100%;
+	}
+	
+	h3{
+	width : 50px;
+	height : 30px;
+	background-color : aqua; 
+	font-size : 100%;
+	}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//1초만에 300px만큼 바깥왼쪽 여백띄우는 동작효과를 줌
+		$("h1").animate({marginLeft : "300px"},10)
+		//1초안에 다시 제자리로 돌아가도록 동작효과를 줌
+				.animate({marginLeft : 0},10);
+	});
+	
+	
+</script>
+</head>
+<body>
+	<h1>내용</h1>
+	<h2>내용</h2>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

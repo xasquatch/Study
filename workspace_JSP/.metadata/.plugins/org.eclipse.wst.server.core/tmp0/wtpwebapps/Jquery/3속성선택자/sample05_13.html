@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- 
+		jQuery 속성 선택자 종류
+		1. Attribute Equals Selector 선택자란?
+		 : HTML DOM에서 속성이름과 속성값을 이용해서 원하는 태그를 검색하는 방법
+		 : 속성이름과 속성값을 같이 지정하는 경우에는 "[속성명=값]" 또는 "[속성명 !=값]" 표현식을 사용함
+		 
+		사용법
+		: $("selector[attr='value']")
+		: $("selector[attr!='value']")
+			-> HTML 태그 중에서 속성이름(attr)이 지정된 value와 정확하게 일치하는
+			 요소를 검색하는 경우 =연산자를 사용
+			일치하지 않는 요소를 검색하는 경우는 !=연산자를 사용한다.
+			
+		예제 주제: 
+			명시한 URL주소 값과 <a>태그의 href속성값이 정확하게 일치하는 요소를 찾아서 글꼴 크기를 40px로 설정하고
+			일치하지 않는 요소는 글자색을 red로 설정하는 예제	
+		
+	 -->
+
+	<script src="jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+			
+		$(document).ready(function() {
+			//<a>태그에서 href속성의 값이 "https://www.naver.com"과 정확하게 일치하는 태그를 선택
+			$("a[href='https://naver.com']").css("font-size","40px");
+			
+			//속성값이 https://naver.com와 일치하지 않는 요소를 모두 선택하여 글자색을 red로 설정함
+			$("a[href != 'https://naver.com']").css("color","red");
+		});
+	
+	
+	</script>
+
+</head>
+<body>
+	<a href = "http://naver.com">one</a> <br/>
+	<a href = "https://naver.com" target="_blank">two</a> <br/>
+	<a href = "https://daum.net">three</a> <br/>
+	<a href = "http://daum.net" target="_blank">four</a> <br/>
+	<a href = "http://korea.com">five</a> <br/>
+	<a href = "https://korea.com" target="_blank">six</a> <br/>
+</body>
+</html>

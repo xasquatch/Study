@@ -1,0 +1,31 @@
+package sec04.ex01;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+//loginTest서블릿의 주요역할
+//ID나 비밀번호를 제대로 입력하지 않으면 오류 메세지를 출력한 후 
+//다시 로그인 창으로 이동이 되도록 설정.
+
+@WebServlet("/loginTest")
+public class loginTest extends HttpServlet {
+
+	
+	/*구성 
+	 * 명령지정자 리턴값 메소드명(서블릿request request변수, 서블릿response response변수) throws exception(runtime exception제외)	*/
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.
+		
+	}
+	
+	
+	
+	
+}

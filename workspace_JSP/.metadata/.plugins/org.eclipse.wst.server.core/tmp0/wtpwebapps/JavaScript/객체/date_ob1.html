@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>날짜정보 객체</title>
+
+	<script type="text/javascript">
+		
+		
+		//현재 날짜 정보를 제공하는 Date라는 이름의 객체 생성
+		var t = new Date();
+		
+		//t.getMonth()메소드의 반환값으로 현재 월의 정보를 리턴하는데
+		//그 값을 nowMonth변수에 저장(참고 : 현재 월을 반환하며 1적게 나옵니다.)
+		var nowMonth = t.getMonth() + 1;
+		
+		//t.getDate()메소드가 호출하면 우리 개발자에게 되돌려 주는 값은
+		//현재 일자 정보를 제공해줌.
+		var nowDate = t.getDate(); //현재 일자 반환
+		
+		
+		var nowDay = t.getDay();//현재 요일을 숫자로 반환(0:일요일 ~ 6:토)
+		
+		document.write("현재월 : " + nowMonth, "<br/>")
+		document.write("현재일 : " + nowDate, "<br/>")
+		document.write("현재요일 : " + nowDay, "<br/>")
+		
+		//2002년 월드컵의 날짜정보를 제공할 때에는 현재 날짜가 아니라 특정 날짜의 정보를 제공받아야 하므로
+		//특정 날짜 정보 객체를 만들어야 함 
+		
+		//참조변수명 = new Date(연도,월-1,일);
+		
+		var m = new Date(2002, 4, 31); //2002.5.31 월드컵 날짜 객체 생성
+		
+		var theMonth = m.getMonth() +1; //날짜 객체에서 월에 대한 정보만 가져옵니다.
+		var theDate = m.getDate();//날짜 객체에 일에 대한 정보만 가져옵니다.
+		var theDay = m.getDay();//날짜 객체에 요일에 대한 정보만 가져옵니다.
+		
+		document.write("2002월드컵 몇월 : " + theMonth,"<br/>")
+		document.write("2002월드컵 몇일 : " + theDate,"<br/>")
+		document.write("2002월드컵 몇요일 : " + theDay,"<br/>")
+		
+		</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

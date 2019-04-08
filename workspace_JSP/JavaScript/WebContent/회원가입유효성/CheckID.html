@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+		function checkID() {
+	
+			//아이디 입력란 <input>영역을 선택하여 가져와서 uID변수에 저장
+			var uID = document.getElementById("uID");
+			
+			//입력한 id값이 3자 미만이거나 8자를 초과할 경우
+			//"아이디는 3자이상 8자이내로 입력해야 합니다"<---- 경고메시지창 띄워주고,
+			//아이디 입력<input>란에 빈공백을 주고
+			//페이지가 이동되는 것을 차단
+			if(uID.value.length < 3 || uID.value.length > 8){
+				alert("ID는 3자 이상, 8자 이내로 입력해주세요");
+				uID.value = "";
+				return false;
+				
+			//입력한 id값이 3자 미만이거나 8자를 초과하지 않을 경우
+			//"이 아이디를 사용하시겠습니까?" 메시지와 함께 confirm()창을 띄우고
+			//[확인] 버튼을 누르면 register.html페이지의 id값이 uID인 <input>태그의 value값을
+			//현재 페이지인 checkId.html의 아이디 입력<input>란에 작성한 값으로 설정
+			//설정 후 현재  checkId.html창 닫기
+			}else{
+				if(window.confirm("이 아이디를 사용하시겠습니까?")){
+					opener.document.getElementById("uID").value = uID.value;
+					
+					window.close();
+				}
+			}
+		}
+	</script>
+
+
+</head>
+<body>
+	아이디 : <input type="text" name="uID" id="uID">
+			<input type="button" onclick="checkID" value="확인">
+</body>
+</html>

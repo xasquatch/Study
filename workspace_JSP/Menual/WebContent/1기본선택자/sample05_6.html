@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+	예제 주제 : 하나의 태그에 여러 class속성값을 가진 태그들을 선택적으로 검색하는 방법.
+			 모든 태그는 하나 이상의 class속성값을 가질수 있고
+			 검색할떄는 그중에서 하나만 일치하면 검색 결과에 포함되어 반환된다.	
+ -->
+ <!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+ <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+ <script type="text/javascript">
+	//웹브라우저가 body태그영역을 모두 읽어들였을때(제이쿼리 문법사용 준비가 되었을떄)
+	//function(){}실행되게 선언
+	$(function(){
+		//class속성값이 "myClass"인 모든 태그에  border속성을 적용하여 값을 설정
+		$(".myClass").css("border","2px solid blue");
+	
+		$(".myClass.otherClass").css("color","red");
+	});
+ 
+ </script>
+
+</head>
+<body>
+	<div class="myClass">div class="myClass"</div>
+	<div class="myClass otherClass">div class="myClass"</div>
+	<span class="myClass otherClass">span class="myClass"</span>
+</body>
+</html>
+
+

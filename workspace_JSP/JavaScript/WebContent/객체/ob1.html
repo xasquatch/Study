@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 
+	주제 : new키워드와 기본 객체 생성함수 object()를 이용해 객체 생성해보기
+
+ -->
+
+<script type="text/javascript">
+	//new키워드와 객체 생성 함수를 이용해 새로운 객체메모리르 ㄹ생성한 후,
+	//tv변수에 참조시켰습니다.
+	var tv = new Object();
+	
+	//생성된 tv객체 width, height, weight, color 속성을 넣어서 값을 저장
+	tv.width = "30cm";
+	tv.height = "25cm";
+	tv.weight = "20kg";
+	tv.color = "white";
+	
+	//생성된 tv객체에 off기능의 메소드를 만들어서 저장
+	tv.off = function() {
+		document.write("전원 off","<br/>")
+		}
+	
+	document.write(tv.width,"<br/>"); //tv객체 너비 속성의 값을 가져와서 출력
+	document.write(tv.height,"<br/>");//tv객체 높이 속성의 값을 가져와서 출력
+	document.write(tv.weight,"<br/>"); //tv객체 무게 속성의 값을 가져와서 출력
+	document.write(tv.color,"<br/>");//tv객체 색상 속성의 값을 가져와서 출력
+  
+	tv.off();	
+	
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

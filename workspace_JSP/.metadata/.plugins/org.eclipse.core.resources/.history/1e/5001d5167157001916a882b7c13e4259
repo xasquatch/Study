@@ -1,0 +1,10 @@
+package sec01.ex01;
+	
+	//VO(Value Object)역할을 하는 클래스
+	//VO역할이란?
+	//DB의 테이블에서 조회한 레코드의 컬럼 값을 
+	//변수에 저장하거나 변수에 저장된 값들을 VO객체를 생성하여 한번에 DB에 추가(insert)할 역할을 수행
+public class MemberVO {
+	
+	
+}

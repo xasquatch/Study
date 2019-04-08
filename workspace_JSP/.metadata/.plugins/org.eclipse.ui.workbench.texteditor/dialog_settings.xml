@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="touch_right_btn" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="zone"/>
+			<item value="mySwipe"/>
+			<item value="minute"/>
+			<item value="월"/>
+			<item value="best"/>
+			<item value="slider"/>
+			<item value="분"/>
+			<item value="노출되어"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+</section>

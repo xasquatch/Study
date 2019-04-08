@@ -1,0 +1,20 @@
+package Chapter7;
+
+public class Bookbase{
+	
+	int price;
+	String title, author;
+	
+	Book(int price,String title,String author){
+		this.price = price;
+		this.title = title;
+		this.author = author;
+		
+	}
+	
+}
+
+public class Book{
+	
+	
+}

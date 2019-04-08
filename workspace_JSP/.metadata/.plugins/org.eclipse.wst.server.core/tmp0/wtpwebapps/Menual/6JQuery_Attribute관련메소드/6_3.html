@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+ 	<script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ 	
+ 	<script type="text/javascript">
+ 		//제이쿼리의 속성관련 메소드
+ 		
+ 		//val()메소드  : <input>, <select>, <textatra>등과 같은 <form>폼관련 태그에서 
+ 		//             값을 가져올떄 사용함.
+ 		
+ 		//val(값)메소드 : 해당 태그에 값을 설정할때 사용함
+ 		
+ 		//참고 : 일반적으로 선택되거나 체크된 태그를 찾기 위하여  :selected 또는  :checked선택자와 같이 사용함
+ 		
+ 		
+ 		//웹브라우저가 HTML태그를 모두 로드 했을떄.. function(){}가 실행되게 선언
+ 		$(document).ready(function(){
+ 			//<button>복사 버튼을 클릭했을때...
+ 			$("button").click(function(){
+ 				//id속성값이 source인 태그의 값을 가져와서  text변수에 저장하고
+				var text = $("#source").val();		
+ 				
+				//text변수값을 id속성값이 target인  태그에 값으로 설정 하기 
+ 				$("#target").val(text);
+ 			
+ 			});
+ 		});
+ 		
+ 	</script>
+
+</head>
+<body>
+	입력 : <input type="text" id="source"> <br/>
+		  <button>복사</button><br/>
+	출력 : <input type="text" id="target">
+</body>
+</html>
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jquery-3.3.1.min.js&apos; to &apos;2계층선택자&apos;&#x0D;&#x0A;- Original project: &apos;Menual&apos;&#x0D;&#x0A;- Destination element: &apos;2계층선택자&apos;&#x0D;&#x0A;- Original element: &apos;jquery-3.3.1.min.js&apos;" description="Copy file" element1="WebContent/1기본선택자/jquery-3.3.1.min.js" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1553472284659" target="/Menual/WebContent/2계층선택자" units="0" version="1.0"/>
+</session>

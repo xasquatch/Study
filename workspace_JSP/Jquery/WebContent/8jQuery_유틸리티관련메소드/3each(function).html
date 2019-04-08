@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	// .each(function)메서드는 선택된 DOM요소들을 손쉽게 반복적으로 순회할 수 있다.
+	//	자바프로그램언어의 반복문과 비슷하고 HTML문서 내의 동일한 태그로 구성된 요소를
+	// 반복처리할 때 유용하게 사용할 수 있음
+	
+	//주제 : 3개의 <li>태그의 text값을 반복적으로 출력하기 위한 예제.
+	$(function() {
+		//<li>태그를 반복적으로 순회하기 위하여 .each(function)메소드를 사용한다.
+		//메서드 내에서 사용된 $(this)는 반복순회할 때 <li>태그 자신을 의미한다.
+		//따라서 $(this).text()는 반복적으로 순회할 때 <li>태그의 text값을 얻는다.
+		$("li").each(function(index, element){
+			console.log(index +":"+$(this).text());
+			console.log(element);
+			
+		});
+		
+		
+	});
+	
+	
+	
+	
+	
+</script>
+</head>
+<body>
+	<ul>
+		<li>홍길</li>
+		<li>이순</li>
+		<li>유관</li>
+	</ul>
+</body>
+</html>

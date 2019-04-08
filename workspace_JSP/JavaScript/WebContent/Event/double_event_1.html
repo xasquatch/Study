@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+  	<style> 
+ 	#btn{  */ 
+  	text-align : center;  
+  	color : red;  
+ 	}  */ 
+	
+  	</style>  
+
+	<script type="text/javascript">
+	
+		//이벤트가 발생했을 때 이벤트를 처리
+	
+		//웹브라우저가 확장자명이 .html파일 내부의 소스를 모두 읽어 들었을 때..(로딩했을 때)
+		//요약 : 웹브라우저가 body영역의 태그를 모두 읽어 들였을 때 이벤트 핸들러의 구문이 실행되게 선언
+		window.onload = function(){
+			
+			function fnc1() {
+					alert('실행문');
+			}
+			
+			function fnc2() {
+					alert('실행문');
+			}
+					//iD속성값이 "btn인 <button>태그를 선택하여 가져와서 mybtn변수에 저장
+			var myBtn = document.getElementById("btn");
+			
+			//파이어폭스, 크롬 등 브라우저에서 true를 반환해서 조건식을 만족함
+			if(window.addEventListener){
+				//<button id="btn">인 태그요소를 클릭 할 때마다 함수 fnc1를 호출합니다.
+				myBtn.addEventListener("click",fnc1,false);
+				
+				//<button id="btn">인 태그요소를 클릭 할 때마다 함수 fnc1를 호출합니다.
+				myBtn.addEventListener("click",fnc2,false);
+				
+				
+			}else{//IE 8이하에서만 실행
+				
+				myBtn.addattchEvent("onclick",fnc1);
+			
+				myBtn.addattchEvent("onclick",fnc2);
+			}
+			
+		}
+		
+		
+	</script>
+
+</head>
+<body>
+	<button id ="btn" onclick=fnc1>버튼</button>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:not() Filter Selector</title>
+
+<!-- 
+	:not(Selector) 필터 선택자
+	- 이선택자는 selector와 일치하지 않는 모든 요소를 반환 함.
+	  selector위치에는 :not(div a), :not(div, a)와 같은 
+	  모든 선택자를 사용 할수 있다.
+
+	예제: 체크박스 형식을 사용하는 <input>태그 중에서 check되지 않은
+		  <input>태그와 바로 인접한 <span>태그를 검색하여 배경색을 
+		  green으로 설정 하는 예제이다.
+		  :checked는  check된 <input>태그만 반환하는 필터 선택자이다.
+ -->
+
+
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+
+   $(document).ready(function(){
+	   //:checked 필터 선택자는 <form> 태그내에서 사용하는 선택자로서
+	   //check된 요소를 반환 한다.
+	   //따라서, :not(:checked) check 되지 않은 요소를 반환 하게 된다.
+	   //해설 : <input>태그 중에서 check되지 않은 요소에 바로 인접한 <span>태그에
+	   //CSS스타일 적용
+	   $( "input:not(:checked) + span" ).css( "background-color", "green" );
+   });
+</script>
+</head>
+<body>
+<div>
+  <input type="checkbox" name="a">
+  <span>홍길동</span>
+</div>
+<div>
+  <input type="checkbox" name="b">
+  <span>이순신</span>
+</div>
+<div>
+  <input type="checkbox" name="c" checked="checked">
+  <span>유관순</span>
+</div>
+</body>
+</html>

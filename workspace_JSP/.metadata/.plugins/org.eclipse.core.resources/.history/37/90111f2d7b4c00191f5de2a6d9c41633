@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h1{
+	width : 50px;
+	height : 30px;
+	background-color : red; 
+	font-size : 100%;
+	}
+
+	h2{
+	width : 50px;
+	height : 30px;
+	background-color : orange; 
+	font-size : 100%;
+	}
+	
+	h3{
+	width : 50px;
+	height : 30px;
+	background-color : aqua; 
+	font-size : 100%;
+	}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//1초만에 300px만큼 바깥왼쪽 여백띄우는 동작효과를 줌
+		$("h1").animate({marginLeft : "300px"},1000)
+		//1초안에 다시 제자리로 돌아가도록 동작효과를 줌
+				.animate({marginLeft : 0},1000);
+		
+		//1초만에 300px만큼 바깥왼쪽 여백띄우는 동작효과를 줌
+		$("h2").animate({marginLeft : "300px"},1000)
+		//1초안에 다시 제자리로 돌아가도록 동작효과를 줌
+				.animate({marginLeft : 0},1000);
+		
+// 		$("h2").dequeue();
+		//dequeue()메소드의 실행원리
+			//└ 큐 공간에 대기중인 메서드가 모두 제거되어 실행X
+		
+//--------------------큐----------------------------
+// 
+//--------------------------------------------------
+
+
+// 		$("h2").clearQueue();
+		//clearQueue()메소드의 실행원리
+		//이 메서드는 <h2>태그에 가장 먼저 적용되어 실행중인 1초안에 300px만큼 이동하는 부분만 빼고
+		//큐 저장소에 대기중인 메소드나 애니메이션 속성값은 모두 제거됩니다.
+		//결론 : 가장 처음에 실행되는 animate()메소드만 실행되고
+		//		두 번째 animate()메소드는 큐저장소 공간에서 삭제됨.
+		
+		$("h3").animate({marginLeft : "300px"},1000); //1초안에 우측으로 300px만큼 이동되는 동작효과를 줌
+		
+		
+});
+	
+	
+</script>
+</head>
+<body>
+	<h1>내용</h1>
+	<h2>내용</h2>
+	<h3>내용3</h3>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

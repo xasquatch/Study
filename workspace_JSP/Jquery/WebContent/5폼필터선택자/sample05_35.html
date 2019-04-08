@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:parent Filter Selector</title>
+<style>
+  td {
+    width: 40px;
+  }
+</style>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+/*
+내용 필터 선택자의 종류
+:parent -> 자식요소가 존재하거나, 텍스트(내용) 값을 가지고 있는 요소를 반환한다.
+*/
+ 
+   $(document).ready(function(){
+	   //자식요소를 갖거나 텍스트 값을 가진 <td>태그요소를 선택하여  CSS설정
+	   $( "td:parent" ).css("background-color","green");
+   });
+</script>
+</head>
+<body>
+<table border="1">
+  <tr><td>Value 1</td><td></td></tr>
+  <tr><td>Value 2</td><td></td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<!-- 
+		jQuery 계층선택자 종류
+		2. 인접한 형제 선택자  -> $("prev + next")
+			: prev요소의 형제 요소 중에서 바로 다음에 나오는 인접한 하나의 next요소를 반환함
+			
+		예제 주제 : <label>태그의 바로 다음에 나오는 인접한 <input>태그에 글자색을 'blue'로 설정하고,
+				  동시에 value값을 "Labeled!"로 설정 하는 예제.
+				 <input>태그에 value값을 설정 하기 위해서는 "값"을 인자로하는 val(값)메소드를 사용하면 되고
+				 value값을 얻으려면 인자없는 val()메소드를 사용하면 된다. 
+	 -->
+	 <!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+	 <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	 <script type="text/javascript">
+	 	//웹브라우저가 HTML문서 전체의 소스를 로드 했을떄..
+	 	 $(function() {
+			//<label>태그에 바로 인접한 다음(next)요소인 <input>태그에 글자색을 파란색으로 적용하고
+			//동시에 "Labeled!"문자열을 해당 태그의 value속성값으로 설정함
+			$("label + input").css("color", "blue").val("Labeled!");
+		 });
+	 
+	 </script>
+</head>
+<body>
+	<form>
+		<label>Name:</label>
+		<input type="text" name="name" id="name">
+		<fieldset>
+			<label>Newsletter:</label>
+			<input type="text" name="newsletter" id="newsletter">
+		</fieldset>
+	</form>
+	<input type="text" name="none">
+
+
+
+</body>
+
+
+
+
+</html>

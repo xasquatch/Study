@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:nth-child(index) Filter Selector</title>
+<!-- 
+:nth-child(index) 필터 선택자
+ - 일치하는 index에 해당하는 자식 요소를 반환한다.
+   index 값은 1부터 시작함.
+ -->
+ <style>
+  div {
+    float: left;
+  }
+ </style>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+
+   $(document).ready(function(){
+	   //<li>태그의 부모태그인 <ul>태그의 자손중에서 두 번째 위치한 <li>태그를 선택하여
+	   //CSS스타일을 지정 한다.
+	   //index는 1부터 시작하기 때문에 "이순신"과 "정도전" 값에 적용 된다.
+	   $( "li:nth-child(2)" ).css("font-size" , "30px");
+   });
+</script>
+</head>
+<body>
+<div>
+  <ul>
+    <li>홍길동</li>
+    <li>이순신</li>
+    <li>유관순</li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li>강감찬</li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li>이성계</li>
+    <li>정도전</li>
+    <li>정몽주</li>
+    <li>이황</li>
+  </ul>
+</div>
+</body>
+</html>

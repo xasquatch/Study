@@ -1,0 +1,14 @@
+package Chapter7;
+
+public class Test0402 {
+
+	public static void main(String[] args) {
+		Person ps1 = new Person("홍길동",10);
+		Person ps2 = new Person("이순신",40);
+		Person ps3 = new Person("유관순",20);
+		
+		System.out.println();
+		
+	}
+
+}

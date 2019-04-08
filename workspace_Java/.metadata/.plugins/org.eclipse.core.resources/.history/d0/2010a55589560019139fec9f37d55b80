@@ -1,0 +1,8 @@
+package Chapter8;
+
+public interface MyInterface {
+	public interface name() {
+		
+	}
+	
+}

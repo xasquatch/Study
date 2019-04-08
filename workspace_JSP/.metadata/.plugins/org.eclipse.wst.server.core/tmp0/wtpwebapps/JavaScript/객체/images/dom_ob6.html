@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 폼태그 요소  -->
+	<form action="#" method="get" name="f1"> <!-- 폼액션에 이동경로 설정가능 -->
+		<fieldset>		<!-- 문단을 묶어줄 떄 사용 -->
+			<legend>폼 요소1</legend>	
+			<p>
+				<label>비밀번호</label>
+				<input type="password" name="user_pw1" id="user_pw1"> 	<!-- 비밀번호칸 -->
+			</p>
+			<p>
+				<label>비밀번호확인</label>
+				<input type="text" name = "user_pw2" id="user_pw2" >	<!-- 텍스트입력칸 -->
+				<input type="submit" value = "확인">					 	<!-- 전송버튼 -->
+			</p>
+			
+		</fieldset>	
+	</form>
+	<form action="#" method="get" name="f2" id="IDIDIDIDIDID"> <!-- 폼에 고유식별값으로 name이나 id값을 주어 식별할 수 있음 -->
+		<fieldset>
+			<legend>폼 요소2</legend>
+			<div id = "terms">
+				회사는 법령이 정하는 바에 따라 "회원"의 개인정보를 보호하기 위해 노력합니다.<br>
+				개인정보의 보호 및 사용에 대해서는 관련법 및 회사의 개인정보취급방침이 적용됩니다.
+			</div>
+			<p>
+				<input type = "checkbox" name = "accept" id = "accept"> <!-- input태그 중요도 ★★★★☆ -->
+				<label>약관에 동의보감합니다.</label>
+			</p>
+			<p>
+				<input type="checkbox" name = "allchk" id = "allchk">
+					<label>전체선택</label><br>
+				<!-- ↑전체선택 체크로 하위 체크항목이 모두 체크되게하는 기능 -->
+
+
+				<input type="checkbox" name = "subject1" id = "subject1" value="s1"> <!-- value="s1"은 체크여부 값 -->
+					<label>과목1</label><br>
+
+				<input type="checkbox" name = "subject2" id = "subject2" value="s2"> <!-- value="s2"은 체크여부 값 -->
+					<label>과목2</label><br>
+
+				<input type="checkbox" name = "subject3" id = "subject3" value="s3"> <!-- value="s3"은 체크여부 값 -->
+					<label>과목3</label><br>
+
+			</p>
+			<p>
+				<input type="submit" value = "등록완료">
+				<input type="reset" value = "등록취소">	<!-- reset타입 작용 시 등록된 체크박스가 모두 해제됨 -->
+			</p>
+		</fieldset>
+	</form>
+		<script type="text/javascript">
+			//<form name = "f1">태그영역에서 확인(전송)버튼이 클릭될 때마다 이벤트 핸들러(익명함수, function() )에
+			//실행문이 실행됩니다.
+			document.f1.onsubmit = function(){
+				
+				//입력을 받을 수 있는 태그 중에 <input name = "user_pw1">태그를 선택하여 가져와서 pw1변수에 저장
+				var pw1 = document.f1.user_pw1;
+				//입력을 받을 수 있는 태그 중에서 name속성 값이 user_pw2인 <input>태그를 선택하여 가져와서 pw2변수에 저장				
+				var pw2 = document.f1.user_pw2;
+				
+				//방문객이 입력한 비밀번호 값이 다음의 비밀번호 확인 <input>태그에 value값으로 입력되도록
+				pw2.value = pw1.value;
+				
+				//<input name = "user_pw2">태그가 비활성화되도록 disabled속성의 값을 true로 입력
+				pw2.disabled = true;
+				
+				//이벤트 핸들러 마지막 부분에  return false를 작성하면 데이터의 전송이 차단됩니다.
+				//만일 차단하지 않으면 <form>태그의 action속성의 값으로 입력된 페이지로 이동 됩니다.
+				
+				return false;
+			}
+			
+			//전체선택 체크박스를 클릭했을 때 마다 익명함수의 코드가 실행되게 선언
+			//
+			document.f2.allchk.onclick = function(){
+				//this : 이벤트가 발생한 태그를 가리킴 
+				if(this.checked){//전체 선택 체크박스에 체크가 되어있다면?
+						//첫 번째 과목1에 관한 체크 박스 체크되게 하기
+					document.f2.subject1.checked = true;
+						//두 번째 과목2에 관한 체크 박스 체크되게 하기
+					document.f2.subject2.checked = true;	
+						//세 번째 과목3에 관한 체크 박스 체크되게 하기
+					document.f2.subject3.checked = true;
+						
+						//true가 아닌 false값은 체크 해제 상태
+						
+				}else{//전체 선택 체크박스가 체크가 되어있지 않다면?
+					//첫 번째 과목1에 관한 체크 박스 체크되게 하기
+					document.f2.subject1.checked = false;
+						//두 번째 과목2에 관한 체크 박스 체크되게 하기
+					document.f2.subject2.checked = false;	
+						//세 번째 과목3에 관한 체크 박스 체크되게 하기
+					document.f2.subject3.checked = false;
+						//true가 아닌 false값은 체크 해제 상태	
+				
+				}
+							
+				
+			}
+			
+			//두 번째 form태그의 전송버튼 클릭했을 때
+			document.f2.onsubmit = function(){
+				//약관 동의 체크 박스 자체를 가져와서 저장
+				var act = document.f2.accept;
+				
+				//약관 동의 체크박스에 체크가 되어 있지 않을 경우
+				if(act.checked == false){
+					window.alert("약관에 동의해야 합니다.");
+					act.focus(); //약관 동의 체크박스에 포커스 주기
+					return false; //전송취소
+
+				//과목1체크박스가 체크되어 있지 않을 경우
+				}else if(document.f2.subject1.checked == false){
+					window.alert("과목1에 동의해야 합니다.");
+					act.focus(); //과목1 체크박스에 포커스 주기
+					return false; //전송취소
+					
+				//과목2체크박스가 체크되어 있지 않을 경우
+				}else if(document.f2.subject2.checked == false){
+					window.alert("과목2에 동의해야 합니다.");
+					act.focus(); //과목2 체크박스에 포커스 주기
+					return false; //전송취소
+				
+				//과목3체크박스가 체크되어 있지 않을 경우, getElementById로도 ID를 참조하는 것도 가능
+				}else if(document.getElementById("subject3").checked == false){
+					alert("과목3에 동의해야 합니다.");
+					act.getElementById("subject3").focus(); //과목3 체크박스에 포커스 주기
+					return false; //전송취소
+				
+					
+				}
+			}
+			
+		
+		
+		</script>
+	
+</body>
+</html>

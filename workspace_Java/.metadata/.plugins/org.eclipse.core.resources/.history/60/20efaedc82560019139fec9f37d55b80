@@ -1,0 +1,15 @@
+package Chapter8;
+
+public class ElectricCar{
+
+	private int curX, curY;
+	
+	public void reportPosition() {
+		System.out.println(curX+" "+curY);
+	}
+	
+	public void addFuel() {
+		System.out.println("급속 충전");
+	}
+	
+}

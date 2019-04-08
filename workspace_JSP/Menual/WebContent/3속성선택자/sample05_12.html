@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	
+	<!-- 
+		jQuery 속성선택자 종류
+		1. Has Attribute Selector 선택자란?
+		 : HTML태그의 속성 이름을 이용해서 원하는 태그를 검색하는 방법.
+		 : 속성이름을 지정한느 경우에는 "selector[속성명]" 표현식을 사용 한다 
+		 
+		 사용법
+		 : $("selector[attr]")
+		   -> HTML DOM을 구성하는 모든 태그에서 지정된 attr속성 이름을 갖는 태그요소를 모두 선택하여 반환함
+	
+		예제주제:
+		모든 HTML태그 중에서 id속성을 갖는 태그만? 검색하여 (선택하여) 글꼴의 크기를 30px로 설정 하는 예제
+
+	 -->
+
+	<!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+ 	<script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ 	
+ 	<script type="text/javascript">
+ 		//웹브라우저가 HTML태그를 모두 로드 했을떄.. 함수 실행되게 
+ 		$(function() {
+			//id속성을 가진 모든 태그를 선택한다
+			//따라서  <div id="hey">아이템2</div>
+			//      <div id="there">아이템3</div>
+			//태그에 CSS스타일이 적용되어 글자 크기가 변경 됨.
+			$("[id]").css("font-size", "30px");
+		});
+ 	
+ 	</script>
+ 	
+</head>
+<body>
+	<div>아이템1</div>
+	<div id="hey">아이템2</div>
+	<div id="there">아이템3</div>
+	<div>아이템4</div>
+</body>
+</html>
+

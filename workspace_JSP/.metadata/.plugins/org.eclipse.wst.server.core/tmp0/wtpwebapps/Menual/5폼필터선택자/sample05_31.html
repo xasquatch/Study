@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:selected Filter Selector</title>
+<!-- 
+	:selected 필터 선택자
+	- 이선택자는  <select> 태그의 하위 태그로 사용하는 <option>태그중에서 선택된 태그요소를 반환함
+	  <input> 태그의 type속성값이 checkbox이거나 radio인 경우는 동작하지 않고 
+	  오직<select>태그에서만 동작하기 때문에 주의해야함
+ 
+ 	주제 : <select>태그에서 선택한 값을 출력하는 예제
+ 
+ -->
+
+
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+
+   $(document).ready(function(){
+	   //<select>태그에 change 이벤트 함수를 설정 한다.
+	   //이후<select>태그의 하위 항목인 <option>태그를 선택하면 
+		$("select").change(function(){
+			//선택된 <option>태그의 값을  가져와서 저장
+			var data = $(":selected").text();
+			//저장한 값을 <span>태그의 값으로 설정
+			$("span").text(data);
+		});
+   });
+</script>
+</head>
+<body>
+<form>
+<select name="phone">
+  <option>010</option>
+  <option selected="selected">011</option>
+  <option>02</option>
+</select>
+</form>
+선택된 값:<span></span>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:empty Filter Selector</title>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+//내용 필터 선택자의 종류
+//:empty -> 자식 요소가 존재하지 않고 텍스트 값이 비어 있는 요소를 반환한다.
+//         <input>,<img>,<hr>, <br>태그 등이  :empty필터 선택자에 의해서 선택되는 대표적인 태그요소들이다.
+
+//주제 : 내용이 없는 <td>태그를 선택하여 문자열 "Was empty!"로 내용을 채우고 배경색을 green으로 설정 하는 예제
+   $(document).ready(function(){
+	   //<td>태그 중에서 자식요소 및 텍스트값이 비어 있는 요소를 선택하여 문자열"빈문자열"을 설정하고 배경색을 green으로 설정
+	   $( "td:empty" ).text("빈 문자열" ).css("background-color","green");
+   });
+</script>
+</head>
+<body>
+<table border="1">
+  <tr><td>TD #0</td><td></td></tr>
+  <tr><td>TD #2</td><td></td></tr>
+  <tr><td></td><td>TD#5</td></tr>
+</table>
+</body>
+</html>

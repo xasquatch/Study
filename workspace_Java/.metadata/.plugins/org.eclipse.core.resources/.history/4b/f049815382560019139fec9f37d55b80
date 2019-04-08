@@ -1,0 +1,25 @@
+package Chapter8;
+
+class Vehicle {
+
+	private int curX, curY;
+	
+	public void reportPosition() {
+		System.out.println(curX+" "+curY);
+	}
+	
+	public void addFuel() {
+		System.out.println("모든 운송 수단은 연료가 필요");
+	}
+	
+
+}
+
+public class VehicleTest{
+	public static void main(String[] args) {
+	
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인창</title>
+</head>
+<body>
+	<!-- 
+		name = "form태그를 식별할 수 있는 고유 이름"
+		method = "요청방식값 작성" <-- POST 또는 GET방식으로 서블릿을 요청할 수 있음(get / post)
+		action = "login" <-- 입력된 데이터를 서블릿 매핑이름이 login인 서블릿으로 전송시키기위해 작성	
+	 -->
+	<form name="frmLogin" method="post" action="login3" encType="UTF-8">
+	<!-- name = 텍스트박스에 입력된 ID를 user_id라는 name값을 이용하여 서블릿에게 전송함 -->
+		아이디 : <input type="text" name="user_id"><br>
+
+	<!-- name = 텍스트박스에 입력된 비밀번호값을 user_pw라는 name값을 이용하여 서블릿에게 전송함 -->
+		비밀번호 :	<input type="password" name="user_pw"><br> 
+		<input type="submit" value="로그인"> <input type="reset" value="다시입력">
+	</form>
+	
+	
+</body>
+</html>

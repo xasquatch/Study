@@ -1,0 +1,21 @@
+package Chapter8;
+
+public class DieselSUV {
+
+	private int curX, curY;
+	
+	public void reportPosition() {
+		System.out.println(curX+" "+curY);
+	}
+	
+	public void addFuel() {
+		System.out.println("주유소에서 급유");
+	}
+	
+}
+
+
+
+
+
+

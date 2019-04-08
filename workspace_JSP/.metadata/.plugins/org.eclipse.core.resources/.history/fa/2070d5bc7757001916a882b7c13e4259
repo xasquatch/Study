@@ -1,0 +1,10 @@
+package sec01.ex01;
+
+import javax.servlet.http.HttpServlet;
+
+@webservlet("/")
+public class MemberServlet extends HttpServlet {
+	
+	
+	
+}

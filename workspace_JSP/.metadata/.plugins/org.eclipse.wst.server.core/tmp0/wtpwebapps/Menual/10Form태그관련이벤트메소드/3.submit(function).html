@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+<script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+	/*
+		submit(function)메소드
+		
+		- 대상 태그에서 submit이벤트가 발생하면 function을 실행하는 메소드이다.
+		    이메서드는 on("submit",function)메소드의 형태와 동일하게 일을 수행한다
+		    인자없는 submit()메소드는  trigger("submit")메서드를 호출하는 문장을 줄여서 표현한것이다.
+		
+		- submit이벤트는 사용자가 <form>태그를 submit할때만 발생하는 이벤트로서
+	           명시적으로 <input type="submit">요소와 <input type="image">그리고
+		  <button type="submit">요소를 클릭하거나 엔터키를 눌렀을때 제한적으로 발생하는 이벤트이다.
+		  
+		주제 : <form>을 이용하여 test.jsp로 값을 전송하기 전에 입력한값을 비교하여 "OK"문자열을 입력하면
+		      "성공" 문자열을 출력하고, 아니면 "실패"문자열을 출력하는 예제.
+	 */
+	 
+	 $(function(){
+		//id가target인 <form>태그의 전송을 위해  [GO]버튼을 클릭 했을때..
+		$("#target").submit(function(event){
+			
+			var mesg="실패";
+			
+			//<form>태그내의 type이 text인  <input>태그에 입력한 값이  "OK"문자열과 같다면
+			if($(":text").val() == "OK"){
+				//성공 문자열을 변수에 저장
+				mesg = "성공";
+			}
+			
+			//<div>태그에 성공 문자열을 출력하고..
+			$("div").text(mesg);
+			
+			//실제로  test.jsp로 전송되는 것을 차단하기 위해  preventDefault()메소드를 호출함
+			event.preventDefault();
+		});
+	 });
+</script>
+
+</head>
+<body>
+ OK입력하면 '성공'출력하고 아니면 '실패'출력
+ <form id="target" action="test.jsp">
+ 	<input type="text" value="" name="a">
+ 	<input type="submit" value="GO">
+ </form>
+ <div></div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+
+	</style>
+	
+</head>
+<body>
+	<!-- 
+		jQuery 계층 선택자 종류
+		1. 자손 선택자 -> $("ancestor descednt")
+			: 조상(ancestor)태그의 모든 후손(descednt)태그를 반환한다.
+			 부모(parent)와 자식(child) 관계가 조상(ancestor)과 후손(descendant)관계로
+			 확대 되었을 뿐 childSelecter(자식선택자)와 개념은 비슷하다.
+			 
+		예제주제 : <form>태그 내의 모든 <input>태그를 선택하여 border스타일을 설정한다.
+				또한, <form>태그 안에 요소 중에서 <fieldset>태그 내의 모든 <input>태그에
+				배경색을 노란색으로 적용
+	
+	 -->
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script type="text/javascript">
+		//HTML문서내의 모든 요소가 웹브라우저에 로드되면
+		//자동으로 ready()함수가 수행되어  function콜백함수의 구문이 실행되게 선언
+		
+		$(function() {
+			
+			//<form>태그의 자손태그 중에서 <input>태그를 선택하여 가져와서
+			//따라서 <form>태그 내의 모든 <input>태그가 border스타일을 적용받는다
+			//<form>태그 외부의 <input>태그는 <form>태그의 형제 노드로 자손이 아니기 때문에
+			//css의 적용을 받지 않는다
+			$("form input").css("border", "2px dotted blue");
+			
+			//<form>태그의 자손중에서 <fieldset>태그를 선택하고,
+			//<fieldset>태그의 자손 중에서 <input>태그에 background-color속성을 설정함
+			$("form fieldset input").css("background-color","yellow");
+		});
+
+		</script>
+	
+		<form>
+		<div>기본폼</div>
+		<label>기본폼의 자식</label>
+		<input name="name" type="text" id="name" />
+		<fieldset>
+			<label>기본폼의 자손, 필드셋의 자식</label>
+			<input type="text" name="newsLetter" id="newsLetter">
+		</fieldset> 
+	</form>
+	기본 폼의 형제 : <input type="text" name="none">
+	
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:first 및 :last Filter Selector</title>
+<!-- 
+	:first 필터 선택자
+	- 첫번째 요소를 반환
+	
+	:last 필터 선택자
+	- 마지막 요소를 반환
+
+ -->
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+
+   $(document).ready(function(){
+	   //<tr>태그 중에서 첫번째 요소를 선택하여 배경색을 변경
+	   $( "tr:first" ).css( "background-color", "#bbf" ); 
+	   //<tr>태그 중에서 마지막 요소를 선택하여 글꼴 스타일을 이탤릭체로 변경
+	   $( "tr:last" ).css( "font-style", "italic"); 
+   });
+</script>
+</head>
+<body>
+ <table border="1">
+  <tr><td>인덱스 0</td></tr>
+  <tr><td>인덱스 1</td></tr>
+  <tr><td>인덱스 2</td></tr>
+  <tr><td>인덱스 3</td></tr>
+</table>
+</body>
+</html>

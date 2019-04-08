@@ -1,0 +1,9 @@
+package sec01.ex01;
+	
+	//VO(Value Object)역할을 하는 클래스
+	//VO역할이란?
+	//DB의 테이블에서 조회한 
+public class MemberVO {
+	
+	
+}

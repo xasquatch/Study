@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+	var pop = window.open("winpopup.html","pop1","width=300,height=400");
+	
+	</script>
+</head>
+<body>
+
+	<p>
+		<!-- 
+			브라우저 창 위치변경 → 버튼을 클릭했을 때...
+			자바스크립트의 코드가 실행되어 변수 pop이 참조하고 있는 팝업창의 위치를 모니터를 기준으로
+			왼쪽에서 200px만큼 이동하고, 위쪽에서 300px만큼 이동 시킵니다.
+			또한 팝업창에 focus()메소드를 적용해 가장 앞으로 창을 띄울 수 있도록 함
+		-->
+		<button onclick="pop.moveTo(200,300)">브라우저 창 위치 변경버튼</button>
+	
+	</p>
+
+<!-- 			"pop.moveTo(200,300)" -->
+<!-- 			"location.href='http://www.naver.com'" -->
+<!-- 			"alert('버튼 클릭했네')" -->
+
+
+	<P>
+
+<!-- 		브라우저 창 크기 변경 → 버튼을 클릭했을 떄 -->
+<!-- 		팝업창의 너비가 200px, 높이가 300px로 바뀝니다. -->
+<!-- 		또한 팝업창에 focus()메소드를 적용해 가장 앞으로 창을 띄울 수 있도록 함 -->
+	
+		<button onclick="pop.resizeTo(200,300); pop.focus();">
+		브라우저 창크기 변경버튼
+		
+		</button>
+	</P>
+
+
+
+
+</body>
+</html>

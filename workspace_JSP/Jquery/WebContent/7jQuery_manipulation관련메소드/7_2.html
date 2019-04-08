@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>.replaceWith(content) Traverse 메서드</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	
+
+   $(document).ready(function(){
+	/*
+		.replaceWith(content)메소드
+		- 선택된 태그요소를 제거하고 새로운 content로 변경 한다.
+		    만약 html문서 내에 content와 일치하는 태그가 있으면  타깃 태그요소로 이동하여 변경 시킨다.
+	*/   
+	   //class속성값이 second인 <div>태그를 찾아서 
+	   //<div class="inner second">강감찬</div>값을
+	   //"<h2>강감찬 장군</h2>"값으로 변경한다.
+	   //요약 : html문서내에 존재하지 않는 새로운 <h2>태그로 변경 하는 예제
+// 	   $( "div.second" ).replaceWith( "<h2>강감찬 장군</h2>" );
+	   
+	   //class속성값이 third인 <div>태그를 찾아서 html문서 내에 존재하는
+	   //class속성값이 first인 태그로 변경 되게 하기 
+	   //이떄 class속성값이 first인 태그는 이동 된다.
+// 	   $( "div.third" ).replaceWith( $( ".first" ) );
+	
+	/*
+		.replaceAll(target)메소드
+		- replaceAll(target)메소드는 replaceWith(content)메소드와 기능이 동일 함.
+		    다만 content와  target의 위치가 서로 다르다.
+	*/
+		//class속성값이 inner인 태그를 모두 찾아서 새로운<h2>태그로 변경한다.
+// 	   $( "<h2>영웅들</h2>" ).replaceAll( ".inner" );
+	  	
+   });
+
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="inner first">이순신</div>
+  <div class="inner second">강감찬</div>
+  <div class="inner third">유관순</div>
+</div>
+</body>
+</html>

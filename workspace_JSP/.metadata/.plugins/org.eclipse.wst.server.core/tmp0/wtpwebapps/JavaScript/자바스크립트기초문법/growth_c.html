@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>증감연산자</title>
+</head>
+
+
+<script type="text/javascript">
+
+	var num1 = 10;
+	var num2 = 20;
+	var result;
+
+	num1--; //변수 num1의 데이터가 1 감소했으므로  num1에는 현재 9가 저장됩니다.
+  //num1 = num1 - 1;
+	
+	document.write(num1, "<br>");
+	
+	num1++; //변수 num1에 데이터가 1 증가했으므로 num1에는 현재 10이 저장됩니다.
+  //num1 = num1 + 1;
+	document.write(num1,"<br>");
+
+	result = num2++;
+  // ++가 변수의 뒤에 있을때는 먼저 변수 result에 num2의 값(20)을
+  // 저장한 후에  num2의 값이 1증가하게 됩니다. 
+  // 대입연산자가 먼저 실행되고, 증가연산자가 실행됩니다.
+	document.write(result,"<br>");
+	
+  //현재 num2변수값이 21인 상황에서 ++가 num2변수의 앞에 있을 때는 먼저 num2변수의 값을
+  //1증가 시킨 후에 변수 result에 num2의 값을 저장합니다.
+  //증가 연산자가 먼저 발생되고, 대입연산자가 실행됨.
+  	result = ++num2;
+
+  //변수 result에 저장된 값 22이 출력됩니다.
+	document.write(result,"<br>");
+	
+	
+	
+</script>
+
+<body>
+
+
+
+
+
+
+
+</body>
+</html>

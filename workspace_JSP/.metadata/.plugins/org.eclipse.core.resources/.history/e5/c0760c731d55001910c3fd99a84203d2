@@ -1,0 +1,32 @@
+package sec01.ex01;
+
+import java.io.IOException;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/input2")
+public class InputServlet2 extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		request.setCharacterEncoding("UTF-8");
+		Enumeration enu = request.getParameterNames();
+		//주제:
+		//전송(요청)되는 데이터가 많은 경우에는 getParameterNames()메소드를 이용해
+		//input태그의 name속성값만 따로 구할 수 있음
+		
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		
+	}
+
+}

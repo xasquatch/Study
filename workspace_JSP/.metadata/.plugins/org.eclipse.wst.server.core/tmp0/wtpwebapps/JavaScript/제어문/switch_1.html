@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>switch문</title>
+
+	<script type="text/javascript">
+		//우리가 즐겨 사용하는 포털 검색사이트 이름을 입력 받기	
+		var site = prompt("네이버, 다음, 네이트, 구글 중 즐겨 사용하는 포털 검색사이트는?","");
+	
+		var url;
+		
+// 		switch문에는 경우(case)의 데이터 중 변수site의 데이터와 일치하는 데이터가 있는지 검사합니다.
+// 		일치하는 데이터가 있을경우에는 그에 해당하는 실행문을 실행합니다.
+// 		실행문을 실행한 후에 break문을 만나 switch문이 종료됩니다.
+		
+		switch(site) {
+			
+			case "네이버" :
+				url = "www.naver.com";
+				break;
+
+			case "다음" :
+				url = "www.daum.net";
+				break;
+			
+			case "네이트" :
+				url = "www.nate.com";
+				break;
+			
+			case "구글" :
+				url = "www.google.com";
+				break;
+			
+			default:
+				alert("보기 중에 없는 사이트입니다.");
+				break;
+		//▲위의 case유형에 값이  site변수의 값과 일치하는 것이 없을 경우
+		
+		}
+	
+		//만일 변수 url에 포털사이트 주소가 저장되어 있을 경우에는?
+		
+		if(url){
+			//location.href속성값이 바뀌어 해당 포털사이트로 이동한다
+			location.href = "https://" + url; //이동시킬 페이지주소
+			
+		}
+		
+	</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

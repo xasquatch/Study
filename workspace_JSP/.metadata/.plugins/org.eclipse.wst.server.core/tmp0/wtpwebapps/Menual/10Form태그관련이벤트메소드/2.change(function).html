@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+<script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+	//주제 : <select>태그에서 값을 변경 했을떄..
+	//      변경된 값을 <div>태그에 출력하는 예제.
+	$(function() {
+		//<select>태그에서 change이벤트가 발생하면
+		$("select").change(function(){
+			//선택한 option태그의 문자열을 <div>태그에 설정
+			$("div").text( $("option:selected").text() );
+		});
+	});
+
+</script>
+
+</head>
+<body>
+		<select name="sweets">
+			<option>초콜릿</option>
+			<option>캔디</option>
+			<option selected="selected">사탕</option>
+			<option>아이스크림</option>
+			<option>쿠기</option>			
+		</select>
+		<div></div>
+
+
+</body>
+</html>
+
+
+

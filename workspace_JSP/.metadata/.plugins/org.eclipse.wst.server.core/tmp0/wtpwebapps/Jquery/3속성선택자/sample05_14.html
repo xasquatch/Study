@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script type="text/javascript">
+		
+		$(function() {
+			//<a>태그에서 href속성의 값이 https로 시작하는데 그만? 선택하여 가져옴
+			//가져와 글꼴크기를 40px로 설정함
+			
+			$("a[href ^= 'https']").css("font-size","40px");
+			
+			//href속성의 값이 net으로 끝나는 태그만? 선택하여 가져와서
+			//글자색을 red로 설정함
+			
+			$("a[href $= 'net']").css("color","red");
+					
+		});
+		
+		
+	</script>
+
+</head>
+<body>
+	<a href="http://naver.com">one</a> <br/>
+	<a href="https://naver.com" target="_blank">two</a> <br/>
+	<a href="http://daum.net">three</a> <br/>
+	
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- 
+		전송 버튼을 클릭했을 떄 this를 이용해 이벤트가 발생한 <form>요소를 함수의 매개변수에 전달하고,
+		이 <form>태그에 방문자가 입력한 값이 정규표현 객체의 규칙(패턴)에 맞게 되었으면
+		action속성에 지정한 페이지로 값들을 전송하는 예제.
+	 -->
+	 
+	 <script type="text/javascript">
+		//submit_chk(nimiform) 함수의 역할
+		//-> 방문자가 입력한 이름과 연락처가 정해진 패턴에 맞게 작성되었는지 검사합니다.
+		//	만약 틀릴 경우에는 경고 창을 띄우고 포커스를 이동 시킵니다.
+		//	
+	 	function submit_chk(a){
+			//시작부터 끝까지 한글 2~5글자까지 일치하는 패턴으로 정규표현객체를 생성하여 저장
+			var reg1 = /^[가-힣]{2,5}$/;	//한글을 2~5까지 작성했는지 판단하는 정규표현식
+			//첫 글자는 010, 016, 011 중 하나로 시작하고,
+			//다음 숫자는 3~4개까지 오고,
+			//마지막으로 숫자 4개가 일치하는 패턴으로 정규표현객체를 생성
+			var reg2 = /^(010|016|011)\d{3,4}\d{4}$/;
+
+			//이름 입력하는 <input name="user_name"/>를 선택하여 가져와서
+			//name변수에 저장
+			var name = a.user_name;
+					
+			//연락처를 입력 할 수 있는<input name="user_tel"/>를 선택하여 가져와서
+			//tel변수에 저장
+			var tel = a.user_tel;
+			
+			//방문자가 입력한 이름이 정규표현 규칙에 어긋나면 false를 리턴하고
+			//어긋나지 않으면 true를 반환받게 검사해서 검사한 결과를 result1변수에 저장
+			var result1 = reg1.test(name.value);
+				
+			//방문자가 입력한 이름이 정규표현 규칙에 어긋나면 false를 리턴하고
+			//어긋나지 않으면 true를 반환받게 검사해서 검사한 결과를 result2변수에 저장
+			var result2 = reg2.test(tel.value);
+			
+			//만약에 이름을 정규표현식에 어긋나게 작성했을 경우
+			if(!result1){
+				alert("이름 입력이 잘못 되었습니다.");
+				name.value = "";
+				name.focus();
+				return false;
+				
+			}else if(!result2){//연락처를 정해진 규칙에 어긋나게 작성 했을 경우
+				alert("번호 입력이 잘못 되었습니다.");		//경고메세지
+				tel.value = "";
+				tel.focus();
+				return false;
+			}
+			
+		}//submit_chk 끝
+	 
+		//다시작성버튼을 눌렀을 때 확인/취소 버튼이 있는 창을 띄우고,
+		//다시 한번 회원가입 취소 여부를 묻습니다.
+		
+		//[다시작성]버튼을 눌렀을 경우 함수내의 실행문이 실행됩니다.
+		//"정말로 회원가입을 취소하시겠습니까?"라는 확인,취소 버튼이 있는 창을 띄우고
+		//만일 취소 버튼을 누를경우 false값을 반환하여 가입 취소가 실행되지 않습니다.
+		function reset_chk(a){
+			
+			var result = confirm("정말로 회원가입을 취소하시겠습니까?");
+			
+			if(result){
+					return false;
+					
+			}
+			
+		}
+	 
+	 
+	 </script>
+	 
+	 
+</head>
+<!-- 
+	웹브라우저가 <body>에 하위 태그들을 모두 로딩한 후 이름을 입력하는 input태그로 포커스를 이동시키게 하기
+ -->
+<body onload="document.m1.user_name.focus();">
+	<!-- 
+			onreset="return reset_chk(this);는 다시 작성버튼을 눌렀을 때
+			reset_chk()함수를 호출합니다.
+			여기서 this는 취소 이벤트가 발생한 <form>태그를 가리킵니다.
+			역시 return문은 함수에서 false를 반환받으면 reset기능이 취소됩니다.
+		 -->
+		<!-- 
+			onsubmit="return submit_chk(this); 는 회원가입 전송버튼을 눌렀을 때
+			submit_chk()함수를 호출합니다.
+			여기서 this키워드는 전송 이벤트가 발행한 <form>태그를 가리킵니다.
+			return구문은 함수에서 false를 반환받으면 action속성에 작성된 페이지로 데이터 전송을 취소시킴.
+ 		-->
+
+		<form action="#" method="post" name="m1" onsubmit="return submit_chk(this);"
+										onreset="return reset_chk(this);">
+			<fieldset>
+				<legend>회원가입</legend>
+				<p>
+					<label>이름</label>
+					<input type="text" name="user_name" id="user_name"/>
+				</p>
+				<p>
+					<label>연락처</label>
+					<input type="text" name="user_tel" id="user_tel"/>
+				</p>
+				<p>
+					<input type="submit" value="회원가입"/>
+					<input type="reset" value="다시작성"/>			
+				</p>
+				
+			</fieldset>
+		
+		
+		</form>
+
+</body>
+</html>

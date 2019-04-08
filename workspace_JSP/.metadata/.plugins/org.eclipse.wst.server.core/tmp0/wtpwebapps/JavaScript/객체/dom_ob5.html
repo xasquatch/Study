@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1 id="title">마우스 아웃</h1>
+	<a href ="#" id="btn"><img src = "images/btn_out.gif"> </a>	<!-- 한줄로 적어야됨 -->
+	<p id="img_src"></p>
+	
+	<script type="text/javascript">
+		//id값이 "btn"인 <a>태그를 선택해서 가져와서 theBtn변수에 저장
+		var theBtn = document.getElementById("btn");
+	
+		//id값이 "img_src"인 <p>태그를 선택해서 가져와서 s변수에 저장
+		var s = document.getElementById("img_src");
+
+		//id값이 "btn"인 <a>태그에 마우스를 올릴 때마다 익명함수 function(){}의 코드가 실행됩니다.
+		theBtn.onmouseover = function(){
+			//id값이  "title"인 <h1>태그를 선택해서 가져와서
+			//텍스트를 마우스오버로 바뀌게하고
+			document.getElementById("title").innerHTML="마우스 오버";	
+		
+			//<img>태그에 src속성의 값을 "images/btn_over.gif"로 변경되게 하여
+			//마우스 오버된 이미지로 바뀌게 되도록 하기
+			theBtn.firstChild.src = "images/btn_over.gif";
+			
+			//마우스 오버된 <img>태그의 src값을 <p id = "img_src">태그에 텍스트로 출력합니다.
+			s.innerHTML = theBtn.firstChild.src;
+			
+		
+		}
+		
+		//<a id="btn">태그에서 마우스 포인터가 벗어날 때마다 익명함수 function(){}이 실행되게 하기
+		theBtn.onmouseout = function(){
+			//id가 "title"인 <h1>태그에 텍스트가 "마우스 아웃으로 바뀌게 하기
+			document.getElementById("title").innerHTML="마우스 아웃";	
+// 			alert("마우스포인트가 벗어낫네");
+			//<img>태그에 src값을 "images/btn_out.gif"로 변경되게 하여
+			//마우스 아웃된 이미지로 바뀌게 하기
+			theBtn.firstChild.src = "images/btn_out.gif";			
+			//마우스 아웃된 <img>태그의  src속성값을 <p="img_src">태그에 텍스트로 출력합니다.
+			s.innerHTML = theBtn.firstChild.src;
+			
+			
+		}
+		
+		
+		
+	</script>
+	
+	
+</body>
+</html>

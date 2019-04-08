@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<h1>선호하는 음식</h1>
+		<div id="food_1">
+			<h2 id="title">한식</h2>
+			<ol>	<!-- 돔개체 -->
+				<li><a href="#">김치</a></li> <!-- ol안의 li은 목록을 나타냄 a태그로 링크를 걸어줌 링크김치-->
+				<li>불고기</li>	<!-- 돔객체 -->
+				<li>비빔밥</li>
+			</ol>
+		</div>
+		<div id="food_2">
+			<h2>양식</h2>
+			<ol id="list">
+				<li>돈가스</li>
+				<li id="pizza">피자</li>
+				<li>파스타</li>
+			</ol>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+<!--웹브라우저가 위에서 아래로 하향식으로 코드를 읽어들이기 때문에 본 스크립트를 위의 태그 아래에다가 게시함-->
+
+		//위의 태그 중에서 <h1>태그 요소만 선택합니다.
+		//그리고 가장 처음 <h1>태그 요소만 선택한 후 ~ css로 글자 색상을 초록색으로 적용
+		document.getElementsByTagName("h1")[0].style.color = "green";
+	
+		//id속성값이 title인 태그요소를 선택하여 가져와서
+		document.getElementById("title").style.color = "red"; <!-- 중요도 ★★★★☆-->
+	
+		//id속성값이 food_1인 태그요소의 하위요소<li>태그요소만 선택합니다.
+		//그 중 두 번째 <li>태그요소만 선택한 후, 배경색상을 빨간색으로 적용
+		var myList = document.getElementById("food_1").getElementsByTagName("li")[1];
+
+		myList.style.backgroundColor="red";
+	</script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			//<input>태그를 클릭하면 click이벤트가 동작한다.
+			$("input").click(function(){
+				//<input>태그들 중에서 focus된 태그를 찾아 선택하여 가져와서 배경색을 노란색으로 변경함
+				
+				$("input:focus").css("background-color","green");
+				
+				//<input>태그들 중에서 focus되지 않은 태그를 찾아 선택하여 가져와서
+				//focus를 받을 때 동적으로 지정된 style속성을 제거한다.
+// 고태흥작품→ 	$("input:not(:focus)").css("background-color","white");
+				
+				$("input:not(:focus)").removeAttr("style");
+				
+				//					↑removeAttr ★★★★★
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<div>
+		<input type = "text" value="one">
+		<input type = "text" value="two">
+		<input type = "text" value="three">
+	</div>
+
+
+</body>
+</html>

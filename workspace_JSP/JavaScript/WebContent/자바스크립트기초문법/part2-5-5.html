@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>비교 연산자</title>
+</head>
+
+	<script type="text/javascript">
+	
+		var a = 10;	
+		var b = 20;
+		var c = 30;
+		var f = "20";
+		var result;
+		
+		result = a > b; //a=10, b=20 이므로 a > b의 결과는 false가 저장됨
+		document.write(result,"<br/>");
+		
+		result = a < b; //a=10, b=20이므로 a<b의 결과 true가 저장됨
+		document.write(result,"<br>");
+
+		result = b == f; //데이터 형태와 상관없이 데이터가 같으므로 true값으로 출력됨
+		document.write(result,"<br/>");
+		
+		result = a != b; //다른값이 맞으므로 true가 저장됨
+		document.write(result,"<br/>");
+		
+		result = b === f; //변수 b = 20, f="20"이므로 b===f의 결과는 데이터형이 같아야하므로
+						  //false가 저장됨
+		document.write(result,"<br/>");						  
+						  
+	</script>
+<body>
+
+</body>
+</html>

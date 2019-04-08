@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	h1{
+	width : 50px;
+	height : 30px;
+	background-color : red; 
+	font-size : 100%;
+	}
+
+	h2{
+	width : 50px;
+	height : 30px;
+	background-color : orange; 
+	font-size : 100%;
+	}
+	
+	h3{
+	width : 50px;
+	height : 30px;
+	background-color : aqua; 
+	font-size : 100%;
+	}
+	</style>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//<h1>태그를 선택하여 가져와서 animate()메소드를 호출하여 동작효과를 줍시다
+		//animate()메소드를 호출할 때 전달 값으로 marginLeft를 사용하여
+		//<h1>태그의 바깥 왼쪽 여백을 250px만큼 띄어주고 이동되는 동작효과를 3초안에 주기
+		$("#stopBtn").animate()
+		
+		//<h2>태그에 애니메이션을 적용함
+		//<h2>태그의 바깥 왼쪽 여백을 250px만큼 띄어주고 이동되는 동작효과를 3초만에 주기
+		//단 <h2>에 동작이 1초 후에 실행되도록 지연하기
+	});
+	
+	
+</script>
+</head>
+<body>
+	<button id="stopBtn">stop</button>
+	<h1>1번말</h1>
+	<h1>2번말</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attr() 메소드</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	//jquery의 태그의 속성 관련 메소드
+	//jquery 속성과 관련된  API Documentation 주소 : http://api.jquery.com/category/attributes/
+	
+	//.attr(속셩명)메소드 :
+	//	지정된 속성명에 해당하는 속성의 값을 반환.
+	// 일치하는 요소가 맞으면
+	// 처음 일치하는 요소가 변환된다.
+	
+	//.attr(속셩명, 속성값) :
+	// 지정한 속성명에 속성값을 설정하는 메소드
+	
+	//따라서 태그의 특정속성값을 가져오기 위해서는. attr(속셩명) 매서드를 사용하고
+	//속성값을 설정하기 위해서는 .attr(속성명, 속성값) 메서드를 사용한다.
+	
+	//주제 : 버튼을 클릭할 때마다 기본 <img>태그의 속성인 src, width, heigth속성을 값을 변경하여
+	//		새로운 이미지 파일을 화면에 보여주는 예제
+	$(function() {
+	//<button>태그를 클릭했을 때
+		$("button").on("click", function(){
+			//button을 클릭했을 때 <img>속성 src에 "korea.png"를 설정하고
+			//width와 heigth속성을 각각 200으로 설정한다.
+
+			$("img").attr(
+						{
+								src : "korea.png",
+								width : 200px,
+								heigth : 200px
+								
+						});
+		//<img>태그의 속서에 src에 해당하는 속성값을 콘솔탭에 출력한다.
+		console.log($("img").attr("src"));
+		
+		});
+	})
+	
+</script>
+</head>
+<body>
+
+	<img src="france.png" width="100px" heigth="100px">
+	<button>이미지 변경</button>
+</body>
+</html>

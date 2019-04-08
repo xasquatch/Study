@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="wrap">
+		<p>내용1</p>
+		<p>내용2</p>
+		<p>내용3</p>
+		<p>내용4</p>
+	</div>
+	<script type="text/javascript">
+		//id속성값이 wrap인 <div>태그요소를 선택
+		//첫 번째 자식<p>내용1<p>를 선택하여
+		document.getElementById("wrap").children[0].style.color="red";
+		
+		
+		//반복문의 조건식에 노드 타입값을 검사하여 요소 노드가 아닐 경우에는
+		//계속해서 다음요소가 선택되도록 반복문을 이용함
+		//정상적으로 nextobj에 요소노드가 참조되면 노드타입이 1이되므로 반복문이 종료되고
+		//배경색이 노란색으로 적용됨
+		var p = document.getElementsByTagName("p")[1];
+		var nextObj = p.nextSibling;
+		while (nextObj.nodeType != 1){
+			nextObj = nextObj.nextSibling;
+		}
+	
+		nextObj.style.backgroundColor="yellow";
+		
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+package Test2;
+
+class Circle{
+	Circle(int a, int b, int c){
+		
+	}
+	void setX(int a){
+		
+	}
+	void setY(int a){
+	
+	}
+	void setRadius(int a){
+	
+	}
+
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Circle c1 = new Circle(20,30,100);
+		Circle c2 = new Circle();
+		c2.setX(20);
+		c2.setY(30);
+		c2.setRadius(10);
+		if(c1.equals(c2)) System.out.println("같은 원이다");
+		else System.out.println("다른 원이다.");
+		
+		System.out.println(c1);
+		System.out.println(c2);
+	}
+
+}

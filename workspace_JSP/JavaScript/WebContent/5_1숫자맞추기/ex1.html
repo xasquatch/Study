@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>숫자 맞추기 게임</h1>
+	<table class="table table-bordered table-dark">
+		<tr>
+			<td colspan="2">
+				1~100까지의 숫자를 입력해 주세요.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				입력: <input id="num" type="text" autofocus value="">
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				힌트: <input id="hint" type="text" readonly>
+			</td>
+			<td>
+				추측횟수 : <input id="cnt" type="text" value = "0" readonly>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" value="제출" onclick="submit()">
+			</td>
+			<td>
+				<input type="button" value="초기화" onclick="clear1()">
+			</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		var result = Math.floor(Math.random() * 100) + 1;
+		var input = document.getElementById("num");
+		var hint = document.getElementById("hint");
+		var cnt = document.getElementById("cnt");
+		var cont = 0;
+		
+		function submit(){
+			
+			if(Number(result)>Number(input.value)){
+				hint.value = "입력값이 결과보다 작습니다.";
+				input.value ="";
+			}
+			else if(Number(result)<Number(input.value)){
+				hint.value = "입력값이 결과보다 큽니다.";
+				input.value ="";
+			}
+			else if(Number(input.value)>100){
+				hint.value = "입력값이 100을 넘었습니다.";
+			}
+			else if(Number(input.value) == result){
+				hint.value="정답입니다.";
+			}
+			else {
+				hint.value="입력값이 올바르지 않습니다."
+			}
+			
+			cont++;
+			cnt.value = cont;
+		}
+
+		function clear1(){
+			
+			input.value = hint.value = "";
+			result = Math.floor(Math.random() * 100) + 1;
+			cont = 0;
+			cnt.value = 0;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
