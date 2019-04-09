@@ -1,0 +1,36 @@
+package sec02.ex02;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+//memberForm.html페이지에서 가입할 회원내용을 입력하고
+//입력한 내용들을 request객체영역에 저장 후
+//MemberrServlt2서블릿을 요청시 request영역을 전달하게 된다.
+@WebServlet("/Member3")
+public class Memberservlet2 extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doHandle(request, response);
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doHandle(request, response);
+		
+		
+	}
+
+	protected void doHandle(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+			
+		
+		
+	}
+
+}

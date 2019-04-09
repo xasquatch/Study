@@ -25,4 +25,40 @@
     <!--
     <Manager pathname="" />
     -->
+    
+    <!-- 톰캣 실행시 ConnectionPool로 연결할 데이터베이스정보를 설정하는 소스 -->
+    <!-- 
+    	name = 커넥션풀에 대한 JNDI이름
+     	auth = 인증주체
+     	type = "데이터베이스 종류별 DataSource"
+     	driverClassName = 연결할 데이터베이스 종류에 따른 드라이버 클래스 이름
+     	url = 접속할 데이터베이스 주소와 포트번호 및 SID
+     	username = 데이터베이스 접속 ID
+     	password = 데이터베이스 접속 PW
+     	maxActive = 동시에 최대 데이터베이스에 연결할 수 있는 connection수 (접속수)
+    	maxwait = 새로운 연결이 생길 때까지 기다릴 수 있는 최대 시간
+    	
+    	다른 속성들은 고정으로 사용되며,
+    	주로 driverClassName, username, password, url 속성만 변경해서 사용한다.
+     -->
+    
+    <Resource
+    	name = "jdbc/oracle"
+    	auth = "Container"
+    	type = "javax.sql.DataSource"
+    	driverClassName = "oracle.jdbc.OracleDriver"
+    	url = "jdbc:oracle:thin:@localhost:1521:XE"
+    	username = "scott"
+    	password = "tiger"
+    	maxActive = "50"
+    	maxwait = "-1"
+    />
+    
+    
+    
+    
+    
+    
+    
+    
 </Context>

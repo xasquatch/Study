@@ -316,3 +316,8 @@
 4월 08, 2019 11:04:26.29 [5188:6620:0408/110426.294:ERROR:browser_process_sub_thread.cc(209)] Waited 40 ms for network service
 4월 08, 2019 11:04:58.29 [6664:7084:0408/110458.299:ERROR:browser_process_sub_thread.cc(209)] Waited 41 ms for network service
 4월 08, 2019 12:25:46.39 [6796:1904:0408/122546.390:ERROR:browser_process_sub_thread.cc(209)] Waited 62 ms for network service
+
+4월 09, 2019 15:56:25.00 NEW SESSION
+4월 09, 2019 15:56:25.00 [5760:728:0409/155624.986:ERROR:textfield.cc(1768)] NOT IMPLEMENTED
+4월 09, 2019 17:47:58.37 [5760:9160:0409/174758.375:ERROR:browser_process_sub_thread.cc(209)] Waited 30 ms for network service
+4월 09, 2019 17:48:13.06 [4760:232:0409/174813.066:ERROR:browser_process_sub_thread.cc(209)] Waited 122 ms for network service
