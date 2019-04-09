@@ -1,0 +1,22 @@
+package Chapter9;
+
+class InstallTool{
+	void copy() {
+		System.out.println("파일 복사");
+	}
+	
+	volid install() throws Exception{
+		
+	}
+	
+}
+
+
+
+public class UseInstallTool {
+
+	public static void main(String[] args) {
+
+	}
+
+}

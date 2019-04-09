@@ -1,0 +1,24 @@
+package Chapter8;
+
+class Toy2 {}
+
+class Grocery2 {}
+
+class GenericBox<T>{
+	private T some;
+	public T getSome() {
+		return some;
+	}
+	public void setSome(T som) {
+		this.some = some;
+	}
+}
+
+public class GenericBoxTest {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package Chapter8;
+
+class NumberBox<T extends Number> {
+	
+	public void addSomes(T ... ts) {
+		
+	}
+}
+
+
+
+public class ExtendsTest {
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

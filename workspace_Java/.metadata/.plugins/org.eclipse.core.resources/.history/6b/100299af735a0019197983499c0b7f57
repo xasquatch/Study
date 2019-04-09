@@ -1,0 +1,17 @@
+package Chapter9;
+
+public class InstallTool{
+	void copy() {
+		System.out.println("파일 복사");
+	}
+}
+
+
+
+public class UseInstallTool {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Chapter9;
+
+public class UserManagerWithException {
+
+	public boolean login(String id, String pass) {
+		if(!id.equals("hong")) {
+			throw new LoginFailException()
+		}
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

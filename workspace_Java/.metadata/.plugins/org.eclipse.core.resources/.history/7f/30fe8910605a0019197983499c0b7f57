@@ -1,0 +1,36 @@
+package Chapter8;
+
+
+
+class Fruit{}
+class Company{}
+class Market<P>{
+	protected P product;
+}
+interface Useable<D>{}
+
+class Mart<C,P,d> extends Market<P> implements Useable<D>{
+	private C coworker;
+	
+	public Mart(C coworker, P product) {
+		this.coworker = coworker;
+		this.product = product;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Mart [coworker = "+coworker +",product =" +product+"]";
+	}
+	
+}
+
+
+public class MartTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

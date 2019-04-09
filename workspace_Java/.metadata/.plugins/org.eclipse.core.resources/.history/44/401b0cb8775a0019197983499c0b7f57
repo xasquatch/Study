@@ -1,0 +1,21 @@
+package Chapter9;
+
+public class LoginFailException extends RuntimeException{
+
+	enum ErrorCode{
+		INVALID_ID, INVALID_PASS
+	}
+	
+	private ErrorCode errorCode;
+	
+	public LoginFailException(ErrorCode errorCode, String data) {
+		super(data);
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

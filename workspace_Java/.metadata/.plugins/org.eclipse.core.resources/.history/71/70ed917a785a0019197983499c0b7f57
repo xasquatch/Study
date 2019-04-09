@@ -1,0 +1,18 @@
+package Chapter9;
+
+public class UserManagerWithException {
+
+	public boolean login(String id, String pass) {
+		if(!id.equals("hong")) {
+			throw new LoginFailException(LoginFailException.ErrorCode.INVALID_ID,id);
+		}else if(!pass.equals("1234")) {
+			throw new LoginFailException(LoginFailException.ErrorCode.INVALID_PASS,pass);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

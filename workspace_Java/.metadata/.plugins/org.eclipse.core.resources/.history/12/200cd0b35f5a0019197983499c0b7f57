@@ -1,0 +1,18 @@
+package Chapter8;
+
+
+
+class Fruit{}
+class Company{}
+class Market<P>{
+	protected P product;
+}
+
+public class MartTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

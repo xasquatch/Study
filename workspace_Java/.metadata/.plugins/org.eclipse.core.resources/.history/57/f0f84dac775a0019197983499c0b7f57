@@ -1,0 +1,10 @@
+package Chapter9;
+
+public class LoginFailException extends RuntimeException{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
