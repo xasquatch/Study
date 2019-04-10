@@ -123,6 +123,8 @@ public class MemberDAO {
 			pstmt.setString(4, email);
 			//PreparedStatement객체를 이용하여 DB에 insert실행
 			pstmt.executeUpdate(); //수정, 삭제, 추가
+
+			
 			
 			//객체자원해제
 			pstmt.close();
@@ -133,5 +135,32 @@ public class MemberDAO {
 		}
 		
 	}//addMember메소드 끝
+
+
+	public void delMember(String id) {
+		try {
+			//DataSource커넥션풀을 이용해 데이터베이스와 접속한다.
+			con = dataFactory.getConnection();
+			//delete문을 문자열로 만듭니다.
+			String query = "DELETE FROM t_member WHERE id = ?";
+			//?를 제외한 delete문장을 저장한 PreparedStatement <---DELETE실행 객체에 담아
+			pstmt = con.prepareStatement(query);
+			//PreparedStatement객체에 나머지 ????값들을 위의 우리가 입력한 값으로 셋팅함.
+			pstmt.setString(1, id);
+			
+			//DELETE문장을 DB에 전달하여 실행
+			pstmt.executeUpdate(); //수정, 삭제, 추가
+
+			
+			
+			//객체자원해제
+			pstmt.close();
+			con.close(); //Connection객체를 커넥션풀에 반납
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 
 }
