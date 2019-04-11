@@ -53,8 +53,8 @@
 		<item value="539" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="467" key="DIALOG_HEIGHT"/>
-		<item value="552" key="DIALOG_X_ORIGIN"/>
-		<item value="389" key="DIALOG_Y_ORIGIN"/>
+		<item value="615" key="DIALOG_X_ORIGIN"/>
+		<item value="288" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
 		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
@@ -95,6 +95,7 @@
 		<item value="true" key="IgnoreDefault"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Comments"/>
+		<item value="2" key="InsertPosition.v2"/>
 		<item value="1" key="VisibilityModifier"/>
 		<item value="0" key="StringStyle"/>
 		<item value="0" key="ToStringTemplateSelected"/>
@@ -105,6 +106,8 @@
 	</section>
 	<section name="OverrideMethodDialog">
 		<item value="true" key="showtypes"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

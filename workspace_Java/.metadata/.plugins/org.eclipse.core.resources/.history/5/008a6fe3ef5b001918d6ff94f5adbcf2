@@ -1,0 +1,10 @@
+package Chapter10;
+
+public class InstanceInnerTest {
+
+	class Inner{
+		int innerMember = 10;
+		static final int finalStaticMember = 20;
+		
+	}
+}

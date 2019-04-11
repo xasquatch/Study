@@ -1,0 +1,17 @@
+package Chapter10;
+
+interface InfoPrintable{
+	public void printInfo();
+}
+
+public class VariousInnerClassTest {
+
+	public void useInnerClass(InfoPrintable inner) {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+	}
+
+}

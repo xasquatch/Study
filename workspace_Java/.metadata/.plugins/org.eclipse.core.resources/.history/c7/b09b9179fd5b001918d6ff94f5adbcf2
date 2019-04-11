@@ -1,0 +1,29 @@
+package Chapter10;
+
+interface InfoPrintable{
+	public void printInfo();
+}
+
+public class VariousInnerClassTest {
+
+	public void useInnerClass(InfoPrintable inner) {
+		inner.printInfo();
+	}
+	public void useSpeakerTest() {
+		useInnerClass(new InfoPrintable() {
+			public void printInfo() {
+				System.out.println("익명의 내부 클래스");
+			}
+		});
+		class EngSpeaker implements InfoPrintable{
+			public void printInfo() {
+				System.out.println("로컬 내부 클래스");
+			} 
+		}
+		useInnerClass(new EngSpeaker());
+		
+	}
+	public static void main(String[] args) {
+	}
+
+}

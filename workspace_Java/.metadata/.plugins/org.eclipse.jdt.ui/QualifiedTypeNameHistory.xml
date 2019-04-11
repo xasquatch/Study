@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="chapter6.Student"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="Chapter7.FinalMemberClass"/>
@@ -32,4 +31,11 @@
 <fullyQualifiedTypeName name="Chapter9.LoginFailException.ErrorCode"/>
 <fullyQualifiedTypeName name="Chapter9.UserManagerWithException"/>
 <fullyQualifiedTypeName name="Chapter9.LoginFailException"/>
+<fullyQualifiedTypeName name="LocalInner"/>
+<fullyQualifiedTypeName name="Chapter10.LocalInnerTest"/>
+<fullyQualifiedTypeName name="Chapter10.InfoPrintable"/>
+<fullyQualifiedTypeName name="Chapter10.InstanceInnerTest"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
 </qualifiedTypeNameHistroy>

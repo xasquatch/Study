@@ -1,0 +1,31 @@
+package Chapter10;
+
+public class LocalInnerTest {
+
+	int iMember = 1;
+	static int cMember = 2;
+	
+	void method() {
+		int localVar = 3;
+	
+		class LocalInner{
+			int innerLocalVar = 4;
+			void innerMethod() {
+				System.out.println("외부 인스" + iMember);
+				System.out.println("외브 클" + cMember);
+				System.out.println("외부로컬"+localVar);
+				System.out.println("내부 인스턴스변수" + innerLocalVar);
+				iMember++;
+				cMember++;
+				innerLocalVar++;
+			}
+		}
+		LocalInner LInner = new LocalInner();
+		LInner.innerMethod();
+	}
+	public static void main(String[] args) {
+		LocalInnerTest lit = new LocalInnerTest();
+		lit.method();
+	
+	}
+}

@@ -1,0 +1,12 @@
+package Chapter10;
+
+public class LocalInnerTest {
+
+	int iMember = 1;
+	static int cMember = 2;
+	
+	public static void main(String[] args) {
+
+	}
+
+}
