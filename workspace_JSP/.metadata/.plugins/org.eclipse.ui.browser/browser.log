@@ -355,3 +355,18 @@
 4월 11, 2019 17:06:02.18 [3996:6580:0411/170602.182:ERROR:browser_process_sub_thread.cc(209)] Waited 32 ms for network service
 4월 11, 2019 17:11:17.86 [7292:6396:0411/171117.866:ERROR:browser_process_sub_thread.cc(209)] Waited 30 ms for network service
 4월 11, 2019 17:37:14.76 [6680:5316:0411/173714.765:ERROR:browser_process_sub_thread.cc(209)] Waited 21 ms for network service
+
+4월 15, 2019 14:14:57.32 NEW SESSION
+4월 15, 2019 14:14:57.32 [9516:4792:0415/141457.319:ERROR:browser_process_sub_thread.cc(209)] Waited 103 ms for network service
+4월 15, 2019 14:29:43.78 [9220:7756:0415/142943.783:ERROR:browser_process_sub_thread.cc(209)] Waited 96 ms for network service
+4월 15, 2019 14:41:12.35 [3632:3976:0415/144112.350:ERROR:browser_process_sub_thread.cc(209)] Waited 129 ms for network service
+4월 15, 2019 15:04:33.33 [8164:2120:0415/150433.333:ERROR:browser_process_sub_thread.cc(209)] Waited 129 ms for network service
+4월 15, 2019 15:15:31.66 [4600:4464:0415/151531.661:ERROR:browser_process_sub_thread.cc(209)] Waited 183 ms for network service
+4월 15, 2019 15:17:22.79 [6220:3440:0415/151722.795:ERROR:browser_process_sub_thread.cc(209)] Waited 139 ms for network service
+4월 15, 2019 15:20:54.25 [9708:4060:0415/152054.255:ERROR:browser_process_sub_thread.cc(209)] Waited 75 ms for network service
+4월 15, 2019 15:22:43.56 [7936:844:0415/152243.566:ERROR:browser_process_sub_thread.cc(209)] Waited 89 ms for network service
+4월 15, 2019 15:56:37.05 [2120:1388:0415/155637.051:ERROR:browser_process_sub_thread.cc(209)] Waited 102 ms for network service
+4월 15, 2019 16:36:02.29 [8620:10060:0415/163602.297:ERROR:browser_process_sub_thread.cc(209)] Waited 105 ms for network service
+4월 15, 2019 16:36:45.44 [10216:9844:0415/163645.440:ERROR:browser_process_sub_thread.cc(209)] Waited 77 ms for network service
+4월 15, 2019 17:31:03.38 [8996:2252:0415/173103.382:ERROR:browser_process_sub_thread.cc(209)] Waited 94 ms for network service
+4월 15, 2019 17:36:14.26 [6328:9244:0415/173614.265:ERROR:browser_process_sub_thread.cc(209)] Waited 20 ms for network service
