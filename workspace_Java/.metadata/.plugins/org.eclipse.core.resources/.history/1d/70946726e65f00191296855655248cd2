@@ -1,0 +1,22 @@
+package Chapter11;
+
+public class CustomCloneTest {
+
+	class Person implements Cloneable{
+		String name;
+		int age;
+		int[] score;
+	}
+	
+	public Person(String name, int age, int[] score) {
+		this.name = 
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+}

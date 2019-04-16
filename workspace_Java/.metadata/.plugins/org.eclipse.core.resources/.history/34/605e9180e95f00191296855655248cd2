@@ -1,0 +1,13 @@
+package Chapter11;
+
+public class GetClassTest {
+
+	public void sayHello() {
+		System.out.println("hello");
+	}
+	
+	public static void main(String[] args) {
+		GetClassTest gct = new GetClassTest();
+		
+	}
+}

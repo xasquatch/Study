@@ -1,0 +1,12 @@
+package Chapter11;
+
+public class SystemClockTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long start = System.nanoTime();
+		in num = 20;
+		
+	}
+
+}

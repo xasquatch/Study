@@ -1,0 +1,44 @@
+package Chapter11;
+
+import java.util.Arrays;
+
+public class CustomCloneTest {
+
+	class Person implements Cloneable{
+		String name;
+		int age;
+		int[] score;
+	
+	
+		public Person(String name, int age, int[] score) {
+			this.name = name;
+			this.age = age;
+			this.score = score;
+		}
+
+		@Override
+		public String toString() {
+			// TODO Auto-generated method stub
+			return "[name="+name+", age="+age+",score="+Arrays.toString(score)+"]";
+		}
+		
+
+		@Override
+		protected Object clone() throws CloneNotSupportedException {
+			// TODO Auto-generated method stub
+			return super.clone();
+		}
+
+
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person original = new Person("ȫ", 20, new in[] {100,90});
+		System.out.println(original);
+		
+		
+		
+	}
+
+}

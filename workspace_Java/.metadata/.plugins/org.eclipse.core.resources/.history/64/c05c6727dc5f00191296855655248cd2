@@ -1,0 +1,9 @@
+package Chapter11;
+
+public class HashCodeTest {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

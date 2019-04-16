@@ -1,0 +1,8 @@
+package Chapter11;
+
+public class GetClassTest {
+
+	public void sayHello() {
+		
+	}
+}
