@@ -10,6 +10,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="list"/>
 			<item value="data"/>
 			<item value="a+&quot;\n&quot;+b+&quot;\n&quot;+c+&quot;\n&quot;+d+&quot;\n&quot;+e+&quot;\n&quot;+f+&quot;\n&quot;+g+&quot;\n&quot;+h+&quot;\n&quot;+i);"/>
 		</list>

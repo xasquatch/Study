@@ -31,15 +31,12 @@
 <fullyQualifiedTypeName name="Chapter10.LocalInnerTest"/>
 <fullyQualifiedTypeName name="Chapter10.InfoPrintable"/>
 <fullyQualifiedTypeName name="Chapter10.InstanceInnerTest"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="Chapter11.Product"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.Cloneable"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="Chapter11.CustomCloneTest.Person"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="Chapter11.GetClassTest"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
@@ -49,4 +46,13 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="Chapter12.DecimalFormat"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.impl.protocol.giopmsgheaders.Message"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.ws.api.message.Message"/>
+<fullyQualifiedTypeName name="java.text.MessageFormat"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>
