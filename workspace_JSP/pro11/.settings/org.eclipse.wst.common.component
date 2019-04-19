@@ -2,7 +2,7 @@
     <wb-module deploy-name="pro11">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="pro11"/>
         <property name="java-output-path" value="/pro11/build/classes"/>
+        <property name="context-root" value="pro11"/>
     </wb-module>
 </project-modules>

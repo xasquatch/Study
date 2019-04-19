@@ -6,6 +6,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="con"/>
 			<item value="헤더"/>
 			<item value="html"/>
 			<item value="foot"/>
@@ -13,7 +14,6 @@
 			<item value="get"/>
 			<item value="delMember"/>
 			<item value="Member3"/>
-			<item value="Member3Member3"/>
 		</list>
 		<list key="replacehistory">
 		</list>

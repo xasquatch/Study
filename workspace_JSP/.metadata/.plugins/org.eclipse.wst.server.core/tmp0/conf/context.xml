@@ -41,7 +41,7 @@
     	다른 속성들은 고정으로 사용되며,
     	주로 driverClassName, username, password, url 속성만 변경해서 사용한다.
      -->
-    
+
     <Resource
     	name = "jdbc/oracle"
     	auth = "Container"
@@ -53,12 +53,5 @@
     	maxActive = "50"
     	maxwait = "-1"
     />
-    
-    
-    
-    
-    
-    
-    
-    
+
 </Context>
