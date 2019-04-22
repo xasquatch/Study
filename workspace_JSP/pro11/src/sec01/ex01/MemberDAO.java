@@ -101,8 +101,8 @@ public class MemberDAO {
 		try {
 			//커넥션풀에서 커넥션객체 얻기(DB접속)
 			con = ds.getConnection();
-			//회원정보를 모두 검색하는 select SQL문 만들기
-			String query = "SELECT * FROM t_member";
+			//회원정보를 최근 가입일순으로 내림차순 정렬하여 검색할 SQL문 만들기
+			String query = "SELECT * FROM t_member ORDER BY joindate DESC";
 			
 			//?를 제외한 SQL구문을 담은 OraclePrepardStatementWrapper실행객체 얻기(위는 ? 없음)
 			pstmt = con.prepareStatement(query);

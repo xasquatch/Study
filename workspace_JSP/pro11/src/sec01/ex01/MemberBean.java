@@ -9,7 +9,7 @@ public class MemberBean { //DTO클래스 역할(VO클래스 역할)
 	/*회원 테이블의 컬럼이름과 동일하게 변수 이름과 자료형을 선언합니다.*/
 	private String id;
 	private String pwd;
-	private String name;	
+	private String name;
 	private String email;
 	private Date joindate;
 	//private선언 DTO(VO)클래스의 규칙

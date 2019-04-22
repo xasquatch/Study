@@ -21,8 +21,8 @@
 <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="sec01.ex01.MemberBean"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
