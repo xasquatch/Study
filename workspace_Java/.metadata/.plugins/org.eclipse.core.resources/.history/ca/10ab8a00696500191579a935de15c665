@@ -1,0 +1,15 @@
+package Chapter13;
+
+class Listlotto{
+	Integer bonus;
+	List<Integer> lotto  = new ArrayList<>();
+	
+}
+public class ListLottoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

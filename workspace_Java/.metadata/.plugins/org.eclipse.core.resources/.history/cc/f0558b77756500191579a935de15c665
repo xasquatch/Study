@@ -1,0 +1,25 @@
+package Chapter13;
+
+import java.util.HashSet;
+
+class Phone{
+	String number;
+	
+	public Phone(String number) {
+		this.number = number;
+	}
+	
+	public String toString() {
+		return "전화번호 : "+number;
+	}
+}
+
+public class HashSetTest {
+
+	Set<Object> hset = new HashSet<E>();
+	public static void main(String[] args) {
+		
+
+	}
+
+}

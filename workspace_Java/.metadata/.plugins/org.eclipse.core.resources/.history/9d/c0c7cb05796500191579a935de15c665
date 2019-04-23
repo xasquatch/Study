@@ -1,0 +1,55 @@
+package Chapter13;
+
+class Phone2 {
+	String number;
+	Integer price;
+
+	public Phone2(String num, Integer pr) {
+		this.number = num;
+		this.price = pr;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((number == null) ? 0 : number.hashCode());
+		result = prime * result + ((price == null) ? 0 : price.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (this == null)
+			return false;
+		if (getClass()!= obj.getClass())
+			return false;
+		Phone2 ot = (Phone2) obj;
+		if (number == null) {
+			if(ot.number !=null)
+				return false;
+			}else if (!number.equals(ot.number)) {
+				return false;
+		if (price == null) {
+			if (ot.price !=null) {
+				return false;
+			}else if (!price.equals(ot.price)) 
+				return false;
+			return true;
+		}
+		}
+	}
+
+	
+}
+
+public class PhoneTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

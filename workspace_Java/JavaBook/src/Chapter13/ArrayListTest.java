@@ -2,6 +2,7 @@ package Chapter13;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListTest {
@@ -23,16 +24,28 @@ public class ArrayListTest {
 	}
 	
 	private void deleteTest() {
-		list.remove(0);
-		list.remove("Hello");
-			for (int i = 0; i < list.size(); i++) {
-				if (list.get(i) instanceof Integer) {
-					list.remove(i);
-				}
+		
+		Iterator it = list.iterator();
+		while (it.hasNext()) {
+			if (it.next() instanceof Integer) {
+				it.remove();
 			}
-		System.out.println("삭제 후"+list);
+			
+		}
+		System.out.println("삭제후"+list);
 		list.clear();
-		System.out.println("초기화 후"+list);
+		System.out.println("초기화후"+list);
+		
+//		list.remove(0);
+//		list.remove("Hello");
+//			for (int i = 0; i < list.size(); i++) {
+//				if (list.get(i) instanceof Integer) {
+//					list.remove(i);
+//				}
+//			}
+//		System.out.println("삭제 후"+list);
+//		list.clear();
+//		System.out.println("초기화 후"+list);
 	}
 
 	private void updateTest() {
@@ -42,6 +55,7 @@ public class ArrayListTest {
 	}
 
 	private void retrieveTest() {
+
 
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(i+":"+list.get(i));
