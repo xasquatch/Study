@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 	#body{ 
+ 		margin : 0 auto 0 auto; 
+		
+	}
+*/
+	body div, section, article{
+		border: solid 1px; 
+	}
+/* 	헤더영역 */
+	#header{
+		background-color: #eee;
+		height: 100px;
+		
+		width: 1000px;
+		margin: 0 auto 20px auto; 
+	}
+/* nav영역 */
+	#nav{
+	
+	}
+/* content영역 */
+	#content{
+		background : aqua;
+		margin-top : 20px;
+		margin-bottom : 20px;
+	}
+/* footer영역 */
+	#footer{
+		background: #eee;
+		height:100px;
+		
+	}
+	#content{
+		display : grid;
+		grid-template-columns : 1fr 1fr;
+	}
+	
+	@MEDIA(MAX-width:800px){
+		#content{
+			display : block;
+		}
+	}
+</style>
+</head>
+<body>
+<div id="body">
+	<header id="header">header</header>
+		<nav id="nav">nav</nav>
+		
+		<div id="content">
+			<div>
+				<section>section</section>
+				<article>article</article>
+			</div>
+			<div>
+				<iframe width="500" height="auto" src="https://www.youtube.com/embed/DyDfgMOUjCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<aside>aside</aside>
+			</div>
+		</div>
+	<footer>
+	footer
+	</footer>
+</div>
+</body>
+</html>

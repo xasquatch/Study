@@ -9,12 +9,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<style type="text/css">
-body {
-	font-family: "Gabriola";
-	font-color : "RED";
-}
-</style>
+<script>
+
+	//직원 데이터 삭제시 한번 더 삭제할지 물어보는 함수
+	function fnDel(no){
+		
+		var result = confirm("정말?");
+		
+		if(result){
+			location.href = "delSawon.jsp?no="+no;
+		}
+		
+	};
+</script>
+
 </head>
 <body>
 <%
@@ -61,7 +69,7 @@ body {
 				//	- DB로부터 검색된 결과값을 임시로 저장하는 객체
 				ResultSet rs = null;
 				
-			/*연결할 DB주소, DB접속 id, DB접속 PW 저장*/	
+			/*연결할 DB주소, DB접속 id, DB접속 PW 저장*/
 			String url = "jdbc:mysql://localhost:3306/jspbeginner";
 			String id = "jspid", pw = "jsppass";
 			
@@ -116,7 +124,7 @@ body {
 						<td><%=s_addr %></td>
 						<td><%=s_dept %></td>
 						<td><%=s_extension %></td>
-						<td><a href="modifysawon.jsp?no=<%=s_no%>">수정</a></td>
+						<td><a href="modifySawon.jsp?no=<%=s_no%>">수정</a></td>
 						<td><a href="javascript:fnDel(<%=s_no%>)">삭제</a></td>
 					</tr>
 		<%
