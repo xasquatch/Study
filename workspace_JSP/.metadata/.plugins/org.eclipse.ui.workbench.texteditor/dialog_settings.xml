@@ -2,20 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="th" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value=","/>
+			<item value="int"/>
+			<item value=";"/>
+			<item value="getConnection"/>
+			<item value="free"/>
+			<item value="getconnection"/>
+			<item value="getinsteace"/>
 			<item value="td"/>
-			<item value="s_extension"/>
-			<item value="get"/>
-			<item value="sql"/>
-			<item value="th"/>
-			<item value="SQLException"/>
-			<item value="ds"/>
-			<item value="con"/>
 		</list>
 		<list key="replacehistory">
+			<item value=";"/>
+			<item value="this"/>
+			<item value=","/>
 			<item value="th"/>
 			<item value="td"/>
 		</list>
