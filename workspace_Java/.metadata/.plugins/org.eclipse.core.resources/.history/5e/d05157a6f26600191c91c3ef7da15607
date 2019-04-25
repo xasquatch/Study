@@ -1,0 +1,14 @@
+package Chapter13;
+
+import java.util.TreeSet;
+
+public class SimpleTreeSetTest {
+
+	public static void main(String[] args) {
+
+		TreeSet<Object> set = new TreeSet<Object>();
+		
+
+	}
+
+}

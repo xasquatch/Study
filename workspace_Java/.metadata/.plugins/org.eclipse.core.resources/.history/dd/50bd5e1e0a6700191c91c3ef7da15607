@@ -1,0 +1,20 @@
+package Chapter13;
+
+import java.util.Properties;
+
+public class PropertiesTestWithFile {
+
+	private final static String PROP_FILE_PATH = "./config.properties";
+	
+	private static void saveToFile() {
+		Properties props = new Properties();
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Chapter13;
+
+import java.util.Properties;
+import java.util.Set;
+
+public class ProPertyTest {
+
+	public static void main(String[] args) {
+		Properties props = System.getProperties();
+		Set<Object> keys = props.keySet();
+		System.out.println(props);
+
+	}
+
+}

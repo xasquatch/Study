@@ -1,0 +1,18 @@
+package Chapter13;
+
+public class PropertiesTestWithFile {
+
+	private final static String PROP_FILE_PATH = "./config.properties";
+	
+	private static void saveToFile() {
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+	}
+
+}

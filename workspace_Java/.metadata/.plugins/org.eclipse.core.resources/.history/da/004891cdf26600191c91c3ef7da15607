@@ -1,0 +1,16 @@
+package Chapter13;
+
+import java.util.Arrays;
+import java.util.TreeSet;
+
+public class SimpleTreeSetTest {
+
+	public static void main(String[] args) {
+
+		TreeSet<Object> set = new TreeSet<>();
+		set.addAll(Arrays.asList("W","o","r","l","d"));
+
+		
+	}
+
+}

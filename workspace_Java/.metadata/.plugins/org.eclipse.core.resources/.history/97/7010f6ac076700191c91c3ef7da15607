@@ -1,0 +1,18 @@
+package Chapter13;
+
+import java.util.Properties;
+import java.util.Set;
+
+public class ProPertyTest {
+
+	public static void main(String[] args) {
+		Properties props = System.getProperties();
+		Set<Object> keys = props.keySet();
+		for (Object key : keys) {
+			System.out.printf("key\t\t\t\t\props.get(key)","");
+			System.out.printf("%s\t\t\t\t\t%s\n",key,props.get(key));
+		}
+		
+	}
+
+}
