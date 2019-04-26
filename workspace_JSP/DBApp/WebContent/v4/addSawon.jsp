@@ -28,23 +28,23 @@
 				<table>
 					<tr>
 						<th>ID</th>
-						<td><input type="text" name="s_id"></td>
+						<td><input type="text" name="id"></td>
 					</tr>
 					<tr>
 						<th>이름</th>
-						<td><input type="text" name="s_name"></td>
+						<td><input type="text" name="name"></td>
 					</tr>
 					<tr>
 						<th>Password</th>
-						<td><input type="password" name="s_pw"></td>
+						<td><input type="password" name="pass"></td>
 					</tr>
 					<tr>
 						<th>나이</th>
-						<td><input type="text" name="s_age"></td>
+						<td><input type="text" name="age"></td>
 					</tr>
 					<tr>
 						<th>근무지</th>
-						<td><select name="s_addr">
+						<td><select name="addr">
 							<option value="서울">서울</option>
 							<option value="인천">인천</option>
 							<option value="경기">경기</option>	
@@ -52,11 +52,11 @@
 					</tr>
 					<tr>
 						<th>내선번호</th>
-						<td><input type="text" name="s_extension"></td>
+						<td><input type="text" name="extension"></td>
 					</tr>
 					<tr>
 						<th>부서</th>
-						<td><select name="s_dept">
+						<td><select name="dept">
 							<option value="영업">영업</option>
 							<option value="기술">기술</option>
 							<option value="기획">기획</option>	

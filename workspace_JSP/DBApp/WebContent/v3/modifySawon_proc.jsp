@@ -43,8 +43,7 @@
 		DBConnectionMgr pool = DBConnectionMgr.getInstance();
 		
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
-		
+			
 			pool.getConnection();
 			
 			pstmt = con.prepareStatement(sql);

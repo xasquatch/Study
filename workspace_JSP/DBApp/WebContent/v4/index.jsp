@@ -47,6 +47,7 @@
 	
 	<h2>직원 정보 리스트</h2>
 
+	<img src="../짤/uh.jpg"><br>
 	<a href="addSawon.jsp">직원추가(회원가입)</a>
 	<form action="index.jsp" method="post">
 		<select name="search">
@@ -88,8 +89,8 @@
 				<td><%=dto.getAddr() %></td>
 				<td><%=dto.getDept() %></td>
 				<td><%=dto.getExtension() %></td>
-				<td>수정</td>
-				<td>삭제</td>
+				<td><a href="modifySawon.jsp?no=<%=dto.getNo() %>">수정</a></td>
+				<td><a href="javascript:fnDel(<%=dto.getNo() %>)">삭제</a></td>
 			</tr>
 				
 		<%		

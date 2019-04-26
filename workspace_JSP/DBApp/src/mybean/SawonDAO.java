@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sun.org.apache.xml.internal.dtm.DTMDOMException;
+
 import dbcp.DBConnectionMgr;
 
 //DB와 연결하여 작업하는 역할을 하는 클래스
@@ -27,9 +29,137 @@ public class SawonDAO {
 		}
 	}
 
-	/* DB로부터 모든 사원 레코드를 검색하는 메소드 */
-	// index.jsp에서 요청한 검색기준 필드값과 검색어를 메소드의 매개변수로 전달받아
-	// 검색어가 없으면 모든 사원레코드를 검색할 수 있게끔 하는 메소드
+	public void delsawon(int no) {
+		//DB연결
+		try{
+			con = pool.getConnection();
+			
+			pstmt = con.prepareStatement("DELETE FROM tblsawon WHERE no = ?");
+			pstmt.setInt(1, no);
+			
+			pstmt.executeUpdate();
+			
+		}catch(Exception e){
+			
+			e.printStackTrace();
+			
+		}finally {
+			
+			pool.freeConnection(con,pstmt);
+		}
+	}
+	
+	
+	public void modifysawon(SawonDTO dto){
+		String sql = "UPDATE tblsawon SET"
+									+" id = ?"
+									+", name = ?"
+									+", pass = ?"
+									+", age = ?"
+									+", addr = ?"
+									+", extension = ?"
+									+", dept = ?"
+									+" WHERE no = ?";
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		DBConnectionMgr pool = DBConnectionMgr.getInstance();
+		
+		try{
+			
+			con = pool.getConnection();
+			
+			pstmt = con.prepareStatement(sql);
+				
+				pstmt.setString(1, dto.getId());
+				pstmt.setString(2, dto.getName());
+				pstmt.setString(3, dto.getPass());
+				pstmt.setInt(4, dto.getAge());
+				pstmt.setString(5, dto.getAddr());
+				pstmt.setString(6, dto.getExtension());
+				pstmt.setString(7, dto.getDept());
+				pstmt.setInt(8, dto.getNo());
+				
+			pstmt.executeUpdate();
+
+			
+		}catch(Exception e){
+			e.printStackTrace();
+			System.out.println("proc page error");
+			
+		}finally{
+			pool.freeConnection(con, pstmt);
+			
+		}
+		
+	}
+	
+	
+	public void setSawon(SawonDTO dto) {
+		//리턴값X
+		String sql = "INSERT INTO tblsawon(id,name,pass,age,addr,extension,dept) VAlUES(?,?,?,?,?,?,?)";
+		DBConnectionMgr pool = DBConnectionMgr.getInstance();
+		
+		try{
+			
+			con = pool.getConnection();
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, dto.getId());
+			pstmt.setString(2, dto.getName());
+			pstmt.setString(3, dto.getPass());
+			pstmt.setInt(4, dto.getAge());
+			pstmt.setString(5, dto.getAddr());
+			pstmt.setString(6, dto.getExtension());
+			pstmt.setString(7, dto.getDept());
+			
+			pstmt.executeUpdate();
+			
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+
+			pool.freeConnection(con, pstmt);
+		}
+		
+	}
+	
+	public SawonDTO getSawon(int no) {
+		
+		
+		String sql = "SELECT * FROM tblsawon WHERE no = ?";
+		SawonDTO dto = new SawonDTO();
+		
+		try{
+			
+			
+			con = pool.getConnection();
+			
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setInt(1, no);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()){
+				dto.setId(rs.getString("id"));
+				dto.setName(rs.getString("name"));
+				dto.setPass(rs.getString("pass"));
+				dto.setAge(rs.getInt("age"));
+				dto.setAddr(rs.getString("addr"));
+				dto.setExtension(rs.getString("extension"));
+				dto.setDept(rs.getString("dept"));
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			pool.freeConnection(con, pstmt, rs);	
+		
+		}
+		return dto;
+	}
+	
 	public List getList(String key, String text) {
 		// DB로부터 검색된 데이터를 저장할 용도의 ArrayList컬렉션 프레임웍을 생성
 		ArrayList list = new ArrayList<>();

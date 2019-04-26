@@ -6,6 +6,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="s_"/>
 			<item value=","/>
 			<item value="int"/>
 			<item value=";"/>
@@ -13,7 +14,6 @@
 			<item value="free"/>
 			<item value="getconnection"/>
 			<item value="getinsteace"/>
-			<item value="td"/>
 		</list>
 		<list key="replacehistory">
 			<item value=";"/>

@@ -1,3 +1,4 @@
+<%@page import="mybean.SawonDTO"%>
 <%@page import="dbcp.DBConnectionMgr"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -7,38 +8,14 @@
 
 <%
 	request.setCharacterEncoding("utf-8");
-	String no = request.getParameter("no");
-	
-	String sql = "DELETE FROM tblsawon WHERE no=?";
-	
-	Connection con = null;
-	PreparedStatement pstmt = null;
-	
-
-	DBConnectionMgr pool = DBConnectionMgr.getInstance();
-	
-	try{
-		
-		con = pool.getConnection();
-		
-		pstmt = con.prepareStatement(sql);
-				
-			pstmt.setString(1, no);
-		
-		
-		
-		pstmt.executeUpdate();
-		%>
+	int no = Integer.parseInt(request.getParameter("no"));
+%>	
+	<jsp:useBean id="dao" class = "mybean.SawonDAO"></jsp:useBean>
+<%
+	dao.delsawon(no);
+%>	
 		<script type="text/javascript">
 			alert("삭제완료");
 			location.href = "index.jsp";
 		</script>
-		<%
-	}catch(Exception e){
-		System.out.println("del error-"+e);
-	}finally{
-		pool.freeConnection(con, pstmt);
 		
-	}
-	
- %>
