@@ -1,0 +1,24 @@
+package Chapter15;
+
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class DataStreamTest {
+
+	public static void main(String[] args) throws IOException {
+
+		File src = new File("C:/Temp?streamtest.text");
+		
+		try(DataOutputStream dos = new DataOutputStream(new FileOutputStream(src))) {
+			dos.writeUTF("ȫ�浿");
+			dos.writeInt(30);
+			dos.writeDouble(170.5);
+		} catch (Exception e) {
+			
+		}
+
+	}
+
+}

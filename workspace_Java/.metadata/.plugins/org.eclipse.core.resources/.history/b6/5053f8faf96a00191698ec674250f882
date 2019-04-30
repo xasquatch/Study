@@ -1,0 +1,12 @@
+package Chapter15;
+
+import java.io.Serializable;
+
+public class Person implements Serializable {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}
