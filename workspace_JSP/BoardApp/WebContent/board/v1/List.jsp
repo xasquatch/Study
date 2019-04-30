@@ -14,6 +14,18 @@
 		}
 		document.search.submit();
 	}
+	function fnRead(num) {
+		document.Read.num.value = num;
+		document.Read.submit();
+		
+	}
+	
+	function fnlist() {
+		document.List.action = "List.jsp";
+		//form태그의 submit이벤트 설정
+		document.List.submit();
+		
+	}
 </script>
 <BODY>
 <center><br>
@@ -35,7 +47,14 @@
 		keyField = request.getParameter("keyField");
 		//검색어 받아오기
 		keyWord = request.getParameter("keyWord");
+	}	
+
+	if(request.getParameter("reload") != null){
+		if(request.getParameter("reload").equals("true")){
+			keyWord = "";
+		}
 	}
+
 	//게시판의 전체 글 목록 리스트를 화면에 뿌려주기 위해
 	//DB에 SELECT 작업을 위한 dao클래스의 메소드 호출
 	//호출시 검색기준 값, 검색어를 메소드의 인자로 전달하여
@@ -43,6 +62,8 @@
 	
 	Vector V = dao.getBoardList(keyField, keyWord);
 	out.println(V.size());
+	
+
 	
 %>
 
@@ -61,6 +82,7 @@
 			<tr align=center bgcolor=#D0D0D0 height=120%>
 				<td> 번호 </td>
 				<td> 제목 </td>
+				<td> 내용 </td>
 				<td> 이름 </td>
 				<td> 날짜 </td>
 				<td> 조회수 </td>
@@ -85,7 +107,13 @@
 			%>
 					<tr align=center>
 						<td> <%=dto.getNum() %> </td>
-						<td><a href="Read.jsp?num=<%=dto.getNum()%>"><%=dto.getSubject() %></a></td>
+						<td><a href="javascript:fnRead(<%=dto.getNum()%>)"><%=dto.getSubject() %></a></td>
+<%-- 					<td><a href="Read.jsp?num=<%=dto.getNum()%>"><%=dto.getSubject() %></a></td> --%>
+						<td style = " border : dotted 1px gray; font-weight : bold; color : red;">
+							<%=dto.getContent()%> 
+<!-- 							.substring(if(dto.getContent().length()<20-1){dto.getContent().length();}else{return 20;})  -->
+						</td>
+						
 						<td><a href="mailto:<%=dto.getEmail() %>"> <%=dto.getName() %> </a></td>
 						<td> <%=s.format(dto.getRegdate()) %> </td>
 						<td> <%=dto.getCount() %> </td>
@@ -107,7 +135,7 @@
 	<td align="left">Go to Page </td>
 	<td align=right>
 		<a href="Post.jsp">[글쓰기]</a>
-		<a href="javascript:list()">[처음으로]</a>
+		<a href="javascript:fnlist()">[처음으로]</a>
 	</td>
 </tr>
 </table>
@@ -130,5 +158,17 @@
 	</table>
 </form>
 </center>	
+	
+<!-- 	현재 List.jsp페이지가 리로드하는지 안하는지 구별하기위한 값 true를 다시 List.jsp에 요청하는 폼태그 -->
+	<form name="List" method="POST">
+		<input type="hidden" name="reload" value="true">
+	</form>
+	
+	<form action="Read.jsp" name="Read" method="POST">
+		<input type="hidden" name="num">
+		<input type="hidden" name="keyField" value="<%=keyField%>">
+		<input type="hidden" name="keyWord" value="<%=keyWord%>">
+	</form>
+	
 </BODY>
 </HTML>

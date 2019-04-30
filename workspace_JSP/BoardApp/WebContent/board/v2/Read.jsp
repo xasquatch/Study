@@ -43,7 +43,7 @@
  <tr>
   <td align=center colspan=2> 
 	<hr size=1>
-	[ <a href="javascript:list()">목 록</a> | 
+	[ <a href="javascript:list()">목 록</a> 
 	<a href="">수 정</a> |
 	<a href="">삭 제</a> ]<br>
   </td>

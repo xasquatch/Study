@@ -1,3 +1,4 @@
+<%@page import="com.bean.board.BoardDAOImpl"%>
 <%@page import="com.bean.board.BoardDTO"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <html>
@@ -5,14 +6,22 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
+<script type="text/javascript">
+	function fnList() {
+		document.List.submit();
+	}
+</script>
+
+
+
 <body>
 <%
 	request.setCharacterEncoding("utf-8");
 	int num = Integer.parseInt(request.getParameter("num"));
-	
-%>
-<jsp:useBean id="dao" class="com.bean.board.BoardDAOImpl"></jsp:useBean>
-<%
+	String keyField = request.getParameter("keyField");
+	String keyWord = request.getParameter("keyWord");
+
+	BoardDAOImpl dao = new BoardDAOImpl();
 	BoardDTO dto = dao.getBoard(num);
 
 %>
@@ -36,14 +45,14 @@
 	 <td align=center bgcolor=#dddddd width=10%> 메 일 </td>
 	 <td bgcolor=#ffffe8 ><%=dto.getEmail()%></td> 
 	 <td align=center bgcolor=#dddddd width=10%> 홈페이지 </td>
-	 <td bgcolor=#ffffe8 ><a href="http://" target="_new">http://<%=dto.getHomepage()%></a></td> 
+	 <td bgcolor=#ffffe8 ><a href="http://<%=dto.getHomepage()%>" target="_new">http://<%=dto.getHomepage()%></a></td> 
 	</tr>
     <tr> 
      <td align=center bgcolor=#dddddd> 제 목</td>
      <td bgcolor=#ffffe8 colspan=3><%=dto.getSubject()%></td>
    </tr>
    <tr> 
-    <td colspan=4><%=dto.getContent()%></td>
+    <td colspan=4><%=dto.getContent().replace("\n", "<BR>")%></td>
    </tr>
    <tr>
     <td colspan=4 align=right>
@@ -56,11 +65,17 @@
  <tr>
   <td align=center colspan=2> 
 	<hr size=1>
-	[ <a href="javascript:list()">목 록</a> | 
-	<a href="Update.jsp?num=<%=dto.getNum()%>">수 정</a> |
+	[ <a href="javascript:fnList()">목 록</a> | 
+	<a href="Update.jsp?num=<%=num%>">수 정</a> |
 	<a href="Delete.jsp?num=<%=dto.getNum()%>">삭 제</a>] <br>
   </td>
  </tr>
 </table>
+
+	<form action="List.jsp" name = "List" method="POST">
+		<input type="hidden" name= "keyField" value="<%=keyField %>">
+		<input type="hidden" name= "keyWord" value="<%=keyWord%>">
+	</form>
+
 </body>
 </html>

@@ -2,18 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="dto" key="selection"/>
+		<item value="reload" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="reload"/>
+			<item value="게시판에"/>
+			<item value="list"/>
 			<item value="varchar"/>
 			<item value="|"/>
 			<item value="s_"/>
 			<item value=","/>
 			<item value="int"/>
-			<item value=";"/>
-			<item value="getConnection"/>
-			<item value="free"/>
 		</list>
 		<list key="replacehistory">
 			<item value="String"/>

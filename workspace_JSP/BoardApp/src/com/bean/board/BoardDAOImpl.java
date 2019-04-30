@@ -94,48 +94,50 @@ public class BoardDAOImpl implements IBoardDAO {
 		return v;
 	}
 
+	
+
 
 	@Override
 	public BoardDTO getBoard(int num) {
 		
 		BoardDTO dto = new BoardDTO();
 		String sql = "";
-		
-		try {
-		
+
+		try{
+			
+			sql = "UPDATE tblboard SET count = count + 1 WHERE num = "+num;
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.executeUpdate();
+			
 			sql = "SELECT * FROM tblboard WHERE num = "+num;
 			
-				con = ds.getConnection();
-				pstmt = con.prepareStatement(sql);
-				rs = pstmt.executeQuery();
-				
-				while(rs.next()){
-					dto.setNum(rs.getInt("num"));
-					dto.setName(rs.getString("name"));
-					dto.setEmail(rs.getString("email"));
-					dto.setHomepage(rs.getString("homepage"));
-					dto.setSubject(rs.getString("subject"));
-					dto.setContent(rs.getString("content"));
-					dto.setPass(rs.getString("pass"));
-					dto.setCount(rs.getInt("count"));
-					dto.setIp(rs.getString("ip"));
-					dto.setRegdate(rs.getTimestamp("regdate"));
-					dto.setPos(rs.getInt("pos"));
-					dto.setDepth(rs.getInt("depth"));
-				}
-//			while (rs.next()) {
-//				BoardDTO dto = new BoardDTO(rs.getInt("num"), rs.getString("name"), rs.getString("email"),
-//											rs.getString("homepage"), rs.getString("subject"), rs.getString("content"),
-//											rs.getString("pass"), rs.getInt("count"), rs.getString("ip"),
-//											rs.getTimestamp("regdate"), rs.getInt("pos"), rs.getInt("depth"));
-//				v.add(dto);
-//			}
-		} catch (SQLException e) {
-			System.out.println("getBoard error!");
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			rs.next();
+			
+				dto.setNum(rs.getInt("num"));
+				dto.setName(rs.getString("name"));
+				dto.setEmail(rs.getString("email"));
+				dto.setHomepage(rs.getString("homepage"));
+				dto.setSubject(rs.getString("subject"));
+				dto.setContent(rs.getString("content"));
+				dto.setPass(rs.getString("pass"));
+				dto.setCount(rs.getInt("count"));
+				dto.setIp(rs.getString("ip"));
+				dto.setRegdate(rs.getTimestamp("regdate"));
+				dto.setPos(rs.getInt("pos"));
+				dto.setDepth(rs.getInt("depth"));
+			
+		}catch (Exception e){
+			System.out.println("READ error!");
 			e.printStackTrace();
 		}finally {
 			freeResource();
 		}
+	
 		return dto;
 	}
 
@@ -175,6 +177,30 @@ public class BoardDAOImpl implements IBoardDAO {
 	@Override
 	public void updateBoard(BoardDTO dto) {
 		
+		String sql = "";
+		try {
+			sql = "UPDATE tblboard SET name = ?, email = ?, subject = ?, content = ?, pass = ?,"
+								+ " WHERE num = ?";
+		
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			
+				pstmt.setString(1, dto.getName());
+				pstmt.setString(2, dto.getEmail());
+				pstmt.setString(3, dto.getSubject());
+				pstmt.setString(4, dto.getContent());
+				pstmt.setString(5, dto.getPass());
+				pstmt.setInt(5, dto.getNum());
+			
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("또여 와나..");
+		}finally {
+			freeResource();
+		}
+		
 	}
 
 	@Override
@@ -187,4 +213,45 @@ public class BoardDAOImpl implements IBoardDAO {
 		
 	}
 
+	
+	
+	public BoardDTO getBoardInfo(int num) {
+		
+		BoardDTO dto = new BoardDTO();
+		
+		try{
+			
+			
+			String sql = "SELECT * FROM tblboard WHERE num = "+num;
+			
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			rs.next();
+			
+				dto.setNum(rs.getInt("num"));
+				dto.setName(rs.getString("name"));
+				dto.setEmail(rs.getString("email"));
+				dto.setHomepage(rs.getString("homepage"));
+				dto.setSubject(rs.getString("subject"));
+				dto.setContent(rs.getString("content"));
+				dto.setPass(rs.getString("pass"));
+				dto.setCount(rs.getInt("count"));
+				dto.setIp(rs.getString("ip"));
+				dto.setRegdate(rs.getTimestamp("regdate"));
+				dto.setPos(rs.getInt("pos"));
+				dto.setDepth(rs.getInt("depth"));
+			
+		}catch (Exception e){
+			System.out.println("READ error!");
+			e.printStackTrace();
+		}finally {
+			freeResource();
+		}
+	
+		return dto;
+	}
+
+	
 }

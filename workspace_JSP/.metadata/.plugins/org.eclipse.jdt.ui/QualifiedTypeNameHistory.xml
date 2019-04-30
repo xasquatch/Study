@@ -21,13 +21,11 @@
 <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.dtm.DTMDOMException"/>
 <fullyQualifiedTypeName name="dbcp.DBConnectionMgr"/>
 <fullyQualifiedTypeName name="mybean.SawonDTO"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
 <fullyQualifiedTypeName name="com.bean.board.IBoardDAO"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
@@ -35,6 +33,8 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.security.auth.message.callback.PrivateKeyCallback.Request"/>
-<fullyQualifiedTypeName name="com.bean.board.BoardDTO"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.bean.board.BoardDTO"/>
 </qualifiedTypeNameHistroy>

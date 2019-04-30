@@ -10,6 +10,11 @@
 		}
 		document.search.submit();
 	}
+	function fnlist() {
+		location.href("/v2/")
+		return;
+	}
+	
 </script>
 <BODY>
 <center><br>
@@ -44,7 +49,7 @@
 	<td align="left">Go to Page </td>
 	<td align=right>
 		<a href="Post.jsp">[글쓰기]</a>
-		<a href="javascript:list()">[처음으로]</a>
+		<a href="javascript:fnlist()">[처음으로]</a>
 	</td>
 </tr>
 </table>
