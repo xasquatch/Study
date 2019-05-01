@@ -14,6 +14,9 @@
 <br>
 <table width=80% cellspacing=0 cellpadding=3 align=center>
 <form name=post method=post action="PostProc.jsp" >
+
+<!-- 	추가1. 요청한 클라이언트의  ip정보를 PostProc.jsp에 요청 -->
+         <input type="hidden" name = "ip" value="<%=request.getRemoteAddr()%>">
  <tr>
   <td align=center>
    <table border=0 width=100% align=center>

@@ -46,6 +46,52 @@ public class BoardDAOImpl implements IBoardDAO {
 		}
 	}
 	
+	public Vector<BoardDTO> getBoardList(String keyField, String keyWord, int start, int end) {
+		Vector v = new Vector<>();
+		
+		String sql = "";
+		
+		try {
+			//DataSource(커넥션풀)에서 DB연동객체(커넥션)가져오기
+			con = ds.getConnection();
+			//검색어를 입력하지 않았다면?
+			if(keyWord == null || keyWord.isEmpty()){
+
+				//가장 최신글이 위로 올라오게 num필드 값 기준으로 하여
+				//내림차순 정렬
+				sql = "SELECT * FROM tblboard ORDER BY num desc LIMIT "+start+" , "+end;
+
+			//검색어를 입력했다면 (조건else)			
+			}else{
+			
+				sql = "SELECT * FROM tblboard WHERE "+ keyField +" LIKE '%"+ keyWord +"%' ORDER BY num desc LIMIT "+start+" , "+end;
+				//keyField(검색기준 필드)에 해당하는 글 검색시
+				//앞뒤에 어떤 문자가 와도 상관 없이  keyword(검색어)를 가진 데이터를 검색함
+				//num필드 기준으로 하여 내림차순 정렬하여 검색하는 sql구문 생성 
+			}
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			//검색한 결과를 (ResultSet객체에 저장된 결과)를 뽑아내서
+			//각각의 BoardDTO객체를 생성하여 저장 후
+			//저장한 BoardDTO객체를 다시 벡터에 추가하여 담아
+			while (rs.next()) {
+				BoardDTO dto = new BoardDTO(rs.getInt("num"), rs.getString("name"), rs.getString("email"),
+											rs.getString("homepage"), rs.getString("subject"), rs.getString("content"),
+											rs.getString("pass"), rs.getInt("count"), rs.getString("ip"),
+											rs.getTimestamp("regdate"), rs.getInt("pos"), rs.getInt("depth"));
+				v.add(dto);
+			}
+			
+		} catch (Exception e) {
+			System.out.println("getBoardList error!");
+		} finally {
+				freeResource();
+		}
+		return v;
+	}
+	
+	
 	//DB에 있는 글들을 검색해서 가져올 수 있는 메소드↓
 	//List.jsp
 	@Override
@@ -206,10 +252,27 @@ public class BoardDAOImpl implements IBoardDAO {
 	@Override
 	public void deleteBoard(int num) {
 		
+		
+		try{
+			String sql = "DELETE FROM tblboard WHERE num = "+num;
+			
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.executeUpdate();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			freeResource();
+		}
+		
+		
 	}
 
 	@Override
 	public void replayBoard(BoardDTO dto) {
+		
+		
 		
 	}
 

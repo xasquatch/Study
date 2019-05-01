@@ -1,3 +1,6 @@
+
+<%@page import="com.bean.board.BoardDTO"%>
+<%@page import="com.bean.board.BoardDAOImpl"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <html>
 <head> <title>JSPBoard</title>
@@ -14,6 +17,19 @@
 </script>
 </head>
 <body>
+<%
+	request.setCharacterEncoding("utf-8");
+	int num = Integer.parseInt(request.getParameter("num"));
+
+%>
+<jsp:useBean id="dao" class="com.bean.board.BoardDAOImpl"/>
+<%
+	BoardDTO dto = dao.getBoardInfo(num);
+	String name = dto.getName();
+	String email = dto.getEmail();
+	String subject = dto.getSubject();
+	String content = dto.getContent();
+%>
 <center>
 <br><br>
 <table width=460 cellspacing=0 cellpadding=3>
@@ -23,6 +39,8 @@
 </table>
 
 <form name=form method=post action="UpdateProc.jsp" >
+
+	<input type="hidden" name="num" value="<%=num %>">
 <table width=70% cellspacing=0 cellpadding=7>
  <tr>
   <td align=center>
@@ -30,24 +48,24 @@
     <tr>
      <td width=20%>성 명</td>
      <td width=80%>
-	  <input type=text name=name size=30 maxlength=20 value="">
+	  <input type=text name=name size=30 maxlength=20 value="<%=name %>">
 	 </td>
 	</tr>
     <tr>
      <td width=20%>E-Mail</td>
      <td width=80%>
-	  <input type=text name=email size=30 maxlength=30 value="">
+	  <input type=text name=email size=30 maxlength=30 value="<%=email %>">
 	 </td>
     </tr>
 	<tr>
      <td width=20%>제 목</td>
      <td width=80%>
-	  <input type=text name=subject size=50 maxlength=50 value="">
+	  <input type=text name=subject size=50 maxlength=50 value="<%=subject %>">
 	 </td>
     <tr>
      <td width=20%>내 용</td>
      <td width=80%>
-	  <textarea name=content rows=10 cols=50></textarea>
+	  <textarea name=content rows=10 cols=50><%=content %></textarea>
 	 </td>
     </tr>
 	<tr>

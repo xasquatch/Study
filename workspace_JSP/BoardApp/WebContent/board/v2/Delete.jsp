@@ -1,6 +1,34 @@
+<%@page import="com.bean.board.BoardDTO"%>
+<%@page import="com.bean.board.BoardDAOImpl"%>
 <%@ page contentType="text/html; charset=UTF-8" %>
-
-<html>
+<%
+	request.setCharacterEncoding("utf-8");
+	
+	String num1 = request.getParameter("num");
+	int num = Integer.parseInt(num1);
+	
+	BoardDAOImpl dao = new BoardDAOImpl();
+	BoardDTO dto = dao.getBoardInfo(num);
+	String dbPass = dto.getPass();
+	
+	String paramPass = "";
+	
+	if(request.getParameter("pass") != null){
+		paramPass = request.getParameter("pass");
+		
+		if(!dbPass.equals(paramPass)){
+				%><script>
+					window.alert("틀림");
+					history.back();
+				</script><%
+		}else{
+				dao.deleteBoard(num);
+				
+				response.sendRedirect("List.jsp");
+		}
+	}
+	
+%><html>
 <head><title>JSPBoard</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <script>
@@ -24,7 +52,9 @@
  </tr>
 </table>
 <table width=70% cellspacing=0 cellpadding=2>
+
 <form name=form method=post action="Delete.jsp" >
+<input type="hidden" name="num" value="<%=num%>">
  <tr>
   <td align=center>
    <table align=center border=0 width=91%>
