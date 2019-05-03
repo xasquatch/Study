@@ -1,0 +1,14 @@
+package Chapter14;
+
+import java.util.Random;
+
+public class UITHreadTest {
+
+	public static void main(String[] args) {
+		Random rd = new Random();
+		int first = rd.nextInt(9)+1;
+		int second = rd.nextInt(9)+1;
+
+	}
+
+}

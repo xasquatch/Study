@@ -1,0 +1,23 @@
+package Chapter14;
+
+class R1 implements Runnable{
+
+	@Override
+	public void run() {
+		int i = 1;
+		
+		
+	}
+	
+	
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

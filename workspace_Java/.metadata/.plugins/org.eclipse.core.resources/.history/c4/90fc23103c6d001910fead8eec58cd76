@@ -1,0 +1,12 @@
+package Chapter15;
+
+public class FileChannelTest {
+
+	
+	public static void main(String[] args) {
+		FileChannelTest fct = new FileChannelTest();
+		
+	
+	}
+
+}

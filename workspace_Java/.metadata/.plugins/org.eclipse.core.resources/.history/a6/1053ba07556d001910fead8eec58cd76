@@ -1,0 +1,16 @@
+package Chapter14;
+
+class r1 implements Runnable{
+	
+	
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package Chapter14;
+
+class R1 implements Runnable{
+
+	@Override
+	public void run() {
+		int i = 1;
+		int result = 0;
+		for (int j = 0; j <= 9; j++) {
+			result = i*j;
+		}
+		System.out.println("스레드 1 끝남");
+	}
+	
+	
+}
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		Thread t1 = new Thread(new R1());
+		t1.start();
+		System.out.println("메인끝남");
+
+	}
+
+}
