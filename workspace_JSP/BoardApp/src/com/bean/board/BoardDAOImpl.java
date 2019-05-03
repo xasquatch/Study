@@ -59,12 +59,12 @@ public class BoardDAOImpl implements IBoardDAO {
 
 				//가장 최신글이 위로 올라오게 num필드 값 기준으로 하여
 				//내림차순 정렬
-				sql = "SELECT * FROM tblboard ORDER BY num desc LIMIT "+start+" , "+end;
+				sql = "SELECT * FROM tblboard ORDER BY pos ASC LIMIT "+start+" , "+end;
 
 			//검색어를 입력했다면 (조건else)			
 			}else{
 			
-				sql = "SELECT * FROM tblboard WHERE "+ keyField +" LIKE '%"+ keyWord +"%' ORDER BY num desc LIMIT "+start+" , "+end;
+				sql = "SELECT * FROM tblboard WHERE "+ keyField +" LIKE '%"+ keyWord +"%' ORDER BY pos ASC LIMIT "+start+" , "+end;
 				//keyField(검색기준 필드)에 해당하는 글 검색시
 				//앞뒤에 어떤 문자가 와도 상관 없이  keyword(검색어)를 가진 데이터를 검색함
 				//num필드 기준으로 하여 내림차순 정렬하여 검색하는 sql구문 생성 
@@ -108,12 +108,12 @@ public class BoardDAOImpl implements IBoardDAO {
 
 				//가장 최신글이 위로 올라오게 num필드 값 기준으로 하여
 				//내림차순 정렬
-				sql = "SELECT * FROM tblboard ORDER BY num desc";
+				sql = "SELECT * FROM tblboard ORDER BY pos ASC";
 
 			//검색어를 입력했다면 (조건else)			
 			}else{
 			
-				sql = "SELECT * FROM tblboard WHERE "+ keyField +" LIKE '%"+ keyWord +"%' ORDER BY num desc";
+				sql = "SELECT * FROM tblboard WHERE "+ keyField +" LIKE '%"+ keyWord +"%' ORDER BY pos ASC";
 				//keyField(검색기준 필드)에 해당하는 글 검색시
 				//앞뒤에 어떤 문자가 와도 상관 없이  keyword(검색어)를 가진 데이터를 검색함
 				//num필드 기준으로 하여 내림차순 정렬하여 검색하는 sql구문 생성 
@@ -190,10 +190,20 @@ public class BoardDAOImpl implements IBoardDAO {
 	@Override
 	public void insertBoard(BoardDTO dto) {
 		
+		String sql ="";
 		try {
-			String sql = "INSERT INTO tblboard(name, email, homepage, subject, content, regdate, pass, count, ip, pos, depth)"
-								+ " VALUES(?, ?, ?, ?, ?, ?, ?, 0, ?, 0, 0)";
+			
+			sql = "UPDATE tblboard set pos = pos+1";
 			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.executeUpdate();
+			
+			
+			
+			con = ds.getConnection();
+			
+			sql = "INSERT INTO tblboard(name, email, homepage, subject, content, regdate, pass, count, ip, pos, depth)"
+								+ " VALUES(?, ?, ?, ?, ?, ?, ?, 0, ?, 0, 0)";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, dto.getName());
 			pstmt.setString(2, dto.getEmail());
@@ -269,13 +279,6 @@ public class BoardDAOImpl implements IBoardDAO {
 		
 	}
 
-	@Override
-	public void replayBoard(BoardDTO dto) {
-		
-		
-		
-	}
-
 	
 	
 	public BoardDTO getBoardInfo(int num) {
@@ -315,6 +318,77 @@ public class BoardDAOImpl implements IBoardDAO {
 	
 		return dto;
 	}
+	
+	
+	public void replyUpPos(int pos) {
+	//규칙
+	//1. 부모글보다 큰 pos값은 1씩 증가
+	//2. 답변글은 부모글의 pos에 1을 더해줌
+	//3. 부모글의 depth(들여쓰기)에 1을 더해줌
+		String sql = "";
+		try {
+			sql = "UPDATE tblboard set pos = pos+1 WHERE pos>?";
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, pos);
+			pstmt.executeUpdate();
+			
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("replyUpPos : "+e.getMessage() );
+		} finally {
+			freeResource();
+		}
+	}	
+		
+	
+	
+	@Override
+	public void replayBoard(BoardDTO dto) {
+		//규칙
+		//부모글의 pos, depth값을 답변글을 추가할 떄 사용
+		
+		String sql = "";
+		try {
+			//답변글의 pos값은 부모글의 pos +1
+			int pos = dto.getPos()+1;
+			// 답변글의 depth값은 부모글의 depth +1
+			int depth = dto.getDepth()+1;
+			
+			sql = "INSERT INTO tblboard(name, email, homepage, subject, content, pass,"
+					+"count, ip, regdate, pos, depth) VALUES(?, ?, ?, ?, ?, ?, 0, ?, ?, ?, ?)";
+					
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+				pstmt.setString(1, dto.getName());
+				pstmt.setString(2, dto.getEmail());
+				pstmt.setString(3, dto.getHomepage());
+				pstmt.setString(4, dto.getSubject());
+				pstmt.setString(5, dto.getContent());
+				pstmt.setString(6, dto.getPass());
+				pstmt.setString(7, dto.getIp());
+				pstmt.setTimestamp(8, dto.getRegdate());
+				pstmt.setInt(9, pos);
+				pstmt.setInt(10, depth);
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("replayBoard 오류");
+		} finally {
+			freeResource();
+		}
+		
+	}
 
+	public String useDepth(int depth){
+		String result ="";
+		for (int i = 1; i <= depth; i++) {
+			result += "&nbsp;";
+		}
+		return result;
+	}
 	
 }
+

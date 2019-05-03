@@ -37,7 +37,7 @@ background-color : white;
 </style>
 <BODY style="background-image : url('d.gif');">
 <center><br>
-<img src="siva.gif" height="250"> <h1 style="display : inline; font-size : 200; font-family : 맑은 고딕; color:red;">JSP Board</h1>
+<img src="siva.gif" height="250"> <h1 style="display : inline; font-size : 200; font-family : 맑은 고딕; color:black; text-shadow : 0 0 2px #fff;">JSP Board</h1>
 
 <%-- 순서1. DB작업을 하기 위해 BoardDAOimp1객체생성 --%>
 <jsp:useBean id="dao" class="com.bean.board.BoardDAOImpl"></jsp:useBean>
@@ -162,18 +162,21 @@ background-color : white;
 //-----------------------------------------------------------------------------------
 //case 3. foreach
 						for(BoardDTO dto:V){
+							
+								
+						
 			%>
 					<tr align=center>
-						<td> <%=dto.getNum() %> </td>
-						<td style="width: 250;">
-							<a href="javascript:fnRead(<%=dto.getNum()%>)"><%=dto.getSubject() %></a>
+						<td> <%=dto.getPos()+1 %> </td>	<!-- getnum에서 getpos+1로 수정함 -->
+						<td style="width: 50; text-align : left;">
+							<a href="javascript:fnRead(<%=dto.getNum()%>)"><%=dao.useDepth(dto.getDepth())+dto.getSubject() %></a>
 						</td>
-						<td style = " border : dotted 1px gray; font-weight : bold; color : red; width: 250; height: 20;">
+						<td style = "font-weight : bold; color : red; width: 250; height: 20;">
 							<%
 							String content = dto.getContent();			
 							if(content.length()>20)
 								content = content.substring(0, 19);
-							%><%=content %>
+							%><%=content+"..." %>
 						</td>
 						
 						<td><a href="mailto:<%=dto.getEmail() %>"> <%=dto.getName() %> </a></td>
