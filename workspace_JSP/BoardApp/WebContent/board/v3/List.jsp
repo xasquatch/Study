@@ -168,7 +168,7 @@ background-color : white;
 			%>
 					<tr align=center>
 						<td> <%=dto.getPos()+1 %> </td>	<!-- getnum에서 getpos+1로 수정함 -->
-						<td style="width: 50; text-align : left;">
+						<td style="width: 100; text-align : left;">
 							<a href="javascript:fnRead(<%=dto.getNum()%>)"><%=dao.useDepth(dto.getDepth())+dto.getSubject() %></a>
 						</td>
 						<td style = "font-weight : bold; color : red; width: 250; height: 20;">

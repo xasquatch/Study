@@ -684,3 +684,4 @@
 5월 03, 2019 16:19:04.36 [6988:8308:0503/161904.360:ERROR:browser_process_sub_thread.cc(217)] Waited 59 ms for network service
 5월 03, 2019 16:34:50.98 [4724:2108:0503/163450.979:ERROR:browser_process_sub_thread.cc(217)] Waited 66 ms for network service
 5월 03, 2019 17:04:49.27 [3016:8644:0503/170449.275:ERROR:browser_process_sub_thread.cc(217)] Waited 83 ms for network service
+5월 03, 2019 17:26:55.73 [6780:7736:0503/172655.737:ERROR:browser_process_sub_thread.cc(217)] Waited 6 ms for network service

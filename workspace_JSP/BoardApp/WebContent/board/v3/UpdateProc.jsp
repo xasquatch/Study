@@ -15,6 +15,7 @@
 	
 	BoardDTO dto = new BoardDTO();
 	
+		dto.setNum(num);
 		dto.setName(name);
 		dto.setEmail(email);
 		dto.setSubject(subject);

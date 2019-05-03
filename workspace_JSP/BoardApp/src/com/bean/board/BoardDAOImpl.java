@@ -235,7 +235,7 @@ public class BoardDAOImpl implements IBoardDAO {
 		
 		String sql = "";
 		try {
-			sql = "UPDATE tblboard SET name = ?, email = ?, subject = ?, content = ?, pass = ?,"
+			sql = "UPDATE tblboard SET name = ?, email = ?, subject = ?, content = ?, pass = ?"
 								+ " WHERE num = ?";
 		
 			con = ds.getConnection();
@@ -246,8 +246,8 @@ public class BoardDAOImpl implements IBoardDAO {
 				pstmt.setString(3, dto.getSubject());
 				pstmt.setString(4, dto.getContent());
 				pstmt.setString(5, dto.getPass());
-				pstmt.setInt(5, dto.getNum());
-			
+				pstmt.setInt(6, dto.getNum());
+				
 			pstmt.executeUpdate();
 			
 		} catch (Exception e) {
