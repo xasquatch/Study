@@ -24,6 +24,9 @@ public class GenericBoxTest {
 		GenericBox<Grocery2> gbox2 = new GenericBox<Grocery2>();
 		gbox2.setSome(new Grocery2());
 		Grocery2 grocery = gbox2.getSome();
+		GenericBox<Object> gbox3 = new GenericBox();
+		gbox3.setSome(new Grocery2());
+		gbox3.setSome(new Toy2());
 	}
 
 }
