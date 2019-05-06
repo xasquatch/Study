@@ -39,7 +39,8 @@ public class seasonEnumTest {
 		ss.compareEnum(Season.WINTER);
 		System.out.println("---------------------");
 		ss.enumSwitch(Season.SPRING);
-		
+		System.out.println(Season.FALL.ordinal());
+		System.out.println(Season.SUMMER.name());
 	}
 
 }
