@@ -1,0 +1,20 @@
+package Chapter14;
+
+public class SleepTest {
+
+	static class Timer extends Thread{
+
+		@Override
+		public void run() {
+
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+
+
+	}
+
+}

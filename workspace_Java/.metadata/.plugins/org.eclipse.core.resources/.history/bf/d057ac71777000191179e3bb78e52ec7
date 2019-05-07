@@ -1,0 +1,21 @@
+package Chapter14;
+
+public class Account {
+	protected int balance;
+	
+	public Account(int balance) {
+		this.balance = balance;
+	}
+
+	public int nwhitdraw(int money) {
+		String threadName = Thread.currentThread().getName();
+	}
+	
+	public static void main(String[] args) {
+		
+		
+
+
+	}
+
+}

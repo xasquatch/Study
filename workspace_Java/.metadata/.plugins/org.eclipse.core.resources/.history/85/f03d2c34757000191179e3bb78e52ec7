@@ -1,0 +1,18 @@
+package Chapter14;
+
+public class DaemonThreadTest {
+	
+	static class SaveDaemon extends Thread{
+
+		public SaveDaemon() {
+			this.setDaemon(true);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

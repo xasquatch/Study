@@ -1,0 +1,18 @@
+package Chapter14;
+
+public class YieldTest {
+
+	static class YieldThread extends Thread{
+		String symbol;
+
+		public YieldThread(String symbol) {
+			this.symbol = symbol;
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package Chapter14;
+
+class Thread2 extends Thread {
+
+	@Override
+	public void run() {
+		for (int i = 1; i < 10; i++) {
+			System.out.printf("2¡¿%d=%d%n", i, 2 * i);
+		}
+
+	}
+
+}
+
+public class TestThread {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

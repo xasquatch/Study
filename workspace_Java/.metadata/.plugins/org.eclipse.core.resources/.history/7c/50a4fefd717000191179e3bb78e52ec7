@@ -1,0 +1,27 @@
+package Chapter14;
+
+public class StopTest {
+
+	static class ResourceUseThread extends Thread{
+		boolean flag = true;
+
+		@Override
+		public void run() {
+			System.out.println("ÀÚ¿øÈ¹µæ");
+			while (flag) {
+				try {
+					
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package Chapter14;
+
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
+public class SleepTest {
+
+	static class Timer extends Thread{
+
+		@Override
+		public void run() {
+			for (int i = 0; i < 3; i++) {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				System.out.println("Â°±ï : "+LocalTime.now());
+			}
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package Chapter14;
+
+public class DaemonThreadTest {
+	
+	static class SaveDaemon extends Thread{
+		
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Chapter14;
+
+public class InterruptTest {
+
+	static class MinuteAlarmThread extends Thread{
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

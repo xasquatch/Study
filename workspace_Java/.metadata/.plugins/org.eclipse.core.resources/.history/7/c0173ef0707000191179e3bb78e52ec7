@@ -1,0 +1,12 @@
+package Chapter14;
+
+public class YieldTest {
+
+	static class YieldThread extends Thread{
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

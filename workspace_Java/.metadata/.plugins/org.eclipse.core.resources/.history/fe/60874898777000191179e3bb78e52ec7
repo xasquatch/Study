@@ -1,0 +1,30 @@
+package Chapter14;
+
+public class Account {
+	protected int balance;
+	
+	public Account(int balance) {
+		this.balance = balance;
+	}
+
+	public int withdraw(int money) {
+		String threadName = Thread.currentThread().getName();
+		if (balance >=money) {
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			balance -= money;
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		
+
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package Chapter14;
+
+public class JoinTest {
+
+	static class GuguThread extends Thread{
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

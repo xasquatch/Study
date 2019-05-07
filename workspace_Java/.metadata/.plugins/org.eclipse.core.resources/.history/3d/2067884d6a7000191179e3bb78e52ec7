@@ -1,0 +1,36 @@
+package Chapter14;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JoinTest {
+
+	static class GuguThread extends Thread{
+		private int dan;
+		String[] result = new String[9];
+		
+		public GuguThread(int dan) {
+			this.dan = dan;
+		}
+
+		@Override
+		public void run() {
+			for (int i = 1; i < 10; i++) {
+				result[i-1] = dan+"*"+i+"="+(dan*i);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			System.out.println(dan + "´Ü ¿Ï·á");
+		}
+	}
+	
+	public static void main(String[] args) {
+		List<GuguThread> gugus = new ArrayList();
+		
+	}
+
+}

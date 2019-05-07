@@ -1,0 +1,14 @@
+package Chapter14;
+
+public class PriorityTest {
+
+	static class MessengerThread extends Thread{
+		
+	}
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}
