@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="x-windows-949" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-05-07T14:22:39.540123600Z</date>
+  <millis>1557238959540</millis>
+  <nanos>123600</nanos>
+  <sequence>0</sequence>
+  <logger>ch09.exception.logging.SimpleLoggingFile</logger>
+  <level>INFO</level>
+  <class>ch09.exception.logging.SimpleLoggingFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>info log</message>
+</record>
+<record>
+  <date>2019-05-07T14:22:39.665052400Z</date>
+  <millis>1557238959665</millis>
+  <nanos>52400</nanos>
+  <sequence>1</sequence>
+  <logger>ch09.exception.logging.SimpleLoggingFile</logger>
+  <level>INFO</level>
+  <class>ch09.exception.logging.SimpleLoggingFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>method type info log</message>
+</record>
+<record>
+  <date>2019-05-07T14:22:39.667051300Z</date>
+  <millis>1557238959667</millis>
+  <nanos>51300</nanos>
+  <sequence>2</sequence>
+  <logger>ch09.exception.logging.SimpleLoggingFile</logger>
+  <level>WARNING</level>
+  <class>ch09.exception.logging.SimpleLoggingFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>method type warning log</message>
+</record>
+<record>
+  <date>2019-05-07T14:22:39.668050600Z</date>
+  <millis>1557238959668</millis>
+  <nanos>50600</nanos>
+  <sequence>3</sequence>
+  <logger>ch09.exception.logging.SimpleLoggingFile</logger>
+  <level>SEVERE</level>
+  <class>ch09.exception.logging.SimpleLoggingFile</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>method type severe log</message>
+</record>
+</log>
