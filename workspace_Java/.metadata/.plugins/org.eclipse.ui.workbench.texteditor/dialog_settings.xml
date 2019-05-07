@@ -6,18 +6,23 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="separator" key="selection"/>
+		<item value="getName" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="getClass"/>
+			<item value="\t"/>
+			<item value="t2"/>
 			<item value="Separator"/>
 			<item value="pathSeparator"/>
 			<item value="&quot;+File.pathSeparator+&quot;"/>
 			<item value="list"/>
 			<item value="data"/>
-			<item value="a+&quot;\n&quot;+b+&quot;\n&quot;+c+&quot;\n&quot;+d+&quot;\n&quot;+e+&quot;\n&quot;+f+&quot;\n&quot;+g+&quot;\n&quot;+h+&quot;\n&quot;+i);"/>
 		</list>
 		<list key="replacehistory">
+			<item value="getName"/>
+			<item value="\n"/>
+			<item value="t3"/>
 			<item value="separator"/>
 			<item value="Separator"/>
 			<item value="/"/>

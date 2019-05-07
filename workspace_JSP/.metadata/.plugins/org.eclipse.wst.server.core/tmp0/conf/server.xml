@@ -153,7 +153,7 @@
 <!-- 	JNDI기술을 사용하여 접속할 DB정볼르 지정 -->
 	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" name="jdbc/jspbeginner" password="jsppass" type="javax.sql.DataSource" url="jdbc:mysql://Localhost:3306/jspbeginner" username="jspid"/>
 		
-</Context></Host>
+</Context><Context docBase="D:\Selfwill\workspace_JSP\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\FileUpload" path="/FileUpload" reloadable="true" source="org.eclipse.jst.jee.server:FileUpload"/></Host>
     </Engine>
   </Service>
 </Server>
