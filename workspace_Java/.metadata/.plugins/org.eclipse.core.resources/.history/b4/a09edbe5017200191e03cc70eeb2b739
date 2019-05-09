@@ -1,0 +1,16 @@
+package Test;
+
+import javax.swing.JFrame;
+
+class Test1 extends JFrame{
+	
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
