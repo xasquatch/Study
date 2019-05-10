@@ -1,0 +1,14 @@
+package Chapter16;
+
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		Lst<String> heroes = Arrays.asList("아이언맨","스파이더맨","헐크","토르");
+		
+
+	}
+
+}

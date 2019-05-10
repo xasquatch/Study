@@ -1,0 +1,11 @@
+package Chapter16;
+
+import java.io.IOException;
+
+public class FromFile {
+
+	public static void main(String[] args) throws IOException {
+		
+	}
+
+}

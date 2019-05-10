@@ -11,7 +11,7 @@
 %>
 <!-- 	다운로드할 파일이름을 hidden태그의 value속성의 값으로 설정해서 result.jusp에 다운로드 요청함 -->
 <form action="result.jsp" method="POST">
-							<input type="hidden" name="param1" value="공유방주소.txt">
+							<input type="hidden" name="param1" value="colorpicker.gif">
 							<input type="hidden" name="param2" value="duke.png">
 	<input type="submit" value="파일 다운로드">
 	
