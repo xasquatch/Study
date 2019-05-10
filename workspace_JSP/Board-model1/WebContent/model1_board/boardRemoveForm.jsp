@@ -34,10 +34,10 @@
 <%
 	// boardNo값이 넘어오지 않으면 boardList.jsp로 이동
 	if(request.getParameter("boardNo") == null) {
-	    response.sendRedirect(request.getContextPath()+"/jsp_board/boardList.jsp");
+	    response.sendRedirect(request.getContextPath()+"/model1_board/boardList.jsp");
 	} else {
 %>
-	    <form  class="form-inline" id="removeForm" action="<%=request.getContextPath()%>/jsp_board/boardRemoveAction.jsp" method="post">
+	    <form  class="form-inline" id="removeForm" action="<%=request.getContextPath()%>/model1_board/boardRemoveAction.jsp" method="post">
 	        <!-- boardPw와 함께 boardNo값도 숨겨서(hidden값으로) 넘김 -->
 	        <input name="boardNo" value="<%=request.getParameter("boardNo")%>" type="hidden"/>
 	        <div class="form-group">
