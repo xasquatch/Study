@@ -63,6 +63,8 @@ request객체에 담긴 모든 데이터 꺼내오기 -->
 		for(int i=0; i<saveFile.size();i++){
 			%>
 			<li>
+<!-- 			파일다운로드 처리하는 download.jsp페이지 요청시 -->
+<!-- 			업로드한 파일위치인 가상경로 주소, 실제 다운로드할 파일이름을 전달 -->
 				<a href="download.jsp?path=Upload&name=<%=saveFile.get(i)%>">
 					<%=originFiles.get(i)%>
 				</a>

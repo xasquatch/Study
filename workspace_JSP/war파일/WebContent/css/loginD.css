@@ -1,0 +1,644 @@
+*{
+	padding: 0px
+}
+body{
+	overflow-x:hidden; 
+	
+}
+#nav{
+	width: 100%;
+	height: 90px;
+	line-height: 80px;
+	text-align: center;
+	background-color : lightgray;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	z-index: 1
+}
+#nav input[type="image"]{
+	width: 75px;
+	height: 70px;
+	margin: 5px 5px;
+	vertical-align: middle;
+	border: 0px solid white;
+	border-radius: 10px;
+	outline: none;
+
+}
+#find{
+	width: 1980px; 
+	height: 150px;
+	line-height: 150px;
+	margin-top: 80px;
+	text-align: center;
+	overflow: hidden;
+}
+.logo{
+	width: 250px;
+	height: 90px;
+	vertical-align: middle;
+	display: inline;
+	
+}
+#find input[type="text"]{
+	width: 25%;
+	height: 50px;
+	line-height: 50px;
+	margin : 0px 20px;
+	padding-left : 10px;
+	font-size: 24px;
+	border: 3px solid red;
+	border-radius: 10px;
+	outline: none;
+	vertical-align: middle;
+}
+#find input[type="submit"]{
+	width: 80px;
+	height: 50px;
+	background: url("../image/button.png");
+	background-repeat : no-repeat;
+	background-size: 100% 100%;
+	border: 0px solid lightgray;
+	border-radius: 10px;
+	vertical-align: middle;
+	outline: none;
+}
+#find input[type="submit"]:HOVER{
+	width: 80px;
+	height: 50px;
+	background-color: white;
+	border: 0px solid lightgray;
+	border-radius: 10px;
+	vertical-align: middle;
+	outline: none;
+}
+#section{
+	width: 1920px;
+	height: 664px;
+	padding: 0px 0px;
+	margin: 0px auto
+	
+}
+#new{
+	width: 900px;
+	height: 200px;
+	text-align: center;
+	margin-right: 20px;
+	float: left;
+	overflow: hidden;
+}
+#new .new{
+	font-size: 26px;
+	font-weight: bold;
+	color: red;
+}
+
+#new table{
+	width: 890px;
+	border: 0px;
+	background-color: white
+}
+#new table td{
+	border-bottom: 1px dashed lightgray;
+	color : black
+}
+
+#new table tr:FIRST-CHILD td{
+	background-color : #f90052;
+	border-bottom: 1px dashed gray;
+}
+#new table tr:nth-child(2):HOVER, #new table tr:nth-child(2):HOVER td{
+	background-color: #EAEAEA;
+	color : black
+}
+#new table tr:nth-child(3):HOVER, #new table tr:nth-child(3):HOVER td{
+	background-color: #EAEAEA;
+	color : black
+}
+#new table tr:nth-child(4):HOVER, #new table tr:nth-child(4):HOVER td{
+	background-color: #EAEAEA;
+	color : black
+}
+#new table tr:FIRST-CHILD{
+	height: 45px;
+	background-color: pink
+}
+#new table tr:FIRST-CHILD td:FIRST-CHILD{
+	width: 550px
+}
+
+#login{
+	width: 390px;
+	height: 200px;
+	text-align: center;
+	background-color: #FCFCFC;
+	border: 1px solid lightgray
+}
+.login_logo{
+	width: 200px;
+	height: 70px;
+	margin: 10px 0px;
+	vertical-align: middle;
+	display: inline;
+	
+}
+#login p input[type="button"]{
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	margin: 5px 15px 15px 15px;
+	text-align: center;
+	float: left;
+	background-color: #EAEAEA;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	outline: none;
+	
+}
+#login p input[type="button"]:HOVER{
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	margin: 5px 15px 15px 15px;
+	text-align: center;
+	float: left;
+	background-color: #D4F4FA;
+	border: 1px solid #D4F4FA;
+	border-radius: 10px;
+	outline: none;
+	
+}
+#login a:FIRST-CHILD{
+	margin-right: 30px;
+}
+#point_top3{
+	width: 1320px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 20px 0px;
+}
+#rank-list {
+    overflow: hidden;
+    width: 90%;
+    height: 47px;
+    margin: 0px 450px;
+    font-size: 18px
+}
+ 
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+ 
+#rank-list ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list li {
+	color : white;
+    height: 47px;
+    line-height: 47px;
+	margin:0px 10px;
+	letter-spacing: 0.5em
+}
+
+
+#rank-list2 {
+    overflow: hidden;
+    width: 90%;
+    height: 47px;
+    margin: 0px 450px;
+    font-size: 18px;
+}
+ 
+#rank-list2 dd {
+    position: relative;
+    margin: 0;
+}
+ 
+#rank-list2 ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list2 li {
+	color : white;
+	margin:0px 10px;
+    height: 47px;
+    line-height: 47px;
+    letter-spacing: 0.5em
+    
+}
+#point_down3{
+	width: 1320px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 0px;
+}
+#content1{
+	clear: both;
+	width: 420px;
+	height: 300px;
+	margin: 20px 30px 20px 0px;
+	text-align: center;
+	float: left;
+	background-color : white
+}
+
+#content1 .new{
+	font-size: 22px;
+	font-weight: bold;
+	color: red;
+	vertical-align: middle;
+	margin: 5px;
+
+}
+#content1 .newicon{
+	display: inline;
+	width: 25px;
+	height: 25px;
+	vertical-align: bottom;
+}
+#content1 table{
+	width: 400px;
+	height: 260px;
+	text-align: center;
+	border: 2px solid #f90052;
+	border-radius: 10px;
+	background-color: white
+}
+#content1 table tr:FIRST-CHILD{
+	background-color: #f90052;
+	font-size: 16px;
+	font-weight: bold;
+	color : white
+	
+}
+#content1 table td{
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px;
+	color : black
+}
+
+#content1 table tr:FIRST-CHILD td{
+	color : white;
+	border-bottom: 1px solid white
+}
+#content1 table tr:nth-CHILD(2) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content1 table tr:nth-CHILD(3) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content1 table tr:nth-child(2):HOVER, #content1 table tr:nth-child(2):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content1 table tr:nth-child(3):HOVER, #content1 table tr:nth-child(3):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content1 table tr:nth-child(4):HOVER, #content1 table tr:nth-child(4):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content1 table tr:FIRST-CHILD td:FIRST-CHILD{
+	width: 50%
+}
+
+#content2{
+	width: 420px;
+	height: 300px;
+	margin: 20px 30px 20px 0px;
+	text-align: center;
+	float: left;
+	background-color : white
+}
+
+#content2 .new{
+	font-size: 22px;
+	font-weight: bold;
+	color: red;
+	vertical-align: middle;
+	margin: 5px;
+
+}
+#content2 .newicon{
+	display: inline;
+	width: 25px;
+	height: 25px;
+	vertical-align: bottom;
+}
+#content2 table{
+	width: 400px;
+	height: 260px;
+	margin: 5px 10px;
+	text-align: center;
+	border: 2px solid #f90052;
+	border-radius: 10px;
+	background-color: white
+}
+#content2 table tr:FIRST-CHILD{
+	background-color: #f90052;
+	font-size: 16px;
+	font-weight: bold;
+	color : white
+	
+}
+#content2 table td{
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px;
+	color : black
+}
+
+#content2 table tr:FIRST-CHILD td{
+	color : white;
+	border-bottom: 1px solid white
+}
+#content2 table tr:nth-CHILD(2) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content2 table tr:nth-CHILD(3) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content2 table tr:nth-child(2):HOVER, #content2 table tr:nth-child(2):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content2 table tr:nth-child(3):HOVER, #content2 table tr:nth-child(3):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content2 table tr:nth-child(4):HOVER, #content2 table tr:nth-child(4):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content2 table tr:FIRST-CHILD td:FIRST-CHILD{
+	width: 50%
+}
+#content3{
+	width: 420px;
+	height: 300px;
+	margin: 20px 30px 20px 0px;
+	text-align: center;
+	float: left;
+	background-color : white
+}
+
+#content3 .new{
+	font-size: 22px;
+	font-weight: bold;
+	color: red;
+	vertical-align: middle;
+	margin: 5px;
+
+}
+
+#content3 table{
+	width: 400px;
+	height: 260px;
+	margin: 5px 10px;
+	text-align: center;
+	border: 2px solid #f90052;
+	border-radius: 10px;
+	background-color: white
+}
+#content3 table tr:FIRST-CHILD{
+	background-color: #f90052;
+	font-size: 16px;
+	font-weight: bold;
+	color : white
+	
+}
+#content3 table td{
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px;
+	color : black
+}
+
+#content3 table tr:FIRST-CHILD td{
+	color : white;
+	border-bottom: 1px solid white
+}
+#content3 table tr:nth-CHILD(2) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content3 table tr:nth-CHILD(3) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content3 table tr:nth-CHILD(4) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content3 table tr:nth-CHILD(5) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content3 table tr:nth-CHILD(6) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+#content3 table tr:nth-CHILD(7) td{
+	color : black;
+	border-bottom: 1px dashed lightgray
+}
+
+#content3 table tr:nth-child(2):HOVER, #content3 table tr:nth-child(2):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:nth-child(3):HOVER, #content3 table tr:nth-child(3):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:nth-child(4):HOVER, #content3 table tr:nth-child(4):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:nth-child(5):HOVER, #content3 table tr:nth-child(5):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:nth-child(6):HOVER, #content3 table tr:nth-child(6):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:nth-child(7):HOVER, #content3 table tr:nth-child(7):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:nth-child(8):HOVER, #content3 table tr:nth-child(8):HOVER td{
+	background-color: #f0f0f0;
+	color: black
+}
+#content3 table tr:FIRST-CHILD td:FIRST-CHILD{
+	width: 50%
+}
+#content4{
+	width: 1320px;
+	height: 800px;
+	margin: 0px 30px 10px 0px;
+	text-align: center;
+	float: left;
+	background-color : white
+}
+#footer{
+	clear: both;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background-color : #555555
+}
+#footer p{
+	font-size: 12px;
+	color : white;
+	text-align: center;
+}
+#footer input[type="button"]{
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	margin : 20px 0px;
+	color: white;
+	border: 1px solid #37373e;
+	border-radius: 5px;
+	background-color: #4f4f5b;
+	outline: none
+}
+#footer input[type="button"]:HOVER{
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	margin : 20px 0px;
+	color: white;
+	border: 1px solid #37373e;
+	border-radius: 5px;
+	background-color: #373740;
+	outline: none
+}
+
+
+
+
+
+#logo{
+	height: 140px
+}
+#logo a img{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+#login_form{
+	width: 700px;
+	height: 425px;
+	text-align: center;
+	margin: 10px 5px 10px 610px;
+	background-color: white;
+	float: left;
+}
+#login_form img{
+	width: 100%;
+	height: 350px;
+	text-align: center;
+	margin : 10px 0px 0px 0px;
+	float: left;
+	overflow: hidden;
+}
+#login_form input[type="text"],#login_form input[type="password"]{
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin: 10px 0px 10px 0px;
+	outline: none;
+}
+#login_form input[type="text"]:FOCUS,#login_form input[type="password"]:FOCUS{
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	border: 1px solid #f90052;
+	border-radius: 10px;
+	margin: 10px 0px 10px 0px;
+	outline: none;
+}
+#login_form input[type="button"],#login_form input[type="submit"]{
+	width: 60%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #EAEAEA;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin: 20px 0px 10px 0px;
+	outline: none;
+}
+#login_form input[type="button"]:HOVER,#login_form input[type="submit"]:HOVER{
+	width: 60%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #D4F4FA;
+	border: 1px solid #D4F4FA;
+	border-radius: 10px;
+	margin: 20px 0px 10px 0px;
+	outline: none;
+}
+h2{
+	color: #f90052;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#footer{
+	clear: both;
+	width: 100%;
+	height: 100%;
+	line-height: 100px;
+	text-align: center;
+	background-color : #555555
+}
+.id_check{
+color : #f90052;
+font-size: 16px;
+
+}
+.find_font{
+	font-size : 14px;
+	margin: 10px 0px;
+}
+

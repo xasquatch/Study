@@ -720,3 +720,19 @@
 5월 08, 2019 11:42:30.09 [4468:3764:0508/114230.095:ERROR:browser_process_sub_thread.cc(217)] Waited 14 ms for network service
 5월 08, 2019 12:49:20.10 [6836:7928:0508/124920.101:ERROR:browser_process_sub_thread.cc(217)] Waited 115 ms for network service
 5월 08, 2019 12:51:14.35 [9944:5400:0508/125114.355:ERROR:browser_process_sub_thread.cc(217)] Waited 88 ms for network service
+
+5월 10, 2019 14:02:18.25 NEW SESSION
+5월 10, 2019 14:02:18.25 [2436:3920:0510/140218.252:ERROR:browser_process_sub_thread.cc(217)] Waited 64 ms for network service
+5월 10, 2019 14:25:43.00 [4712:8152:0510/142543.004:ERROR:CONSOLE(40)] "Uncaught (in promise) undefined", source: chrome://resources/js/promise_resolver.js (40)
+5월 10, 2019 14:25:45.03 [4712:8152:0510/142545.032:ERROR:CONSOLE(40)] "Uncaught (in promise) undefined", source: chrome://resources/js/promise_resolver.js (40)
+5월 10, 2019 14:56:44.01 [4712:8152:0510/145644.018:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 10, 2019 15:01:01.60 [4712:9644:0510/150101.606:ERROR:browser_process_sub_thread.cc(217)] Waited 19 ms for network service
+5월 10, 2019 15:01:25.18 [8616:6952:0510/150125.185:ERROR:CONSOLE(40)] "Uncaught (in promise) undefined", source: chrome://resources/js/promise_resolver.js (40)
+5월 10, 2019 15:01:28.89 [8616:6952:0510/150128.892:ERROR:CONSOLE(40)] "Uncaught (in promise) undefined", source: chrome://resources/js/promise_resolver.js (40)
+5월 10, 2019 15:01:30.14 [8616:6952:0510/150130.145:ERROR:CONSOLE(40)] "Uncaught (in promise) undefined", source: chrome://resources/js/promise_resolver.js (40)
+5월 10, 2019 15:01:32.23 [8616:4376:0510/150132.236:ERROR:browser_process_sub_thread.cc(217)] Waited 215 ms for network service
+5월 10, 2019 15:02:25.89 [6984:5148:0510/150225.895:ERROR:browser_process_sub_thread.cc(217)] Waited 73 ms for network service
+5월 10, 2019 15:02:54.33 [4572:7340:0510/150254.331:ERROR:CONSOLE(40)] "Uncaught (in promise) undefined", source: chrome://resources/js/promise_resolver.js (40)
+5월 10, 2019 15:29:15.28 [4572:4520:0510/152915.281:ERROR:browser_process_sub_thread.cc(217)] Waited 63 ms for network service
+5월 10, 2019 15:54:08.47 [8960:2720:0510/155408.479:ERROR:browser_process_sub_thread.cc(217)] Waited 48 ms for network service
+5월 10, 2019 16:16:11.19 [1636:9096:0510/161611.194:ERROR:browser_process_sub_thread.cc(217)] Waited 118 ms for network service
