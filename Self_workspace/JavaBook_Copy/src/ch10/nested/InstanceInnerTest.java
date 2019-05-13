@@ -30,6 +30,6 @@ public class InstanceInnerTest {
 		System.out.println(ins.outerMem);
 		InstanceInnerTest ins2 = new InstanceInnerTest();
 		System.out.println(ins2.outerMem);
-		
+
 	}
 }
