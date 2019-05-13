@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<script type="text/javascript">
+		//이미지 추가하기 버튼을 클릭했을떄..호출되는 함수 만들기
+		function addImage(){
+			//class속성값이  class1인 태그를 선택하여 
+			//<img>태그를 추가 합니다.
+// 			$(".class1").html("<img src='../image/duke.png'>");
+	
+			$("div").html("<img src='../image/duke.png'>");
+			
+		}
+	
+	</script>
+</head>
+<body>
+	<div class="class1"></div>
+	<div class="class1"></div>
+	<input type="button" value="이미지 추가하기" onclick="addImage()">
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서 정보 출력창</title>
+
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script type="text/javascript">
+		function fn_process(){
+			
+			$.ajax({
+					type:"post",
+					async:false,
+					url:"http://localhost:8090/pro12/ajaxTest2", 
+					dataType:"xml", //응답 받을 데이터의 타입 작성 
+					//전송과 응답이 성공 했을 경우의 작업을 설정 합니다.
+					success:function(info, textStatus){
+						//AjaxTest2서블릿으로 부터 XML데이터를 응답받은후
+						//제이쿼리의 find()메소드를 이용하여 <title>,<writer>,<image>태그 이름으로
+						//호출하여 각각의 도서 정보를 가져옵니다.
+						$(info).find("book").each(function(){
+							
+							var title = $(this).find("title").text();
+							var writer = $(this).find("writer").text();
+							var image = $(this).find("image").text();
+							
+							//id속성값이 bookInfo인 <div>태그 영역에 도서 정보를 표시 합니다.
+							$("#bookInfo").append(
+									      			"<p>" + title + "</p>" + 
+									      			"<p>" + writer + "</p>" + 
+									      			"<img src=" + image + " />"
+									      			
+							                      );	
+						});
+					},
+					error:function(data,textStatus){
+						alert("에러가 발생 했습니다.");
+					},
+					complete:function(data,textStatus){
+						//alert("작업을 완료 했습니다.");
+					}
+				  });
+		}
+	</script>
+
+
+</head>
+<body>
+	<div id="bookInfo"></div>
+	<input type="button" value="도서정보요청" onclick="fn_process()">
+
+</body>
+</html>
+
+
+
+

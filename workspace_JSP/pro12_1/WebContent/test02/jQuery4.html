@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script type="text/javascript">
+		//입력하기 버튼을 클릭 했을때.. 호출되는 함수
+		function fn_process(){
+			//id속성값이 t_input인 <input>태그를 선택하여 가져와서
+			//그 <input>태그에 입력한 값을 얻어와 value변수에 저장
+			var value = $("#t_input").val();
+			
+			//위의 value변수에 저장된 값을  id속성값이 t_output인 <input>태그에 설정
+			$("#t_output").val(value);
+		}
+	</script>
+
+</head>
+<body>
+	<input type="text" id="t_input">
+	<input type="button" value="입력하기" onclick="fn_process()"><br><br> 
+	<div>
+		결과 : <br>
+		<input type="text" id="t_output" disabled>
+	</div>
+</body>
+</html>
+
+
+

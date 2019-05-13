@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+		function fn_process(){
+			//id속성값이 t_id인 <input>태그에 입력한  ID값을 얻어  _id변수에 저장
+			var _id = $("#t_id").val();
+			
+			if(_id == ''){
+				alert("ID를 입력하세요");//ID를 입력하지 않으면 오류 메세지를 출력
+				return;
+			}
+			$.ajax({
+				   	type:"post",
+				   	url:"http://localhost:8090/pro12/mem",
+				   	dataType:"text",
+				   	data: {id:_id}, //입력한 ID값 <--요청 전달 값
+				   	//전송과 응답이 성공했을경우 작업을 설정합니다.
+				   	success:function(data,textStatus){
+				   		//서버에서 전송된 결과에 따라 메세지를 표시 합니다
+				   		if(data == 'usable'){
+				   			$("#message").text("사용할수 있는 ID입니다.");
+				   			//사용할수 있는 ID이면 버튼을 비활성화 시킵니다.
+				   			$("#btn_duplicate").prop("disabled",true);
+				   		}else{
+				   			$("#message").text("사용할수 없는 ID입니다.");
+				   		}
+				   	},
+				   	error:function(data,textStatus){
+				   		alert("에러가 발생 했습니다.");
+				   	}
+				   }); //end ajax
+		}//function 닫는 부분 
+	</script>
+</head>
+<body>
+<!-- 
+	ID 중복체크하기를 클릭하면 텍스트 박스에 입력한 ID를 val()메소드로 가져와
+	ajax를 이용해서 서블릿으로 전송합니다.
+	그러면 서블릿에서 결과를 전달 받아 화면에 표시 합니다.
+ -->
+	<input type="text" id="t_id">
+	<input type="button" id="btn_duplicate" value="ID중복체크하기" onclick="fn_process()"> 
+	<br><br>
+	<!-- 결과를 표시할 영역 -->
+	<div id="message"></div>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서 정보 출력창</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	fn_process = function() {
+		//id속성값이 t_id인 <input>태그에 입력한 id 값을 얻어 _id변수에 저장
+		var _id = $("#t_id").val();
+		if (_id == '') {
+			alert('아이디를 입력해주세요');
+			return;
+		}
+		$.ajax({
+			type : "POST",
+			url : "http://localhost:8090/pro16/mem",
+			dataType : "text",
+			data : {id : _id},//입력한 ID값 <--요청 전달값
+			//전송과 응답이 성공했을 경우 작업을 설정합니다
+			success : function(data, textStatus) {
+				//서버에 전송된 결과에 따라 메세지를 표시합니다.
+				if (data = 'usable') {
+					$("#message").text("사용가능아이디");
+					$("#btn_duplicate").prop("disabled",true);
+				}else{
+					$("#message").text("사용못함");
+				}
+			},
+			error : function(data, textStatus) {
+				alert("에러발생");
+			}
+		});
+	}
+</script>
+</head>
+<body>
+<!-- 	ID 중복체크하기를 클릭하면 텍스트박스에 입력한 ID를 val()메소드로 가져와
+	 	ajax를 이용해서 서블릿으로 전송합니다. 
+	 	그러면 서블릿에서 결과를 전달받아 화면에 표시합니다. -->
+	
+	<input type="text" id="t_id">
+	<input type="button" id="btn_duplicate" value="ID중복체크하기" onclick="fn_process()"><BR><BR>
+	
+	<!-- 결과를 표시할 영역 -->
+	<div id="message"></div>
+	
+</body>
+</html>

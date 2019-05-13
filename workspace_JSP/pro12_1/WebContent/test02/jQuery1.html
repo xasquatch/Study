@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 선택자 연습1</title>
+
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script type="text/javascript">
+		//웹브라우저가 jQuery1.html파일 전체 소스를 모두 로드 했을때... 이벤트 핸들러가 실행되게 선언
+		$(document).ready(function(){
+			//페이지 로드시 id가 unique2인 태그를 검색한후
+			//검색한 태그영역의 text값을 얻어 .. 경고메세지 창에 출력하기
+			alert( $("#unique2").html());
+		});
+	</script>
+
+</head>
+<body>
+		<div class="class1">안녕하세요</div>
+		<div id="unique2">제이쿼리 입니다.</div>
+		<div id="unique3">
+			<p>제이쿼리는 아주 쉽습니다!!</p>
+		</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

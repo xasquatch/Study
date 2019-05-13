@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>도서 정보 출력창</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	fn_process = function() {
+		$.ajax({
+			type:"post",
+			async:false,
+			url : "http://localhost:8090/pro16/ajaxtest2",
+			dataType : "xml", //응답받을 데이터의 타입작성
+			//전송과 응답이 성공했을 경우 작업을 설정
+			success : function(info, textStatus) { //info: 응답데이터 , textStatus : 응답데이터의 상태값 
+				//ajaxtest2서블릿으로부터 XML데이터를 응답받은 후
+				//제이쿼리의 find()메소드를 이용하여 <title>,<writer>,<image>태그 이름으로
+				//호출하여 각각의 도서 정보를 가져옵니다.
+				$(info).find("book").each(function() {
+					var title = $(this).find("title").text();
+					var writer = $(this).find("writer").text();
+					var image = $(this).find("image").text();
+					
+					//id속성값이 bookinfo인 <div>태그 영역에 도서정보를 표시합니다.
+					$("#bookInfo").append(
+							"<p>"+title+"</p>"+
+							"<p>"+writer+"</p>"+
+							"<img src="+image+"/>"
+							
+					);
+					
+				});
+				
+			},
+			error : function(data, textStatus) {
+				alert("에러발생");
+			},
+			complete : function(data, textStatus) {
+// 				alert("작업완료");
+			}
+		});
+	}
+</script>
+</head>
+<body>
+	<div id="bookInfo"></div>
+	<input type="button" value="도서정보요청" onclick="fn_process()">
+</body>
+</html>

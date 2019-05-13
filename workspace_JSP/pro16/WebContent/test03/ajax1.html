@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	fn_process = function() {
+		$.ajax({
+			type:"get",//get방식 전송
+			dataType : "text",//응답 데이터를 텍스트로 지정
+			async : false, //false인 경우 동기식으로 처리
+			//요청할 서블릿의 매핑주소를 설정
+			url : "http://localhost:8090/pro16/ajaxTest1",
+			data : {param:"Hello,jquery"},//서블릿으로 요청할 데이터 지정
+			//요청과응답이 성공했을 경우 작업을 설정하는 곳
+			success : function(data, textStatus) {
+				//서버 응답 메세지를 <div>태그 영역에 표시
+				$("#message").append(data);
+			},
+			//작업중 오류가 발생했을 경우 수행할 작업 설정
+			error : function(data, textStatus) {
+				alert("에러발생");
+			},
+			//완료시 수행할 작업을 설정합니다.
+			complete : function(data, textStatus) {
+				alert("작업완료");
+			}
+		});
+	}
+	
+</script>
+</head>
+<body>
+	<input type="button" value="전송하기" onclick="fn_process()"><BR><BR>
+	<div id="message"></div>
+	<input type="button" value="전기" onclick="fn_fetch()"><BR><BR>
+	<div id="msg"></div>
+</body>
+</html>

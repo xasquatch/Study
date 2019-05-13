@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 선택자 연습1</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	fn_process = function() {
+		var value = $("#t_input").val();
+		
+		$("#t_output").val(value);
+	}
+	
+</script>
+</head>
+<body>
+	<input type="text" id="t_input">
+	<input type="button" value="입력하기" onclick="fn_process()"><BR><BR>
+	<div>
+		결과 : <br>
+		<input type="text" id="t_output" disabled="disabled">
+	</div>
+</body>
+</html>

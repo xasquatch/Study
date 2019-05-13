@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript">
+		//추가하기 버튼을 클릭했을때 호출되는 addHtml()함수 만들기
+		function addHtml(){
+			//p태그영역을 선택해서 가져와서  "안녕하세요<br>"문자열을  p태그영역에 설정
+			$("#article").html("안녕하세요<br>");
+		}
+	
+	</script>
+</head>
+<body>
+	<div>
+		<p id="article"></p>
+	</div>
+	<input type="button" value="추가하기" onclick="addHtml()"> 
+</body>
+</html>
+
+
+
+
+

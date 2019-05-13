@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- 제이쿼리를 사용하기 위해 반드시 설정 해줄 CDN링크 -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<script type="text/javascript">
+			function fn_process(){				
+				$.ajax(
+						 {
+							type:"get", //get방식으로 전송
+							dataType:"text",//응답 데이터를 텍스트로 지정합니다.
+							async:false, //false인 경우 동기식으로 처리 합니다.
+							//요청할 서블릿의 매핑주소를 설정
+							url:"http://localhost:8090/pro12/ajaxTest1",
+					     	data:{param:"Hello,jquery"},//서블릿으로 요청할 데이터 지정
+					     	//요청과 응답이 성공 했을경우 작업을 설정 하는곳
+					     	success:function(data, textStatus){
+					     		//서버 응답 메세지를 <div>태그영역에 표시 
+					     		$("#message").append(data);
+					     	},
+					     	//작업중 오류가 발생했을때경우에 수행할 작업을 설정 합니다.
+					     	error:function(data,textStatus){
+					     		alert("에러가 발생 했습니다.");
+					     	},
+					     	//완료시 수행할 작업을 설정 합니다.
+					     	complete:function(data,textStatus){
+					     		alert("작업을 완료 했습니다.");
+					     	}						
+						 }//{ }의  }부분 
+					  );//.ajax메소드 끝 부분
+			}//fn_process()함수 닫는 부분
+	</script>
+</head>
+<body>
+	<input type="button" value="전송하기" onclick="fn_process()"> <br><br>
+	<div id="message"></div>
+
+</body>
+</html>
+
+
+
+
+
