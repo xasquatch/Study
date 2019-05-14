@@ -1,0 +1,22 @@
+package Test;
+
+import java.awt.HeadlessException;
+
+import javax.swing.JFrame;
+
+public class TestGUI extends JFrame{
+
+	
+	
+	
+	
+	public TestGUI() throws HeadlessException {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
