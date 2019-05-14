@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animal>
+	<cat>
+		<text>사자</text>
+	</cat>
+	<cat>
+		<text>호랑이</text>
+	</cat>
+</animal>
+<!-- 
+	document.xml의 구조를 살펴보면
+	최상위 노드인 animal태그 노드에 cat노드가 각각 있고,
+	각 cat노드의 하위에는 이름 프러퍼티인 text노드가 있음
+	
+ -->

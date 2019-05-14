@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//XMLHttpRequest객체를 저장할 변수 선언
+	var xhttp;
+	
+	createHttpRequest = function() {
+		xhttp = new XMLHttpRequest();
+	}
+	
+	mysend = function() {
+		createHttpRequest();//함수를 호출하여 XMLHttpRequest객체 얻기
+		//서버의 응답처리를 하기 위해 onreadystatechange프로퍼티에서는
+		//readyState프로퍼티의 반환값에 따라 자동으로 호출되는 callFunction함수를 설정
+		xhttp.onreadystatechange = callFunction;
+		
+		xhttp.open("GET","json.json",true);
+		
+		xhttp.send(null);
+		
+	}
+	
+	callFunction = function() {
+		//서버와 클라이언트간의 통신이 모두 성공적으로 완료된 시점이 readyState는 값이 4이고
+		//status프로퍼티 값이 200이면
+		if (xhttp.readyState == 4 && xhttp.status == 200) {
+			//JSON형식의 응답데이터를 받기 위해 responseText프로퍼티를 사용함
+			var responseData = xhttp.responseText;
+			
+			//eval()함수를 이용해야 텍스트형태의 응답데이터를 JSON객체로 반환한다.
+			var jsonObject = eval('(' + responseData + ')');
+			
+			//.(dat)를 사용하여 JSON객체의 name, age, address에 접근하여 value를 얻는다.
+			var name = jsonObject.username;
+			var age = jsonObject.age;
+			var address = jsonObject.address;
+		
+			document.getElementById("result").innerHTML = name + "\t" + age + "\t" + address;
+			
+		}
+	}
+	
+</script>
+</head>
+<body>
+	JSON파일 실습입니다.<BR><BR>
+	<button onclick="mysend()">파일 수신</button>
+	
+	<div id="result"></div>
+</body>
+</html>

@@ -2,28 +2,28 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="response" key="selection"/>
+		<item value="input_id" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="input_id"/>
+			<item value="userid"/>
+			<item value="sample.xml"/>
 			<item value="resp"/>
 			<item value="document.forms[1].elements"/>
 			<item value="upload"/>
 			<item value="/"/>
 			<item value="search"/>
-			<item value="최근"/>
-			<item value="totalRecord"/>
-			<item value="totalPage"/>
 		</list>
 		<list key="replacehistory">
+			<item value="input_name"/>
+			<item value="passwd"/>
+			<item value="json.json"/>
 			<item value="response"/>
 			<item value="target"/>
 			<item value="."/>
 			<item value="cnt"/>
 			<item value="th"/>
-			<item value="String"/>
-			<item value=";"/>
-			<item value="this"/>
 		</list>
 	</section>
 </section>

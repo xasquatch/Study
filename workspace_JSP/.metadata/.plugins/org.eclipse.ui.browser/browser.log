@@ -767,3 +767,19 @@
 5월 13, 2019 13:45:01.67 [3608:6500:0513/134501.674:ERROR:browser_process_sub_thread.cc(217)] Waited 43 ms for network service
 5월 13, 2019 13:46:28.41 [8668:5628:0513/134628.412:ERROR:browser_process_sub_thread.cc(217)] Waited 44 ms for network service
 5월 13, 2019 13:46:36.63 [3740:8996:0513/134636.632:ERROR:browser_process_sub_thread.cc(217)] Waited 114 ms for network service
+
+5월 14, 2019 15:18:57.84 NEW SESSION
+5월 14, 2019 15:18:57.84 [7468:8432:0514/151857.841:ERROR:browser_process_sub_thread.cc(217)] Waited 32 ms for network service
+5월 14, 2019 15:22:56.49 [1256:1700:0514/152256.494:ERROR:browser_process_sub_thread.cc(217)] Waited 27 ms for network service
+5월 14, 2019 15:38:30.17 [7020:6596:0514/153830.170:ERROR:browser_process_sub_thread.cc(217)] Waited 95 ms for network service
+5월 14, 2019 15:38:35.10 [7056:4188:0514/153835.100:ERROR:browser_process_sub_thread.cc(217)] Waited 106 ms for network service
+5월 14, 2019 15:41:03.49 [2364:6700:0514/154103.494:ERROR:browser_process_sub_thread.cc(217)] Waited 122 ms for network service
+5월 14, 2019 16:27:33.23 [300:7300:0514/162733.231:ERROR:browser_process_sub_thread.cc(217)] Waited 115 ms for network service
+5월 14, 2019 16:30:00.16 [4796:2640:0514/163000.161:ERROR:browser_process_sub_thread.cc(217)] Waited 119 ms for network service
+5월 14, 2019 17:24:29.13 [8252:6132:0514/172429.136:ERROR:browser_process_sub_thread.cc(217)] Waited 128 ms for network service
+5월 14, 2019 17:25:20.94 [5480:3292:0514/172520.944:ERROR:browser_process_sub_thread.cc(217)] Waited 160 ms for network service
+5월 14, 2019 17:32:53.60 [1696:3908:0514/173253.602:ERROR:browser_process_sub_thread.cc(217)] Waited 82 ms for network service
+5월 14, 2019 17:33:21.51 [3048:7036:0514/173321.516:ERROR:browser_process_sub_thread.cc(217)] Waited 140 ms for network service
+5월 14, 2019 17:34:21.14 [2568:7556:0514/173421.149:ERROR:browser_process_sub_thread.cc(217)] Waited 53 ms for network service
+5월 14, 2019 17:35:31.85 [3016:1772:0514/173531.854:ERROR:browser_process_sub_thread.cc(217)] Waited 128 ms for network service
+5월 14, 2019 17:35:58.11 [8500:6728:0514/173558.111:ERROR:browser_process_sub_thread.cc(217)] Waited 160 ms for network service
