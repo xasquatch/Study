@@ -783,3 +783,41 @@
 5월 14, 2019 17:34:21.14 [2568:7556:0514/173421.149:ERROR:browser_process_sub_thread.cc(217)] Waited 53 ms for network service
 5월 14, 2019 17:35:31.85 [3016:1772:0514/173531.854:ERROR:browser_process_sub_thread.cc(217)] Waited 128 ms for network service
 5월 14, 2019 17:35:58.11 [8500:6728:0514/173558.111:ERROR:browser_process_sub_thread.cc(217)] Waited 160 ms for network service
+
+5월 15, 2019 09:50:48.11 NEW SESSION
+5월 15, 2019 09:50:48.11 [5688:3896:0515/095048.099:ERROR:browser_process_sub_thread.cc(217)] Waited 152 ms for network service
+5월 15, 2019 10:14:42.89 [8308:4928:0515/101442.899:ERROR:browser_process_sub_thread.cc(217)] Waited 95 ms for network service
+5월 15, 2019 10:15:21.18 [6980:5544:0515/101521.182:ERROR:browser_process_sub_thread.cc(217)] Waited 83 ms for network service
+5월 15, 2019 10:32:34.19 [5960:6880:0515/103234.196:ERROR:browser_process_sub_thread.cc(217)] Waited 26 ms for network service
+5월 15, 2019 10:33:00.14 [7352:4316:0515/103300.146:ERROR:browser_process_sub_thread.cc(217)] Waited 88 ms for network service
+5월 15, 2019 10:39:35.54 [5188:8704:0515/103935.546:ERROR:browser_process_sub_thread.cc(217)] Waited 93 ms for network service
+5월 15, 2019 10:49:49.59 [6472:7784:0515/104949.593:ERROR:browser_process_sub_thread.cc(217)] Waited 122 ms for network service
+5월 15, 2019 10:50:03.40 [4084:4012:0515/105003.406:ERROR:browser_process_sub_thread.cc(217)] Waited 145 ms for network service
+5월 15, 2019 10:51:13.92 [2136:5960:0515/105113.923:ERROR:browser_process_sub_thread.cc(217)] Waited 44 ms for network service
+5월 15, 2019 11:03:55.24 [2344:9084:0515/110355.242:ERROR:browser_process_sub_thread.cc(217)] Waited 105 ms for network service
+5월 15, 2019 11:13:45.99 [4308:8744:0515/111345.991:ERROR:browser_process_sub_thread.cc(217)] Waited 109 ms for network service
+5월 15, 2019 11:16:46.19 [5036:5208:0515/111646.190:ERROR:browser_process_sub_thread.cc(217)] Waited 139 ms for network service
+5월 15, 2019 11:17:10.80 [5552:6160:0515/111710.806:ERROR:browser_process_sub_thread.cc(217)] Waited 99 ms for network service
+5월 15, 2019 11:17:21.04 [6944:8924:0515/111721.041:ERROR:browser_process_sub_thread.cc(217)] Waited 117 ms for network service
+5월 15, 2019 11:18:21.93 [4908:2128:0515/111821.931:ERROR:browser_process_sub_thread.cc(217)] Waited 89 ms for network service
+5월 15, 2019 11:19:30.48 [8940:5068:0515/111930.489:ERROR:browser_process_sub_thread.cc(217)] Waited 30 ms for network service
+5월 15, 2019 11:21:14.59 [2128:7996:0515/112114.595:ERROR:browser_process_sub_thread.cc(217)] Waited 112 ms for network service
+5월 15, 2019 11:21:25.93 [6240:6952:0515/112125.933:ERROR:browser_process_sub_thread.cc(217)] Waited 122 ms for network service
+5월 15, 2019 11:23:20.02 [8460:4392:0515/112320.022:ERROR:browser_process_sub_thread.cc(217)] Waited 89 ms for network service
+5월 15, 2019 11:30:35.80 [8288:3112:0515/113035.806:ERROR:browser_process_sub_thread.cc(217)] Waited 58 ms for network service
+5월 15, 2019 11:33:23.36 [848:6560:0515/113323.367:ERROR:browser_process_sub_thread.cc(217)] Waited 111 ms for network service
+5월 15, 2019 11:45:30.65 [7808:5840:0515/114530.654:ERROR:browser_process_sub_thread.cc(217)] Waited 134 ms for network service
+5월 15, 2019 12:06:55.51 [4992:6692:0515/120655.510:ERROR:browser_process_sub_thread.cc(217)] Waited 45 ms for network service
+5월 15, 2019 12:07:22.65 [5440:4236:0515/120722.651:ERROR:browser_process_sub_thread.cc(217)] Waited 109 ms for network service
+5월 15, 2019 12:28:45.51 [7688:6956:0515/122845.513:ERROR:browser_process_sub_thread.cc(217)] Waited 13 ms for network service
+5월 15, 2019 12:37:31.34 [4296:5896:0515/123731.341:ERROR:browser_process_sub_thread.cc(217)] Waited 112 ms for network service
+5월 15, 2019 12:41:39.13 [5328:8104:0515/124139.131:ERROR:browser_process_sub_thread.cc(217)] Waited 22 ms for network service
+5월 15, 2019 12:44:02.98 [5068:6484:0515/124402.979:ERROR:browser_process_sub_thread.cc(217)] Waited 123 ms for network service
+5월 15, 2019 14:10:29.45 [72:2676:0515/141029.449:ERROR:browser_process_sub_thread.cc(217)] Waited 95 ms for network service
+
+5월 15, 2019 14:52:03.05 NEW SESSION
+5월 15, 2019 14:52:03.05 [4004:8744:0515/145203.055:ERROR:CONSOLE(1247)] "Uncaught TypeError: Cannot set property 'annotationAvailable' of undefined", source: chrome://print/pdf/pdf_viewer.js (1247)
+5월 15, 2019 14:52:05.59 [4004:8744:0515/145205.591:ERROR:CONSOLE(1247)] "Uncaught TypeError: Cannot set property 'annotationAvailable' of undefined", source: chrome://print/pdf/pdf_viewer.js (1247)
+5월 15, 2019 14:52:34.02 [4004:8744:0515/145234.028:ERROR:CONSOLE(1247)] "Uncaught TypeError: Cannot set property 'annotationAvailable' of undefined", source: chrome://print/pdf/pdf_viewer.js (1247)
+5월 15, 2019 14:52:59.64 [4004:8744:0515/145259.640:ERROR:CONSOLE(1247)] "Uncaught TypeError: Cannot set property 'annotationAvailable' of undefined", source: chrome://print/pdf/pdf_viewer.js (1247)
+5월 15, 2019 14:53:13.11 [4004:8060:0515/145313.113:ERROR:browser_process_sub_thread.cc(217)] Waited 64 ms for network service

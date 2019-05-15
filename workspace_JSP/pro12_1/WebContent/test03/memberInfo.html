@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원정보출력창</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	//회원정보요청 버튼을 클릭시 호출되는 함수로 서블릿에 요청
+	fn_process = function() {
+		$.ajax({
+			type="POST",
+			url="http://localhost:8090/pro12_1/mem2",
+			dataType="xml",//응답데이터를 xml형태로 받기 위해 작성
+
+			//전송과 응답이 성공했을 때 작업을 설정합니다.
+			success= function(info,textStatus) {
+				//memberservlet의 XML데이터 <main>태그영역전체를 응답받은 후
+				//find메소드를 이용하여 <member>태그들을 배열에 담아 모두 선택한 후
+				//each메소드를 이용하여 각각의 <member>태그를 반복해서 찾는데
+				//<member>태그 영역 내부의 id,name,email,date,pwd 태그영역의 텍스트값을 얻어서 변수에 저장
+				$(info).find("member").each(function() {
+					var id = $(this).find("id").text();
+					var name = $(this).find("name").text();
+					var email = $(this).find("email").text();
+					var date = $(this).find("date").text();
+					var pwd = $(this).find("pwd").text();
+					
+// 					document.getElementById("memberInfo").innerHTML += id +"\t"+ name +"\t"+email+"\t"+date+"\t"+pwd;
+					
+					$("#memberInfo").append(
+						"<h1>검색한 회원정보출력</h1>"+	
+						"<p> id="+id +", name="+name+", email="+email+", date="+date+", pwd="+pwd+"</p>"
+						);
+				});
+			},
+			error= function(data,textStatus) {
+				alert("에러 발생");
+			}
+		});
+	}
+	
+</script>
+</head>
+<body>
+	<div id="memberInfo"></div>
+	<input type="button" value="회원정보요청" onclick="fn_process()">
+	
+</body>
+</html>
