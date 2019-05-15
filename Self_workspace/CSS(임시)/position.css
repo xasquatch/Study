@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+
+section {border: 4px dashed #ccc;
+  margin: 50px 10px;}
+
+
+  /* position: relative */
+section#sec01>* {position: relative;
+ /*현재 위치를 기준으로 자리 변경*/ }
+ 
+.rel-p {border: 1px solid;
+ width: 300px;
+ left: 650px; /*왼쪽에서 이동*/ }
+
+.rel-img {bottom:150px; /*아래에서 이동*/}
+
+.rel-div {/* border: 1px solid; */
+ width:640px; height:50px;
+ bottom: 560px;
+ background-color:rgba(0,0,0,0.7);/*색상의
+   투명도를 지정(a는 alpha. 0~1사이의 값)*/
+ color: #fff;
+ text-indent: 20px;/*글자 들여쓰기*/
+ line-height: 50px;/*행간과 영역의 높이값을
+ 같게 해서 수직으로 가운데 정렬함*/
+ font-weight: bold;
+ text-transform: capitalize;/*영문
+ 대소문자 지정(첫글자를 대문자로..)*/ }
+
+fieldset#log { width: 400px; height: 200px;}
+
+fieldset#log>* { margin: 0; 
+  padding: 0;}
+
+fieldset#log label {/* border: 1px solid; */
+ display:inline-block;
+ width: 100px;  height: 30px;}
+
+fieldset#log input {
+width: 150px;  height: 30px;	
+border: none;
+border-bottom: 3px solid #999;
+padding-left: 10px;}
+
+#pwd-box {/* border: 1px solid; */
+  	position: relative;
+  	top: 20px; }
+
+fieldset#log>button { border:none; 
+	width: 260px;	height: 30px;
+	position:relative;
+	top: 60px; } 
+
+.log { /*label과 button의 공통 스타일*/
+ background-color: #999;
+ text-align: center;
+ line-height: 30px;
+ text-transform: uppercase;
+ font-weight: bold;
+ vertical-align:bottom;
+ color: #fff; }
+
+
+
+ /* position:absolute */
+ 
+ section#sec02 {
+  position: relative;/*자식이 본인을 기준으로
+ 자리를 잡도록 설정해야하는 값 */ 
+  height: 540px; }
+ 
+ .absol-p, .absol-img, .absol-div {
+  position: absolute; }
+ 
+ .absol-p {border: 1px solid;
+   width: 250px;  height: 400px; 
+   left: 680px; }
+ 
+ .absol-img {top: 80px;
+   left: 30px;} 
+ 
+.absol-div {border: 1px solid;
+  right: 50px;
+  bottom: 0; }
+ 
+ fieldset#log2 {
+  width: 400px;  height: 250px;
+  position: relative;
+ }
+ 
+ fieldset#log2 label {/* */
+  width: 150px;  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+ }
+ 
+ fieldset#log2 input {border:none;
+  width: 200px;  height: 50px;
+  border-bottom: 2px solid #999;
+  padding-left: 10px;
+ }
+ 
+ fieldset#log2 button {
+ width: 360px; height: 50px;
+ position: absolute;
+ left: 30px;
+ bottom: 20px;
+ }
+ 
+ #id-box2 { /* border:1px solid red; */
+  position: absolute;
+  left: 30px; 
+  top: 50px;}
+  
+ #pwd-box2 {/*  border:1px solid red; */
+  position: absolute;
+  left: 30px; 
+  top: 120px;
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

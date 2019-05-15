@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+<h1><span>margin</span> : 바깥 여백</h1>
+ <a href="padding.html" class="link">padding수업 보기</a>
+
+<p class="text">     요소의 테두리(border)를 기준으로 
+ 바깥에 생기는 4방향의 여백을      margin이라 함.
+ 요소의 위치에 변화가 생긴다.
+</p>
+
+<p class="text">
+ block요소 자체를 수평으로 항상 가운데 정렬하려면
+  <b>좌우 margin의 값을 auto</b>로 지정한다.
+</p>
+
+
+
+ <h2>margin-(top/right/bottom/left)</h2>
+<ol id="ol01">
+ <li class="mt">margin-top : 위쪽 바깥 여백</li>
+ <li class="mr">margin-right : 오른쪽 바깥 여백</li>
+ <li class="mb">margin-bottom : 아래쪽 바깥 여백</li>
+ <li class="ml">margin-left : 왼쪽 바깥 여백</li>
+</ol>
+
+
+<h3>inline요소에서의 margin 적용</h3>
+<p class="text">inline요소 즉, 줄이 바뀌지 않는 요소들은
+ margin이 상하 방향은 적용되지 않고 
+  좌우는 적용된다.
+</p>
+
+<p id="p1">
+ <span class="sp01">span-1</span>
+ <span class="sp02">span-2</span>
+ <span class="sp03">span-3</span>
+ <span class="sp04">span-4</span>
+ 
+ <b class="sp01 sp02 sp03 sp04">b </b>
+</p>
+
+<h2>margin:n/n n/n n n n</h2>
+
+ <p class="m1">margin:100px;</p>
+ <p class="m2">margin:0 100px;</p>
+ <p class="m3">margin:100px 0;</p>
+ <p class="m4">margin:0 100px 150px 200px;</p>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
+
+
+
