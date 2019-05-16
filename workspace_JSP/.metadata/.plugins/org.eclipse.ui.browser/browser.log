@@ -821,3 +821,8 @@
 5월 15, 2019 14:52:34.02 [4004:8744:0515/145234.028:ERROR:CONSOLE(1247)] "Uncaught TypeError: Cannot set property 'annotationAvailable' of undefined", source: chrome://print/pdf/pdf_viewer.js (1247)
 5월 15, 2019 14:52:59.64 [4004:8744:0515/145259.640:ERROR:CONSOLE(1247)] "Uncaught TypeError: Cannot set property 'annotationAvailable' of undefined", source: chrome://print/pdf/pdf_viewer.js (1247)
 5월 15, 2019 14:53:13.11 [4004:8060:0515/145313.113:ERROR:browser_process_sub_thread.cc(217)] Waited 64 ms for network service
+
+5월 16, 2019 17:39:33.47 NEW SESSION
+5월 16, 2019 17:39:33.47 [2684:4076:0516/173933.477:ERROR:browser_process_sub_thread.cc(217)] Waited 101 ms for network service
+5월 16, 2019 17:40:18.67 [532:7876:0516/174018.671:ERROR:browser_process_sub_thread.cc(217)] Waited 118 ms for network service
+5월 16, 2019 17:41:45.39 [4024:1156:0516/174145.394:ERROR:browser_process_sub_thread.cc(217)] Waited 110 ms for network service
