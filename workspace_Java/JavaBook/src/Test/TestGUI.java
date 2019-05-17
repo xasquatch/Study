@@ -4,15 +4,11 @@ import java.awt.HeadlessException;
 
 import javax.swing.JFrame;
 
-public class TestGUI extends JFrame{
+public class TestGUI extends JFrame {
 
-	
-	
-	
-	
 	public TestGUI() throws HeadlessException {
-		
-		setTitle("Jframe");
+
+		setTitle("ºé½Ã³ª");
 		setSize(300, 150);
 		setVisible(true);
 	}
