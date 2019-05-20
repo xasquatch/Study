@@ -32,8 +32,5 @@ public class K1905201116{
         K1905201116 k = new K1905201116();
         k.setting();
         k.insertKey();
-        
-
-
     }
 }
