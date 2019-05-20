@@ -1,0 +1,437 @@
+@CHARSET "UTF-8";
+
+/* board Page */
+header {
+	border-bottom: 1px solid #ccc;
+}
+
+#logo {
+	width: 140px;
+	margin-top: 8px;
+}
+
+#search_option {
+	margin: 10px 0 0 20px;
+	padding-bottom: 10px;
+}
+
+#search_option #search_option_btn {
+	color: #333;
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 15px;
+	margin: 5px 0;
+	background-image: url("../images/Arrow-Down.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 10px 15px;
+}
+
+#search_option #search_option_btn:HOVER {
+	color: #00acbf;
+	text-decoration: underline;
+}
+
+#search_option #options {
+	border: 1px solid #ccc;
+	display: none;
+	height: 200px;
+	padding: 10px 20px;
+}
+
+#search_option #options .options {
+	float: left;
+	margin: 10px 15px;
+}
+
+#search_option #options .options h3 {
+	float: left;
+}
+
+#search_option #options .options .more_options {
+	display: inline-block;
+	margin: 15px 0 0 15px;
+	color: #888;
+	text-decoration: none;
+}
+
+#search_option #options .options .price {
+	width: 70px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+/* item-list */
+#item_lists .item_list {
+	margin: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#item_lists .item_list span {
+	display: inline-block;
+}
+
+#item_lists .item_list .item_img {
+	float: left;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+#item_lists .item_list .item_img img {
+	width: 300px;
+}
+
+#item_lists .item_list .item_info {
+	float: left;
+	margin: 10px 20px;
+}
+
+#item_lists .item_list .item_info .title {
+	margin-bottom: 15px;
+	width: 600px;
+}
+
+#item_lists .item_list .item_info .title a {
+	color: #0080c0;
+	text-decoration: none;
+}
+
+#item_lists .item_list .item_info .left_time {
+	float: right;
+	margin-right: 130px;
+	font-size: 18px;
+}
+
+#item_lists .item_list .item_info .bidder, #item_lists .item_list .item_info .area {
+	font-size: 14px;
+	margin: 5px 0;
+}
+
+#no_content {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 50px;
+}
+
+#board_btns {
+	margin: 10px 0;
+	float: right;
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid #009bae;
+	background-color: #fff;
+	color: #009bae;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.btn:ACTIVE {
+	background-color: #ddd;
+}
+
+#editor_div {
+	margin-top: 30px;
+}
+
+#page {
+	margin: 5px auto 40px auto;
+	width: 300px;
+	font-size: 13px;
+	text-align: center;
+}
+
+#page a {
+	margin: 0 10px;
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* editor(sell) Page */
+#editor_top2 {
+	margin-bottom: 50px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+#editor_top2 #main_img_div {
+	float: left;
+}
+
+#editor_top2 #main_img_div #main_img {
+	width: 350px;
+	border: 1px solid #ccc;
+}
+
+#editor_top2 #main_img_div #main_img p {
+	text-align: center;
+	font-size: 15px;
+	padding: 100px 0;
+}
+
+#editor_top2 #main_img_div #main_img img {
+	width: 350px;
+}
+
+#editor_top2 #main_img_div button {
+	width: 351px;
+}
+
+#sell_options {
+	font-size: 13px;
+	float:left;
+	margin: 0 20px;
+}
+
+#sell_options th {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+}
+
+#sell_options td input[type="date"] {
+	width: 115px;
+	font-size: 11px;
+}
+
+#sell_options td #start_minute {
+	width: 40px;
+}
+
+#sell_options td #buyItNow_price, #sell_options td #bidding_price {
+	width: 100px;
+}
+
+
+#editor_top2 #map_div {
+	border: 1px solid #ccc;
+	width: 330px;
+	height: 270px;
+	float: left;
+	margin-left: 10px;
+}
+
+#editor_top2 #map_div #sample5_address {
+	width: 247px;
+	height: 18px;
+}
+
+#editor_top2 #map_div #detail_address {
+	width: 328px;
+	height: 18px;
+}
+
+#editor_top2 #map {
+	width: 330px;
+	height: 220px;
+}
+
+#editor_top {
+	margin: 10px;
+}
+#editor_top label {
+	font-size: 14px;
+}
+
+#editor_top #title {
+	width: 400px;
+	padding: 2px 5px;
+}
+
+#editor_top select {
+	height: 24px;
+}
+
+#editor_top #select_cate:SELECT {
+	background-color: red;
+}
+
+#editor_submit {
+	text-align: center;
+	margin: 20px 10px;
+	padding: 20px 0;
+	border-top: 1px solid #ccc;
+}
+
+#editor_submit input, #editor_submit button {
+	width: 80px;
+	margin: 0 10px;
+}
+
+/* content.jsp */
+#status {
+	width: 100%;
+	height: 25px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.con_btn {
+	margin: 0 0 10px 15px;
+	float: right;
+}
+
+#mainBoard {
+	border: 8px solid #00acbf;
+	border-radius: 10px;
+	box-shadow: 4px 4px 2px #aaa;
+	min-height: 600px;
+	margin: 20px 0;
+}
+
+#mainBoard #board_info {
+	margin: 5px 10px;
+	padding: 5px;
+	border-bottom: 1px dashed #00acbf;
+}
+
+#mainBoard #board_info #title {
+	font-weight: bold;
+}
+
+#mainBoard #board_info #start_time {
+	float: right;
+}
+
+#mainBoard #writer, #mainBoard #area {
+	margin: 10px 15px;
+	font-weight: bold;
+	float: left;
+}
+
+#mainBoard #main_img {
+	width: 400px;
+	float: left;
+}
+
+#mainBoard #main_img img {
+	width: 400px;
+}
+
+#mainBoard #imgAndBid {
+	border: 4px double #00acbf;
+	margin: 25px 20px;
+}
+
+#mainBoard #main_img {
+	margin: 10px 0 10px 15px;
+	border: 1px solid #ddd;
+}
+
+#mainBoard #bid_div {
+	float: left;
+	margin: 5px 0 0 70px;
+}
+
+#mainBoard #bid_div .price {
+	margin-top: 15px;
+}
+
+#mainBoard #bid_div .bidder {
+	color: #00f;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#mainBoard #bid_div .bidder:HOVER {
+	text-decoration: underline;
+}
+
+#mainBoard #bid_div #bidder_list {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 370px;
+	height: 330px;
+	padding: 5px 15px;
+	margin-left: 80px;
+	overflow: auto;
+	display: none;
+}
+
+#mainBoard #bid_div #bidder_list h3 {
+	border-bottom: 1px dashed #00acbf;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 10px 0;
+	font-size: 18px;
+}
+
+#mainBoard #bid_div #bidder_list table {
+	width: 100%;
+	margin-top: 20px;
+	font-size: 13px;
+}
+
+#mainBoard #bid_div #bidder_list th, #mainBoard #bid_div #bidder_list td {
+	text-align: left;
+	padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#mainBoard #bid_div #bidder_list #start_bid {
+	font-weight: bold;
+}
+
+#mainBoard #bid_div input {
+	display: block;
+}
+
+#mainBoard #bid_div input[type="text"] {
+	width: 335px;
+	height: 25px;
+	margin: 5px 0;
+	padding: 0 5px;
+	font-size: 13px;
+}
+
+#mainBoard #bid_div input[type="submit"] {
+	width: 350px;
+	height: 40px;
+	margin: 10px 0;
+	background-color: #009bae;
+	border: 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0.5em;
+	cursor: pointer;
+}
+
+#mainBoard #bid_div #left_time {
+	font-weight: bold;
+	font-size: 13px;
+	color: #f00;
+	margin-bottom: 10px;
+	float: right;
+}
+
+#mainBoard #content {
+	margin: 50px 20px;
+}
+
+#mainBoard #map_div {
+	margin: 0 0 20px 20px;
+	float: left;
+}
+
+#mainBoard #map_div a {
+	color: #000;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#mainBoard #map_div #map {
+	width: 400px; 
+	height: 300px; 
+	border: 1px solid #ddd;
+	margin-top: 5px;
+}

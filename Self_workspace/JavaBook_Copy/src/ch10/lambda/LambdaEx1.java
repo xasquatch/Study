@@ -15,16 +15,16 @@ public class LambdaEx1 {
 			
 			@Override
 			public void methodA() {
-				System.out.println("ÀÍ¸íÀÇ ³»ºÎ Å¬·¡½º ÇüÅÂ");
+				System.out.println("ï¿½Í¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 				
 			}
 		});
 		
 		useFIMethod(() ->{
-			System.out.println("¶÷´Ù½ÄÀÌ¿ë1");
+			System.out.println("ï¿½ï¿½ï¿½Ù½ï¿½ï¿½Ì¿ï¿½1");
 		});
 		
-		useFIMethod(()->System.out.println("¶÷´Ù½Ä ÀÌ¿ë2"));
+		useFIMethod(()->System.out.println("ï¿½ï¿½ï¿½Ù½ï¿½ ï¿½Ì¿ï¿½2"));
 		
 	}
 

@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+/* 회원 가입 */
+#join_test { width:1300px; margin:0 auto; }
+#join_test h2 { margin:10px 0 30px 0; padding-bottom:5px; font-size:14px; font-weight:bold; color:#434343; border-bottom:3px solid #3a4452; }
+#join_test .box-wrap { width:70%; margin:0 auto; }
+#join_test .join-form { margin-bottom:12px; border-top:1px solid #dadada; border-left:1px solid #dadada; }
+#join_test .join-form li { position:relative; height:49px; line-height:49px; padding:0 23px; border-right:1px solid #dadada; border-bottom:1px solid #dadada; background:#fff; color:#000; }
+#join_test .join-form li label { font-size:14px; font-weight:bold; }
+#join_test .join-form li .txt-input { position:absolute; top:0; left:23px; width:300px; height: 49px; line-height:49px; padding:0; margin:0; font-size: 14px; font-weight: bold; color:#000; border: 0; opacity: 0; filter: alpha(opacity=0); }
+#join_test .join-form li .input-radio { width:14px; height:14px; margin:0; margin-top:-2px; padding:0; vertical-align:middle; }
+#join_test .join-form li .btn { display:block; position:absolute; top:6px; right:8px; width:83px; height:34px; line-height:36px; font-size:14px; font-weight:bold; color:#fff; text-align:center; }
+#join_test .join-form li.birth:after { clear:both; display:block; content:''; }
+#join_test .join-form li.birth { *z-index:2; line-height:51px; }
+#join_test .join-form li.birth .birth_txt { width:150px; margin-left:0px; font-size:13px; font-weight:bold; text-align:left; color: #0549bb; padding-bottom: 5px; } 
+#join_test .join-form li.birth dl dd { position:relative; float:left; width:100px; margin-left:10px; font-size:14px; font-weight:bold; }
+#join_test .join-form li.birth dl dd:first-child { width:100px; margin-left:0; }
+#join_test .join-form li.birth dl.type2 ul li { margin:0; padding:0; border:0; }
+#join_test .join-form li.birth dl.type2 ul li .txt-input { left:0; width:90%; }
+#join_test .join-form li.gender {}
+#join_test .join-form li.gender label { margin-right:30px; }
+#join_test .join-msg li label { font-size:14px; font-weight:bold; }
+#join_test .join-msg li { height:18px; line-height:18px; padding-left:2px; color:#999; }
+#join_test .bottom-btn { padding:40px 0; text-align:center; }
+#join_test .bottom-btn a { display:block; height:58px; line-height:62px; margin:0 auto; font-weight:bold; color:#fff; font-size:24px; text-align:center; letter-spacing:-1px; }
+
+#aside { overflow: hidden; width: 174px; margin-right: 10px; }
+#aside .snb-w, 
+#aside .shop-cate, 
+#aside .community,
+#aside .cs-center { margin-bottom: 10px; }
+#aside .snb-w, 
+#aside .shop-cate, 
+#aside .community { border: 1px solid #dbdbdb; } 
+#aside .cs-center { border: 1px solid #c3e1dc; }
+#aside .hd { width: 150px; height: 30px; line-height: 30px; padding-left: 20px; font-size: 13px; font-weight: bold; letter-spacing: -1px; }
+#aside .snb-w .hd,
+#aside .shop-cate .hd,
+#aside .community .hd { color: #717171; background-color: #efefef; border: 1px solid #fff; }
+#aside .cs-center .hd { color: #fff; background-color: #c3e1dc; border: 1px solid #d8ebe8; }
+#aside .snb { padding: 10px 0 20px; border-top: 1px solid #dbdbdb; }
+#aside .snb li { padding: 5px 0 5px 20px; word-wrap: break-word; background: url(/images/d3/peppermint/common/bul_sqr_h3.gif) no-repeat 10px 45%; }
+#aside .snb li a:hover { color: #a1c4c3; }
+#aside .snb-w .snb li { padding: 5px 0 5px 10px; background: none; }
+#aside .snb-cs { padding: 10px 0 10px 20px; border-top: 1px solid #c3e1dc; font-size: 11px; }
+#aside .snb-cs .phone { color: #715b50; font-family: Tahoma; font-size: 14px; }
+#aside .snb-cs .work { margin-top: 10px; color: #999; }
+#aside .snb-cs .email { display: inline-block; margin-top: 5px; }
+#aside .snb-cs .email a { color: #aad2cb; }
+#aside .snb-bank { padding: 10px 0 10px 20px; background: url(/images/d3/peppermint/common/bg_line_dotted_h1.gif) repeat-x 0 0; color: #999; font-size: 11px; }
+#aside .snb-bank em { display: inline-block; padding-bottom: 5px; color: #abcac5; font-family: Tahoma; font-size: 12px; font-weight: bold; }
+
+
+/* 버튼 */
+.new-btn-area { text-align: center; margin:30px 0 0; padding-bottom:30px; border-bottom:1px solid #ececec; }
+.new-btn-area input { display:block; width:234px; height:64px; line-height:66px; margin:0 auto; font-size:22px; font-weight:bold; color:#fff; background:#0549bb; border:1px solid #053688; }
+
+.buttonlogin {
+	height: 35px;
+	width: 270px;
+	margin: 10px 0 0;
+}
+
+.buttonlogin a span {
+	width: 100%;
+	line-height: 35px;
+	padding: 10px 0;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 0.5px;
+}
+
+.btnlogin {
+	display: inline-block;
+	border: 1px solid #ddd;
+	margin: 5px 2px;
+	background: #f2f2f2;
+	color: #333;
+	font-family: Tahoma, 'Roboto', 'arial';
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.btnlogin:hover {
+	background: #333;
+	border: 1px solid #fff;
+	color: #fff;
+}

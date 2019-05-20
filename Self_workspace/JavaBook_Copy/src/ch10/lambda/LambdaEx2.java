@@ -7,14 +7,14 @@ interface FunctionalInterface2{
 
 public class LambdaEx2 {
 	public static void useFIMethod(FunctionalInterface2 fi) {
-		fi.methodB("È«±æµ¿");
+		fi.methodB("È«ï¿½æµ¿");
 	}
 	
 	public static void main(String[] args) {
 		useFIMethod((String msg)->{
-			System.out.println("¶÷´Ù½Ä ÀÌ¿ë1: "+msg);
+			System.out.println("ï¿½ï¿½ï¿½Ù½ï¿½ ï¿½Ì¿ï¿½1: "+msg);
 		});
-		useFIMethod(msg->System.out.println("¶÷´Ù½Ä ÀÌ¿ë2: "+msg ));
+		useFIMethod(msg->System.out.println("ï¿½ï¿½ï¿½Ù½ï¿½ ï¿½Ì¿ï¿½2: "+msg ));
 		
 		
 	}

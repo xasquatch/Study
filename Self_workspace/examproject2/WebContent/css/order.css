@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+input {
+	line-height: normal;
+}
+.line {
+	/* border-top: 1px solid lightgray; */
+	border-left: 1px solid lightgray;
+	padding: 0 15px;
+	font-family: inherit;
+	font-size: 13px;
+}
+.left_line {
+	border-left: 1px solid lightgray;
+	padding: 0 20px;
+	font-family: inherit;
+	font-size: 13px;
+}

@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+section {
+	width: 1000px;
+	margin-left: 300px;
+	padding-right: 30px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em
+}
+/*정렬 오른쪽 너비 660px 안오른쪽여백 30px
+글자체Verdana,Geneva,sans-serif 글자크기1em 
+줄간격1.5em */
+article h1 {
+	font-family: "Times New Roman";
+	font-size: 45px;
+	color: #CCC;
+	margin: 20px 0;
+	font-weight: normal;
+} /*글자체 Times New Roman 글자크기 45px
+글자색 #CCC 밖여백20px 0  글자굵기 normal*/
+article p {
+	padding-left: 10px
+} /*안왼쪽여백 10px*/
+figure.ceo {
+	float: right;
+	margin: 5px;
+} /*정렬 오른쪽 밖여백 5px*/
+figcaption {
+	text-align: center;
+	color: #39F
+}
+/*글자정렬 가운데 글자색 #39F*/
+.clear {
+	clear: both;
+}
+/*------------------*/
+#sub_img_center {
+	width: 971px;
+	height: 179px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/*너비 971 높이179 
+배경이미지 images/center/sub_back.png
+반복 no 위치left top */
+table#notice {
+	width: 670px;
+	border-collapse: collapse;
+}
+
+table#notice td {
+	text-align: center;
+	padding: 6px 0;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999
+}
+/*글자정렬 center
+안여백 6px 0 테두리아래너비 1px 테두리아래스타일dotted
+테두리아래색 #999*/
+table#notice td.left {
+	text-align: left;
+}
+/*글자정렬 left*/
+th.tno {
+	width: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+} /*너비 50px 
+왼쪽위 둥글게5px 왼쪽아래 둥글게5px*/
+th.ttitle {
+	width: 400px;
+	letter-spacing: 0.7em
+}
+/*너비 400px 문자간격 0.7em*/
+th.twrite {
+	width: 100px;
+}
+/*너비 100px*/
+th.tdate {
+	width: 50px;
+}
+/*너비 50px*/
+th.tread {
+	width: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*너비 50px 
+오른쪽위 둥글게5px 오른쪽아래 둥글게5px*/
+#table_search {
+	margin: 15px 0 10px 0;
+}
+/*밖여백 15px 0 10px 0 정렬 right*/
+#table_search .input_box {
+	height: 20px;
+	width: 200px;
+	border-radius: 10px;
+	background-color: #FEFDED;
+	border: 1px solid #333
+}
+#table_search .btn {
+	display: inline-block;
+	*display: inline;
+	padding: 4px 4px;
+	height: 25px;
+	line-height: 15px;
+	background-color: #636363;
+	border: 1px solid #EFEFEF;
+	color: #fff;
+	text-decoration: none;
+	font-size: 10pt;
+	font-family: 'Nanum Gothic', 돋움;
+	letter-spacing: 0px;
+}
+#table_search .btn:hover {
+	background-color: #000;
+	border: 1px solid #EFEFEF;
+	color: #fff;
+}
+#page_control {
+	text-align: center;
+	margin: 20px 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*글자정렬 center 밖여백 20px 0 0 0
+밖여백오른쪽 auto 밖여백왼쪽 auto*/
+#page_control a {
+	padding: 2px 5px;
+	text-decoration: none;
+	color: #333;
+	margin: 0 5px;
+}
+/*안여백 2px 5px 밑줄 none 글자색#333 밖여백 0 5px*/
+#page_control a:hover {
+	font-weight: bold;
+	color: #F90;
+	text-decoration: underline;
+}
+/*글자굵기bold 글자색#F90 밑줄 underline*/
+table#notice tr:hover {
+	background-color: #EEFDFF;
+	cursor: pointer;
+	cursor: hand;
+}

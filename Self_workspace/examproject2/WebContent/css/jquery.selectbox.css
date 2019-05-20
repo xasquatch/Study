@@ -1,0 +1,115 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	border: solid 1px #d4d4d4;
+	font-family: dutum, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	height: 38px;
+	position: relative;
+	width: 100%;
+	margin-top:4px;
+	_position:absolute;
+	_top:0;
+	_left:0;
+	_height:143px;
+	_padding-top:38px;
+	_overflow-y:auto;
+	_border:0;
+	_border-top: solid 1px #d4d4d4;
+}
+.sbHolder:focus .sbSelector{
+}
+.sbSelector{
+	display: block;
+	height: 38px;
+	left: 0;
+	line-height: 38px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 100%;
+	font-size: 14px;
+	_border-left: solid 1px #d4d4d4;
+	_border-bottom: solid 1px #d4d4d4;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+	color: #000;
+	outline: none;
+	text-decoration: none;
+}
+.sbToggle{
+	background: url(../images/d3/modern_simple/btn/select-icons.png) 0 -114px no-repeat;
+	display: block;
+	height: 38px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 38px;
+	_border-right: solid 1px #d4d4d4;
+}
+.sbToggle:hover{
+	background: url(../images/d3/modern_simple/btn/select-icons.png) 0 -165px no-repeat;
+}
+.sbToggleOpen{
+	background: url(../images/d3/modern_simple/btn/select-icons.png) 0 -14px no-repeat;
+}
+.sbToggleOpen:hover{
+	background: url(../imgages/d3/modern_simple/btn/select-icons.png) 0 -64px no-repeat;
+}
+.sbHolderDisabled{
+	background-color: #fff;
+	border: solid 1px #d4d4d4;
+}
+.sbHolderDisabled .sbHolder{
+	
+}
+.sbHolderDisabled .sbToggle{
+	
+}
+.sbOptions{
+	background-color: #fff;
+	border: solid 1px #d4d4d4;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+	max-height:105px !important;
+	_left:0;
+}
+.sbOptions li{
+	height:20px !important;
+	line-height:20px !important;
+	padding: 5px 0 5px 10px !important;
+	border:none !important;
+}
+.sbOptions a{
+	display: block;
+	outline: none;
+}
+.sbOptions a:link, .sbOptions a:visited{
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+	color: #000;
+}
+.sbOptions li.last a{
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+}
+.sbOptions .sbGroup{
+}
+.sbOptions .sbSub{
+}

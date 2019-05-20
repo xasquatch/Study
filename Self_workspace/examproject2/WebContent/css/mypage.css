@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+.myshopMain {
+	overflow: hidden;
+	width: 800px;
+	text-align: center;
+	border-left: 1px solid #ddd;
+	margin: 0px auto;
+	border-top: 1px solid #ddd;
+	margin-bottom: 70px;
+}
+
+.myshopMain .shopMain {
+	float: left;
+	width: 399px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.myshopMain .shopMain:hover {
+	background: #E9E9E9;
+}
+
+.myshopMain .shopMain .tit {
+	color: #333;
+	display: block;
+	padding: 25px 20px;
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.myshopMain .shopMain .info {
+	display: block;
+	padding: 20px 0 22px 30px;
+	font-size: 11px;
+	font-family: 'nanumgothic', dotum;
+	color: #999;
+}
+
+.myshopMain .shopMain a {
+	display: block;
+	font-size: 10px;
+	text-decoration: none;
+}
