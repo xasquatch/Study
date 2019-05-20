@@ -1,0 +1,7 @@
+package Test;
+
+public class ClickAndDoubleClickEx extends JFrame {
+	JPanel contentPane = new JPanel();
+	
+	
+}

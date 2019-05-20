@@ -1,0 +1,2086 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DoubleDDD<DoubleD>",
+            "request": "launch",
+            "mainClass": "DoubleDD.DoubleDDD",
+            "projectName": "DoubleD"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Student<JAVAEX>",
+            "request": "launch",
+            "mainClass": "Javaex1.Student",
+            "projectName": "JAVAEX"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ScannerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.input.ScannerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BooleanTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.BooleanTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CharTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.CharTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DateFormating<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.DateFormating",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Declaration<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.Declaration",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FloatTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.FloatTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Formatting<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.Formatting",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IntegerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.IntegerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NamingConvention<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.NamingConvention",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TypeCastingTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch02.variable.TypeCastingTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Arithmetic<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.arithmetic.Arithmetic",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InfinityNan<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.arithmetic.InfinityNan",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OverFlowAndCasting<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.arithmetic.OverFlowAndCasting",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Assign<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.assign.Assign",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BitLogical<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.bit.BitLogical",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BitMask<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.bit.BitMask",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShiftOperation<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.bit.ShiftOperation",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CompareOperator<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.compare.CompareOperator",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LogicalOperator<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.logical.LogicalOperator",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShortCircuit<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.logical.ShortCircuit",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MonadicCasting<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.monadic.MonadicCasting",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MonadicOperation<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.monadic.MonadicOperation",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IntegerProblem<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch03.operator.IntegerProblem",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DayByMonthTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.condition.DayByMonthTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IfElseIfTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.condition.IfElseIfTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IfElseTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.condition.IfElseTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Nestedif<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.condition.Nestedif",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchNoBreak<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.condition.SwitchNoBreak",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchSimple<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.condition.SwitchSimple",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BreakTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.BreakTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ContinueTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.ContinueTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Dowhile<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.Dowhile",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GuguQuiz<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.GuguQuiz",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LabelTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.LabelTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NestedForTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.NestedForTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProductManagerClient<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.ProductManagerClient",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.Test",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableFor1<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.TimesTableFor1",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableWhile1<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.TimesTableWhile1",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableWhile2<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch04.loop.TimesTableWhile2",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ArrayCopy<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.ArrayCopy",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IteratorFor<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.IteratorFor",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LottoGeneratorByArray<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.LottoGeneratorByArray",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainParam<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.MainParam",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainParam2<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.MainParam2",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrintArray<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.PrintArray",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Sorting<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.advanced.Sorting",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BoundsTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.basic.BoundsTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InitArrayTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.basic.InitArrayTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleArray<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.basic.SimpleArray",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTable2Dim<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.basic.TimesTable2Dim",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableArrayTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.basic.TimesTableArrayTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleInitTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.multi.SimpleInitTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VariableLegnthArray<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch05.multi.VariableLegnthArray",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DefaultPerson<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.constructor.DefaultPerson",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LoginTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.login.LoginTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CallByTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.method.CallByTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MethodCallStack<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.method.MethodCallStack",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VariableArgsTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.method.VariableArgsTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WalkTestBad<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.overloading.WalkTestBad",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WalkTestGood<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.overloading.WalkTestGood",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PersonTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.person.PersonTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VariableTypes<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch06.person.VariableTypes",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ScopeTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.extend.ScopeTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SpiderManTest2<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.extend.SpiderManTest2",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StaticImportTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.imp.StaticImportTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BlankFinalTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.modifier.BlankFinalTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SingletonTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.modifier.SingletonTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-unbelievableTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.modifier.encapsulation.unbelievableTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Parentset<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.modifier.p1.Parentset",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InstanceOfTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.poly.InstanceOfTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PhoneTestsel1<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.poly.PhoneTestsel1",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PolymorphismTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.poly.PolymorphismTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrintObject<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch07.poly.PrintObject",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CarTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.abs.bad.CarTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VehicleTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.abs.good.VehicleTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VehicleTest<JavaBook_Copy>(1)",
+            "request": "launch",
+            "mainClass": "ch08.abs.middle.VehicleTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<JavaBook_Copy>(1)",
+            "request": "launch",
+            "mainClass": "ch08.annotation.Test",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CustomMethodTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.enume.CustomMethodTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EnumMethodTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.enume.EnumMethodTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GradEnumTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.enume.GradEnumTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InnerEnumTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.enume.InnerEnumTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UseConstructorTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.enume.UseConstructorTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-seasonEnumTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.enume.seasonEnumTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ExtendsTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.generic.type.ExtendsTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GenericBoxTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.generic.type.GenericBoxTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MartTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.generic.type.MartTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NormalBoxTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.generic.type.NormalBoxTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TypeParameterMethod<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.generic.type.TypeParameterMethod",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WildTypeTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.generic.type.WildTypeTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IronMan<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.inter.IronMan",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DefaultMethodTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.inter.method.DefaultMethodTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StaticMethod<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.inter.method.StaticMethod",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrintClientTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.inter.printer.PrintClientTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RelationTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch08.inter.relation.RelationTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BigException<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.BigException",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CheckedThrowsTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.CheckedThrowsTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CloseResourceTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.CloseResourceTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OverridingTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.OverridingTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RuntimeThrowsTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.RuntimeThrowsTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UseInstallTool<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.UseInstallTool",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UserManagerWithException<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.UserManagerWithException",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DifficultLogic<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.debugging.DifficultLogic",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleLogging<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.logging.SimpleLogging",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleLoggingFile<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch09.exception.logging.SimpleLoggingFile",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LambdaEx1<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.LambdaEx1",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LambdaEx2<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.LambdaEx2",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LambdaEx3<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.LambdaEx3",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VariableUseTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.VariableUseTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PredicateComposeTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.composing.PredicateComposeTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConsumerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.functional.ConsumerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FunctionTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.functional.FunctionTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PredicateTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.functional.PredicateTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SupplierTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.functional.SupplierTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConstructorReference<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.ref.ConstructorReference",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MethodReference2<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.ref.MethodReference2",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MethodReference3<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.lambda.ref.MethodReference3",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AnonymousInnerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.nested.AnonymousInnerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DuplicatedNameTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.nested.DuplicatedNameTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InstanceInnerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.nested.InstanceInnerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LocalInnerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.nested.LocalInnerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StaticInnerTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.nested.StaticInnerTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VariousInnerClassTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch10.nested.VariousInnerClassTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CustomCloneTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.object.CustomCloneTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EqualsTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.object.EqualsTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GetClassTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.object.GetClassTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HashCodeTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.object.HashCodeTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ImmutaleClass<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.string.ImmutaleClass",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NewStringTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.string.NewStringTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Trim$Regexp<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.string.Trim$Regexp",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UseIndex$EqualsTest$MaskingTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.string.UseIndex$EqualsTest$MaskingTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringbuilderTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.stringbuilder.StringbuilderTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BasicIO<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.system.BasicIO",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProcessManageTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.system.ProcessManageTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PropertyTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.system.PropertyTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SystemClockTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch11.system.SystemClockTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MemoryIOTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.array.MemoryIOTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InputStareamTest2<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.basic.InputStareamTest2",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InputStreamTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.basic.InputStreamTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OutputStreamTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.basic.OutputStreamTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReaderTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.basic.ReaderTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WriterTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.basic.WriterTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CopyTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.file.CopyTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EditFileTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.file.EditFileTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FileTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.file.FileTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UseFileTest<JavaBook_Copy>",
+            "request": "launch",
+            "mainClass": "ch15.nod.file.UseFileTest",
+            "projectName": "JavaBook_Copy"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DuplicatedNameTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter10.DuplicatedNameTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InstanceInnerTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter10.InstanceInnerTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LocalInnerTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter10.LocalInnerTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SomeClass<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter10.SomeClass",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter10.Test",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CustomCloneTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter11.CustomCloneTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GetClassTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter11.GetClassTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HashCodeTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter11.HashCodeTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SystemClockTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter11.SystemClockTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RegexpTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter12.RegexpTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringTokenizerTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter12.StringTokenizerTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ArrayListTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.ArrayListTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HashSetTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.HashSetTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ListLottoTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.ListLottoTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PhoneTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.PhoneTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ProPertyTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.ProPertyTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PropertiesTestWithFile<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.PropertiesTestWithFile",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleTreeSetTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter13.SimpleTreeSetTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Account<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.Account",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DaemonThreadTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.DaemonThreadTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InterruptTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.InterruptTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JoinTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.JoinTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PriorityTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.PriorityTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleThreadTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.SimpleThreadTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SleepTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.SleepTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StopTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.StopTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SynchronizedAccount<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.SynchronizedAccount",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test1<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.Test1",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestThread<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.TestThread",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UITHreadTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.UITHreadTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-YieldTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter14.YieldTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BufferTextTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter15.BufferTextTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DataStreamTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter15.DataStreamTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FileChannelTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter15.FileChannelTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FormCollectionTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter16.FormCollectionTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FromFile<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter16.FromFile",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<JavaBook>(1)",
+            "request": "launch",
+            "mainClass": "Chapter16.Test",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ArithmeticOperatorTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.ArithmeticOperatorTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BooleanTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.BooleanTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CharTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.CharTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DataFormatting<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.DataFormatting",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Declaraton<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.Declaraton",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FloatTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.FloatTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Formatting<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.Formatting",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InegerTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.InegerTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IntegerProblem<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.IntegerProblem",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Naming<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.Naming",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ScannerTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.ScannerTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TypeCastingTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.TypeCastingTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-chap2<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.chap2",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-tq<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter2.tq",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BitLogical<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.BitLogical",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BitMast<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.BitMast",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CompareOperator<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.CompareOperator",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LogicalOperator<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.LogicalOperator",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ModadicCasting<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.ModadicCasting",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShiftOperation<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.ShiftOperation",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-infinityNaN<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.infinityNaN",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-logical<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.logical",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-monadic<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter3.monadic",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DayByMonthTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.DayByMonthTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IfElseTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.IfElseTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NestedForTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.NestedForTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchNoBreak<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.SwitchNoBreak",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SwitchSimple<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.SwitchSimple",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableFor<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.TimesTableFor",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableFor2<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.TimesTableFor2",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableWhile1<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter4.TimesTableWhile1",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BelievableTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.BelievableTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BlankFinalTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.BlankFinalTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Book<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.Book",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HandPhone<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.HandPhone",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InstanceOfTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.InstanceOfTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PolymorphismTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.PolymorphismTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrintObject<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.PrintObject",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ScopeTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.ScopeTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SpiderMan3<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.SpiderMan3",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SpiderManTest2<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.SpiderManTest2",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test0402<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter7.Test0402",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ExtendsTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter8.ExtendsTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GenericBoxTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter8.GenericBoxTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IronMan<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter8.IronMan",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MartTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter8.MartTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VehicleTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter8.VehicleTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UseInstallTool<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter9.UseInstallTool",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-UserManagerWithException<JavaBook>",
+            "request": "launch",
+            "mainClass": "Chapter9.UserManagerWithException",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AnonymousClassListener<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.AnonymousClassListener",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BorderLayoutEx<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.BorderLayoutEx",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ListenerMouseEx<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.ListenerMouseEx",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ListenerSample<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.ListenerSample",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MouseListenerEx<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.MouseListenerEx",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<JavaBook>(2)",
+            "request": "launch",
+            "mainClass": "Test.Test",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test05200925<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.Test05200925",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestGUI<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.TestGUI",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestGUI2<JavaBook>",
+            "request": "launch",
+            "mainClass": "Test.TestGUI2",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ArrayCopy<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.ArrayCopy",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InitArrayTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.InitArrayTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IteratorFor<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.IteratorFor",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LottoGeneratorByArray<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.LottoGeneratorByArray",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainParam2<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.MainParam2",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Param<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.Param",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleArray<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.SimpleArray",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleIntiTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.SimpleIntiTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTable2Dim<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.TimesTable2Dim",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TimesTableArrayTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.TimesTableArrayTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter5.test",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Goods<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.Goods",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InitializerTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.InitializerTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MethodCallStack<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.MethodCallStack",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MyExp<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.MyExp",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OverloadConstructorPerson<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.OverloadConstructorPerson",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ParameterPerson<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.ParameterPerson",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PersonTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.PersonTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StudentTest<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.StudentTest",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThisPerson<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.ThisPerson",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-VariableTypes<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.VariableTypes",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WalkTestBad<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.WalkTestBad",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WalkTestGood<JavaBook>",
+            "request": "launch",
+            "mainClass": "chapter6.WalkTestGood",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-JDBC_Ex1<JavaBook>",
+            "request": "launch",
+            "mainClass": "javadb.JDBC_Ex1",
+            "projectName": "JavaBook"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<Object>",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Object"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Array1<Test2>",
+            "request": "launch",
+            "mainClass": "Array.Array1",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Arrayex1<Test2>",
+            "request": "launch",
+            "mainClass": "Array.Arrayex1",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Arrayex2<Test2>",
+            "request": "launch",
+            "mainClass": "Array.Arrayex2",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Arrayex3<Test2>",
+            "request": "launch",
+            "mainClass": "Array.Arrayex3",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-arraytest1<Test2>",
+            "request": "launch",
+            "mainClass": "Array.arraytest1",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-convertdowhile<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.convertdowhile",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-convertswitchcase<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.convertswitchcase",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-fortest<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.fortest",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-switchpra<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.switchpra",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test082<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.test082",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-testscwhile<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.testscwhile",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-text08<Test2>",
+            "request": "launch",
+            "mainClass": "Private1.text08",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CircleArea<Test2>",
+            "request": "launch",
+            "mainClass": "Test2.CircleArea",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Dtest<Test2>",
+            "request": "launch",
+            "mainClass": "Test2.Dtest",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test<Test2>",
+            "request": "launch",
+            "mainClass": "Test2.Test",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test2<Test2>",
+            "request": "launch",
+            "mainClass": "Test2.Test2",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Testscanner<Test2>",
+            "request": "launch",
+            "mainClass": "Test2.Testscanner",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConCon<Test2>",
+            "request": "launch",
+            "mainClass": "convert.ConCon",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Moneyconvert<Test2>",
+            "request": "launch",
+            "mainClass": "convert.Moneyconvert",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Test09<Test2>",
+            "request": "launch",
+            "mainClass": "convert.Test09",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestElseif<Test2>",
+            "request": "launch",
+            "mainClass": "convert.TestElseif",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestIf<Test2>",
+            "request": "launch",
+            "mainClass": "convert.TestIf",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestScanner<Test2>",
+            "request": "launch",
+            "mainClass": "convert.TestScanner",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Testfor<Test2>",
+            "request": "launch",
+            "mainClass": "convert.Testfor",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Testswitch<Test2>",
+            "request": "launch",
+            "mainClass": "convert.Testswitch",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Testwhile<Test2>",
+            "request": "launch",
+            "mainClass": "convert.Testwhile",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Timeconvert<Test2>",
+            "request": "launch",
+            "mainClass": "convert.Timeconvert",
+            "projectName": "Test2"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-mutipleofthree<Test2>",
+            "request": "launch",
+            "mainClass": "convert.mutipleofthree",
+            "projectName": "Test2"
+        }
+    ]
+}
