@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+/* 게시판 버튼 */
+.board_btn01 {
+	display: inline-block;
+	*display: inline;
+	padding: 2px 10px;
+	height: 25px;
+	line-height: 10px;
+	background-color: #636363;
+	border: 1px solid #EFEFEF;
+	color: #fff;
+	text-decoration: none;
+	font-size: 10pt;
+	font-family: 'Nanum Gothic', 돋움;
+	letter-spacing: 0px;
+}
+
+.board_btn01:hover {
+	background-color: #000;
+	border: 1px solid #EFEFEF;
+	color: #fff;
+}
+/* 주문취소 버튼 */
+.btn01 {
+	display: inline-block;
+	padding: 2px 10px;
+	height: 20px;
+	line-height: 10px;
+	background-color: #636363;
+	border: 1px solid #EFEFEF;
+	color: #fff;
+	text-decoration: none;
+	font-size: 8pt;
+	font-family: 'Nanum Gothic', 돋움;
+	letter-spacing: 0px;
+}
+
+.btn01:hover {
+	background-color: #000;
+	border: 1px solid #EFEFEF;
+	color: #fff;
+}
+
+article table#notice {
+	width: 670px;
+	border-collapse: collapse;
+}
+
+article table#notice th {
+	height: 30px;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-family: seo;
+	font-weight: bold;
+	padding: 5px;
+	background-repeat: repeat-x;
+	background-position: center center;
+	color: #999;
+}
+article table#notice td {
+	text-align: center;
+	padding: 6px 0;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999
+}
+/*글자정렬 center
+안여백 6px 0 테두리아래너비 1px 테두리아래스타일dotted
+테두리아래색 #999*/
+article table#notice td.left {
+	text-align: left;
+}
+/*글자정렬 left*/
+article th.tno {
+	width: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+} /*너비 50px 
+왼쪽위 둥글게5px 왼쪽아래 둥글게5px*/
+article th.ttitle {
+	width: 400px;
+	letter-spacing: 0.7em
+}
+/*너비 400px 문자간격 0.7em*/
+article th.twrite {
+	width: 100px;
+}
+/*너비 80px*/
+article th.tdate {
+	width: 80px;
+}
+/*너비 50px*/
+article th.tread {
+	width: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*너비 50px 
+오른쪽위 둥글게5px 오른쪽아래 둥글게5px*/
+article #table_search {
+	margin: 15px 0 10px 0;
+	/*float: left;*/
+}
+/*밖여백 15px 0 10px 0 정렬 right*/
+#table_search .input_box {
+	height: 20px;
+	width: 200px;
+	border-radius: 4px;
+	background-color: #ddf4ff;
+	border: 1px solid #333
+}
+

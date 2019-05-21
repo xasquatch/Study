@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+/* 로그인 */
+#aside { overflow: hidden; width: 174px; margin-right: 10px; }
+#aside .snb-w, 
+#aside .shop-cate, 
+#aside .community,
+#aside .cs-center { margin-bottom: 10px; }
+#aside .snb-w, 
+#aside .shop-cate, 
+#aside .community { border: 1px solid #dbdbdb; } 
+#aside .cs-center { border: 1px solid #c3e1dc; }
+#aside .hd { width: 150px; height: 30px; line-height: 30px; padding-left: 20px; font-size: 13px; font-weight: bold; letter-spacing: -1px; }
+#aside .snb-w .hd,
+#aside .shop-cate .hd,
+#aside .community .hd { color: #717171; background-color: #efefef; border: 1px solid #fff; }
+#aside .cs-center .hd { color: #fff; background-color: #c3e1dc; border: 1px solid #d8ebe8; }
+#aside .snb { padding: 10px 0 20px; border-top: 1px solid #dbdbdb; }
+#aside .snb li { padding: 5px 0 5px 20px; word-wrap: break-word; background: url(/images/d3/peppermint/common/bul_sqr_h3.gif) no-repeat 10px 45%; }
+#aside .snb li a:hover { color: #a1c4c3; }
+#aside .snb-w .snb li { padding: 5px 0 5px 10px; background: none; }
+#aside .snb-cs { padding: 10px 0 10px 20px; border-top: 1px solid #c3e1dc; font-size: 11px; }
+#aside .snb-cs .phone { color: #715b50; font-family: Tahoma; font-size: 14px; }
+#aside .snb-cs .work { margin-top: 10px; color: #999; }
+#aside .snb-cs .email { display: inline-block; margin-top: 5px; }
+#aside .snb-cs .email a { color: #aad2cb; }
+#aside .snb-bank { padding: 10px 0 10px 20px; background: url(/images/d3/peppermint/common/bg_line_dotted_h1.gif) repeat-x 0 0; color: #999; font-size: 11px; }
+#aside .snb-bank em { display: inline-block; padding-bottom: 5px; color: #abcac5; font-family: Tahoma; font-size: 12px; font-weight: bold; }
+
+
+/* 로그인 버튼 */
+.buttonlogin { position:absolute; left: 0px; top: 155px; width:270px; margin:10px 0 0;}
+.buttonlogin span a {width:100%;line-height:14px;padding:10px 0; text-align:center;margin:0;letter-spacing:1.5px;}
+.btnlogin { display:inline-block;border:1px solid #333; margin:0 2px;letter-spacing:-1px;  background:#333; color:#fff;  font-family: Tahoma, 'Roboto', arial; font-size:11px;  }
+.btnlogin:hover{background:#fff ; color:#333; cursor: pointer;}
+.buttonlogin1 { width:270px; margin:10px 0 0;}
+.buttonlogin1 span a {width:100%;line-height:14px;padding:10px 0;font-size:11px;text-align:center;margin:0;letter-spacing:0.5px;}
+.btnlogin1 { display:inline-block;border:1px solid #ddd; margin:0 2px;letter-spacing:-1px;font-size:11px; background:#f2f2f2; color:#333;  font-family: Tahoma, 'Roboto', 'arial'; font-size:11px;  }
+.btnlogin1:hover{background:#333;border:1px solid #333; color:#fff;}
+
+
+/* 로그인텍스트부분 */
+.mtxt01 { width:100%; margin:0 auto; text-align:center;}
+.mtxt01 li { display:inline-block; *display:inline; text-align:center; padding:0 5px; }
+.mtxt01 li a { font-size:11px; color:#555; height:20px; text-decoration: none;padding:0;margin:0;  font-family: 'Nanum Gothic', 돋움, Dotum;}
+.mtxt01 li a:hover {color:#999;}
+.mtxt02 { width:100%; margin:0 auto; text-align:center;}
+.mtxt02 p { color:#999; }
+.mtxt02 span {padding:0 10px; }
+.mline01 { height:1px; background:#B2B2B2; width:80px; margin:0 auto;}
+
+/* BASIC css start */
+#loginWrap { padding-bottom:0px;}
+
+#loginWrap .loc-navi { margin-top: 40px; padding-bottom: 5px; border-bottom: 1px solid #e5e5e5; }
+#loginWrap .page-body { width: 700px; margin-top: 55px; margin-bottom: 50px; margin-left: auto; margin-right: auto; border: 0px solid #e5e5e5;  }
+#loginWrap .mlog-sign { width: 700px; min-height: 206px; _height; 206px;  position: relative; }
+#loginWrap .mlog-sign .mlog,
+#loginWrap .mlog-sign .sign { float: left; }
+/* member login */
+
+
+#loginWrap {margin-bottom: 0px;}
+#loginWrap .mlog-sign .mlog { position: relative; width: 350px;}
+
+#loginWrap .mlog-sign .frm-list { position: absolute; left: 0px; top: 0px; width: 350px; color: #3F3F3F; text-decoration:none; font-size:8pt;font-family: 'Nanum Gothic',돋움;  }
+#loginWrap .mlog-sign .frm-list li,
+
+#loginWrap .mlog-sign .frm-list .id { overflow:hidden;display:block;width:300px;margin:0 0 2px; line-height:32px; }
+#loginWrap .mlog-sign .frm-list .pwd { overflow:hidden;display:block;width:300px;margin:0 0 2px; line-height:32px; }
+#loginWrap .mlog-sign .frm-list input {width:270px;height:23px;padding:2px 0 2px 0;line-height:23px; border:1px solid #d9d9d9;  float: left; border:none; background-color:#f2f2f2;}
+
+#loginWrap .mlog-sign .frm-list li label,
+#loginWrap .mlog-sign .frm-list li .txt-frm { float: left; }
+#loginWrap .mlog-sign .frm-list li { width: 100%; margin-bottom: 5px; }
+#loginWrap .mlog-sign .frm-list li label { width: 300px; padding-top: 2px;}
+#loginWrap .mlog-sign .frm-list li .txt-frm { width: 200px; height: 19px; padding: 2px 0 0 2px; border: 0; background-color: #eaeaea; }
+#loginWrap .mlog-sign .btn-mlog { position: absolute; left: 316px; top: 110px; }
+#loginWrap .mlog-sign .se-log { position: absolute; left: 0px; top: 135px;  color: #3F3F3F; text-decoration:none; font-size:8pt;font-family: 'Nanum Gothic',돋움;   }
+#loginWrap .mlog-sign .frm-list .id .name {float:left;}
+#loginWrap .mlog-sign .frm-list .pwd .name {float:left;}
+
+/* sign */
+#loginWrap .mlog-sign .sign { position:absolute; left: 428px; top: 0px;  width: 300px;  text-align: center; border: 0px solid #000;   }
+#loginWrap .mlog-sign .sign .msg { text-align:left;padding:5px 0; line-height:14px; color: #3F3F3F; text-decoration:none; font-size:8pt;font-family: 'Nanum Gothic',돋움;  }
+#loginWrap .mlog-sign .sign .btns { width: 103px; margin-left: auto; margin-right: auto; }
+#loginWrap .mlog-sign .sign .btns a { display: block; margin-top: 8px; }
+
+.snstitbox { width: 100%; height: 40px; line-height: 40px; background-color: #fff; border: 0px solid #EFEFEF; padding-top:10px; }
+.snstitbox .title { width: 250px; text-align: center; height: 40px; margin: 0 auto; border-top: 1px solid #E1E1E1; border-bottom: 1px solid #E1E1E1; }
+.snstitbox .title .name { font-weight: bold; font-size: 12px; color: #333; text-transform: uppercase; font-family: 'Roboto', Arial,sans-serif,'Nanum Gothic'; }
+
+/* simpleLogin */
+#simpleLogin { position: relative; }
+#simpleLogin .sns-login { margin-top: 50px; margin-bottom:100px; text-align: center; font-size: 0; line-height: 0; }
+#simpleLogin .sns-login p { margin-bottom: 30px; }
+#simpleLogin .sns-login a { display: inline-block; margin: 0 4px; }

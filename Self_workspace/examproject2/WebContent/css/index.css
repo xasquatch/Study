@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+/* navbar-paapper를 사용해 탐색 모음을 닫기, 슬라이더 위에 탐색 모음을 중첩  */
+.navbar-wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 51px;
+}
+
+.navbar-wrapper>.container {
+	padding: 0;
+}
+
+@media all and (max-width: 768px ) {
+	.navbar-wrapper {
+		position: relative;
+		top: 0px;
+	}
+}
+
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+	animation-name: jssorl-009-spin;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@
+keyframes jssorl-009-spin {
+from { transform:rotate(0deg);}
+to {transform: rotate(360deg);}
+}
+
+.jssorb031 {position:absolute;}
+.jssorb031 .i {position:absolute;cursor:pointer;}
+.jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+.jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+.jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+.jssorb031 .i.idn {opacity:.3;}
+
+#pagescroll{bottom:20px;position:fixed;right:20px;z-index:2147483647;}
+
+/* 사진 마우스 오버 */
+.col-md-4 img:HOVER {
+	transform : scale(1.02) rotate(.02deg);
+	transition: transform .5s cubic-bezier(.175,.885,.32,1.275);
+}
