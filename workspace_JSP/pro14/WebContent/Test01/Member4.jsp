@@ -59,18 +59,22 @@
 	${memberlist[0]}<br><br>
 	
 	${memberlist[1]}<br>
-	
+
 	<%
+	
+		memberlist.get(1);
+	
 		String i = "";
 		Iterator it = (Iterator)memberlist.iterator();
 		while(it.hasNext()){
 			i += it.next();
+			
 		}
-	
-	
+		
+		
 	%>
 	<br><BR>
-	<%=i %>
+	<%=i %>  <BR><%=memberlist.get(0) %>
 	
 	
 </body>

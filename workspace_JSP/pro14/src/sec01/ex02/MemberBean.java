@@ -1,4 +1,4 @@
-package sec01.ex01;
+package sec01.ex02;
 
 import java.sql.Date;
 
@@ -11,14 +11,16 @@ public class MemberBean{
 	
 	private String id, pwd, name, email;
 	private Date joinDate;
+	private Address addr;
 	
 	public MemberBean(){}
-	public MemberBean(String id, String pwd, String name, String email, Date joinDate) {
+	public MemberBean(String id, String pwd, String name, String email, Date joinDate, Address addr) {
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
 		this.email = email;
 		this.joinDate = joinDate;
+		this.addr = addr;
 	}
 	
 	public String getId() {
@@ -50,6 +52,12 @@ public class MemberBean{
 	}
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
+	}
+	public Address getAddr() {
+		return addr;
+	}
+	public void setAddr(Address addr) {
+		this.addr = addr;
 	}
 	
 }
