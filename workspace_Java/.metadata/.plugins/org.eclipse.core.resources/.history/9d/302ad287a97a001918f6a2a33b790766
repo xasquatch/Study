@@ -1,7 +1,0 @@
-package Chapter16;
-
-import jfra;
-
-public class MenuEx extends jfra {
-
-}

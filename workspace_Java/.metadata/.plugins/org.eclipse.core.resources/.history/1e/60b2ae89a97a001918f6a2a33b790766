@@ -1,8 +1,0 @@
-package Chapter16;
-
-import javax.swing.JFrame;
-
-
-public class MenuEx extends JFrame {
-
-}
