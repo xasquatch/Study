@@ -2,28 +2,28 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="${ }" key="selection"/>
+		<item value="st[1]" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="st[0]"/>
+			<item value="th colspan=&quot;5&quot;"/>
+			<item value="memberlist[0]."/>
+			<item value="memberlist[0]"/>
+			<item value="memberlist"/>
+			<item value="[0]"/>
 			<item value="&lt;%= %&gt;"/>
 			<item value="mem1"/>
-			<item value="[0]"/>
-			<item value="rigth"/>
-			<item value="&lt;p&gt;"/>
-			<item value="=="/>
-			<item value="BasicNameValuePair"/>
-			<item value="input_id"/>
 		</list>
 		<list key="replacehistory">
+			<item value="st[1]"/>
+			<item value="th colspan=&quot;5&quot; bgcolor=&quot;lightgray&quot;"/>
+			<item value="memberlist[1]"/>
+			<item value="memberlist[0]"/>
+			<item value="[1]"/>
 			<item value="${ }"/>
 			<item value="mem2"/>
-			<item value="[1]"/>
 			<item value="right"/>
-			<item value="&lt;p align=&quot;rigth&quot;&gt;"/>
-			<item value="== "/>
-			<item value="input_name"/>
-			<item value="passwd"/>
 		</list>
 	</section>
 </section>
