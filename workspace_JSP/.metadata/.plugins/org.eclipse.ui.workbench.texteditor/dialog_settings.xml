@@ -2,28 +2,28 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="st[1]" key="selection"/>
+		<item value="()%&gt;" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="();"/>
+			<item value="list"/>
+			<item value="list[i]"/>
+			<item value="i."/>
+			<item value=", "/>
+			<item value="&lt;br&gt;"/>
+			<item value="h1"/>
 			<item value="st[0]"/>
-			<item value="th colspan=&quot;5&quot;"/>
-			<item value="memberlist[0]."/>
-			<item value="memberlist[0]"/>
-			<item value="memberlist"/>
-			<item value="[0]"/>
-			<item value="&lt;%= %&gt;"/>
-			<item value="mem1"/>
 		</list>
 		<list key="replacehistory">
-			<item value="st[1]"/>
-			<item value="th colspan=&quot;5&quot; bgcolor=&quot;lightgray&quot;"/>
-			<item value="memberlist[1]"/>
-			<item value="memberlist[0]"/>
-			<item value="[1]"/>
-			<item value="${ }"/>
-			<item value="mem2"/>
-			<item value="right"/>
+			<item value="()%&gt;"/>
+			<item value="();%&gt;"/>
+			<item value="&lt;%=list"/>
+			<item value="i"/>
+			<item value="mlist[i]."/>
+			<item value="mlist[i]"/>
+			<item value="&lt;/td&gt;&lt;td&gt;"/>
+			<item value="th"/>
 		</list>
 	</section>
 </section>
