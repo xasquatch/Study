@@ -2,18 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="type=&quot;time&quot; timeStyle" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="timeStyle"/>
-			<item value="dateStyle"/>
-			<item value=" width= &quot;200&quot;"/>
-			<item value="();"/>
-			<item value="list"/>
-			<item value="list[i]"/>
-			<item value="i."/>
-			<item value=", "/>
+			<item value="card"/>
+			<item value="rightcolumn"/>
+			<item value="nav"/>
+			<item value="black"/>
+			<item value="topnav"/>
+			<item value="header"/>
+			<item value="My Website"/>
+			<item value="my webpa"/>
 		</list>
 		<list key="replacehistory">
 			<item value="type=&quot;time&quot; timeStyle"/>

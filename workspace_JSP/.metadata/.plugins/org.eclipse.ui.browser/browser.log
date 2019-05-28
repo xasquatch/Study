@@ -969,3 +969,20 @@
 5월 27, 2019 17:19:53.04 [8496:2928:0527/171953.046:ERROR:browser_process_sub_thread.cc(217)] Waited 166 ms for network service
 5월 27, 2019 17:38:16.33 [6024:7832:0527/173816.335:ERROR:browser_process_sub_thread.cc(217)] Waited 103 ms for network service
 5월 27, 2019 17:40:28.46 [7080:300:0527/174028.462:ERROR:browser_process_sub_thread.cc(217)] Waited 7 ms for network service
+
+5월 28, 2019 14:03:40.88 NEW SESSION
+5월 28, 2019 14:03:40.88 [4620:9268:0528/140340.879:ERROR:browser_process_sub_thread.cc(217)] Waited 140 ms for network service
+5월 28, 2019 14:03:48.72 [6620:5020:0528/140348.721:ERROR:browser_process_sub_thread.cc(217)] Waited 151 ms for network service
+5월 28, 2019 14:47:22.06 [9504:9588:0528/144722.067:ERROR:browser_process_sub_thread.cc(217)] Waited 126 ms for network service
+5월 28, 2019 14:48:27.15 [2008:5740:0528/144827.156:ERROR:browser_process_sub_thread.cc(217)] Waited 102 ms for network service
+5월 28, 2019 14:48:56.86 [6512:2776:0528/144856.865:ERROR:browser_process_sub_thread.cc(217)] Waited 137 ms for network service
+5월 28, 2019 15:29:46.39 [5072:2252:0528/152946.396:ERROR:browser_process_sub_thread.cc(217)] Waited 98 ms for network service
+5월 28, 2019 15:57:37.45 [4480:1868:0528/155737.457:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 28, 2019 16:03:01.65 [4480:6676:0528/160301.656:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:03:40.09 [4480:6676:0528/160340.092:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:03:55.24 [4480:6676:0528/160355.247:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:04:31.43 [4480:6676:0528/160431.431:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:04:37.16 [4480:6676:0528/160437.160:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:04:49.34 [4480:6676:0528/160449.345:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:06:17.53 [4480:6620:0528/160617.533:ERROR:browser_process_sub_thread.cc(217)] Waited 196 ms for network service
+5월 28, 2019 17:42:10.91 [10492:10536:0528/174210.904:ERROR:browser_process_sub_thread.cc(217)] Waited 149 ms for network service
