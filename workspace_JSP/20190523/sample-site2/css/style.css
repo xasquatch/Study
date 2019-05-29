@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.front {
+    background-image: url(../imgs/front-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-full {
+    width: 100%;
+}
+
+.container {
+    width: 1190px;
+    margin: auto;
+}
+
+header {
+    min-height: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 200;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 3px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: orange;
+    border-bottom: 1px dotted orangered;
+    padding-bottom: 0.25em;
+}
+
+.logo {
+    margin: 12px 0 0 20px;
+}
+
+.copy-text {
+    padding-bottom: 5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+    margin-bottom: 1em;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.copy-text h1 {
+    color: #fff;
+    margin-top: 180px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.notice-box,
+.time-box {
+    background-color: rgba(0, 0, 0, .65);
+    padding: 1em;
+    color: white;
+    height: 250px;
+}
+
+.notice-box {
+    width: 61%;
+    float: left;
+}
+
+.notice-box h3 {
+    font-size: 1.6rem;
+    font-family: 'NanumSquare', sans-serif;
+    padding-left: 0.75em;
+}
+
+.notice-box ul {
+    list-style: none;
+    margin-left: -0.5em;
+}
+
+.notice-box li {
+    line-height: 1.75em;
+}
+
+.notice-box li a {
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 600px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.notice-box li a:hover {
+    color: orange;
+    border-bottom: 1px dotted orangered;
+    padding-bottom: 0.15em;
+}
+
+.time-box {
+    width: 32%;
+    float: right;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.time-box h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+img.tele-icon {
+    width: 50px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    flex: 0 0 50px;
+    margin-top: auto;
+    padding-top: 5px;
+    background-color: #1b1b1b;
+}
+
+.foot-logo img {
+    width: 120px;
+    float: left;
+    margin-right: 50px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: white;
+    padding-left: 0.5em;
+    text-decoration: none;
+}
+
+
+section.company {
+    background-image: url(../imgs/company.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    margin-top: -240px;
+}
+
+section.company h1 {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+article {
+    padding-top: 0;
+    margin-top: 0;
+    width: 80%;
+    float: right;
+}
+
+aside {
+    float: left;
+    width: 18%;
+}
+
+aside ul {
+    margin-left: -35px;
+    list-style: none;
+}
+
+aside ul li {
+    padding-bottom: 0.75em;
+}
+aside ul li a {
+    text-decoration: none;
+}
