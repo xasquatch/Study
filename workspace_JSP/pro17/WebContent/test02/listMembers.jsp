@@ -57,10 +57,12 @@
 			</c:otherwise>
 		</c:choose>
 	</table>
-	<a href="<%=request.getContextPath()%>/member/memberForm.do" class="cls2">
-	<p>JOIN US NOW!</p></a>
-
-	<a href="${pageContext.request.contextPath}/member/memberForm.do" class="cls2">
-	<p>JOIN US NOW!</p></a>
+	<c:choose>
+		<c:when test="${empty session.id}">
+			<a href="${pageContext.request.contextPath}/member/memberForm.do" class="cls2">
+			<p>JOIN US NOW!</p></a>
+		</c:when>
+	</c:choose>
+	
 </body>
 </html>

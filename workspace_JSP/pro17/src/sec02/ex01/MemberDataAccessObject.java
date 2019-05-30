@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +31,35 @@ public class MemberDataAccessObject {
 		}
 	}
 
+	public int addMember(String userid, String userpw, String username, String useremail){
+		int result = 0;
+		String sql = "INSERT INTO t_member(id, pwd, name, email, joindate) VALUES(?,?,?,?,?)"; 
+
+			try {
+			
+			con = ds.getConnection();
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, userid);
+			pstmt.setString(2, userpw);
+			pstmt.setString(3, username);
+			pstmt.setString(4, useremail);
+			pstmt.setTimestamp(5, new Timestamp(System.currentTimeMillis()));
+			result = pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			System.out.println("addMember connection Exception!"+e.getMessage());
+		}finally {
+			try {
+				if(con != null) con.close();
+				if(pstmt != null) pstmt.close();
+			} catch (Exception e2) {
+				System.out.println("addMember connection close Exception!"+e2.getMessage());
+			}
+		}
+		return result;
+	}
+	
+	
 	public List listMembers() {
 		List list = new ArrayList();
 		String sql = null;
@@ -58,7 +88,7 @@ public class MemberDataAccessObject {
 				if (pstmt != null) pstmt.close();
 				if (rs != null) rs.close();
 			} catch (Exception e2) {
-				System.out.println("listMembers close Exception!"+e2.getMessage());
+				System.out.println("listMembers connection close Exception!"+e2.getMessage());
 			}
 		}
 		return list;

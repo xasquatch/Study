@@ -1,6 +1,7 @@
 package sec02.ex01;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -60,12 +61,31 @@ public class MemberController extends HttpServlet {
 						
 			}else if (action.equals("/addMember.do")) { //action변수값이 /addmember.do이면 요청된 회원정보를 DB의 테이블에 insert하라는 요청 
 				
+				String userid = request.getParameter("userid");
+				String userpw = request.getParameter("userpw");
+				String username = request.getParameter("username");
+				String useremail = request.getParameter("useremail");
+				
+				int check = dao.addMember(userid,userpw,username,useremail);
+				
+				if (check == 0) {
+					System.out.println("안된거야");//임시
+					nextPage = "/test02/memberForm.jsp";
+					request.setAttribute("notice", "회원가입에 실패하였습니다. 다시 시도해주세요.");
+				}else {
+					System.out.println("완료");//임시
+					nextPage = "/test02/TemperalyNotice.jsp";
+					List userinfo = new ArrayList();
+					userinfo.add(userid);
+					userinfo.add(userpw);
+					userinfo.add(username);
+					userinfo.add(useremail);
+					
+					request.setAttribute("list", userinfo);
+				}
 			}
 		
 		}
-		
-		
-		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
 		dispatcher.forward(request, response);
 	}
