@@ -41,3 +41,5 @@
 2019-04-18 16:14:30,053 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2019-04-18 16:48:44,738 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2019-04-19 13:35:02,170 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-05-28 18:24:11,992 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-05-28 20:26:49,771 [Worker-37: Updating status for Tomcat v8.5 Server at localhost...] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: D:\Workspace\!GIT\workspace_JSP\.metadata\com.genuitec.eclipse.webclipse.livepreview\0\store
