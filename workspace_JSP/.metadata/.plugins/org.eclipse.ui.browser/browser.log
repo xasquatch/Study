@@ -969,3 +969,83 @@
 5월 27, 2019 17:19:53.04 [8496:2928:0527/171953.046:ERROR:browser_process_sub_thread.cc(217)] Waited 166 ms for network service
 5월 27, 2019 17:38:16.33 [6024:7832:0527/173816.335:ERROR:browser_process_sub_thread.cc(217)] Waited 103 ms for network service
 5월 27, 2019 17:40:28.46 [7080:300:0527/174028.462:ERROR:browser_process_sub_thread.cc(217)] Waited 7 ms for network service
+
+5월 28, 2019 14:03:40.88 NEW SESSION
+5월 28, 2019 14:03:40.88 [4620:9268:0528/140340.879:ERROR:browser_process_sub_thread.cc(217)] Waited 140 ms for network service
+5월 28, 2019 14:03:48.72 [6620:5020:0528/140348.721:ERROR:browser_process_sub_thread.cc(217)] Waited 151 ms for network service
+5월 28, 2019 14:47:22.06 [9504:9588:0528/144722.067:ERROR:browser_process_sub_thread.cc(217)] Waited 126 ms for network service
+5월 28, 2019 14:48:27.15 [2008:5740:0528/144827.156:ERROR:browser_process_sub_thread.cc(217)] Waited 102 ms for network service
+5월 28, 2019 14:48:56.86 [6512:2776:0528/144856.865:ERROR:browser_process_sub_thread.cc(217)] Waited 137 ms for network service
+5월 28, 2019 15:29:46.39 [5072:2252:0528/152946.396:ERROR:browser_process_sub_thread.cc(217)] Waited 98 ms for network service
+5월 28, 2019 15:57:37.45 [4480:1868:0528/155737.457:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0, channel_layout: 0, channels: 0, sample_rate: 0, frames_per_buffer: 0, effects: 0, mic_positions: 
+5월 28, 2019 16:03:01.65 [4480:6676:0528/160301.656:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:03:40.09 [4480:6676:0528/160340.092:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:03:55.24 [4480:6676:0528/160355.247:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:04:31.43 [4480:6676:0528/160431.431:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:04:37.16 [4480:6676:0528/160437.160:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:04:49.34 [4480:6676:0528/160449.345:ERROR:CONSOLE(5170)] "Cannot find context with specified id", source: chrome-devtools://devtools/bundled/shell.js (5170)
+5월 28, 2019 16:06:17.53 [4480:6620:0528/160617.533:ERROR:browser_process_sub_thread.cc(217)] Waited 196 ms for network service
+5월 28, 2019 17:42:10.91 [10492:10536:0528/174210.904:ERROR:browser_process_sub_thread.cc(217)] Waited 149 ms for network service
+
+5월 29, 2019 10:52:57.25 NEW SESSION
+5월 29, 2019 10:52:57.25 [4976:6304:0529/105257.256:ERROR:browser_process_sub_thread.cc(217)] Waited 147 ms for network service
+5월 29, 2019 11:02:35.21 [10920:3856:0529/110235.215:ERROR:browser_process_sub_thread.cc(217)] Waited 120 ms for network service
+5월 29, 2019 11:02:43.30 [1996:6032:0529/110243.304:ERROR:browser_process_sub_thread.cc(217)] Waited 126 ms for network service
+5월 29, 2019 11:04:23.54 [10832:10120:0529/110423.545:ERROR:browser_process_sub_thread.cc(217)] Waited 115 ms for network service
+5월 29, 2019 11:04:30.04 [8204:9108:0529/110430.042:ERROR:browser_process_sub_thread.cc(217)] Waited 144 ms for network service
+5월 29, 2019 11:05:18.31 [4372:548:0529/110518.317:ERROR:browser_process_sub_thread.cc(217)] Waited 53 ms for network service
+5월 29, 2019 11:11:13.26 [1996:5176:0529/111113.267:ERROR:browser_process_sub_thread.cc(217)] Waited 60 ms for network service
+5월 29, 2019 11:17:01.01 [1688:1872:0529/111701.013:ERROR:browser_process_sub_thread.cc(217)] Waited 123 ms for network service
+5월 29, 2019 11:30:38.89 [5520:6240:0529/113038.896:ERROR:browser_process_sub_thread.cc(217)] Waited 127 ms for network service
+5월 29, 2019 11:30:46.44 [7304:6168:0529/113046.444:ERROR:browser_process_sub_thread.cc(217)] Waited 110 ms for network service
+5월 29, 2019 11:31:39.02 [2436:7340:0529/113139.022:ERROR:browser_process_sub_thread.cc(217)] Waited 114 ms for network service
+5월 29, 2019 11:31:45.09 [8440:5764:0529/113145.090:ERROR:browser_process_sub_thread.cc(217)] Waited 134 ms for network service
+5월 29, 2019 11:31:58.31 [10948:3840:0529/113158.314:ERROR:browser_process_sub_thread.cc(217)] Waited 142 ms for network service
+5월 29, 2019 11:33:05.51 [9136:4824:0529/113305.516:ERROR:browser_process_sub_thread.cc(217)] Waited 65 ms for network service
+5월 29, 2019 11:33:44.33 [3428:1036:0529/113344.329:ERROR:browser_process_sub_thread.cc(217)] Waited 79 ms for network service
+5월 29, 2019 11:34:28.15 [1384:9932:0529/113428.156:ERROR:browser_process_sub_thread.cc(217)] Waited 76 ms for network service
+5월 29, 2019 11:36:46.99 [9408:3328:0529/113646.996:ERROR:browser_process_sub_thread.cc(217)] Waited 70 ms for network service
+5월 29, 2019 11:36:53.95 [11016:5492:0529/113653.953:ERROR:browser_process_sub_thread.cc(217)] Waited 155 ms for network service
+5월 29, 2019 11:37:31.63 [7188:10008:0529/113731.637:ERROR:browser_process_sub_thread.cc(217)] Waited 149 ms for network service
+5월 29, 2019 11:38:27.54 [7668:10212:0529/113827.545:ERROR:browser_process_sub_thread.cc(217)] Waited 127 ms for network service
+5월 29, 2019 11:38:34.65 [4468:4044:0529/113834.654:ERROR:browser_process_sub_thread.cc(217)] Waited 151 ms for network service
+5월 29, 2019 11:38:54.61 [10560:8856:0529/113854.612:ERROR:browser_process_sub_thread.cc(217)] Waited 136 ms for network service
+5월 29, 2019 11:38:59.52 [9780:10920:0529/113859.520:ERROR:browser_process_sub_thread.cc(217)] Waited 147 ms for network service
+5월 29, 2019 11:39:23.72 [1832:5600:0529/113923.720:ERROR:browser_process_sub_thread.cc(217)] Waited 132 ms for network service
+5월 29, 2019 11:41:12.71 [11208:9036:0529/114112.710:ERROR:browser_process_sub_thread.cc(217)] Waited 112 ms for network service
+5월 29, 2019 11:41:18.82 [948:9656:0529/114118.827:ERROR:browser_process_sub_thread.cc(217)] Waited 159 ms for network service
+5월 29, 2019 11:41:50.31 [7896:9564:0529/114150.311:ERROR:browser_process_sub_thread.cc(217)] Waited 137 ms for network service
+5월 29, 2019 11:42:03.47 [3976:1932:0529/114203.475:ERROR:browser_process_sub_thread.cc(217)] Waited 151 ms for network service
+5월 29, 2019 11:42:52.45 [10288:708:0529/114252.457:ERROR:browser_process_sub_thread.cc(217)] Waited 126 ms for network service
+5월 29, 2019 11:42:58.80 [7000:6776:0529/114258.804:ERROR:browser_process_sub_thread.cc(217)] Waited 157 ms for network service
+5월 29, 2019 11:43:30.22 [10788:6172:0529/114330.220:ERROR:browser_process_sub_thread.cc(217)] Waited 121 ms for network service
+5월 29, 2019 11:52:44.94 [6808:2476:0529/115244.947:ERROR:browser_process_sub_thread.cc(217)] Waited 109 ms for network service
+5월 29, 2019 12:21:34.96 [10312:7772:0529/122134.968:ERROR:browser_process_sub_thread.cc(217)] Waited 102 ms for network service
+5월 29, 2019 12:21:41.86 [8044:4352:0529/122141.861:ERROR:browser_process_sub_thread.cc(217)] Waited 136 ms for network service
+5월 29, 2019 12:34:35.52 [9536:10460:0529/123435.525:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 29, 2019 12:34:58.42 [9536:5848:0529/123458.420:ERROR:browser_process_sub_thread.cc(217)] Waited 87 ms for network service
+5월 29, 2019 12:37:59.16 [540:10980:0529/123759.160:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 29, 2019 12:39:01.61 [540:2260:0529/123901.614:ERROR:browser_process_sub_thread.cc(217)] Waited 138 ms for network service
+5월 29, 2019 12:40:10.83 [8976:9588:0529/124010.830:ERROR:browser_process_sub_thread.cc(217)] Waited 137 ms for network service
+5월 29, 2019 12:40:36.42 [284:5352:0529/124036.421:ERROR:browser_process_sub_thread.cc(217)] Waited 146 ms for network service
+5월 29, 2019 12:40:40.60 [936:6256:0529/124040.608:ERROR:browser_process_sub_thread.cc(217)] Waited 128 ms for network service
+5월 29, 2019 12:49:59.14 [4796:3012:0529/124959.142:ERROR:browser_process_sub_thread.cc(217)] Waited 24 ms for network service
+5월 29, 2019 12:53:54.58 [5008:4608:0529/125354.589:ERROR:browser_process_sub_thread.cc(217)] Waited 27 ms for network service
+5월 29, 2019 12:56:44.34 [3872:11124:0529/125644.342:ERROR:browser_process_sub_thread.cc(217)] Waited 140 ms for network service
+5월 29, 2019 12:57:44.06 [9460:2732:0529/125744.065:ERROR:browser_process_sub_thread.cc(217)] Waited 58 ms for network service
+5월 29, 2019 12:58:28.49 [8976:2672:0529/125828.497:ERROR:browser_process_sub_thread.cc(217)] Waited 119 ms for network service
+5월 29, 2019 13:46:44.07 [1352:5916:0529/134644.071:ERROR:browser_process_sub_thread.cc(217)] Waited 21 ms for network service
+
+5월 30, 2019 16:55:41.63 NEW SESSION
+5월 30, 2019 16:55:41.63 [9748:4192:0530/165541.449:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+5월 30, 2019 17:20:32.52 [9748:7256:0530/172032.520:ERROR:browser_process_sub_thread.cc(217)] Waited 170 ms for network service
+5월 30, 2019 17:29:06.75 [8480:7552:0530/172906.751:ERROR:browser_process_sub_thread.cc(217)] Waited 87 ms for network service
+5월 30, 2019 17:32:11.64 [2032:1344:0530/173211.641:ERROR:browser_process_sub_thread.cc(217)] Waited 16 ms for network service
+5월 30, 2019 17:33:15.43 [11136:9652:0530/173315.430:ERROR:browser_process_sub_thread.cc(217)] Waited 63 ms for network service
+5월 30, 2019 17:34:43.62 [5028:2424:0530/173443.625:ERROR:browser_process_sub_thread.cc(217)] Waited 152 ms for network service
+5월 30, 2019 17:35:16.69 [4112:10720:0530/173516.690:ERROR:browser_process_sub_thread.cc(217)] Waited 115 ms for network service
+5월 30, 2019 17:38:59.06 [1612:8868:0530/173859.066:ERROR:browser_process_sub_thread.cc(217)] Waited 14 ms for network service
+5월 30, 2019 17:41:46.43 [4696:9600:0530/174146.437:ERROR:browser_process_sub_thread.cc(217)] Waited 143 ms for network service
+5월 30, 2019 17:45:29.30 [968:9668:0530/174529.300:ERROR:browser_process_sub_thread.cc(217)] Waited 15 ms for network service
+5월 30, 2019 17:46:54.12 [7992:6664:0530/174654.127:ERROR:browser_process_sub_thread.cc(217)] Waited 28 ms for network service
+5월 30, 2019 17:48:42.97 [4972:9980:0530/174842.976:ERROR:browser_process_sub_thread.cc(217)] Waited 132 ms for network service

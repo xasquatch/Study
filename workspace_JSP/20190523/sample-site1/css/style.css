@@ -1,0 +1,279 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a.logo img {
+    width: 180px;
+    margin-top: 15px;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    z-index: 1000;
+    background-color: #000;
+}
+
+button.mobile {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 3px;
+    padding: 8px 15px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.25s;
+}
+
+nav ul li a:hover {
+    color: orange;
+    padding-bottom: 3px;
+    border-bottom: 1px solid orange;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-page {
+    height: 100vh;
+}
+
+.back-image1,
+.back-image2,
+.back-image3,
+.back-image4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+
+.back-image1 {
+    background-image: url("../imgs/image-back.jpg");
+}
+
+.back-image2 {
+    background-image: url("../imgs/image-back2.jpg");
+}
+
+.back-image3 {
+    background-image: url("../imgs/image-back3.jpg");
+}
+
+.back-image4 {
+    background-image: url("../imgs/image-back4.jpg");
+}
+
+.page {
+    padding-top: 70px;
+}
+
+.page h1 {
+    padding: 0.5em;
+    color: #fff;
+    text-shadow: 0 2px 7px rgba(0, 0, 0, .55);
+}
+
+.page .inner {
+    min-height: 70vh;
+    background-color: rgba(255, 255, 255, .95);
+    padding: 1em 2em;
+    color: #000;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-left {
+    padding: 0.2em 1em;
+    float: left;
+    padding-left: 0;
+}
+
+.img-right {
+    padding: 0.2em 1em;
+    float: right;
+    padding-right: 0;
+}
+
+.img-50 {
+    width: 50%;
+}
+
+form.basic-form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+form.basic-form label {
+    width: 120px;
+    display: inline-block;
+    padding: 0.5em 0;
+    vertical-align: top;
+}
+
+form.basic-form input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    width: 50%;
+}
+
+form.basic-form input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+form.basic-form textarea {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 5px;
+    height: 200px;
+    margin: 10px 0;
+}
+
+form.basic-form button {
+    margin-left: 130px;
+    padding: 0.8em 3em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+}
+
+form.basic-form button:active {
+    border-radius: 10px;
+    background-color: red;
+    outline: none;
+}
+
+.customer p {
+    margin: auto;
+    width: 70%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+    box-shadow: 0 1px 1px #fff;
+}
+
+footer {
+    padding: .75em;
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.first-part {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-part h1 {
+    text-align: center;
+    font-size: 5em;
+    transition: width 0.5s linear 0.2s;
+    position: relative;
+    animation: fadetop 3s;
+}
+
+@keyframes fadetop {
+    0% {
+        opacity: 0;
+        top: -150px;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+button.mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.85rem;
+    }
+    button.mobile {
+        display: block;
+        width: 100px;
+        font-size: 2em;
+        background-color: transparent;
+        border: none;
+        color: white;
+        position: relative;
+        top: 3px;
+        float: right;
+        cursor: pointer;
+    }
+    button.mobile:focus {
+        outline: none;
+    }
+    nav ul {
+        list-style: none;
+        display: inline;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top:1px solid rgba(255,255,255, 0.5);
+        width:100%;
+    }
+    nav ul li {
+        margin-left:-30px;
+
+    }
+    .mobile-nav {
+        height: 220px;
+        transition: all 0.25s;
+    }
+    .first-part h1 {
+        font-size: 4.5rem;
+    }
+    .customer p {
+        display: none;
+    }
+}

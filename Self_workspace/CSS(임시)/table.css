@@ -1,0 +1,14 @@
+@CHARSET "UTF-8"
+
+table{
+	border: 1px solid orange;
+	width: 600px;
+	margin: 30px;
+}
+th, td{border: 1px solid;
+		border-radius:50px; }
+
+table#tab01{table-layout:auto;}
+table#tab02{table-layout:fixed;}
+table#tab03{border-spacing: 0px;}
+table#tab04{border-collapse: collapse;}

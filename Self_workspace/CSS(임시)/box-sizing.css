@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+/* body * {box-sizing: border-box;} 
+ 초기값으로 본문의 모든 요소의 크기를 border-box로 지정
+*/
+
+.text {border:4px dashed;
+ background-color: #ccc;
+ color: #333;	
+ line-height: 1.8;
+ width: 50em;  height: 11em; 
+ padding: 0.7em 1em; 
+ box-sizing: border-box;
+}
+
+.size {
+ font-size: 26px;
+ font-weight: bold;	
+ height: 5em;
+}
+
+section {border: 3px solid #666;
+ width:820px;
+ padding: 20px;}
+
+section>div {border: 6px double;
+ width: 400px; height: 100px;
+ display: inline-block; 
+ padding: 20px 10px; }
+
+.contentbox {border-color: #00f;
+ box-sizing:content-box;
+}
+.borderbox {border-color: #f00;
+ box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
