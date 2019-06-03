@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * 두 단계로 이루어진 클라이언트의 요청 주소를 가져옴
  * action변수의 값에 따라 if문을 분기해서 요청한 작업을 수행
  */
-@WebServlet("/member/*")//웹브라우저로부터 주소를 입력해서 요청시 두 단계로 요청이 이루어짐(asterisk 표시 중요)
+/*@WebServlet("/member/*")웹브라우저로부터 주소를 입력해서 요청시 두 단계로 요청이 이루어짐(asterisk 표시 중요)*/
 public class MemberController extends HttpServlet {
 
 	MemberDataAccessObject dao;
@@ -47,7 +47,7 @@ public class MemberController extends HttpServlet {
 		만약 action변수의 값이 null이거나 /listmembers.do인 경우에 회원검색 기능 요청이 들어왔다라는 것을 알 수 있음*/
 		if (action != null){
 				
-				MemberDataAccessObject dao = new MemberDataAccessObject();
+				dao = new MemberDataAccessObject();
 			
 			if(action.equals("/listMembers.do")) {
 				
@@ -66,13 +66,14 @@ public class MemberController extends HttpServlet {
 				String username = request.getParameter("username");
 				String useremail = request.getParameter("useremail");
 				
-				int check = dao.addMember(userid,userpw,username,useremail);
+				MemberValueObject vo = new MemberValueObject(userid,userpw,username,useremail);
+				int check = dao.addMember(vo);
 				
 				if (check == 0) {
 					System.out.println("안된거야");//임시
 					nextPage = "/test02/memberForm.jsp";
 					request.setAttribute("notice", "회원가입에 실패하였습니다. 다시 시도해주세요.");
-				}else {
+				} else {
 					System.out.println("완료");//임시
 					nextPage = "/test02/TemperalyNotice.jsp";
 					List userinfo = new ArrayList();
@@ -83,6 +84,26 @@ public class MemberController extends HttpServlet {
 					
 					request.setAttribute("list", userinfo);
 				}
+			}else if(action.equals("/delmember.do")){
+				
+				String userid = request.getParameter("id");
+				int check = dao.delmember(userid);
+				if (check == 0) {
+					System.out.println("안된거야");//임시
+					nextPage = "/test02/listMembers.jsp";
+					request.setAttribute("notice", "회원정보 삭제에 실패하였습니다. 다시 시도해주세요.");
+					List<MemberValueObject> list = dao.listMembers();
+					request.setAttribute("list", list);
+					
+				} else {
+					System.out.println("완료");//임시
+					nextPage = "/test02/listMembers.jsp";
+					request.setAttribute("notice", "회원정보가 정상적으로 삭제되었습니다.");
+					List<MemberValueObject> list = dao.listMembers();
+					request.setAttribute("list", list);
+					
+					
+				}
 			}
 		
 		}
@@ -90,5 +111,3 @@ public class MemberController extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 }
-
-

@@ -1,3 +1,4 @@
+<%@page import="com.sun.xml.internal.bind.CycleRecoverable.Context"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt"  uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -38,6 +39,7 @@
 			<th width="7%">Full NAME</th>
 			<th width="7%">Contactable EMAIL</th>
 			<th width="7%">Join DATE</th>
+			<th width="1%">DEL</th>
 		</tr>
 		<tr><th colspan="5">CORE-forEach print</th></tr>
 		<c:choose>	
@@ -52,6 +54,7 @@
 						<td>${memberVO.name }</td>
 						<td>${memberVO.email }</td>
 						<td>${memberVO.joindate }</td>
+						<td><a href='${pageContext.request.contextPath}/member/delmember.do?id=${memberVO.id }'>DEL</a></td>
 					</tr>
 				</c:forEach>
 			</c:otherwise>
@@ -63,6 +66,7 @@
 			<p>JOIN US NOW!</p></a>
 		</c:when>
 	</c:choose>
-	
+	<h2 align="center">${notice}</h2>
+
 </body>
 </html>

@@ -6,18 +6,18 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="name_259246341973201" key="selection"/>
+		<item value="Str" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="str"/>
+			<item value="Address"/>
+			<item value="ChatThread"/>
 			<item value="name_259246341973201"/>
 			<item value="vi"/>
 			<item value="set"/>
 			<item value="getClass"/>
 			<item value="\t"/>
-			<item value="t2"/>
-			<item value="Separator"/>
-			<item value="pathSeparator"/>
 		</list>
 		<list key="replacehistory">
 			<item value="getName"/>

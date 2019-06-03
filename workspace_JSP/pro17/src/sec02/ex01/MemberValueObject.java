@@ -11,6 +11,12 @@ public class MemberValueObject {
 	private Date joindate;
 	
 	public MemberValueObject(){}
+	public MemberValueObject(String id, String pwd, String name, String email) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+		this.email = email;
+	}
 	public MemberValueObject(String id, String pwd, String name, String email, Date joindate) {
 		this.id = id;
 		this.pwd = pwd;
