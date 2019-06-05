@@ -1,0 +1,50 @@
+안드로이드 애플리케이션 기초개념
+
+- 자바소스 파일 → .dex파일 → .apk파일
+
+	┌───────apk bulider─────┐
+	│1. 소스파일 : 자바 소스	│
+	│2. 리소스 : 주로 XML파일	│
+	│3. 컴파일러		│
+	└───────────────────────┘
+
+◆ Sdk(Software Development Kit) = 개발툴 (자바의 JDK와 일맥상통(?))
+└ 라이브러리 표준 경로( C:\Users\ITWILL\AppData\Local\Android\Sdk )
+
+- 1. platforms
+ 해당 경로(위 예시로는 표준경로)의 platforms → android-28(플랫폼 버전)
+
+- 2. platform-tools
+ adb(android device bridge) : 컴파일 결과를 출력할 수 있게 해주는 브릿지 역할??...
+ 
+안드로이드 4가지 타입 컴포넌트
+ Num	컴포넌트 타입	배우는 비중
+- 1.	 액티비티	 	(90%)
+- 2.	 서비스	 	(3.3%)
+- 3.	 방송수신자 	(3.3%)
+- 4.	 콘텐트 제공자 	(3.3%)
+
+xml parsing(xml파일 분석 tool)
+
+
+수명주기 콜백 구현(자바에서 오버라이딩과 같은 의미)
+- 1. onCreate
+- 2. onStart
+- 3. onResume
+- 4. onPause
+- 5. onStop
+- 6. onDestroy
+
+배치관리자(View Group)
+- android.support.constraint.ConstraintLayout
+- LinearLayout 선형 레이아웃
+ └ horizen, vertical 중 설정
+
+
+
+
+
+
+
+
+
