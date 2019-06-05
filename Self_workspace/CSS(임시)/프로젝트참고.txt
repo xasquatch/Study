@@ -23,6 +23,9 @@ pexels.com
 https://morguefile.com
 https://pixabay.com
 
+★ 이미지 무료편집사이트(온라인포토샵)
+https://pixlr.com/editor
+
 ★ 서체 사이트
 https://fonts.google.com/
 http://software.naver.com/software/fontList.nhn?categoryId=I0000000
@@ -30,7 +33,7 @@ dafont.com
 1001fonts.com
 
 ★ 추천색상팔레트
-color.adobe.com
+https://color.adobe.com
 
 ★ css자동생성기 사이트
 http://www.colorzilla.com (그라데이션)
