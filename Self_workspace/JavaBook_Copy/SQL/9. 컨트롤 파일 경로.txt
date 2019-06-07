@@ -1,0 +1,61 @@
+-/u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl
+
+SQLPLUS => 리눅스 터미널
+SQL> !	엔터
+
+리눅스 터미널 => SQLPLUS
+]$ exit
+
+---------------------------------------- 실행 내역
+
+SQL> conn sys/oracle as sysdba
+Connected.
+SQL> SELECT name
+  2  FROM v$controlfile;
+
+NAME
+--------------------------------------------------------------------------------
+/u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl
+
+SQL> alter system set control_files =
+  2  '/u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl',
+  3  '/u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl',
+  4  '/u01/app/oracle/oradata/ORCL/datafile/control03.ctl' scope = spfile;
+
+System altered.
+
+SQL> shut immediate
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> !
+[oracle@localhost ~]$ cp /u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl /u01/app/oracle/oradata/ORCL/datafile/control03.ctl
+[oracle@localhost ~]$ ls /u01/app/oracle/oradata/ORCL/datafile/
+control03.ctl                 o1_mf_system_fwvn49fw_.dbf    o1_mf_users_fwvn681o_.dbf
+o1_mf_inventor_gfwr6pfb_.dbf  o1_mf_temp_fwvnbgvk_.tmp
+o1_mf_sysaux_fwvn5f1l_.dbf    o1_mf_undotbs1_fwvn66mp_.dbf
+[oracle@localhost ~]$ exit
+exit
+
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area  838860800 bytes
+Fixed Size                  8626240 bytes
+Variable Size             658509760 bytes
+Database Buffers          163577856 bytes
+Redo Buffers                8146944 bytes
+Database mounted.
+Database opened.
+SQL> SELECT name
+  2  FROM v$controlfile;
+
+NAME
+--------------------------------------------------------------------------------
+/u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl
+/u01/app/oracle/oradata/ORCL/datafile/control03.ctl
+
+SQL>

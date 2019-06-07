@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RadioButtonEX</string>
+    <string-array name = "array">
+        <item>한식</item>
+        <item>중식</item>
+        <item>양식</item>
+        <item>일식</item>
+        <item>월식</item>
+        <item>두식</item>
+        <item>방식</item>
+        <item>주식</item>
+        <item>휴식</item>
+    </string-array>
+</resources>

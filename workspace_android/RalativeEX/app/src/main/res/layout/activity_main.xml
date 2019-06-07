@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="쳐봐" />
+
+    <Spinner
+        android:id="@+id/S1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentLeft="true"/>
+
+    <Spinner
+        android:id="@+id/S2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/S2"
+        android:layout_alignParentRight="true"
+        android:text="눌러봐" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_alignParentRight="true"
+        android:onClick="clickLisener"
+        app:srcCompat="@drawable/icon" />
+
+</RelativeLayout>

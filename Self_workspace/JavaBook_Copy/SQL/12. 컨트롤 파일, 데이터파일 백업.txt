@@ -1,0 +1,72 @@
+SQL> select name
+  2  from v$controlfile;
+
+NAME
+--------------------------------------------------------------------------------
+/u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl
+/u01/app/oracle/oradata/ORCL/datafile/control03.ctl
+
+SQL> select file#, name
+  2  from v$datafile;
+
+     FILE#
+----------
+NAME
+--------------------------------------------------------------------------------
+         1
+/u01/app/oracle/oradata/ORCL/datafile/o1_mf_system_fwvn49fw_.dbf
+
+         2
+/u01/app/oracle/oradata/ORCL/datafile/o1_mf_inventor_gfwr6pfb_.dbf
+
+         3
+/u01/app/oracle/oradata/ORCL/datafile/o1_mf_sysaux_fwvn5f1l_.dbf
+
+
+     FILE#
+----------
+NAME
+--------------------------------------------------------------------------------
+         4
+/u01/app/oracle/oradata/ORCL/datafile/o1_mf_undotbs1_fwvn66mp_.dbf
+
+         7
+/u01/app/oracle/oradata/ORCL/datafile/o1_mf_users_fwvn681o_.dbf
+
+
+SQL> shut immediate
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> !
+[oracle@localhost ~]$ ls
+afiedt.buf  labs_12c  query.sql      공개      문서      비디오  서식
+backup      ora12c    querytest.sql  다운로드  바탕화면  사진    음악
+[oracle@localhost ~]$ rm -r backup/
+[oracle@localhost ~]$ ls
+afiedt.buf  ora12c     querytest.sql  다운로드  바탕화면  사진  음악
+labs_12c    query.sql  공개           문서      비디오    서식
+[oracle@localhost ~]$ mkdir backup
+[oracle@localhost ~]$ ls
+afiedt.buf  labs_12c  query.sql      공개      문서      비디오  서식
+backup      ora12c    querytest.sql  다운로드  바탕화면  사진    음악
+[oracle@localhost ~]$ cd backup/
+[oracle@localhost backup]$ cp /u01/app/oracle/oradata/ORCL/datafile/control03.ctl control_bk.ctl
+[oracle@localhost backup]$ ls
+control_bk.ctl
+[oracle@localhost backup]$ cp /u01/app/oracle/oradata/ORCL/datafile/*.dbf .
+[oracle@localhost backup]$ exit
+exit
+
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area  838860800 bytes
+Fixed Size                  8626240 bytes
+Variable Size             658509760 bytes
+Database Buffers          163577856 bytes
+Redo Buffers                8146944 bytes
+Database mounted.
+Database opened.
+SQL>

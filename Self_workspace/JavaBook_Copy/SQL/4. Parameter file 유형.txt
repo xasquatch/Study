@@ -1,0 +1,26 @@
+<Parameter file 유형>
+1. PFILE
+ - 위치 : $ORACLE_HOME/dbs
+ - 이름 : initSID.ora	ex) initorcl.ora
+ - text 파일 유형, vi 편집기로 수동편집 가능
+ - static 파일유형 : DB 운영 중 parameter값 변경 시 바로 적용 X
+		     DB 재시작 시 적용 됨.
+
+2. SPFILE
+ - 위치 : $ORACLE_HOME/dbs
+ - 이름 : spfileSID.ora    ex) spfileorcl.ora
+ - binary 파일 유형 : vi 편집기로 수동편집 X, Oracle DB에서 관리
+ - dynamic 파일 유형 : DB 운영 중 parameter 값 변경 시 바로 적용
+ - 조회 : SQL> show parameter db_block_size
+ - 변경 : SQL> ALTER SYSTEM SET db_cache_size = 256M 
+	       [scope = [spfile|memory|both]];
+
+옵션) 1) spfile : 현재 DB에는 적용하지 않고 DB 재시작부터 적용하고 유지
+      2) memory : 현재 DB에 적용하고 DB 재시작시 원래값으로 되돌림.
+      3) both(d): 현재 DB에 적용하고 DB 재시작시에도 설정값 유지
+
+
+
+
+
+

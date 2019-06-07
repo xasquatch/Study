@@ -1,0 +1,33 @@
+SQL> select name
+  2  from v$controlfile;
+
+NAME
+--------------------------------------------------------------------------------
+/u01/app/oracle/oradata/ORCL/controlfile/o1_mf_fwvn95xm_.ctl
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl
+/u01/app/oracle/oradata/ORCL/datafile/control03.ctl
+
+SQL> shut immediate
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> !
+[oracle@localhost ~]$ cd /u01/app/oracle/oradata/ORCL/controlfile/
+[oracle@localhost controlfile]$ cp *.ctl /u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/o1_mf_fwvn96cd_.ctl
+[oracle@localhost controlfile]$ cd /u01/app/oracle/fast_recovery_area/orcl/ORCL/controlfile/
+[oracle@localhost controlfile]$ ls
+o1_mf_fwvn96cd_.ctl
+[oracle@localhost controlfile]$ exit
+exit
+
+SQL> startup
+ORACLE instance started.
+
+Total System Global Area  838860800 bytes
+Fixed Size                  8626240 bytes
+Variable Size             658509760 bytes
+Database Buffers          163577856 bytes
+Redo Buffers                8146944 bytes
+Database mounted.
+Database opened.
+SQL>

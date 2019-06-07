@@ -1,0 +1,29 @@
+SQL> shut immediate
+Database closed.
+Database dismounted.
+ORACLE instance shut down.
+SQL> startup mount
+ORACLE instance started.
+
+Total System Global Area  838860800 bytes
+Fixed Size                  8626240 bytes
+Variable Size             658509760 bytes
+Database Buffers          163577856 bytes
+Redo Buffers                8146944 bytes
+Database mounted.
+SQL> !
+[oracle@localhost ~]$ cd backup/
+[oracle@localhost backup]$ ls
+control_bk.ctl                o1_mf_sysaux_fwvn5f1l_.dbf  o1_mf_undotbs1_fwvn66mp_.dbf
+o1_mf_inventor_gfwr6pfb_.dbf  o1_mf_system_fwvn49fw_.dbf  o1_mf_users_fwvn681o_.dbf
+[oracle@localhost backup]$ cp o1_mf_system_fwvn49fw_.dbf /u01/app/oracle/oradata/ORCL/datafile/o1_mf_system_fwvn49fw_.dbf
+[oracle@localhost backup]$ exit
+exit
+
+SQL> recover database;
+Media recovery complete.
+SQL> alter database open;
+
+Database altered.
+
+SQL>

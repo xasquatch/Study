@@ -1,0 +1,74 @@
+SQL> select group#, member
+  2  from v$logfile
+  3  order by group#;
+
+    GROUP#
+----------
+MEMBER
+--------------------------------------------------------------------------------
+         1
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/onlinelog/o1_mf_1_fwvn9o6v_.log
+
+         1
+/u01/app/oracle/oradata/ORCL/datafile/redo1c.log
+
+         1
+/u01/app/oracle/oradata/ORCL/onlinelog/o1_mf_1_fwvn9ddb_.log
+
+
+    GROUP#
+----------
+MEMBER
+--------------------------------------------------------------------------------
+         2
+/u01/app/oracle/oradata/ORCL/onlinelog/o1_mf_2_fwvn9ddv_.log
+
+         2
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/onlinelog/o1_mf_2_fwvn9l85_.log
+
+         2
+/u01/app/oracle/oradata/ORCL/datafile/redo2c.log
+
+
+    GROUP#
+----------
+MEMBER
+--------------------------------------------------------------------------------
+         3
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/onlinelog/o1_mf_3_fwvn9xf6_.log
+
+         3
+/u01/app/oracle/oradata/ORCL/onlinelog/o1_mf_3_fwvn9t6z_.log
+
+         3
+/u01/app/oracle/oradata/ORCL/datafile/redo3c.log
+
+
+    GROUP#
+----------
+MEMBER
+--------------------------------------------------------------------------------
+         4
+/u01/app/oracle/oradata/ORCL/onlinelog/redo4a.log
+
+         4
+/u01/app/oracle/oradata/ORCL/datafile/redo4c.log
+
+         4
+/u01/app/oracle/fast_recovery_area/orcl/ORCL/onlinelog/redo4b.log
+
+
+12 rows selected.
+
+SQL> alter database
+  2  drop logfile member '/u01/app/oracle/fast_recovery_area/orcl/ORCL/onlinelog/o1_mf_2_fwvn9l85_.log';
+
+Database altered.
+
+SQL> alter database
+  2  add logfile member '/u01/app/oracle/fast_recovery_area/orcl/ORCL/onlinelog/redo2b.log'
+  3  to group 2;
+
+Database altered.
+
+SQL>

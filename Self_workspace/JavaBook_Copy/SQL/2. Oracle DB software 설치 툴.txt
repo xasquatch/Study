@@ -1,0 +1,27 @@
+Oracle DB software 설치 툴
+ - OUI(Oracle Universal Installer)
+$] ./runInstaller	OUI 실행
+
+Oracle DB 생성 툴
+ - DBCA 
+
+
+
+데이터베이스 관련 환경 변수
+.bash_profile	사용자 환경변수 파일
+
+환경변수
+$ORACLE_BASE	오라클 소프트웨어가 환경 파일이 위치하는 경로
+$ORACLE_HOME	오라클 소프트웨어가 설치되는 경로
+$ORACLE_SID	데이터베이스 이름
+
+환경변수 출력
+EX) echo $ORACLE_HOME
+
+
+데이터베이스 설치 과정
+1. parameter file 생성
+2. passwordfile 생성
+3. DB nomount 시작
+4. CREATE DATABASE 구문 실행
+

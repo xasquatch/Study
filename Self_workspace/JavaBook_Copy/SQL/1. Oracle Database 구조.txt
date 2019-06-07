@@ -1,0 +1,76 @@
+<Oracle Database 구조>
+[Database]
+1. Data files
+ - 실제 Data가 저장된 파일
+ - Data Dictionary가 저장된 파일
+ - v$datafile 데이터 딕셔너리
+
+2. Control file
+ - DB의 무결성을 유지관리 할 수 있는 
+   모든 동기화 정보가 기록된 곳
+   (DB의 논리적/물리적 구조정보, 마지막 작업 정보, ..)
+ - DB당 하나만 있어도 됨
+ - 다중화 기능 제공됨(최대 8개까지 가능, 권장 : 3개까지)
+ - v$controlfile 데이터 딕셔너리
+
+3. [Online] Redo log files
+ - DB에서 발생된 모든 변경작업의 로그정보(Redo data)가 기록된 곳
+ - 목적 : Datafile recovery
+ - DB당 최소 2개이상 존재해야 됨
+ - 순환형으로 관리
+ - 다중화 기능 제공
+ - v$log, v$logfile 데이터 딕셔너리
+
+4. parameter file
+ - Instance의 정의정보가 기록된 파일 (SGA 할당정보, B/G proc 정보)
+ - DB의 여러 설정정보가 기록된 파일
+
+5. password file
+ - DB를 시작/종료할 수 있게 인증해주는 파일
+ - 위치 : $ORACLE_HOME/dbs
+ - 이름 : orapwSID (ex> orapworcl)
+
+6. Archived log files (옵션)
+ - Redo log file의 offline 복사본
+ - 목적 : datafile recovery
+
+[Instance]
+<<SGA>> - 공유 메모리 영역
+1. Shared pool => 사전준비 작업을 하는 곳
+ 1) Library cache
+ - 최근에 발생 된 SQL구문과 실행계획이 저장된 곳
+   (대소문자, 공백까지 일치)
+ - LRU(Least Recent Used) 알고리즘으로 관리
+ 2) Data dictionary cache
+ - 최근에 사용된 DB정의 정보가 저장된 곳
+ - LRU 알고리즘으로 관리됨
+
+2. DB buffer cache => 작업을 수행하는 곳
+ - 최근에 사용된 Data block이 저장된 곳
+ - LRU 알고리즘으로 관리
+
+3. Redo log buffer
+ - DB에서 발생된 변경작업의 로그정보가 기록되는 곳
+ - 순환형으로 관리 됨
+ - 목적 : Datafile recovery
+
+<<B/G proc>>
+1. PMON - User proc fail 시 진행중인 트랜잭션 롤백 
+          및 선점하고 있던 자원 LOCK을 해제
+2. SMON - Instance fail 시 (=DB 비정상종료) 
+          DB 재시작될때 DB 동기화를 맞춰줌
+3. DBWn - DB buffer cache의 dirty block을 datafile로 기록함
+          체크포인트 발생 시 동작
+4. LGWR - Redo log buffer의 log정보(Redo data)를 
+          Redo log file로 기록함
+	  Commit 발생 시 동작
+5. CKPT - 체크포인트 발생 시 DBWR에게 알려줌.
+6. ARCn(옵션) - DB가 archive log mode인 경우 활성화
+		Redo log file에 로그스위치가 발생 시
+		Offline 복사본(Archvied log file)을 기록함.
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+SQL> alter database datafile 7 offline;
+alter database datafile 7 offline immediate
+
+Database altered.
+
+SQL> !
+[oracle@localhost ~]$ cp /home/oracle/backup/o1_mf_users_fwvn681o_.dbf /u01/app/oracle/oradata/ORCL/datafile/o1_mf_users_fwvn681o_.dbf
+[oracle@localhost ~]$ exit
+exit
+
+SQL> recover datafile 7;
+Media recovery complete.
+SQL> alter database datafile 7 online;
+
+Database altered.
+
+SQL>
