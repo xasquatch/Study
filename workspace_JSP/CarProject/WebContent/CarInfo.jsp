@@ -44,7 +44,7 @@
 				<tr>
 					<td align="center" width="200">대여수량</td>
 					<td align="center" width="200">
-						<select	name="carpty">
+						<select	name="carqty">
 							<option value="1">1대</option>
 							<option value="2">2대</option>
 							<option value="3">3대</option>
@@ -55,7 +55,7 @@
 				</tr>
 				<tr>
 					<td align="center" width="200">대여 금액</td>
-					<td align="center" width="200">${bean.carprice }</td>
+					<td align="center" width="200">${bean.carprice}</td>
 				</tr>
 				<tr>
 					<td align="center" width="200">제조회사</td>

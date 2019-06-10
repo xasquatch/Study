@@ -3,6 +3,7 @@ package db;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Vector;
 
 import javax.naming.Context;
@@ -167,6 +168,41 @@ public class CarDAO {
 		}
 		return bean; //CarListBean객체 반환
 	}//getOneCar메소드 끝
+
+
+	public void insertCarOrder(CarOrderBean bean) {
+		getCon();
+		try {
+			String sql = "INSERT INTO carorder(carno, carqty, carreserveday, carbegindate, carins, carwifi, carnave, carbabyseat, memberphone, memberpass)"
+					+ " VALUES(?,?,?,?,?,?,?,?,?,?)";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, bean.getCarno());
+			pstmt.setInt(2, bean.getCarqty());
+			pstmt.setInt(3, bean.getCarreserveday());
+			pstmt.setString(4, bean.getCarbegindate());
+			pstmt.setInt(5, bean.getCarins());
+			pstmt.setInt(6, bean.getCarwifi());
+			pstmt.setInt(7, bean.getCarnave());
+			pstmt.setInt(8, bean.getCarbabyseat());
+			pstmt.setString(9, bean.getMemberphone());
+			pstmt.setString(10, bean.getMemberpass());
+			pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			allClose();
+		}
+	}
+
+	public void allClose(){
+		try {
+			con.close();
+			pstmt.close();
+			rs.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	
 	
