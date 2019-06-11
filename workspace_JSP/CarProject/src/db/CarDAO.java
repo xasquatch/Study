@@ -190,15 +190,63 @@ public class CarDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {
-			allClose();
+			conpstmtClose();
 		}
 	}
 
-	public void allClose(){
+	public Vector<CarConfirmBean> getAllCarOrder(String memberphone,String memberpass) {
+		
+		Vector<CarConfirmBean> v = new Vector<CarConfirmBean>();
+		CarConfirmBean bean = null;
+		
+		try {
+			String sql = "SELECT * FROM carorder NATURAL JOIN carlist "
+					+ "where now() < carbegindate AND "
+					+ "memberphone=? AND memberpass=?";
+			getCon();	
+			
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, memberphone);
+			pstmt.setString(2, memberpass);
+			rs = pstmt.executeQuery();
+			while (rs.next()) {
+				bean = new CarConfirmBean();
+				bean.setOrderid(rs.getInt(2));
+				bean.setCarqty(rs.getInt(3));
+				bean.setCarreserveday(rs.getInt(4));
+				bean.setCarbegindate(rs.getString(5));
+				bean.setCarins(rs.getInt(6));
+				bean.setCarwifi(rs.getInt(7));
+				bean.setCarnav(rs.getInt(8));
+				bean.setCarbabyseat(rs.getInt(9));
+				bean.setCarname(rs.getString(12));
+				
+				v.add(bean);
+			}
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			conpstmtClose();
+		}
+		return v;
+	}
+	
+	
+	public void conpstmtrsClose(){
 		try {
 			con.close();
 			pstmt.close();
 			rs.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public void conpstmtClose(){
+		try {
+			con.close();
+			pstmt.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

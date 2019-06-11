@@ -1217,3 +1217,11 @@
 6월 10, 2019 17:06:37.36 ", source: chrome-search://local-ntp/local-ntp.html (1)
 6월 10, 2019 17:09:20.02 [3128:8356:0610/170920.020:ERROR:CONSOLE(1)] "Refused to execute inline event handler because it violates the following Content Security Policy directive: "script-src 'strict-dynamic' 'sha256-EVjR8L4xuo0c7UNzAtLmKQoojKIjdHqYIqdanwmukFQ=' 'sha256-ps+f+kvXv/saiMZBvZdqrnWV6Gcxo4dQ9UAG6SXPM6M=' 'sha256-YUYyUdaHPr4vPwR1MbbgywsO6nfhVmXMpy6ILGW3rKk=' 'sha256-ydzrIpu7RPpN+/W1u5M3gE6zl+u6KRMtbQEzdDt/Uao=' 'sha256-KNY16OU2yK5dZbn5VtmVD+8Nko2v7x2ZPfUGq+DvZEs=' 'sha256-lj3Ybq0OcgGBTQmk7PbTtC0eH6NJaDsZHXnY9olO7Mk=' 'sha256-PD+7Krobzp4bjF2GhtRb0yMKpkh2wMO6ONxT2woe4jw='". Either the 'unsafe-inline' keyword, a hash ('sha256-...'), or a nonce ('nonce-...') is required to enable inline execution.
 6월 10, 2019 17:09:20.02 ", source: chrome-search://local-ntp/local-ntp.html (1)
+6월 10, 2019 17:26:35.70 [3128:2280:0610/172635.701:ERROR:browser_process_sub_thread.cc(217)] Waited 177 ms for network service
+
+6월 11, 2019 16:15:01.73 NEW SESSION
+6월 11, 2019 16:15:01.73 [6744:6900:0611/161501.544:ERROR:browser_process_sub_thread.cc(217)] Waited 131 ms for network service
+6월 11, 2019 16:24:45.04 [8652:8556:0611/162445.041:ERROR:browser_process_sub_thread.cc(217)] Waited 15 ms for network service
+6월 11, 2019 16:32:54.59 [1692:4564:0611/163254.590:ERROR:browser_process_sub_thread.cc(217)] Waited 14 ms for network service
+6월 11, 2019 16:37:10.59 [4344:2356:0611/163710.592:ERROR:browser_process_sub_thread.cc(217)] Waited 106 ms for network service
+6월 11, 2019 16:38:51.92 [3952:5240:0611/163851.921:ERROR:browser_process_sub_thread.cc(217)] Waited 113 ms for network service
