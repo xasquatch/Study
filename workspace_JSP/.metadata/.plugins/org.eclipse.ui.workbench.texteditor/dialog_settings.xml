@@ -2,28 +2,28 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="h1" key="selection"/>
+		<item value="xs-2" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="h2"/>
-			<item value="light"/>
-			<item value="span"/>
-			<item value="h1"/>
-			<item value="container"/>
-			<item value="hover"/>
-			<item value="menu"/>
-			<item value="likeAnimation"/>
+			<item value="sample3_detailAddress"/>
+			<item value="sample3_extraAddress"/>
+			<item value="extraAddr "/>
+			<item value="sm-2"/>
+			<item value="form-control"/>
+			<item value="&quot;sr-only&quot;"/>
+			<item value="col-sm-2 control-labelcol-sm-2 control-label"/>
+			<item value="passcheck"/>
 		</list>
 		<list key="replacehistory">
+			<item value="xs-2"/>
+			<item value="form-control"/>
+			<item value="&quot;col-sm-2 control-label&quot;"/>
+			<item value="div"/>
 			<item value="h1"/>
 			<item value="&gt;4444444&lt;"/>
 			<item value="carqty"/>
 			<item value="&lt;option value=&quot;12&quot;&gt;일"/>
-			<item value=" : $"/>
-			<item value="th"/>
-			<item value="));"/>
-			<item value="&quot;);"/>
 		</list>
 	</section>
 </section>

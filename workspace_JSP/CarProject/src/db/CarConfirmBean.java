@@ -1,15 +1,20 @@
 package db;
 
+//두개의 테이블(carlist,carorder)을 JOIN후 검색하여 나온 예약한 정보를 저장해주는 클래스 
 public class CarConfirmBean {
-	
+
+	/*carlist테이블에서 예약정보를 검색하여 가져온 값 저장할 변수 */
 	private String carname;
 	private String carimg;
 	private int carprice;
+	
+	/*carorder테이블에서 예약정보를 검색하여 가져온 값 저장할 변수*/
 	private int orderid;
 	private String carbegindate;
 	private int carreserveday;
-	private int carqty, carins, carwifi, carnav, carbabyseat;
+	private int carqty, carins, carwifi, carnave, carbabyseat;
 	
+	//getter, setter메소드 
 	public String getCarname() {
 		return carname;
 	}
@@ -64,11 +69,11 @@ public class CarConfirmBean {
 	public void setCarwifi(int carwifi) {
 		this.carwifi = carwifi;
 	}
-	public int getCarnav() {
-		return carnav;
+	public int getCarnave() {
+		return carnave;
 	}
-	public void setCarnav(int carnav) {
-		this.carnav = carnav;
+	public void setCarnave(int carnave) {
+		this.carnave = carnave;
 	}
 	public int getCarbabyseat() {
 		return carbabyseat;
@@ -77,6 +82,18 @@ public class CarConfirmBean {
 		this.carbabyseat = carbabyseat;
 	}
 	
+
+	
+	
+	
+	
+	
+	
 	
 	
 }
+
+
+
+
+

@@ -1,20 +1,18 @@
 package db;
 
+//VO , DTO 역할을 하는 클래스 
 public class CarListBean {
+	//차한대의 정보를 저장할 각변수
+	private int carno; //차번호
+	private String carname;//차이름
+	private String carcompany;//차제조사
+	private int carprice;//차한대당 렌트가격
+	private int carusepeople; //차인승
+	private String carinfo; //차 소개 정보
+	private String carimg; //차이미지명
+	private String carcategory; //차종류(대형,소형,중형)
 	
-	private int carno;
-	private String carname;
-	private String carcompany;
-	private int carprice;
-	private int carusepeople;
-	private String carinfo;
-	private String carimg;
-	private String carcategory;
-	
-	
-	
-	
-/*---------------------------------------------------------------------*/
+	//getter,setter메소드
 	public int getCarno() {
 		return carno;
 	}
@@ -63,4 +61,9 @@ public class CarListBean {
 	public void setCarcategory(String carcategory) {
 		this.carcategory = carcategory;
 	}
+	
+
+	
+	
+	
 }
