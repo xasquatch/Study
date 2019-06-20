@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="537" key="DIALOG_X_ORIGIN"/>
-		<item value="174" key="DIALOG_Y_ORIGIN"/>
+		<item value="648" key="DIALOG_X_ORIGIN"/>
+		<item value="244" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 		<item value="true" key="actionSetFilter"/>
@@ -40,6 +40,13 @@
 			<item value="org.eclipse.jst.ws.ui.new"/>
 			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="698" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="716" key="DIALOG_HEIGHT"/>
+		<item value="112" key="DIALOG_X_ORIGIN"/>
+		<item value="-298" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.jst.servlet.ui.internal.wizard.WebComponentExportWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>

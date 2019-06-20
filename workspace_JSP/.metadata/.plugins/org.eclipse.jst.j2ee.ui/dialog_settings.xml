@@ -3,12 +3,12 @@
 	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
 	<item value="true" key="J2EE_EXPORT_SOURCE"/>
 	<list key="J2EE_IMPORT_null">
+		<item value="\\192.168.2.200\data\20190619\CarProject0618.war"/>
 		<item value="\\192.168.2.200\data\20190605\CarProject_0605_final.war"/>
 		<item value="C:\Users\ITWILL\Desktop\XMLHttpRequest객체.war"/>
 		<item value="C:\Users\ITWILL\Desktop\pro12_1.war"/>
 		<item value="C:\Users\ITWILL\Desktop\6강의실 배성국 개인프로젝트\war파일.war"/>
 		<item value="C:\Users\ITWILL\Desktop\FileDown.war"/>
-		<item value="C:\Users\ITWILL\Desktop\Board-model1.war"/>
 	</list>
 	<list key="MRU_RUNTIME_STORE">
 		<item value="Apache Tomcat v8.5"/>

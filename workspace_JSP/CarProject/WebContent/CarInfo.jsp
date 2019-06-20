@@ -1,91 +1,86 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c"  uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fmt"  uri="http://java.sun.com/jsp/jstl/fmt"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<%--JSTL라이브러리에 속한 태그들중.. core라이브러리에 속한 태그를 사용하기 위해 링크 설정 --%>    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>           
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<table align="center" border="1">
-		<tr align="center">
-			<th width="10%">Number</th>
-			<th width="10%">Name</th>	
-			<th width="10%">Company</th>
-			<th width="10%">price</th>
-			<th width="10%">UsePeople</th>
-			<th width="10%">Info</th>
-			<th width="10%">Image</th>
-			<th width="10%">Category</th>
-		</tr>
-		<tr align="center">
-			<td width="10%">${bean.carno}</td>
-			<td width="10%">${bean.carname}</td>
-			<td width="10%">${bean.carcompany}</td>
-			<td width="10%">${bean.carprice}</td>
-			<td width="10%">${bean.carusepeople}</td>
-			<td width="10%">${bean.carinfo}</td>
-			<td width="10%"><img src="img/${bean.carimg}" width="100%"></td>
-			<td width="10%">${bean.carcategory}</td>
-		</tr>
-	</table>
-	<hr>
+<!-- 	자동차 예약시 옵션을 선택할수 있고  검색해온 차량정보를 화면에 출력 해주는 페이지 -->
 	<center>
-		<form action="main.jsp?center=CarOption.jsp" method="POST">
-			<table width="1000">
+		<img src="img/cis.jpg">
+		
+	<!-- 자동차 렌트시 옵션 선택하기 버튼을 눌렀을떄.. 옵션 선택 페이지 화면을 요청! -->	
+	<form action="CarMain.jsp?center=CarOption.jsp" method="post">
+		<table width="1000" border="0">
 				<tr align="center">
-					<th rowspan="6" width="600">
-						<img src="img/${bean.carimg}">
-					</th>
-					<td align="center" width="200">차량 이름</td>
-					<td>${bean.carname}</td>
+					<td rowspan="6" width="600">
+						<img src="img/${requestScope.bean.carimg}" width="500">
+					</td>
+					<td align="center" width="200">차량이름</td>
+					<td align="center" width="200">${bean.carname}</td>
 				</tr>
 				<tr>
 					<td align="center" width="200">대여수량</td>
 					<td align="center" width="200">
-						<select	name="carqty">
-							<option value="1">1대</option>
-							<option value="2">2대</option>
-							<option value="3">3대</option>
-							<option value="4">4대</option>
-							<option value="5">5대</option>
+						<select name="carqty">
+								<option value="1">1대</option>
+								<option value="2">2대</option>
+								<option value="3">3대</option>
+								<option value="4">4대</option>
+								<option value="5">5대</option>
 						</select>
 					</td>
 				</tr>
 				<tr>
-					<td align="center" width="200">대여 금액</td>
-					<td align="center" width="200">${bean.carprice}</td>
+					<td align="center" width="200">대여금액</td>
+					<td align="center" width="200">
+						${bean.carprice}
+					</td>
 				</tr>
 				<tr>
 					<td align="center" width="200">제조회사</td>
-					<td align="center" width="200">${bean.carcompany}</td>
-				</tr>
-				<tr>
-					<td align="center" width="200">UsePeople</td>
-					<td align="center" width="200">${bean.carusepeople}</td>
+					<td align="center" width="200">
+						${bean.carcompany}
+					</td>
 				</tr>
 				<tr>
 					<td align="center" width="200">
-							<input type="submit" value="옵션 선택하기">
-							<input type="hidden" name="carno" value="${bean.carno}">
-							<input type="hidden" name="carimg" value="${bean.carimg}">
-							<input type="hidden" name="carprice" value="${bean.carprice}">
-							<input type="hidden" name="carcompany" value="${bean.carcompany}">
+						<!-- CarList.jsp로 이동 ~ -->
+						 <input type="button" 
+						 		value="이전" 
+						 		onclick="location.href='CarListController.do'">
 					</td>
 					<td align="center" width="200">
-							<input type="button" value="이전" onclick="location.href='CarListController.do'">
+						<!-- 옵션선택 페이지 화면으로 예약할 차번호,이미지명,차한대당가격을  hidden으로 전달 -->
+						<input type="hidden" name="carno" value="${bean.carno}">
+						<input type="hidden" name="carimg" value="${bean.carimg}">
+						<input type="hidden" name="carprice" value="${bean.carprice}">
+						
+						<input type="submit" value="옵션선택하기">
 					</td>
-				</tr>
-			</table>
-		</form>
+				</tr>									
+		</table>
+	</form>
 	</center>
 	<p>
-		<b>차량 설명 내용</b><BR>
-		${bean.carinfo }
+		<b>차량 설명 내용</b>
+		${bean.carinfo}
 	</p>
-	
-	
-	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
