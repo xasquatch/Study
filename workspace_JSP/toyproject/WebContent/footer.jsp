@@ -16,43 +16,47 @@
 
 
 <!-- MODAL FORM -->
-<div id="masage" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div id="masage" class="modal fade bs-example-modal-lg" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-lg" style="width: 80%; height: 80%; font-size: 25px;">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalTitle"></h4>
+          <h1 class="modal-title" id="modalTitle">회원가입 양식</h1>
         </div>
+        <div id="wrap" style="display:none;border:1px solid;width:500px;height:300px;margin:5px 0;position:absolute; z-index:1; right: 0px;">
+						<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap"
+						 style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
+					</div>
 	        <div class="modal-body">
 			<form class="form-horizontal">
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="id">아이디</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" id="id" placeholder="아이디" maxlength="15" required="required">
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="pwd1">비밀번호</label>
 					<div class="col-xs-10">
 						<input type="password" class="form-control" id="mypwd1" placeholder="비밀번호" maxlength="15" required="required" onkeydown="passchecking();">
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="pwd2">비밀번호 확인</label>
 					<div class="col-xs-10">
 						<input type="password" class="form-control" id="mypwd2" placeholder="비밀번호 확인" maxlength="15" required="required" onkeydown="passchecking();">
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<div id="passcheck"></div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="name">이름</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" id="name" placeholder="이름" maxlength="15">
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="CallNumber">연락처</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" id="CallNumber" placeholder="연락처" onkeydown="changnumber" maxlength="15">
@@ -97,7 +101,9 @@
 				        var mypwd2 = $('#mypwd2').val();
 				         
 				        if((mypwd1!=mypwd2)||mypwd1 == ""||mypwd2 == ""){
-				            $('#passcheck').html("비밀번호 확인하셨나요?");
+// 				            $('#passcheck').html("비밀번호 확인하셨나요?");
+// 				            $('#mypwd1').attr('class',' has-error');
+// 				            $('#mypwd2').attr('class',' has-error');
 						}
 				        else{
 				            $('#passcheck').html("잘하셨어요!");
@@ -106,38 +112,34 @@
 					
 				</script>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="email">이메일</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" id="email" placeholder="이메일" maxlength="45" >
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="address">우편번호</label>
-					<div class="col-xs-8">
+					<div class="col-xs-7">
 						<input type="text" class="form-control" name="myaddr1" id="sample3_postcode" placeholder="우편번호">
 					</div>
-					<div class="col-xs-2">
+					<div class="col-xs-3">
 						<input type="button" style="border:1px solid rgba(0,0,0,0.2);" class="btn btn-default" onclick="sample3_execDaumPostcode()" value="우편번호 찾기"><br>
 					</div>
-					<div id="wrap" style="display:none;border:1px solid;width:500px;height:300px;margin:5px 0;position:relative">
-						<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap"
-						 style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
-					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="address">주소</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" name="myaddr2" id="sample3_address" placeholder="주소">
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="address">상세주소</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" name="myaddr3" id="sample3_detailAddress" placeholder="상세주소">
 					</div>
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="col-xs-2 control-label" for="address">참고항목</label>
 					<div class="col-xs-10">
 						<input type="text" class="form-control" name="myaddr4" id="sample3_extraAddress" placeholder="참고항목">
@@ -223,7 +225,7 @@
 					
 					
 				</div>
-				<div class="form-group">
+				<div class="form-group form-group-lg">
 					<label class="sr-only" for="submit">입력완료</label>
 					<button type="submit" class="btn btn-primary">입력완료</button>
 				</div>
