@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TransForm</title>
+</head>
+<body>
+	<ol>
+		<li>transform:translate(x,y); 위치변형</li>
+		<li>transform:scale(x,y); 크기변형</li>
+		<li>transform:rotate(x,y); 회전변형</li>
+		<li>transform:skew(x-angle,y-angle); 기울기변형</li>
+	</ol>
+
+<section id = "sec01">
+	<h2>transform:translate(x,y) 위치변형</h2>
+	
+	
+	
+</section>
+
+
+
+
+</body>
+</html>

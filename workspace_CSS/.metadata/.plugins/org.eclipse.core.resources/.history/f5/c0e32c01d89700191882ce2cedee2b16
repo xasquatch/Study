@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TransForm</title>
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+	<ol>
+		<li>transform:translate(x,y); ìì¹ë³í</li>
+		<li>transform:scale(x,y); í¬ê¸°ë³í</li>
+		<li>transform:rotate(x,y); íì ë³í</li>
+		<li>transform:skew(x-angle,y-angle); ê¸°ì¸ê¸°ë³í</li>
+	</ol>
+
+<section id = "sec01">
+	<h2>transform:translate(x,y) ìì¹ë³í</h2>
+	<div class="trans01">transform:translate(50px,-100px)</div>
+	<div class="trans02">transform:translate(-100px,50px)</div>
+	<div class="trans03">transform:translate(600px)</div>
+	<div class="trans04">transform:translate(-600px)</div>
+	<div class="trans05">transform:translate(x,y)</div>
+	<div class="trans06">transform:translate(x,y)</div>
+</section>
+
+
+
+<section id = "sec02">
+	<h2>transform:scale(x,y); í¬ê¸°ë³í</h2>
+	<div class="scale01">
+		<img alt="" src="img/graphic.png">
+	</div>
+	<div class="scale02">
+		<img alt="" src="img/graphic.png">
+	</div>
+	<div class="scale03">
+		<img alt="" src="img/graphic.png">
+	</div>
+	<div class="scale04">
+		<img alt="" src="img/graphic.png">
+	</div>
+	
+	 
+	
+</section>
+
+</body>
+</html>
