@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+p{
+	border: 6px dotted #fff;
+	width: 600px;
+	padding: 20px 14px;
+	margin: 0 auto;
+	background-color: #333;
+	font-size: 1.2em;
+	color: #fff;
+	line-height: 1.8;
+	border-radius: 30px;
+	
+}
+section {
+	border: 3px solid #a00;
+	width: 42%;
+	margin: 50px 20px;
+	padding: 20px;
+	background-image: url("img/carrots.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	
+}
+
+section>div {
+	border: 1px solid;
+	width: 500px;
+	height: 50px;
+	opacity: 0.5;
+	box-sizing: border-box;
+	margin: 10px 5px;
+	padding: 2px 6px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h1{
+	background-color: rgba(255,255,255,0.8);
+	width: 600px; height: 60px;
+	border-left: 12px solid #333;
+	border-right: 12px solid #333;
+	margin: 30px auto;
+	text-align: center;
+}
+section#sec01>div{
+	background-color: #000;
+}
+
+/* opacity 요소의 투명도*/
+
+section#sec01>h1{
+	font-size: 40px;
+	text-shadow: -3px -3px 2px #999;
+	opacity: 0.5;
+	
+}
+.opa01 {opacity: 0;}
+.opa02 {opacity: 0.1;}
+.opa03 {opacity: 0.2;}
+.opa04 {opacity: 0.3;}
+.opa05 {opacity: 0.4;}
+.opa06 {opacity: 0.5;}
+.opa07 {opacity: 0.6;}
+.opa08 {opacity: 0.7;}
+.opa09 {opacity: 0.8;}
+.opa10 {opacity: 0.9;}
+.opa11 {opacity: 1;}
+
+section#sec01:HOVER>div {
+	opacity: 1;
+	transition: all 1.3s;
+}
+
+/* rgba(n,n,n,n) 컬러의 투명도 */
+section#sec02>h1{
+	font-size: 40px;
+	color: rgba(0,0,0,0.5);
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+}
+.alpha01{background-color: rgba(0,0,0,0);}
+.alpha02{background-color: rgba(0,0,0,0.1);}
+.alpha03{background-color: rgba(0,0,0,0.2);}
+.alpha04{background-color: rgba(0,0,0,0.3);}
+.alpha05{background-color: rgba(0,0,0,0.4);}
+.alpha06{background-color: rgba(0,0,0,0.5);}
+.alpha07{background-color: rgba(0,0,0,0.6);}
+.alpha08{background-color: rgba(0,0,0,0.7);}
+.alpha09{background-color: rgba(0,0,0,0.8);}
+.alpha10{background-color: rgba(0,0,0,0.9);}
+.alpha11{background-color: rgba(0,0,0,1);}
+
+section#sec02:HOVER>div{
+	background-color: rgba(0,0,0,1);
+	transition: all 1.3s;
+}

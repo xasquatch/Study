@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box-sizing</title>
+<link href="box-sizing.css" rel="stylesheet">
+</head>
+<body>
+<h1>box-sizing</h1>
+<p class="text">요소의 실제 크기는 width속성과 height속성에 
+ padding값과 border값이 더해져서 브라우저에 나타난다.<br>
+ (box-sizing:content-box;이 기본값임)<br>
+ 따라서 padding을 추가하거나  border를 두껍게 주면 
+ 레이아웃이 계획과  달리 두줄로 밀려날 수도 있다.<br>
+ 이때 <b>box-sizing</b>속성을 <b>border-box</b>로 지정하면 
+ <b>padding값과  border값이 width와 height에 포함</b> 되어서<br>
+ 요소의 실제 크기가 더이상 커지지 않는다.
+</p>
+
+<p class="text size">
+ box-sizing: content-box;?  요소의 크기=content<br>
+ box-sizing: border-box;? 요소의 크기=content+padding+border
+</p>
+
+<section>
+ <div class="contentbox">box-sizing: content-box;</div>
+ <div class="borderbox">box-sizing: border-box;</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

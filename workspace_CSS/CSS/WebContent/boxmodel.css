@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+table#inbl {border: 1px solid;
+/*border-spacing: 5px 15px 칸의 바깥여백 좌우,상하 순서로 적용됨 */ ;
+  border-collapse: collapse;/*칸과 칸 사이 붙임,바깥 테두리 없앰*/
+  width: 800px; height: 250px;
+}
+ 
+table#inbl th {border: 1px solid;
+ background-color: khaki;
+ color: green;
+}
+table#inbl td {border: 1px solid;
+  padding: 8px 16px;
+  background-color: green;
+  color:khaki;
+}
+
+div>h3 {background-color: #999;
+ border-left: 12px solid #555;
+ padding: 4px 0 4px 10px;
+ color: #fff;
+}
+
+ /* inline요소 */
+
+#box01, #box02 {border: 4px dashed #999;
+	padding: 20px;
+	margin: 20px;	
+}
+
+#box01>*:NOT(h3) {border: 1px solid red;
+ width: 300px;  height: 50px;
+ margin: 60px; } 
+
+#box02>*:NOT(h3) {border: 1px solid blue; 
+ width: 300px;   height: 50px;
+ margin: 60px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="basic.css" rel="stylesheet"> <!-- 외부 basic.css파일에서 불러와서 꾸미는 방식 -->
+
+	<style type="text/css">
+
+	*{font-family: "굴림", serif;
+	}
+	#li2{
+	background-color: skyblue; color: #763;
+	}
+
+
+
+
+	.li2{
+	background-color: yellow;
+	}
+	
+	.h1-red{
+	color: #fff;
+	background-color: #f00;
+	}
+	.white{
+	color: #fff;
+	}
+	.skyblue{
+	color: skyblue;
+	}
+	</style>
+
+
+</head>
+<body>
+
+<h1 class="h1-red">CSS Basic</h1>
+<hr>
+
+<!--------------------------------------------------------------------------------------------------------------->
+<h2>CSS 적용 방식</h2>
+
+<ol>
+
+	<li style="background-Color: #eaf;"> inline 방식 - 태그 뒤에 직접 적용.(적용되는 우선순위는 가장 높지만 권장하지는 않음)<br>
+	&lt;tag style="속성:속성값;"&gt;  <br></li>
+	
+	<li class="li2">embeded 방식 - 웹문서의 head영역내에  style태그를 써서 적용(해당 웹문서에만 적용됨.)<br></li> 
+	
+	<li class="li3">external 방식 - 웹문서와 별개의 외부파일로 스타일을 정의한 파일명<span class="imp">.css파일을 만들고</span> 연결시켜서 적용<br>
+		(여러 웹문서에 공통된 스타일을 적용하고 수정하기 용이. 일관성 유지에 편리하다) <br>
+		- <span class="imp">head영역 내에</span> link태그를 써서 적용 -> <span class="imp">link href="파일명.css" rel="stylesheet" <br></span></li>
+</ol>
+
+<!---------------------------------------------------------------------------------------------------------------->
+<h2>CSS선택자 중의 기본 3가지 </h2>
+<ol>
+	<li>전체 선택자 -*<br></li>
+	<li id="li2">ID 선택자 - 만들때는 id="id명", 불러올 때는 #id<br></li>
+	<li>Class 선택자 - 만들때는 class="class명" 불러올 때는.class명<br></li>
+	<li>Tag 선택자 - 불러올 때는 tag 그대로<br>  
+		- 강제적이고 자동적으로 변함.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------------------->
+<img alt="bag" src="img/bags.png">
+
+</body>
+</html>

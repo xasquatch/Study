@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+	<h1>position</h1>
+	<ul>
+		<li>position: static; 기본값(고정된 상태). 좌표지정 불가</li>
+		<li>position: relative; 현재 위치를 기준으로 좌표 설정됨</li>
+		<li>position: absolute; 부모요소를 기준으로 좌표 설정됨</li>
+		<li>position: fixed; 브라우저창을 기준으로 좌표 설정됨</li>
+	</ul>
+	<section id="sec01">
+	<h2>position: relative; 현재 위치를 기준으로 좌표 설정</h2>
+	<p class="rel-p">Rodem offers a full line of durable filling solutions
+		including, hygienic liquid fillers, net weight fillers and capping
+		systems. See All Fillers and Capping Systems. 지역 검색결과</p>
+	<img alt="adventure" src="img/adventure.jpg" class="rel-img">
+	<div class="rel-div">adventure</div>
+	</section>
+	
+	<fieldset id="log">
+	<legend>log-in</legend>
+	<div id="id-box">
+		<label for="id" class="log">id</label><input type="text" id="id" placeholder="아이디를 입력하세요">
+	</div>
+	<div id="pwd-box">
+		<label for="pwd" class="log">pwd</label><input type="password" id="pwd" placeholder="암호를 입력하세요"><br>
+	</div>
+	<button class="log">login-in</button>
+	</fieldset>
+	
+	<section id="sec02">
+	<h2>position: absolute; 부모요소를 기준으로 좌표 설정</h2>
+	<p class="absol-p">Rodem offers a full line of durable filling solutions
+		including, hygienic liquid fillers, net weight fillers and capping
+		systems. See All Fillers and Capping Systems. 지역 검색결과</p>
+	<img class="absol-img" alt="adventure" src="img/adventure.jpg">
+	<div class="absol-div">adventure</div>
+	</section>
+	
+	<fieldset id="log2">
+	<legend>log-in</legend>
+	<div id="id-box2">
+		<label for="id" class="log">id</label><input type="text" id="id" placeholder="아이디를 입력하세요">
+	</div>
+	<div id="pwd-box2">
+		<label for="pwd" class="log">pwd</label><input type="password" id="pwd" placeholder="암호를 입력하세요"><br>
+	</div>
+	<button class="log">login-in</button>
+	</fieldset>
+	
+	<section id="sec03">
+	<h2>position: fixed; 브라우저창을 기준으로 좌표 설정</h2>
+	<p class="rel-p">Rodem offers a full line of durable filling solutions
+		including, hygienic liquid fillers, net weight fillers and capping
+		systems. See All Fillers and Capping Systems. 지역 검색결과</p>
+	<img class="rel-img" alt="adventure" src="img/adventure.jpg">
+	<div class="rel-div">adventure</div>
+	</section>
+	
+	<nav>
+		<h3>position</h3>
+		<ul>
+			<li><a href="#sec01">relative</a></li>
+			<li><a href="#sec02">absolute</a></li>
+			<li><a href="#sec03">fixed</a></li>
+		</ul>
+	</nav>
+</body>
+</html>

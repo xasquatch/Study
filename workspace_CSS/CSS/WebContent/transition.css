@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+.h1-trans {
+ background-color:#adf; 	
+ font-size: 40px;
+ transition-property:background-color font-size;
+ transition-duration:1.5s; }
+
+.circle {background-color: #f90;
+ width: 100px;  height: 100px;
+ text-align: center;
+ line-height: 100px; }
+
+.circle:HOVER {
+ background-color: #9f0;
+ border-radius: 50%;	
+ transition:all 2s 0.5s; }
+
+.width {background-color: #fff;
+ width: 100%;
+ transition:background-color 4s, width 2s 1s;}
+
+.width:HOVER {background-color: #a65;
+ width: 20%;}
+
+.move {background-color:#afe;
+    border-right:10px solid;
+    width:100px; 
+    padding:10px 0;
+    text-align:right;
+    color:#396;
+	position: relative;/*좌표이동을 위한 설정*/
+	left: 0;/*트랜지션을 좌표이동에 주기 위한 처음 값*/
+    transition:all 4s;}
+
+ .width:HOVER+.move {
+ /* +는 인접형제 선택자(
+ 앞 선택자의 바로 뒤에 오는 하나의 형제만 불러옴) */
+ left: 600px;}
+
+
+
+ /* transition-timing-function 예제1 */
+#timing, section {border: 4px dashed #ccc;
+padding: 30px;
+height: 550px; }
+
+#timing>p {background-color: #aec;
+ border-bottom: 6px solid;
+ width: 120px; height: 30px;
+ text-align: center;
+ color: #365;
+ float: left;
+ margin-right: 20px;
+ transition: height 4s 0.5s;}
+  
+#timing>p.tf01 {transition-timing-function:ease;}
+#timing>p.tf02 {transition-timing-function:ease-in;}
+#timing>p.tf03 {transition-timing-function:ease-out;}
+#timing>p.tf04 {transition-timing-function:ease-in-out;}
+#timing>p.tf05 {transition-timing-function:linear;}
+#timing>p.tf06 {transition-timing-function:cubic-bezier(.64,1.85,.3,-0.94);}
+#timing>p.tf07 {transition-timing-function:cubic-bezier(1,.02,.09,1.05);}
+   
+#timing:HOVER>p {
+ height: 500px;	}
+ 
+#timing:HOVER:BEFORE {
+	float: right;
+	content: "transition-timing-function 예제1";
+	margin-bottom:50px;
+	padding:10px 20px;
+	background-color: #963;
+	color: #fff;
+	font-weight: bold; }
+ 
+ 
+ 
+ /* transition-timing-function 예제2 */
+section>div {
+ background-color: #cae;
+ border-bottom: 6px solid;
+ width: 120px; height: 30px;
+ margin-bottom:50px;
+ text-align: center;
+ color: #536;
+ position: relative;
+ left: 0px;	
+ transition:all 3s;}
+
+.tff01 {transition-timing-function:ease;}
+.tff02 {transition-timing-function:ease-in;}
+.tff03 {transition-timing-function:ease-out;}
+.tff04 {transition-timing-function:ease-in-out;}
+.tff05 {transition-timing-function:linear;}
+.tff06 {transition-timing-function:cubic-bezier(.64,1.85,.3,-0.94);}
+.tff07 {transition-timing-function:cubic-bezier(1,.02,.09,1.05);}
+
+section:HOVER>div {
+ left: 800px;	 }
+
+section:HOVER:BEFORE {
+	content: "transition-timing-function 예제2";
+	padding:10px 20px;
+	background-color: #693;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+
+
+
+

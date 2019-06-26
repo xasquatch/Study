@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+
+section {border: 4px dashed #ccc;
+  margin: 50px 10px;}
+
+
+  /* position: relative */
+section#sec01>* {position: relative;
+ /*현재 위치를 기준으로 자리 변경*/ }
+ 
+.rel-p {border: 1px solid;
+ width: 300px;
+ left: 650px; /*왼쪽에서 이동*/ }
+
+.rel-img {bottom:150px; /*아래에서 이동*/}
+
+.rel-div {/* border: 1px solid; */
+ width:640px; height:50px;
+ bottom: 560px;
+ background-color:rgba(0,0,0,0.7);/*색상의
+   투명도를 지정(a는 alpha. 0~1사이의 값)*/
+ color: #fff;
+ text-indent: 20px;/*글자 들여쓰기*/
+ line-height: 50px;/*행간과 영역의 높이값을
+ 같게 해서 수직으로 가운데 정렬함*/
+ font-weight: bold;
+ text-transform: capitalize;/*영문
+ 대소문자 지정(첫글자를 대문자로..)*/ }
+
+fieldset#log { width: 400px; height: 200px;}
+
+fieldset#log>* { margin: 0; 
+  padding: 0;}
+
+fieldset#log label {/* border: 1px solid; */
+ display:inline-block;
+ width: 100px;  height: 30px;}
+
+fieldset#log input {
+width: 150px;  height: 30px;	
+border: none;
+border-bottom: 3px solid #999;
+padding-left: 10px;}
+
+#pwd-box {/* border: 1px solid; */
+  	position: relative;
+  	top: 20px; }
+
+fieldset#log>button { border:none; 
+	width: 260px;	height: 30px;
+	position:relative;
+	top: 60px; } 
+
+.log { /*label과 button의 공통 스타일*/
+ background-color: #999;
+ text-align: center;
+ line-height: 30px;
+ text-transform: uppercase;
+ font-weight: bold;
+ vertical-align:bottom;
+ color: #fff; }
+
+
+
+ /* position:absolute */
+ 
+ section#sec02 {
+  position: relative;/*자식이 본인을 기준으로
+ 자리를 잡도록 설정해야하는 값 */ 
+  height: 540px; }
+ 
+ .absol-p, .absol-img, .absol-div {
+  position: absolute; }
+ 
+ .absol-p {border: 1px solid;
+   width: 250px;  height: 400px; 
+   left: 680px; }
+ 
+ .absol-img {top: 80px;
+   left: 30px;} 
+ 
+.absol-div {border: 1px solid;
+  right: 50px;
+  bottom: 0; }
+ 
+ 
+  
+ fieldset#log2 {
+  width: 400px;  height: 250px;
+  position: relative;/*자식이 본인을 기준으로
+ 자리를 잡도록 설정해야하는 값 */  }
+ 
+ fieldset#log2 label {
+  width: 150px;  height: 50px;
+  display: inline-block; /* 크기를 적용하기 위함 */
+  line-height: 50px; /* 글자의 수직정렬 가운데로 */ }
+ 
+ fieldset#log2 input {border:none;/*기본테두리 제거*/
+  width: 200px;  height: 50px;
+  border-bottom: 2px solid #999;/*아래쪽테두리 지정*/
+  padding-left: 10px; /*왼쪽내부에 공간 설정*/ }
+ 
+ fieldset#log2 button {
+ width: 360px; height: 50px;
+ position: absolute;/*부모기준으로 자리잡기*/
+ left: 30px; /*왼쪽에서의 거리 지정*/
+ bottom: 20px;/*아래에서의 거리 지정*/ }
+ 
+ #id-box2 { /* border:1px solid red; */
+  position: absolute;/*부모기준으로 자리잡기*/
+  left: 30px; /*왼쪽에서의 거리 지정*/
+  top: 50px; /*위에서의 거리 지정*/}
+  
+ #pwd-box2 {/*  border:1px solid red; */
+  position: absolute;/*부모기준으로 자리잡기*/
+  left: 30px; /*왼쪽에서의 거리 지정*/
+  top: 120px; /*위에서의 거리 지정*/ }
+  
+  
+  
+  /* position:fixed; 브라우저창을 기준으로 좌표 설정 */
+  
+  section#sec03 {background-color:#a30;
+   width: 700px;
+  /*  position: fixed; 브라우저를 기준으로 정렬됨*/
+   left: 0; 
+   top: 0;  }
+  
+ 
+  /* position: fixed로 메뉴바 고정하기 */
+  
+  nav {border-left:15px solid red;
+   background-color:rgba(255,255,255,0.7);
+    /* 색상에 투명도를 지정 */
+   width: 100px;  height: 150px;
+   position: fixed;/* 브라우저를 기준으로 위치 지정 */
+   right: -100px; /* 브라우저의 우측에서 벗어나 바깥에 위치 */
+   bottom: 50px;  /* 브라우저의 아래에서 50만큼 위치*/
+   transition:all 1.8s ; /* 애니메이션 효과 */}
+  
+ nav:HOVER { right: 0; } /* 마우스오버시 메뉴바가 
+                        브라우저 우측에 붙어서 위치 */
+  
+ nav>h3 {background-color: #000;
+  color: #fff;
+  position: absolute;/* 부모(nav) 기준으로 위치 지정  */
+  left: -15px; /* 부모(nav) 기준으로 좌측에서 해당 거리 유지 */
+  width: 120%; }
+  
+nav>ul { /* border:1px solid red; */
+  position: absolute; /* 부모(nav) 기준으로 위치 지정   */
+  top: 40px; /* 부모(nav) 기준으로 우측에서 해당 거리 유지 */
+  left:-20px;/* 부모(nav) 기준으로 좌측에서 해당 거리 유지 */
+  list-style: none; /* 목록 앞의 모양 제거 */}
+  
+ nav>ul>li {line-height: 1.8; /* 행간 지정 */}
+ 
+ nav>ul a {
+  text-decoration: none /* 글자 아래(링크) 밑줄 제거 */;
+  color: #f00;
+  font-weight: bold; }
+ 
+ nav>ul a:hover { /* 링크에 후버시 밑줄 생성, 글자색 변경 */
+  text-decoration: underline;
+  color: #000; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

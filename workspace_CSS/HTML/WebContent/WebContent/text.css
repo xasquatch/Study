@@ -1,0 +1,173 @@
+@CHARSET "UTF-8";
+ body {font-family: 'Lato', sans-serif;}
+
+/*  div {
+  margin: 30px; 
+  padding: 20px;
+  width: 900px;
+ }
+*/
+ 
+  /* (문제)링크 상태관련 속성 지정하기  */
+ .top { padding: 10px;
+  background-color: #0a7;
+  font-weight: bold;
+  text-decoration: none;  }
+ 
+ .top:LINK, .top:VISITED {color: #afd; }
+ .top:HOVER, .top:ACTIVE {
+   background-color: #afd; 
+   color: #0a7; }
+ 
+ #div01, #div02, #div03, #div04 {/*그룹선택자*/
+  margin: 30px; 
+  padding: 20px;
+  width: 900px;
+ }
+
+ div>h3 { /* 부모자식의 관계선택자 */
+   background-color: #ededed;
+   color: #333;
+   padding: 0.3em;
+   margin: 20px;
+  font-family: 'Kanit', sans-serif;
+  }
+
+.pre {white-space: pre-line;
+ background-color: #ededed;
+ padding: 20px;
+ margin: 20px;
+}
+
+ /* font-size 글자 크기 */
+#div01 { border: 3px solid #666;
+  font-size: 20px;
+ }
+
+.fs01 {font-size: 16px;}
+.fs02 {font-size: 20px;}
+.fs03 {font-size: 12px;}
+.fs04 {font-size: 1em;}
+.fs05 {font-size: 1.5em;}
+.fs06 {font-size: 1rem;}
+.fs07 {font-size: 1.5rem;}
+.fs08 {font-size: 50%;}
+.fs09 {font-size: 0.7em;}
+
+
+
+/* font-weight : 글자 두께 */
+
+#div02 { border: 3px solid #a66; }
+
+#div02>table { border: 1px solid;}
+
+.fw00 {font-weight: normal;}
+.fw01 {font-weight: bold;}
+.fw02 {font-weight: 100;}
+.fw03 {font-weight: 200;}
+.fw04 {font-weight: 300;}
+.fw05 {font-weight: 400;}
+.fw06 {font-weight: 500;}
+.fw07 {font-weight: 600;}
+.fw08 {font-weight: 700;}
+.fw09 {font-weight: 800;}
+.fw10 {font-weight: 900;}
+
+
+
+ /* font-style : 글자 기울기 */
+#div03 {border: 3px solid #4fd;}
+
+.fst01 {font-style: italic;}
+i {font-style: normal;}
+em {font-style: normal; }
+address {font-style: normal;}
+
+
+
+ /* font-family : 서체(글꼴) */
+#div04 {border: 3px solid #39d; }
+
+.ffm01 {font-family: "Georgia","Times New Roman","Times",serif;}
+.ffm02 {font-family: "Verdana","Arial",sans-serif;}
+.ffm03 {font-family: "나눔손글씨 펜";}
+.ffm04 {font-family: 'Dokdo', cursive;t}
+.ffm05 {font-family: 'Gothic A1', sans-serif;}
+
+
+ /* text-align : 수평방향으로 글자 정렬  */
+#div05, #div06, #div07, #div08, #div09 {border: 3px dashed #aed;
+  width: 1000px;
+  padding: 20px; 
+  margin: 50px;}
+
+#div05>p { border: 1px solid;
+  width: 800px;  }
+
+.tal01 {text-align: left;}
+.tal02 {text-align: right;}
+.tal03 {text-align: center;}
+.tal04 {text-align: justify;}
+
+
+ /* text-decoration : 글자의 줄 관련 */
+
+ .tdec01 { text-decoration: underline;}
+ .tdec02 { text-decoration: line-through;}
+ .tdec03 { text-decoration: overline;}
+ .tdec04>a { text-decoration: none;}
+ .tdec04>a:HOVER {text-decoration: underline; }
+
+
+ /* text-transform : 영문의 대소문자 지정 */
+
+.ttr02 {text-transform: uppercase; }
+.ttr03 {text-transform: lowercase;}
+.ttr04 {text-transform: capitalize;}
+
+
+  /* text-indent : 들여쓰기 */
+#div08>p {text-indent: 50px;}
+#div08>div {text-indent: 2em;}
+#div08>h4 {border:1px solid;
+	text-indent: -50px;}
+
+
+ /* text-shadow : 글자의 그림자  */
+
+ #div09>*:NOT(h3) {font-size: 1.5em; 
+   font-weight: bold; 
+   color: #adf;  }
+
+ .tsh01 {text-shadow: 3px 0 4px #333; }
+ .tsh02 {text-shadow: 0 4px 0 #333;}
+ .tsh03 {text-shadow: -4px -7px 2px #33a;}
+
+ button:NTH-OF-TYPE(1) {text-shadow: 0 0 6px #000;}
+ button:NTH-OF-TYPE(2) {background-color: #000;
+     color: #000 !important; 
+     text-shadow: 0 0 5px #aefeff; }
+ button:NTH-OF-TYPE(2):HOVER {
+	 text-shadow: 0 0 1px #5ac; }
+
+ .tsh04 {color: #000 !important;
+  text-shadow: 3px 3px 2px red, -3px -3px 2px blue; }
+
+ .tsh04:HOVER {color: #020 !important;
+  text-shadow: 0px -3px 3px red, 0px 3px 3px blue; 
+  transition:all 1.5s;	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

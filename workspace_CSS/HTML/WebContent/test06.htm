@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html> <!-- 현재 문서가 웹표준인 html5 형식의 문서임을 선언 -->
+<html>
+ <head>
+  <title>폼으로 사용자 입력 페이지 만들기</title>
+ </head>
+ <body>
+<hr>
+ <h1>form으로 사용자 입력 페이지 만들기</h1>
+<hr>
+
+<p>입력내용을 form으로 페이지 구성하고<br>
+ form에 method속성과 action속성을 지정한다.<br>
+ method의 값은 POST/GET중에서 선택하고<br>
+ action의 값은 내용을 전달받을 서버의 페이지를 지정한다.<br>
+</p>
+
+<form action="test.jsp" method="post">
+ &lt;label <u><b>for</b>=<mark>id와 동일값</mark></u>&gt;input의 설명글내용&lt;/label&gt;  <br>
+ &lt;input type=text <u><b>id</b>=<mark>for와 동일값</mark></u>&gt;
+
+<ol type="I">
+ <li>한줄 글상자 input type=text</li>
+ <li>암호 글상자 input type=password</li>
+ <li>객관식 고르기(한개만) input type=radio</li>
+ <li>객관식 고르기(두개 이상 가능) input type=checkbox</li>
+ <li>전송버튼 input type=submit</li>
+ <li>취소버튼 input type=reset</li>
+ <li>일반버튼 input type=button</li>
+ <li>버튼 button ... /button(기본은 전송상태. type 속성으로 역할을 지정) </li>
+</ol>
+
+
+ <label for="name01">name</label>
+  <input type="text" id="name01" value="hong gil dong"> <br>
+ <label for="id">ID</label> 
+  <input type="text" id="id" placeholder="영문과 숫자 조합으로 6~10자" size="50"
+maxlength="10">
+  <br>
+ <label for="pwd">PASS</label>	
+  <input type="password" id="pwd" placeholder="영문,숫자,특수문자 조합으로 10자 이상" size="50"> <br>
+ <label>주민등록번호 뒷자리 <input type="password" maxlength="7"></label> <br><br>
+
+ <p>성별 <br>
+  <input type="radio" id="gm" name="gender" checked> <label for="gm">man</label> <br>
+  <input type="radio" id="gw" name="gender"> <label for="gw">woman</label><br>
+  <input type="radio" id="go" name="gender"> <label for="go">other</label>
+ </p>
+ 
+ <p>이벤트 소식을 받으시겠습니까? <br>
+  <input type="radio" id="eyes" name="event" checked>
+   <label for="eyes">YES</label>
+  <input type="radio" id="eno" name="event"> 
+   <label for="eno">NO</label> 
+ </p>
+
+ <p>이벤트 소식을 어떻게 받으시겠습니까? <br>
+  <label>우편 <input type="checkbox"> </label> <br>
+  <label>전화 <input type="checkbox"> </label> <br>
+  <label>문자 <input type="checkbox" checked> </label> <br>
+  <label>이메일 <input type="checkbox" checked> </label> <br>
+  <label>카카오톡 <input type="checkbox"> </label>
+ </p>
+
+ <h3>개인 프로젝트 제출명단</h3>
+ <select>
+  <option>이자영</option>
+  <option>안신효</option>
+  <option>박진우</option>
+  <option>김광민</option>
+  <option>배진환</option>
+ </select>
+
+ <h4>속성 multiple을 추가하여 다중선택이 가능함</h4>
+ <select multiple>
+  <option>프로그래밍</option>
+  <option selected>웹표준</option>
+  <option>오라클</option>
+  <option>직업기초</option>
+  <option selected>Project</option>
+  <option>JAVA</option>
+ </select>
+
+<h4>속성 size="n" 으로 박스 형태로 구성</h4>
+ <select size="4">
+  <option>이자영</option>
+  <option>안신효</option>
+  <option>박진우</option>
+  <option>김광민</option>
+  <option>배진환</option>
+  <option>홍길동</option>
+  <option>나여나</option>
+ </select>
+
+<h4>항목에 속성 selected로 초기에 미리 선택되어진 값으로 구성</h4>
+ <select>
+  <option>이자영</option>
+  <option>안신효</option>
+  <option selected>박진우</option>
+  <option>김광민</option>
+  <option>배진환</option>
+  <option>홍길동</option>
+  <option>나여나</option>
+ </select>
+
+<h3>option항목들을 분류하여 optgroup으로 구성</h3>
+ <select>
+  <optgroup label="웹표준">    
+    <option>html</option>
+    <option>CSS</option>
+  </optgroup>
+
+  <optgroup label="Project">   
+   <option>개인Project</option>
+   <option>팀Project</option>
+  </optgroup>
+ </select>
+  
+<h3>optgroup으로 구성하고 다중선택(multiple)이 가능하게 함</h3>
+ <select multiple size="5">
+  <optgroup label="통학수단">
+   <option>자가용</option>
+   <option selected>대중교통</option>
+   <option>도보</option>
+  </optgroup>
+  <optgroup label="통학시간">
+   <option>1시간 이상</option>
+   <option>1시간 이내</option>
+   <option selected>30분 이내</option>
+   <option>10분 이내</option>
+  </optgroup>
+ </select>
+
+ <h3>textarea ... /textarea 큰 글상자 만들기</h3> 
+ <textarea cols="100" rows="10">
+  자기소개를 해주세요
+ </textarea>
+
+<h3>input type=image 로 전송버튼의 역할을 하는 이미지 지정</h3>
+ <input type="image" src="colorpicker.gif">
+
+<h3>input type=hidden 으로 서버에 전송시 전달될 숨은 값 지정 
+ (브라우저에는 표시 안됨)</h3>
+ <input type="hidden" value="서버에 전달될 값">
+
+<h3>input type=file 로 file전송의 역할을 하는 요소로 지정</h3>
+ <input type="file">
+
+ <hr>
+ <input type="submit" value="전송"> <input type="reset" value="취소"> <br>
+ <input type="button" value="click" onclick="alert('눌렀나보네')"> <br>
+ <button type="button"><b>B</b>utton</button>
+ <button type="button"><img src="aniyellow.gif"> IMAGE BTN</button>
+</form>
+
+ <hr>
+ <a href="test07.htm" title="html5에서 추가된 input type의 요소들">form-2</a>
+
+ </body>
+</html>
+
+
+
+

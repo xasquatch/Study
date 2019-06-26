@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+table{
+	border: 2px solid #fa0;
+	width: 600px;
+	margin: 30px;
+}
+th,td{
+	border: 1px solid;
+}
+
+#tbl01{table-layout: auto;}
+#tbl02{table-layout: fixed;}
+#tbl03{border-spacing: 20px;}
+#tbl04{border-collapse: collapse;}
+.

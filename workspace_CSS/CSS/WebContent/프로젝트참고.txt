@@ -1,0 +1,40 @@
+﻿★ 우수 사이트 모음
+https://www.dbcut.com/bbs/index.php
+
+★ w3school Template (바로 적용해서 확인가능)
+https://www.w3schools.com/w3css/w3css_templates.asp
+
+★ CSS 소스(힌트) 얻기
+https://www.w3schools.com/css/css_examples.asp  w3c의 기능별 예시 소스
+https://www.w3schools.com/w3css/   w3c에서 만든 효과를 그대로 적용하기
+(외부파일 링크형태)
+
+★ Free Bootstrap Templates, Theme
+https://freehtml5.co/
+https://startbootstrap.com/
+https://www.bootstrapzero.com/
+http://bootswatch.com/
+
+★ 홈페이지 템플릿 무료사이트
+http://ko.wix.com/website/templates
+
+★ 이미지 무료사이트
+pexels.com 
+https://morguefile.com
+https://pixabay.com
+
+★ 이미지 무료편집사이트(온라인포토샵)
+https://pixlr.com/editor
+
+★ 서체 사이트
+https://fonts.google.com/
+http://software.naver.com/software/fontList.nhn?categoryId=I0000000
+dafont.com
+1001fonts.com
+
+★ 추천색상팔레트
+https://color.adobe.com
+
+★ css자동생성기 사이트
+http://www.colorzilla.com (그라데이션)
+http://css3generator.com

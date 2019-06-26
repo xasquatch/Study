@@ -1,0 +1,200 @@
+@CHARSET "UTF-8";
+
+section {
+	border: 4px dashed #ccc;
+	margin: 50px 10px; 
+}
+
+section#sec01>* {
+	position: relative;
+}
+
+.rel-p {
+	border: 1px solid;
+	width: 300px;
+	left: 650px;
+}
+
+.rel-div {
+	border: 1px solid;
+}
+
+.rel-img {
+	bottom: 140px;
+}
+
+.rel-div {
+	width: 640px;
+	height: 50px;
+	bottom: 560px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	text-indent: 20px; /* 글자 들여쓰기 */
+	line-height: 50px; /* 행간과 영역의 높이값을 같게해서 수직으로 가운데 정렬함 */
+	font-weight: bold;
+	text-transform: capitalize; /* 영문 첫글자 대문자 UPPERCASE는 전체 대문자*/
+}
+
+fieldset {
+	width: 400px;
+	height: 200px;
+}
+
+fieldset#log label {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+}
+
+fieldset#log input {
+	width: 150px;
+	height: 30px;
+	border: none;
+	border-bottom: 3px solid #999;
+	padding-left: 10px;
+}
+
+#pwd-box {
+	/* 	border: 1px solid; */
+	position: relative;
+	top: 20px;
+}
+
+fieldset#log>button {
+	border: none;
+	width: 260px;
+	height: 30px;
+	position: relative;
+	top: 60px;
+}
+
+.log {
+	background-color: #999;
+	text-align: center;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	vertical-align: bottom;
+	color: #fff;
+}
+
+section#sec02 {
+	position: relative; /*자식이 본인을 기준으로 자리를 잡도록 무조건 relative*/
+	height: 540px;
+}
+
+.absol-p, .absol-img, .absol-div {
+	position: absolute;
+}
+
+.absol-p {
+	border: 1px solid;
+	width: 250px;
+	height: 400px;
+	left: 680px;
+}
+
+.absol-div {
+	border: 1px solid;
+	right: 50px;
+	bottom: 0px;
+}
+
+.absol-img {
+	top: 80px;
+	left: 30px;
+}
+
+fieldset#log2{
+	width: 400px; height: 250px;
+	position: relative;
+}
+
+fieldset#log2 label{
+/* 	border: 1px solid red; */
+	width: 150px; height: 50px;
+	display: inline-block;
+	line-height: 50px;
+}
+
+fieldset#log2 input{
+	border: none;
+	width: 200px; height: 50px;
+	border-bottom: 2px solid #999;
+	padding-left: 10px;
+} 
+
+fieldset#log2 button{
+	width: 360px; height: 50px;
+	position: absolute;
+	left: 30px;
+	bottom: 20px;
+}
+
+#id-box2{
+	border: 1px solid red;
+	position: absolute;
+	left: 30px;
+	top: 50px;
+}
+
+#pwd-box2{
+	border: 1px solid red;
+	position: absolute;
+	left: 30px;
+	top: 120px;
+}
+
+section#sec03{
+	background-color: #a20;
+	width: 700px;
+/* 	position: fixed; */
+	left: 0;
+	bottom: 0;
+}
+/* position: fixed */
+nav{
+	border-left: 15px solid red;
+	background-color:rgba(255,255,255,0.7); /* 색상에 투명도를 지정 */
+	width: 100px; height: 150px;
+	position: fixed; /* 브라우저를 기준으로 위치 지정 */
+	right: -100px; /* 브라우저의 우측에서 벗어나 바깥에 위치 */
+	bottom: 50px; /* 브라우저의 아래에서 50만큼 위치 */
+ 	transition: all 1.8s; /* 애니메이션 효과 */
+}
+
+nav:HOVER{
+	right: 0; /* 마우스 오버시 메뉴바가 브라우저 우측에 붙어서 위치 */
+}
+
+nav>h3{
+	background-color: #000;
+	color: #fff;
+	position: absolute; 
+	left: -15px;
+	width: 120%;
+}
+
+nav>ul{
+/* 	border: 1px solid red; */
+	position: absolute; /* 부모(nav)기준으로 위치 지정 */
+	top: 40px; /* 부모(nav)기준으로 우측에서 해당 거리 유지 */
+	left: -20px; /* 부모(nav)기준으로 좌측에서 해당 거리 유지 */
+	list-style: none;
+
+}
+
+nav>ul>li{
+	line-height: 1.8; /* 행간 지정 */ 
+}
+
+nav>ul a{
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+
+nav>ul a:HOVER{
+	text-decoration: underline;
+	color: #000;
+}

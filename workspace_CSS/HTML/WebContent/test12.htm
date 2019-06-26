@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS Basic</title>
+  <meta charset="UTF-8"> <!--웹표준문서에서 문자셋은 UTF-8 -->
+  <style type="text/css">
+   .red { color: red ; }
+   #red { border: 2px solid red; }
+   .green { color: green; }
+  </style> 
+ </head>
+ <body>
+<header id="red">
+  header
+</header>
+<article>
+ <h1>CSS Basic</h1>
+ <section>
+  <h2 class="red">CSS 적용법</h2>
+  <ul>
+   <li class="red">외부파일을 html문서에 불러오는 방식<br>
+    <pre>
+     head
+   <span class="green">link href="*.css" rel="stylesheet"    
+   </span>
+     /head
+    </pre>
+   </li>
+   <li class="red">html문서의 head에 포함하는 방식
+    <pre class="green">
+     head
+      style type="text/css"
+        .red {속성:속성값;}  --- (class선택자 적용)
+        #red {속성:속성값;}  --- (id선택자 적용)
+         tag {속성:속성값;}  --- (tag선택자 적용)
+      /style
+     /head
+    </pre>
+   </li>
+   <li class="green" style="border:1px solid;">
+    tag 뒤에 직접 쓰는 방식
+   </li>
+  </ul>
+ </section>
+ 
+
+</article>
+<footer>
+ <p>all rights reser...</p>
+</footer>
+ </body>
+</html>

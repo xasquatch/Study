@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background</title>
+<link href="background.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+<h1>background</h1>
+<ul>
+ <li>background-color:색상 - 배경 색상 지정</li>
+ <li>background-image:url(이미지 경로) - 배경 이미지 지정</li>
+</ul>
+
+<h2>background-image의 속성들</h2>
+ <ul>
+  <li>background-repeat (배경이미지 반복)
+   : repeat/no-repeat/repeat-x/repeat-y;
+   (기본값/한번만/가로로만 반복/세로로만 반복)
+  </li>
+  <li>background-position (배경이미지 위치)
+   : n n ; 으로 가로값과 세로값을 지정하거나
+   : left/center/right 으로 수평방향값을 지정하거나
+    top/center/bottom; 으로 수직방향값을 지정할 수 있다.
+   </li>
+  <li>background-size (배경이미지 크기): contain/cover/n% n%/npx npx/...;
+  정해진 값으로 지정하거나 다양한 단위를 붙여 가로크기와 세로크기에 직접 값을 줄 수 있다.
+  </li>
+  <li>background-attachment(배경 고정/스크롤):scroll/fixed/local;<br>
+ 브라우저나 특정 영역에 생긴 스크롤바의 움직임에 배경이미지가 어떻게 움직일지를 지정. 
+  </li>
+ </ul>
+ 
+<section id="sec01">
+<h2>background-repeat (배경이미지 반복)
+   : repeat/no-repeat/repeat-x/repeat-y;</h2>
+ 
+ <p class="bg-re01">background-repeat : repeat; 기본값(양사방 반복) </p>
+ <p class="bg-re02">background-repeat : repeat-x; 가로로만  반복</p>
+ <p class="bg-re03">background-repeat : repeat-y; 세로로만  반복</p>
+ <p class="bg-re04">background-repeat : no-repeat; 한번만 나옴</p>
+</section>
+
+<section id="sec02">
+<h2>background-position (배경이미지 위치)  </h2>
+ <p class="bg-po01">background-position:left center;</p>
+ <p class="bg-po02">background-position:center center ;</p>
+ <p class="bg-po03">background-position:right bottom;</p>
+ <p class="bg-po04">background-position:100px 50px;;</p>
+ <p class="bg-po05">background-position:80% 30%;</p>
+ <p class="bg-po06">background-position:10em 5em;</p>
+</section>
+
+<section id="sec03">
+<h2>background-size (배경이미지 크기)</h2>
+ <p class="bg-sz01">background-size:contain;<br>
+   그림위주(그림 하나가 온전히 보임,빈공간이 생기거나 반복될 수 있음)</p>
+ <p class="bg-sz02">background-size:cover;<br>
+   공간위주(그림이 부분적으로 보이지 않을 수도 있지만 그림 하나로 공간 전체를 덮음)</p>
+ <p class="bg-sz03">background-size:100% 100%; 가로 세로 순서</p>
+ <p class="bg-sz04">background-size:300px 400px;</p> 
+</section>
+
+<section id="sec04">
+<h2>background-attachment:배경 고정/스크롤</h2>
+ <p class="bg-att01">
+ background-attachment:scroll ;<br>
+ 브라우저 스크롤은 따라서 움직이고 자신의 영역 스크롤은 고정
+ <br><br><br><br><br><br><br><br><br>
+ background-attachment:scroll ;<br>
+ 브라우저 스크롤은 따라서 움직이고 자신의 영역 스크롤은 고정
+ <br><br><br><br><br><br><br><br><br>
+ </p>
+ <p class="bg-att02">
+ background-attachment:fixed ;<br>
+ 브라우저 스크롤에 고정, 자신의 영역 스크롤도 고정
+ <br><br><br><br><br><br><br><br><br>
+ background-attachment:fixed ;<br>
+ 브라우저 스크롤에 고정, 자신의 영역 스크롤도 고정
+ <br><br><br><br><br><br><br><br><br>
+ </p>
+ <p class="bg-att03">
+ background-attachment:local ;<br>
+ 브라우저 스크롤과 자신의 영역 스크롤에 모두 따라서 움직임
+ <br><br><br><br><br><br><br><br><br>
+ background-attachment:local ;<br>
+ 브라우저 스크롤과 자신의 영역 스크롤에 모두 따라서 움직임
+ <br><br><br><br><br><br><br><br><br>
+ </p> 
+</section> 
+ 
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

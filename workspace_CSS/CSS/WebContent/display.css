@@ -1,0 +1,147 @@
+@CHARSET "UTF-8";
+
+section {
+ border: 3px dashed #666;
+ margin: 50px 20px;	
+ padding: 20px 12px; }
+
+section>h2 {background-color: #666;
+ border-left: 20px solid #999;
+ border-right: 20px solid #999;
+ width: 700px;
+ margin: 50px auto;/*수평값을 auto로 지정해서 항상 중앙정렬 됨*/
+ padding: 5px 2px;
+ text-align:center;/*글자(컨텐츠)의 수평정렬을 중앙으로 */
+ color: #fff; }
+ 
+
+
+ /* block요소를 inline성격으로 바꿈 */
+section#sec01>*:NOT(h2) {
+	background-color: #f97;
+	width: 200px; height: 50px;
+	margin: 50px; }
+	
+section#sec01:HOVER>*:NOT(h2) { 
+	 display: inline;/*tag성격 */ }	
+	
+
+ /* inline요소를 block성격으로 바꿈 */
+section#sec02>*:NOT(h2) {
+	background-color: #3cf;
+	width: 300px; height: 50px;
+	margin: 50px;}
+
+section#sec02:HOVER>*:NOT(h2) {
+	display: block; /*tag성격 */}
+
+
+/*  inline,block요소를 
+결합한 성격으로 바꿈*/
+
+section#sec03>*:NOT(h2) {
+ border: 2px solid;
+ background-color: #384;
+ color: #5e9;
+ width: 200px; height: 60px;
+ margin: 40px; }
+ 
+section#sec03:HOVER>*:NOT(h2) 
+{ display: inline-block; }
+ 
+ 
+  /* none으로 요소를 사라지게 */
+h2>small {display: none;}
+h2:HOVER>small {
+ display: inline;	} 
+
+section#sec04>p {background-color: #aef;}
+
+section#sec04:HOVER>p.none {
+	display: none;}
+
+section#sec04>span {background-color: #fae;}
+
+section#sec04:HOVER>span.none {
+	display: none;}
+
+
+ /* visibility:hidden;으로 요소를 사라지게 */
+
+aside {border: 4px double #999;
+ margin: 50px;
+ padding: 30px;}
+
+aside#as01>p {
+	border: 1px solid red; }
+
+aside#as01>p.hid {
+	background-color: #faa;}
+
+aside#as01:HOVER>p.hid {
+	visibility: hidden;
+	transition:all 2s;} 
+
+aside#as01>span {
+	border: 1px solid orange; }
+	
+aside#as01>span.opa {
+	background-color: orange; }
+
+aside#as01:hover>span.opa {
+	opacity: 0;
+	transition:all 2s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

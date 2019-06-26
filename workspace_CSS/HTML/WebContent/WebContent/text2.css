@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+
+.top { background-color: #aef;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 1.8; }
+  
+  
+  
+   /* 링크 상태관련 속성 지정 */ 
+ .top:LINK { color: #333; } /* 초기 링크(방문하기 전)의 상태 */
+ .top:VISITED { color: #333;} /* 방문한 링크의 상태  */
+ .top:HOVER { background-color: #000;
+       color: #f00;
+       letter-spacing: 0em;
+       }  /* 마우스오버시의 상태 */
+ .top:ACTIVE { color: #f00;} /* 활성화한  링크의 상태 */ 
+  
+ 
+
+section { border: 3px solid #aaa; 
+ padding: 30px;}
+
+#sec01>p { border: 1px solid;}
+
+.line02 {color: #a00;
+  line-height: 1.8; }
+
+.line03 {color: #00a;
+  line-height: 30px;  }
+
+#sec01>ul {line-height: 2em; }
+
+#sec01>div {border: 1px solid;
+  width: 100px;
+  height: 100px;
+  text-align: center; /*수평 정렬*/
+  line-height: 100px;/*요소의 영역내에서 수직으로 중앙정렬*/
+}
+
+
+ /* letter-spacing: ; 자간 지정 */
+
+#sec02>p {letter-spacing: 20px; }
+#sec02>a {letter-spacing: 0.5em; }
+#sec02>input {letter-spacing:0.3rem;
+ width: 400px; }
+#sec02>h4 {letter-spacing: -2px;}
+
+
+ /* word-spacing: 단어 간격 지정*/
+
+ #sec03>p { word-spacing: 30px; }
+ #sec03>b { word-spacing: -0.5em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

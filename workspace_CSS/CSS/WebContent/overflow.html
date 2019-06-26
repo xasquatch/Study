@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<link href="overflow.css" rel="stylesheet">
+</head>
+<body>
+<h1>overflow:visible/hidden/scroll/auto; 
+ 영역의 범위를 벗어난 컨텐츠 처리</h1>
+ 
+<div id="box">
+ <h3>overflow</h3>
+ <img alt="baking" src="img/baking.jpg">
+</div> 
+ 
+<section id="sec01">
+<h2>overflow:visible; 기본값. 영역과 무관하게 컨텐츠를 다 보여줌</h2>
+<div>overflow:visible; <br>
+ <br><br><br><br>overflow:visible;
+ <br><br><br><br><br>
+ overflow:visible; <br>
+ <br><br><br><br><br>overflow:visible;
+ <br><br><br><br> 
+</div>
+<div><img src="img/dusk-2.jpg"></div>
+</section> 
+
+<section id="sec02">
+<h2>overflow:hidden; 영역을 벗어난 컨텐츠를 안보여줌</h2>
+<div>overflow:hidden; <br>
+ <br><br><br><br><br>overflow:hidden;<br><br><br><br>
+ overflow:hidden; <br>
+ <br><br><br><br><br>overflow:hidden;<br><br><br><br> 
+</div>
+<div><img src="img/dusk-2.jpg"></div>
+</section>
+
+<section id="sec03">
+<h2>overflow:scroll; 무조건 스크롤바를 생성함</h2>
+<div>overflow:scroll; <br>
+ <br><br><br>overflow:scroll;<br><br><br><br><br><br>
+ overflow:scroll; <br>
+ <br><br><br>overflow:scroll;<br><br><br><br><br><br> 
+</div>
+<div><img src="img/dusk-2.jpg"></div>
+</section>
+ 
+<section id="sec04">
+<h2>overflow:auto; 필요에 따라(컨텐츠가 영역밖으로 벗어난) 
+ 스크롤바를 생성함</h2>
+<div>overflow:auto; <br>
+ <br><br><br>overflow:auto;<br><br><br><br><br><br>
+ overflow:auto; <br>
+ <br><br><br>overflow:auto;<br><br><br><br><br><br> 
+</div>
+<div><img src="img/dusk-2.jpg"></div>
+</section>
+ 
+
+ 
+
+
+
+
+
+
+</body>
+</html>

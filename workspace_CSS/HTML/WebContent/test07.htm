@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+ <head> 
+  <title>form-2 html5에서 추가된 요소들</title>
+ </head>
+ <body>
+<a href="test06.htm" title="기본 form요소들">form-1</a>
+
+<hr>
+ <h1>html5에서 추가된 input type의 값들</h1>
+<hr>
+<form action="test.jsp" method="POST">
+<ol>
+ <li><input type="time"> time - 사용자의 지역을 기준으로 시간(시,분,초)을 지정</li>
+ <li><input type="date"> date - 사용자의 지역을 기준으로 날짜(연,월,일)을 지정</li>
+ <li><input type="datetime-local"> datetime-local -
+사용자가 위치한 곳을 기준으로 설정된 날짜와 시간(연,월,일,시,분,초)을 지정 </li>
+ <li><input type="month"> month - 사용자의 지역을 기준으로 날짜(연,월)을 지정</li>
+ <li><input type="week"> week -  사용자의 지역을 기준으로 날짜(연,주)을 지정</li>
+ <li><input type="url"> url - URL주소를 포함하는 영역에 사용(일부 스마트폰에서는 유형을 인식하고 키보드에 .com을 추가함, 브라우저 자체에서 해당 형식에 맞는지를 검사)</li>
+ <li><input type="email"> email - email주소를 포함하는 영역에 사용(일부 스마트폰에서는 
+유형을 인식하고 키보드에 .com을 추가함, 
+브라우저 자체에서 해당 형식에 맞는지를 검사)</li>
+ <li><input type="tel"> tel - 전화번호를 포함하는 영역에 사용(일부 스마트폰에서는 
+ 유형을 인식하고 숫자 키보드로 변경)</li>
+ <li><input type="number" style="width:50px;">
+  number - 숫자를 포함하는 영역에 사용
+  <ul>
+   <li><input type="number" min="1" style="width:50px;"> min=n - 최소값 </li>
+   <li><input type="number" max="50" style="width:50px;"> max=n - 최대값</li>
+   <li><input type="number" step="3" style="width:50px;"> step=n - 간격</li>
+  </ul>
+ </li>
+ <li><input type="range"> range - 범위 내의 값을 포함하는 영역에 사용
+  <ul>
+   <li><input type="range" min="1" style="width:50px;"> min=n - 최소값 </li>
+   <li><input type="range" max="50" style="width:50px;"> max=n - 최대값</li>
+   <li><input type="range" step="3" style="width:50px;"> step=n - 간격</li>
+  </ul>
+ </li>
+ <li><input type="search"> search - </li>
+ <li><input type="color"> color - </li>
+</ol>
+
+<h2>input type의 속성들</h2>
+<ol>
+ <li><input type="text" placeholder="20대"> placeholder=... - 입력할 예시</li>
+ <li><input type="text" autocomplete="off"> autocomplete=on/off
+ - 자동완성기능을 제어</li>
+ <li><input type="text" required> required - 전송하기 전에 반드시 기입해야 함</li>
+ <li><input type="text" autofocus> autofocus - 커서가 미리 위치함</li>
+ <li><input type="text" value="당신은 10번째 방문자입니다." readonly> readonly
+  - 읽기 전용으로 지정함</li>
+ <li><input type="text" value="당신은 실버회원입니다." disabled> disabled
+  - 비활성화 영역으로 지정함</li>
+</ol>
+
+<input type="submit"> <input type="reset">
+</form>
+
+<hr>
+<h1>폼요소들의 그룹화 - fieldset</h1>
+<pre>
+ <b> &lt;fieldset&gt; </b> 
+  <b>  &lt;legend&gt;영역(그룹)의 제목&lt;/legend&gt;</b> 
+   &lt;input type="text"&gt;
+   ...
+   &lt;input type="text"&gt; 
+  <b> &lt;/fieldset&gt;</b> 
+</pre>
+
+<form action="test2.jsp" method="POST">
+ <fieldset>
+  <legend>필수 입력</legend>
+   <input type="text" required> <br>
+   <input type="text" required> <br>
+   <input type="text" required> <br>
+ </fieldset>
+ <br><br>
+ <fieldset>
+  <legend>선택 입력</legend>
+   <input type="text"> <br>
+   <input type="text"> <br>
+   <input type="text"> <br>
+ </fieldset>
+<input type="submit"> <input type="reset">
+</form>
+
+
+ </body>
+</html>
+
+

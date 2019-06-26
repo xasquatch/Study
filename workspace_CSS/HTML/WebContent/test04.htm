@@ -1,0 +1,215 @@
+﻿<html>
+ <head>
+  <title>html수업 둘째날 - 표2 </title>
+ </head>
+ <body>
+<hr>
+<h1>table에서 셀 합치기</h1> 
+<hr>
+
+<table border="1">
+ <tr>
+  <th>가로로 셀 합치기</th>
+  <th>세로로 셀 합치기</th>
+ </tr>
+ <tr>
+  <td>colspan=&quot;n&quot;</td>
+  <td>rowspan=&quot;n&quot;</td>
+ </tr>
+</table>
+<br><br>
+
+<hr>
+<h2>가로로 셀 합치기</h2>
+<table border="1">
+ <tr>
+  <th colspan="2">web을 구현하는 기본 기술</th>
+ </tr>
+ <tr>
+  <th>html</th>
+  <td>웹문서를 만들어 주는 언어</td>
+ </tr>
+ <tr>
+  <th>CSS</th>
+  <td>웹문서를 꾸며 주는 언어</td>
+ </tr>
+ <tr>
+  <th>Javascript</th>
+  <td>웹문서에 동적인 기능을 부여하는 언어</td>
+ </tr>
+</table>
+<br><br>
+
+<table border="1">
+ <tr>
+  <th>NAME</th>
+  <td>Hong gil dong</td>
+  <th>ID</th>
+  <td>hong82</td>
+ </tr>
+ <tr>
+  <th>Phone</th>
+  <td>010-8282-8822</td>
+  <th>Address</th>
+  <td>Josun paldo moden-myun 8282</td>
+ </tr>
+ <tr>
+  <th colspan="2">가로로 2칸을 합치기</th>
+  <td colspan="2">colspan="2"</td>
+ </tr>
+</table>
+<br><br>
+
+<table border="1">
+ <tr>
+  <th>NAME</th>
+  <td>Hong gil dong</td>
+  <th>ID</th>
+  <td>hong82</td>
+ </tr>
+ <tr>
+  <th>Phone</th>
+  <td>010-8282-8822</td>
+  <th>Address</th>
+  <td>Josun paldo moden-myun 8282</td>
+ </tr>
+ <tr>
+  <th colspan="3">가로로 3칸을 합치기</th>
+  <td>colspan="3"</td>
+ </tr>
+</table>
+<br><br>
+
+<h3>◎ 문제 1. 가로로 칸 합치기</h3>
+<table border="1">
+ <tr>
+  <th>학과</th>
+  <td colspan="3">사물인터넷 자바개발자</td>
+ </tr>
+ <tr>
+  <th>출석일자</th>
+  <td>2019-02-27</td>
+  <th>수업교시</th>
+  <td>5교시</td>
+ </tr>
+</table>
+<br><br>
+
+<h3>◎ 문제 2. 가로로 칸 합치기</h3>
+<table border="1">
+ <tr>
+  <td colspan="2">1, 2</td>
+  <td>3</td>
+ </tr>
+ <tr>
+  <td>4</td>
+  <td colspan="2">5, 6</td>
+ </tr>
+ <tr>
+  <td>7</td>
+  <td>8</td>
+  <td>9</td>
+ </tr>
+</table>
+<br><br>
+
+<hr>
+<h2>세로로 셀 합치기</h2>
+
+<table border="1">
+ <tr>
+  <th rowspan="2">결<br>재</th>
+  <th>담 당</th>
+  <th>부원장</th>
+  <th>원 장</th>
+ </tr>
+ <tr>
+  <td>&nbsp; <!--nbsp태그는 글자 한 자의 공백을 뜻하므로 높이 값도 존재함--> </td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+<br><br>
+
+<table border="1">
+ <tr>
+  <td> 1 </td>
+  <td rowspan="2"> 2 </td>
+  <td> 3 </td>
+ </tr>
+ <tr>
+  <td> 4 </td>
+  <td> 5 </td>
+ </tr>
+</table>
+<br><br>
+
+<h3>◎ 문제 3. 세로로 칸 합치기</h3>
+<table border="1">
+ <tr>
+  <td> 1 </td>
+  <td rowspan="3"> 2 </td>
+  <td> 3 </td>
+ </tr>
+ <tr>
+  <td rowspan="2"> 4 </td>
+  <td> 5 </td>
+ </tr>
+ <tr>
+  <td> 6 </td>
+ </tr>
+ <tr>
+  <td> 7 </td>
+  <td> 8 </td>
+  <td> 9 </td>
+ </tr>
+</table>
+<br><br>
+
+<h3>◎ 문제 4. 복합 칸 합치기</h3>
+<table border="1">
+ <tr>
+  <th colspan="2">기타사항</th>
+  <td></td>
+ </tr>
+ <tr>
+  <th rowspan="4">특<br>기<br>사<br>항</th>
+  <th>지각자</th>
+  <td></td>
+ </tr>
+ <tr>
+  <th>결석자</th>
+  <td></td>
+ </tr>
+ <tr>
+  <th>조퇴자</th>
+  <td></td>
+ </tr>
+ <tr>
+  <th>그밖의</th>
+  <td>&nbsp; &nbsp; &nbsp; &nbsp; </td>
+ </tr>
+</table>
+<br><br>
+
+<table border="1">
+ <tr>
+  <th colspan="3">웹표준 기술</th>
+ </tr> 
+ <tr>
+  <th>html</th>
+  <td>html5</td>
+  <th rowspan="3">2<br>0<br>1<br>9<br>년</th>
+ </tr>
+ <tr>
+  <th>CSS</th>
+  <td>CSS3</td>
+ </tr>
+ <tr>
+  <th>JavaScript</th>
+  <td>JavaScript</td>
+ </tr>
+</table>
+
+ </body>
+</html>

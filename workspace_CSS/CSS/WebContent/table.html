@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+<link href="table.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<h1><i class="material-icons">computer</i> CSS table style</h1>
+<h2><i class="material-icons rotate pos">attachment</i> table-layout</h2>
+<table id="tab01">
+ <tr>
+  <th>table-layout</th> 
+  <th>table-layout</th> 
+ </tr>
+ <tr>
+  <td>auto: <br>셀안의 컨텐츠에 따라 셀 크기가 정해짐(기본값)</td>
+  <td>fixed: <br>셀안의 컨텐츠와 무관하게 셀들의 크기가 동일함</td>
+ </tr>
+ <tr>
+  <td>&nbsp;<!-- 공백을 뜻하는 특수문자. 
+       칸에서는 글자 한자의 높이가 유지 됨 -->
+  </td>
+  <td>&amp;nbsp;공백을 뜻하는 특수문자. <br>
+       칸에서는 글자 한자의 높이가 유지 됨 </td>
+ </tr>
+</table>
+
+<table id="tab02">
+ <tr>
+  <th>table-layout</th> 
+  <th>table-layout</th> 
+ </tr>
+ <tr>
+  <td>auto</td>
+  <td>fixed</td>
+ </tr>
+ <tr>
+  <td>&nbsp;<!-- 공백을 뜻하는 특수문자. 
+       칸에서는 글자 한자의 높이가 유지 됨 -->
+  </td>
+  <td>&amp;nbsp;공백을 뜻하는 특수문자. <br>
+       칸에서는 글자 한자의 높이가 유지 됨 </td>
+ </tr>
+</table>
+
+<h2>border-spacing</h2>
+<table id="tab03">
+ <tr>
+  <th>border-spacing</th>
+  <td>셀 간격 기본 상태</td>
+ </tr>
+ <tr>
+  <th>border-collapse</th>
+  <td></td>
+ </tr>
+</table>
+
+<table id="tab03-1">
+ <tr>
+  <th>border-spacing</th>
+  <td>10px 5px 적용(셀 간격. 수평 수직의 순서)</td>
+ </tr>
+ <tr>
+  <th>border-collapse</th>
+  <td></td>
+ </tr>
+</table>
+
+<table id="tab03-2">
+ <tr>
+  <th>border-spacing</th>
+  <td>0 적용(셀 간의 간격은 없어짐, 이중 테두리)</td>
+ </tr>
+ <tr>
+  <th>border-collapse</th>
+  <td></td>
+ </tr>
+</table>
+
+<h2>border-collapse</h2>
+<table id="tab04">
+ <tr>
+  <th>border-spacing</th>
+  <td></td>
+ </tr>
+ <tr>
+  <th>border-collapse</th>
+  <td>기본 상태 (separate)</td>
+ </tr>
+</table>
+
+<table id="tab04-1">
+ <tr>
+  <th>border-spacing</th>
+  <td></td>
+ </tr>
+ <tr>
+  <th>border-collapse</th>
+  <td>collapse(셀 간의 간격, 이중 테두리 없어짐)</td>
+ </tr>
+</table>
+
+<hr>
+<table id="tab05">
+ <tr>
+  <th colspan="3">stripe</th>
+ </tr>
+ <tr>
+  <td>tr:NTH-OF-TYPE(2n-1)</td>
+  <td>홀수번째의 줄에 배경색상 적용</td>
+  <td>=tr:NTH-OF-TYPE(odd)</td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+
+<table id="tab06">
+ <tr>
+  <th colspan="3">stripe</th>
+ </tr>
+ <tr>
+  <td>tr:NTH-OF-TYPE(2n)</td>
+  <td>짝수번째의 줄에 배경색상 적용</td>
+  <td>=tr:NTH-OF-TYPE(even)</td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+</table>
+
+<hr>
+<table id="tab07">
+ <tr>
+  <td>no.</td><td>title</td><td>date</td><td>view</td>
+ </tr>
+ <tr>
+  <td>
+   <img alt="ani" src="img/aniyellow.gif">
+  </td>
+  <td>vertical-align:</td>
+  <td>top/center/bottom;</td>
+  <td>셀 내에서 컨텐츠의 수직정렬을 지정</td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+ <tr>
+  <td></td><td></td><td></td><td></td>
+ </tr>
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>
