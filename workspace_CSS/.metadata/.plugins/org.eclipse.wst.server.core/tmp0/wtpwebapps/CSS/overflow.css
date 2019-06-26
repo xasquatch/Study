@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+div#box	{border: 1px solid;
+ width: 400px; height: 300px;
+ overflow: hidden;/*영역을 벗어난 그림 안보임*/ }
+
+div#box>img { /*평상시 그림의 크기*/
+ width: 640px;
+ transition: all 2s;}
+
+div#box:HOVER>img {/*부모에 오버시 그림의 크기 */
+ width: 400px;}
+
+
+
+
+ section {border: 4px double #666;
+  margin: 50px 30px;
+  padding: 30px 20px;   }
+ 
+ section>div {border: 1px solid red;
+  width: 500px;  height: 150px; 
+  margin-bottom:50px;
+  background-color: #eee; 
+  color: #d70; }
+  
+ section>div>img {
+  height: 80px; }
+ 
+#sec01>div {overflow: visible;}
+#sec02>div {overflow: hidden;} 
+#sec03>div {overflow: scroll;}
+#sec04>div {overflow: auto;}
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

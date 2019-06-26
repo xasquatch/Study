@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+ div#wrap { /* border: 1px solid red; */
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+ h1 {border-left: 20px solid #acf;
+  border-right: 20px solid #acf;
+  background-color: #000;
+  color: #fff;
+  text-align: center; 
+  line-height: 80px;
+  width:500px; height: 80px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 20px auto 100px auto;
+ }
+h1>span { color: #acf;}
+
+.link {
+background-color: #acf;
+margin-left: 800px;
+/* margin-top: 100px; 적용 안됨 */
+padding: 0.7em 1em;
+color: #000;
+font-weight:bold;
+text-decoration: none; }
+
+.link:HOVER {
+background-color: #000;	
+color: #acf; }
+
+.text {border: 3px dashed #666;
+    background-color: #ededed;
+	margin: 50px 20px;
+	padding: 1em 1.2em;
+	
+	white-space: pre;/*공백처리*/
+	line-height: 1.8;/*줄간격*/
+    font-size: 1.1em; }
+
+#ol01 {border: 1px solid blue; }
+#ol01>li {border: 1px solid; }
+
+.mt {margin-top: 80px; }
+.mr {margin-right: 80px;}
+.mb {margin-bottom: 80px;}
+.ml {margin-left: 80px;}
+
+p#p1 {border: 1px solid green;}
+
+p#p1>span {border: 1px solid orange;}
+p#p1>b {border: 1px solid #dd0;}
+
+.sp01 {margin-top: 100px;}
+.sp02 {margin-right: 100px;}
+.sp03 {margin-bottom: 100px;}
+.sp04 {margin-left: 100px;} 
+
+
+
+.m1, .m2, .m3, .m4 {
+	border: 1px solid; }
+
+.m1 {margin: 100px;}
+.m2 {margin: 0 100px;}
+.m3 {margin: 100px 0;}
+.m4 {margin: 0 100px 150px 200px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

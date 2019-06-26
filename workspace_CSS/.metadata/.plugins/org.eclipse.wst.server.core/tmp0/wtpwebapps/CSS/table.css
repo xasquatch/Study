@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+ h1 {
+  border-bottom: 4px solid;
+  width:600px;
+  margin-left:50px;
+  color: #ae6;
+  transition: all 4.5s;/* 애니메이션 효과 */}
+
+ h2 {background-color: #0e6;
+  border-left:15px solid;
+  border-right:15px solid;
+  border-radius:15px; /* 모서리 라운딩 */
+  width: 200px;
+  margin: 30px auto;
+  padding: 10px 0;
+  text-align: center; 
+  color: #051; 
+  position: relative;}
+
+ /* 아이콘 부분 */
+h2>i {vertical-align: -10px;
+/*  font-weight: normal ; */
+ text-shadow:0 0 3px #333;
+ color: #fff;}
+
+.rotate {transform:rotate(45deg); /* 회전변형 */}
+
+.pos {position: absolute;
+      top:-10px;
+      left:-18px; }
+
+
+
+
+
+ table:not(#tab05) { /* :not(선택자) 괄호안의  선택자만 제외*/
+  border: 2px solid #fa0;
+  width: 600px;
+  margin: 30px;}
+  
+ th,td {border: 1px solid;}
+ 
+ table#tab01 {table-layout: auto;}
+ table#tab02 {table-layout: fixed;}
+ 
+  /* border-spacing 셀 간격 */
+ #tab03 tr:NTH-OF-TYPE(1),
+ #tab03-1 tr:NTH-OF-TYPE(1),
+ #tab03-2 tr:NTH-OF-TYPE(1)   {
+  background-color: #e50; }
+  
+ table#tab03 {/* border-spacing: 0px; */}
+ table#tab03-1 {border-spacing: 10px 5px;} 
+ table#tab03-2 {border-spacing: 0;}
+ 
+  /* border-collapse */
+ #tab04 tr:NTH-OF-TYPE(2),
+ #tab04-1 tr:NTH-OF-TYPE(2) {
+  background-color: #08e;}
+
+ table#tab04 { /*border-collapse:separate;*/}
+ table#tab04-1 {border-collapse: collapse;}
+ 
+ 
+ 
+  /* 줄무늬 표 만들기 */
+ #tab05, #tab06 {width: 800px;
+  height: 250px; }
+ 
+ #tab05 tr:NTH-OF-TYPE(2n-1) {
+   /* 2n-1이나  odd는 홀수번째를 뜻함*/
+	background-color: #3e3aff; } 
+ 
+ #tab06 tr:NTH-OF-TYPE(2n) {
+   /* 2n이나  even는 짝수번째를 뜻함*/
+	background-color: #3aefee; }
+ 
+ #tab05 tr:HOVER {/* 한줄 전체가 마우스오버시 변화 */
+	background-color:#3aefee;
+	color: #3e3aff;  }
+ 
+ #tab06 tr:HOVER {/* 한줄 전체가 마우스오버시 변화 */
+	background-color:#3e3aff;
+	color: #3aefee;  } 
+ 
+ 
+  /*  */
+ #tab07 {width: 1000px !important;
+  height: 400px !important;
+  border: 2px solid #38f !important;
+ } /* !important는 스타일 적용시 
+ 우선순위를 가장 높게함 */
+ 
+ #tab07 tr td:NTH-OF-TYPE(1) {
+	width: 50px;
+	background-color: #aef; } 
+ 
+ #tab07 tr td:NTH-OF-TYPE(2) {
+	width: 280px;
+	border-color: #38f; }
+ 
+ #tab07 tr td:NTH-OF-TYPE(3) {
+	width: 100px;
+	border-style: dashed;
+	text-align: center; } 
+ 
+ #tab07 tr:NTH-OF-TYPE(2) {
+	height: 80px; }
+	
+  #tab07 tr:NTH-OF-TYPE(2) td:NTH-OF-TYPE(1) {
+	background-color: #000;
+	vertical-align: bottom; }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

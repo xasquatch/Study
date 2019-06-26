@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="h1-trans">transition</h1>
+<ul>
+ <li>transition-property: 효과를 줄 속성명.
+   전체 속성에 적용할 경우는 값을 all
+ </li>
+ <li>transition-duration: 진행시간(단위는 초-s,밀리초-ms)</li>
+ <li>transition-delay: 지연시간(단위는 초-s,밀리초-ms)</li>
+ <li>transition-timing-function: 가속,감속 효과</li>
+ <li>transition:함축형 표현(속성명 진행시간 지연시간...의 순서)</li>
+</ul>
+
+<div class="circle">
+circle</div>
+
+<div class="width">width</div>
+
+<div class="move">move</div>
+
+
+
+<h2>transition-timing-function</h2>
+<ul>
+ <li>transition-timing-function: ease;
+  기본값. 처음에는 천천히 시작해서 점차 빨라지다 마지막에는 천천히 끝남
+ </li>
+ <li>transition-timing-function: ease-in; 시작을 느리게 함</li>
+ <li>transition-timing-function: ease-out; 마지막을 느리게 함</li>
+ <li>transition-timing-function: ease-in-out; 느리게 시작하고 느리게 끝냄</li>
+ <li>transition-timing-function: linear; 시작부터 끝까지 똑같은 속도로 진행</li>
+ <li>transition-timing-function: cubic-bezier(n,n,n,n); bezier 함수를 직접 정의해서 사용</li>
+</ul>
+
+
+
+<div id="timing">
+ <p class="tf01">ease</p>
+ <p class="tf02">ease-in</p>
+ <p class="tf03">ease-out</p>
+ <p class="tf04">ease-in-out</p>
+ <p class="tf05">linear</p>
+ <p class="tf06">cubic-bezier</p>
+ <p class="tf07">cubic-bezier</p>
+</div>
+
+<section>
+ <div class="tff01">ease</div>
+ <div class="tff02">ease-in</div>
+ <div class="tff03">ease-out</div>
+ <div class="tff04">ease-in-out</div>
+ <div class="tff05">linear</div>
+ <div class="tff06">cubic-bezier</div>
+ <div class="tff07">cubic-bezier</div>
+</section>
+
+
+
+
+
+</body>
+</html>
+
+
+
