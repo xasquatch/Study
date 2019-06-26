@@ -34,6 +34,13 @@
 		<item value="false" key="GoIntoTopLevelTypeAction.isChecked"/>
 		<item value="false" key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
 	</section>
+	<section name="org.eclipse.jdt.internal.ui.wizards.buildpaths.NewVariableEntryDialog">
+		<item value="577" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="398" key="DIALOG_HEIGHT"/>
+		<item value="67" key="DIALOG_X_ORIGIN"/>
+		<item value="4" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="OverrideMethodDialog">
 		<item value="true" key="showtypes"/>
 	</section>
