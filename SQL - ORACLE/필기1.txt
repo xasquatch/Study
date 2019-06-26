@@ -1,0 +1,325 @@
+조인 구문 정리
+카테시안 곱 (카테시안 프로덕트, 크로스 조인)
+논리곱의 형태로 출력
+
+SQL> SELECT e.first_name, d.department_name
+  2  FROM employees e CROSS JOIN departments d;
+
+ex) 
+(1,2,3) x (A,B,C)
+= (1 A), (2 A), (3 A), (1 B), (2 B), (3 B)....
+
+2. EQUI 조인
+
+같은 조건 찾아서 가져오는 조인
+EQUAL 연산자를 사용하기 때문에 붙은 이름
+
+SQL> SELECT e.first_name, d.department_name
+  2  FROM employees e JOIN departments d
+  3  ON e.department_id = d.department_id;
+
+SQL> SELECT e.first_name, d.department_name
+  2  FROM employees e JOIN departments d
+  3  ON e.department_id = d.department_id
+  4  AND e.department_id = 110;
+
+검색 조건을 먼저 검사하고 조인을 하기 때문에 조인의 속도가 빠르다.
+
+2-1. natural join(자연 조인)
+
+SELECT last_name, department_name
+FROM employees NATURAL JOIN departments;
+
+조인 조건의 컬럼명이 서로 일치하는 경우 자연조인으로 조인 가능.
+3. Non-equi 조인
+같지 않은 값을 이용한 조인
+
+ex)
+SQL> CREATE TABLE student
+  2  (name varchar2(30),
+  3  subject_id number,
+  4  score number);
+
+SQL> CREATE TABLE subject
+  2  (subject_id number,
+  3  subject_name varchar2(30));
+
+SQL> CREATE TABLE grade
+  2  (grade varchar2(10),
+  3  min_score number,
+  4  max_score number);
+
+
+insert into student values ('FORD', 1, 80);
+insert into student values ('JAMES', 1, 70);
+insert into student values ('ALLEN', 2, 40);
+insert into student values ('STEVE', 3, 100);
+insert into student values ('MILLER', 4, 90);
+update student set score = score-5;
+
+
+
+insert into subject values (1, 'Computer');
+insert into subject values (2, 'Music');
+insert into subject values (3, 'English');
+insert into subject values (4, 'history');
+
+insert into grade values ('A', 90, 100);
+insert into grade values ('B', 80, 89);
+insert into grade values ('C', 70, 79);
+insert into grade values ('D', 60, 69);
+insert into grade values ('F', 0, 59);
+
+SQL> SELECT stu.name, sub.subject_name, stu.score, g.grade
+  2  FROM student stu JOIN subject sub
+  3  ON stu.subject_id = sub.subject_id
+  4  JOIN grade g
+  5 ON stu.score BETWEEN g.min_score AND g.max_score;
+
+4. outer JOIN
+
+LEFT OUTER JOIN	
+왼쪽 테이블에서 생략된 행을 출력해주는 조인
+RIGHT OUTER JOIN	
+오른쪽 테이블에서 생략된 행을 출력해주는 조인
+FULL OUTER JOIN	
+양쪽 테이블에서 생략된 행을 출력해주는 조인
+
+ex>
+SELECT e.first_name, d.department_name
+FROM employees e LEFT OUTER JOIN departments d
+ON e.department_id = d.department_id;
+
+EX>
+SELECT e.first_name, d.department_name
+FROM employees e FULL OUTER JOIN departments d
+ON e.department_id = d.department_id;
+
+5. SELF-JOIN
+
+SQL> SELECT w.last_name, m.last_name
+  2  FROM employees w JOIN employees m
+  3  ON w.manager_id = m.employee_id;
+
+
+
+
+계층형 쿼리
+실습은 hr 계정에서 진행
+예제)
+select employee_id, last_name, manager_id from employees
+start with manager_id is null
+connect by prior employee_id = manager_id;
+
+-- start with 절 : 계층이 시작될 행을 선택하는 조건절
+-- connect by 절 : 계층이 연결될 컬럼을 선택하는 절
+-- prior : 상위 계층이 될 컬럼 앞에 붙이는 키워드
+
+
+
+EMPLOYEE_ID
+LAST_NAME
+MANAGER_ID
+100
+King
+-
+101
+Kochhar
+100
+108
+Greenberg
+101
+109
+Faviet
+108
+110
+Chen
+108
+111
+Sciarra
+108
+112
+Urman
+108
+113
+Popp
+108
+102
+De Haan
+100
+103
+Hunold
+102
+104
+Ernst
+103
+105
+Austin
+103
+106
+Pataballa
+103
+107
+Lorentz
+103
+
+EX2)
+select employee_id, first_name, last_name, manager_id
+from  employees
+start with employee_id = 107
+connect by employee_id = prior manager_id;
+
+-- 107번 사원을 시작값으로 설정해서 직속상사를 출력하는 구문.
+
+
+EMPLOYEE_ID
+FIRST_NAME
+LAST_NAME
+MANAGER_ID
+107
+Diana
+Lorentz
+103
+103
+Alexander
+Hunold
+102
+102
+Lex
+De Haan
+100
+100
+Steven
+King
+-
+
+
+
+
+집합 연산자
+
+-- 연산 할 쿼리 구문의 컬럼의 데이터 타입과 갯수를 일치시켜야함.
+결과를 모아서 출력(=합집합) - UNION, UNION ALL)
+union 연산자는 결과값에 중복값을 제거하고 결과를 정렬해서 출력해준다.
+
+SELECT department_id, salary
+FROM employees
+WHERE salary > 10000
+AND department_id = 90
+UNION
+SELECT department_id, salary
+FROM employees
+WHERE salary > 10000
+AND department_id = 80;
+
+SELECT department_id, salary
+FROM employees
+WHERE salary > 10000
+AND department_id IN (90, 80);
+
+SELECT department_id, salary
+FROM employees
+WHERE salary > 10000
+AND department_id = 90
+UNION ALL
+SELECT department_id, salary
+FROM employees
+WHERE salary > 10000
+AND department_id = 80; 
+
+--union all은 쿼리 결과를 합쳐서 출력하는 역할을 한다. 
+
+2. 공통으로 있는 데이터찾기(INTERSECT, 교집합)
+-- 두 SQL문장에서 교집합을 찾는 구문
+-- 두 구문에서 서로 일치하는 결과만 골라서 출력
+
+SELECT salary
+FROM EMPLOYEES
+WHERE department_id >= 70
+INTERSECT
+SELECT salary
+FROM EMPLOYEES
+WHERE department_id < 70;
+
+-- 쿼리 구문의 결과값에서 중복값 제거와 정렬을 한뒤 출력 
+
+3. 특정 결과만 제외한 결과(MINUS, 차집합)
+-- 큰 집합에서 작은 집합을 빼는 차집합 연산
+-- 결과값을 정렬한 뒤 출력.
+
+SELECT salary
+FROM employees
+MINUS
+SELECT salary
+FROM EMPLOYEES
+WHERE department_id= 100;
+
+--그룹 함수
+--ROLLUP
+-- 그룹 별 소계를 계산해주는 함수
+SELECT department_id, job_id, COUNT(*), SUM(salary)
+FROM EMPLOYEES
+WHERE department_id > 50
+GROUP BY ROLLUP(department_id, job_id);
+
+
+--CUBE
+--모든 조합의 그룹을 만들어서 결과를 보여주는 함수
+SELECT department_id, job_id, COUNT(*), SUM(salary)
+FROM EMPLOYEES
+WHERE department_id > 50
+GROUP BY CUBE(department_id, job_id);
+
+--GROUPING SETS
+-- 여러 개의 컬럼이 group by 절에 오는 경우 개별의 기준으로 그룹을 묶어서 출력해주는 함수
+SELECT department_id, manager_id, count(*)
+FROM EMPLOYEES
+WHERE department_id > 100
+GROUP BY GROUPING SETS (department_id, manager_id);
+
+
+--LIST AGG
+--하나의 필드에 그룹의 멤버의 선택한 행의 값을 한번에 출력해주는 그룹 함수.
+--11g, 12c 사용가능
+SELECT department_id,
+LISTAGG(first_name,'>>') WITHIN GROUP(ORDER BY hire_date) "LISTAGG RESULT"
+FROM EMPLOYEES
+WHERE department_id > 80
+GROUP BY DEPARTMENT_ID;
+
+
+-- MERGE(DML)
+
+예제 테이블
+
+CREATE TABLE pt_01
+(saleno NUMBER, prodno NUMBER, amount NUMBER, price number);
+CREATE TABLE pt_02
+(saleno NUMBER, prodno NUMBER, amount NUMBER, price number);
+CREATE TABLE pt_total
+(saleno NUMBER, prodno NUMBER, amount NUMBER, price number);
+
+INSERT INTO pt_01 VALUES (062001,1000,1,500);
+INSERT INTO pt_01 VALUES (062002,1500,1,600);
+INSERT INTO pt_01 VALUES (062003,2000,1,700);
+INSERT INTO pt_02 VALUES (062011,1001,1,300);
+INSERT INTO pt_02 VALUES (062012,1501,1,400);
+INSERT INTO pt_02 VALUES (062013,2001,1,500);
+
+
+MERGE INTO pt_total total  --값을 입력받을 테이블
+USING pt_01 p01     --추가할 테이블
+ON (total.saleno=p01.saleno) --행의 중복값 여부를 검사할 조건
+WHEN MATCHED THEN    --조건에 맞는 경우 실행 될 구문
+ UPDATE SET total.prodno = p01.prodno
+WHEN NOT MATCHED THEN   --조건에 맞지 않는 경우 실행 될 구문
+ INSERT VALUES(p01.saleno, p01.prodno, p01.amount, p01.price);
+
+
+MERGE INTO pt_total total  --값을 입력받을 테이블
+USING pt_02 p02     --추가할 테이블
+ON (total.saleno=p02.saleno) --행의 중복값 여부를 검사할 조건
+WHEN MATCHED THEN    --조건에 맞는 경우 실행 될 구문
+ UPDATE SET total.prodno = p02.prodno
+WHEN NOT MATCHED THEN   --조건에 맞지 않는 경우 실행 될 구문
+ INSERT VALUES(p02.saleno, p02.prodno, p02.amount, p02.price);

@@ -2,18 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="xs-2" key="selection"/>
+		<item value="passchecking" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="onkey"/>
+			<item value="keydown"/>
+			<item value="passchecking"/>
+			<item value="zonecode"/>
+			<item value="data.zonecode"/>
 			<item value="sample3_detailAddress"/>
 			<item value="sample3_extraAddress"/>
 			<item value="extraAddr "/>
-			<item value="sm-2"/>
-			<item value="form-control"/>
-			<item value="&quot;sr-only&quot;"/>
-			<item value="col-sm-2 control-labelcol-sm-2 control-label"/>
-			<item value="passcheck"/>
 		</list>
 		<list key="replacehistory">
 			<item value="xs-2"/>

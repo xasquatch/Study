@@ -21,41 +21,77 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="modalTitle"></h4>
+          <h4 class="modal-title" id="modalTitle">회원가입</h4>
+          										저희와 함께하세요!
+<!-- 지도API -->	<div id="wrap" style="display:none;border:1px solid;width:500px;height:300px; float:right;  right:20px; margin:5px 0;z-index:9999;position:absolute;">
+<!-- 지도API --><img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap" style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
         </div>
 	        <div class="modal-body">
 			<form class="form-horizontal">
 				<div class="form-group">
 					<label class="col-xs-2 control-label" for="id">아이디</label>
-					<div class="col-xs-10">
-						<input type="text" class="form-control" id="id" placeholder="아이디" maxlength="15" required="required">
+
+<script type="text/javascript">
+function idchecking() {
+    var myid = $('#myid').val();
+    var pattern = /([^a-z0-9])/;
+    	if(myid.length === 0){
+    		$('#checkid').html("아이디를 먼저 입력해주세요.");
+    		return;
+    	}else if(pattern.test(myid)){
+			$('#checkid').html("영소문자와 숫자만 가능합니다.");
+			$('#myid').val("");
+    	    return;
+    	};
+        $.ajax({
+            type : 'POST',
+            url : '<%=request.getContextPath()%>/checkid.act',
+            data : {
+                myid : myid
+            },
+            success : function(result) {
+                if (result == 1) {
+                    $('#checkid').html("사용가능 ID");
+                } else {
+                    $('#checkid').html("중복 : 사용할 수 없는 ID입니다.");
+                    $('#myid').val('');
+                }
+            }
+        });
+    }
+</script>
+				<div class="col-xs-10">
+						<input type="text" class="form-control" id="myid" placeholder="아이디" maxlength="15" required="required">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-2 control-label" for="pwd1">비밀번호</label>
+					<div id="joinidcheck"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-2 control-label" for="mypwd1">비밀번호</label>
 					<div class="col-xs-10">
-						<input type="password" class="form-control" id="mypwd1" placeholder="비밀번호" maxlength="15" required="required" onkeydown="passchecking();">
+						<input type="password" class="form-control" id="mypwd1" placeholder="비밀번호" maxlength="15" required="required" onkeyup="passchecking();">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-2 control-label" for="pwd2">비밀번호 확인</label>
+					<label class="col-xs-2 control-label" for="mypwd2">비밀번호 확인</label>
 					<div class="col-xs-10">
-						<input type="password" class="form-control" id="mypwd2" placeholder="비밀번호 확인" maxlength="15" required="required" onkeydown="passchecking();">
+						<input type="password" class="form-control" id="mypwd2" placeholder="비밀번호 확인" maxlength="15" required="required" onkeyup="passchecking();">
 					</div>
 				</div>
 				<div class="form-group">
 					<div id="passcheck"></div>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-2 control-label" for="name">이름</label>
+					<label class="col-xs-2 control-label" for="myname">이름</label>
 					<div class="col-xs-10">
-						<input type="text" class="form-control" id="name" placeholder="이름" maxlength="15">
+						<input type="text" class="form-control" id="myname" placeholder="이름" maxlength="15">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-2 control-label" for="CallNumber">연락처</label>
+					<label class="col-xs-2 control-label" for="myCallNumber">연락처</label>
 					<div class="col-xs-10">
-						<input type="text" class="form-control" id="CallNumber" placeholder="연락처" onkeydown="changnumber" maxlength="15">
+						<input type="text" class="form-control" id="myCallNumber" placeholder="연락처" onkeyup="changnumber" maxlength="15">
 					</div>
 				<script type="text/javascript">
 					function autochecking(str) {
@@ -85,7 +121,7 @@
 					    }
 					    return str;
 					}
-					    var cellPhone = document.getElementById('CallNumber');
+					    var cellPhone = document.getElementById('myCallNumber');
 					    cellPhone.onkeyup = function(event){
 					    event = event || window.event;
 					    var _val = this.value.trim();
@@ -107,22 +143,18 @@
 				</script>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-2 control-label" for="email">이메일</label>
+					<label class="col-xs-2 control-label" for="myEmail">이메일</label>
 					<div class="col-xs-10">
-						<input type="text" class="form-control" id="email" placeholder="이메일" maxlength="45" >
+						<input type="text" class="form-control" id="myEmail" placeholder="이메일" maxlength="45" >
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="col-xs-2 control-label" for="address">우편번호</label>
-					<div class="col-xs-8">
+					<div class="col-xs-6">
 						<input type="text" class="form-control" name="myaddr1" id="sample3_postcode" placeholder="우편번호">
 					</div>
-					<div class="col-xs-2">
-						<input type="button" style="border:1px solid rgba(0,0,0,0.2);" class="btn btn-default" onclick="sample3_execDaumPostcode()" value="우편번호 찾기"><br>
-					</div>
-					<div id="wrap" style="display:none;border:1px solid;width:500px;height:300px;margin:5px 0;position:relative">
-						<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnFoldWrap"
-						 style="cursor:pointer;position:absolute;right:0px;top:-1px;z-index:1" onclick="foldDaumPostcode()" alt="접기 버튼">
+					<div class="col-xs-4">
+						<input type="button" style="border:1px solid rgba(0,0,0,0.2);" class="btn btn-primary" onclick="sample3_execDaumPostcode()" value="우편번호 찾기"><br>
 					</div>
 				</div>
 				<div class="form-group">
@@ -133,16 +165,16 @@
 				</div>
 				<div class="form-group">
 					<label class="col-xs-2 control-label" for="address">상세주소</label>
-					<div class="col-xs-10">
+					<div class="col-xs-4">
 						<input type="text" class="form-control" name="myaddr3" id="sample3_detailAddress" placeholder="상세주소">
+					</div>
+					<label class="col-xs-2 control-label" for="address	">참고항목</label>
+					<div class="col-xs-4">
+						<input type="text" class="form-control" name="myaddr4" id="sample3_extraAddress" placeholder="참고항목">
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-xs-2 control-label" for="address">참고항목</label>
-					<div class="col-xs-10">
-						<input type="text" class="form-control" name="myaddr4" id="sample3_extraAddress" placeholder="참고항목">
-					</div>
-
+				</div>
 					
 					<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 					<script>
@@ -220,17 +252,12 @@
 					        element_wrap.style.display = 'block';
 					    }
 					</script>
-					
-					
-				</div>
 				<div class="form-group">
 					<label class="sr-only" for="submit">입력완료</label>
 					<button type="submit" class="btn btn-primary">입력완료</button>
 				</div>
 			</form>
 	        </div>
-        <div class="modal-footer">
-        </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
