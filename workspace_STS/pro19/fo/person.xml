@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="personService" class="com.spring.ex01.PersonServiceimpl">
+		<property name="name" value="홍길동"/>
+		<!-- <property name="name">
+			<value>홍길동</value>
+		</property> -->
+		<property name="age" value="2222"/>
+	</bean>
+
+</beans>
