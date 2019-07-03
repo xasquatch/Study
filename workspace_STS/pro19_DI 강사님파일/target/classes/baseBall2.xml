@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	
+	<bean id="player2" class="com.test.di5.Player">
+		<constructor-arg value="강정호"/>
+		<constructor-arg value="28"/>
+		<constructor-arg>
+			<list>
+				<value>3번타자</value>
+				<value>유격수</value>
+			</list>
+		</constructor-arg>
+		<property name="height" value="188"/>
+		<property name="weight" value="80"/>
+	</bean>
+	
+</beans>
+
+
+
+
+
+
