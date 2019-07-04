@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	<bean class="com.test.aop2.ServiceImpl" id="service"/>
+	
+	<bean class="com.test.aop2.LoggingAdvice" id="loggingadvice"/>
+
+	<bean class="com.test.aop2.TimeCheckAdvice" id="timecheckadvice"/>
+
+	<aop:config>
+		
+		<aop:aspect id="loggingadvice" ref="loggingadvice">
+<!-- after도 있음 --><aop:before method="logging" pointcut="execution(* com.test.aop2.ServiceImpl.*())"/>  
+		</aop:aspect>
+		
+	</aop:config>
+	<aop:config>
+		<aop:aspect id="timecheckadvice" ref="timecheckadvice" >
+			<aop:around method="check" pointcut="execution(* com.test.aop2.ServiceImpl.*())"/><!-- aop:around태그에서는 joinpoint.proceed() 리턴값이 반드시 필요 -->
+		</aop:aspect>
+	</aop:config>
+
+
+
+
+</beans>

@@ -2,47 +2,25 @@ package com.test.di4;
 
 import java.util.ArrayList;
 
-public class Player {
+public class Player {//야구 선수 클래스
+	
+	private String name; //이름
+	private int age; //나이
+	private ArrayList<String> position;//포지션
+	private double height;//키
+	private double weight;//몸무게
+	
+	//기본 생성자
+	public Player() { }
 
-	private String name;
-	private int age, height, weight;
-	private ArrayList<String> Position;
-
-	Player() {
-	}
-
-	public Player(String name, int age, int height, int weight, ArrayList<String> Position) {
-		super();
+	//이름, 나이, 포지션 값을 전달받아 변수를 초기화시킬 생성자
+	public Player(String name, int age, ArrayList<String> position) {
 		this.name = name;
 		this.age = age;
-		this.height = height;
-		this.weight = weight;
-		this.Position = Position;
+		this.position = position;
 	}
-
-	public Player(String name, int age, ArrayList<String> Position) {
-		super();
-		this.name = name;
-		this.age = age;
-		this.Position = Position;
-	}
-
-	public int getHeight() {
-		return height;
-	}
-
-	public void setHeight(int height) {
-		this.height = height;
-	}
-
-	public int getWeight() {
-		return weight;
-	}
-
-	public void setWeight(int weight) {
-		this.weight = weight;
-	}
-
+	
+	//getter,setter메소드 
 	public String getName() {
 		return name;
 	}
@@ -60,11 +38,30 @@ public class Player {
 	}
 
 	public ArrayList<String> getPosition() {
-		return Position;
+		return position;
 	}
 
-	public void setPosition(ArrayList<String> Position) {
-		this.Position = Position;
+	public void setPosition(ArrayList<String> position) {
+		this.position = position;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
 	}
 
 }
+
+
+

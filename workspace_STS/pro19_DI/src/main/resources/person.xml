@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:c="http://www.springframework.org/schema/c"
-	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 생성자를 이용하여 Person클래스에 대한 객체 생성하기위한 설정 -->
+	<bean id="person1" class="com.test.di2.Person">
+		<constructor-arg>
+			<value>홍길동</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>남</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>26</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>911111-1121111</value>
+		</constructor-arg>
+	</bean>
 	
-	<bean id="person1" class="com.test.di2.Person" c:name="홍길동" c:age="26" c:gender="남" c:inNo="941111-1121111" />
-	<bean id="person2" class="com.test.di2.Person" c:name="홍길서" c:age="15" c:gender="여" c:inNo="041212-4121111" />
-	<bean id="personInfo" class="com.test.di2.PersonInfo" c:person-ref="person1" />
+	<!-- 생성자를 이용하여 Person클래스에 대한 객체를 생성하기 위한 설정 작성 -->
+	<bean id="person2" class="com.test.di2.Person">
+		<constructor-arg value="홍길서" />
+		<constructor-arg value="여" />
+		<constructor-arg value="15"/>
+		<constructor-arg value="941212-2511515"/>
+	</bean>
+	
+<!-- PersonInfo객체가 person1객체를 의존하게 만들 기 위한 설정 -->
+	<!-- 먼저 PersonInfo객체 생성 -->	
+	<bean id="personInfo" class="com.test.di2.PersonInfo">
 		
-	<!-- <bean id="personInfo" class="com.test.di2.PersonInfo">
+		<!-- id속성값이 person1인  Person객체를 PersonInfo객체의 생성자를 호출하여
+			 PersonInfo객체의  Person person변수에 의존하는 객체를 주입 
+		 -->
 		<constructor-arg>
 			<ref bean="person1"/>
 		</constructor-arg>
-	</bean> -->
 	
-
+	</bean>
 </beans>
+
+
+
+
+
