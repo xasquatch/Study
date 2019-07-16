@@ -13,7 +13,7 @@
 		<table width="1000" height="5">
 				<!-- 로고이미지 -->
 				<td align="left" width="500">
-					<a href="shoppingMain.jsp">
+					<a href="ShoppingMain.jsp">
 						<img src="img/logo.JPG" alt="left" border="0">
 					</a>
 				</td>

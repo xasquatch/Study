@@ -23,11 +23,11 @@
 <body>
 <!-- 	파라미터 값을 통하여 (left값 center값이 있느냐에 따라 화면구성을 틀리게) -->
 		<c:if test="${center == null}">
-			<c:set var="center" value="${center }"/>
-		</c:if>	
-		<c:if test="${not(center == null)}">
 			<c:set var="center" value="Center.jsp"/>
 		</c:if>
+		<c:if test="${center != null}">
+			<c:set var="center" value="${center}"/>
+		</c:if>	
 	<c:set var="left" value="${left}"/>
 	
 	
@@ -39,7 +39,7 @@
 			<td align="center" colspan="2"><c:import url="Top.jsp"></c:import><td> 
 		</tr>
 		<!-- Center설정 부분 -->
-		<tr height="470">
+		<tr height="470" style="vertical-align: top;">
 			<c:if test="${left == null }">
 				<td align="center">
 					<jsp:include page="Center.jsp"></jsp:include> 
@@ -47,10 +47,10 @@
 			</c:if>
 			<c:if test="${left != null }">
 				<td align="center" width="200">
-					<c:import url="${left.jsp}"></c:import> 
+					<jsp:include page="${left}"></jsp:include> 
 				</td>
 				<td align="center" width="800">
-					<c:import url="${Center.jsp}"></c:import> 
+					<jsp:include page="${center}"></jsp:include> 
 				</td>
 			</c:if>
 		</tr>
