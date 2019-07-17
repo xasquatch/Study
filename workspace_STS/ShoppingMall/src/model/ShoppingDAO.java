@@ -101,4 +101,61 @@ public class ShoppingDAO {
 		//또한 리턴받은 list를 또다시 getAllSutool()메소드를 호출할 곳으로 반환함
 		return template.query(sql, rm);
 	}
+
+	//수작업공구 번호를 전달받아 검색하여 반환할 메소드 
+	public SuBean getOneSutool(int suno) {
+		
+		String sql = "select * from sutool where suno=?";
+		
+		RowMapper<SuBean> rm = 
+				new BeanPropertyRowMapper<SuBean>(SuBean.class);
+		
+		//template객체를 이용하여 SELECT구문을 실행할떄..
+		//queryForObject메소드에 실행할 SELECT문과, 
+		//DB의 SUTOOL테이블의 컬럼명과 매칭한 객체를 전달,
+		//?값 전달 하여...
+		//검색한 결과는 SuBean객체를 반환 받는데 조상 Object타입으로 반환받는다.	
+		return template.queryForObject(sql, rm, suno);
+	}
+	
+	
+	public List<SuBean> getSelectSutool(String num) {
+		
+		String sql = "SELECT * FROM sutool WHERE sucategory = ?";
+
+//		List list = new ArrayList();
+//		
+//		list = template.query(sql, new RowMapper() {
+//
+//			@Override
+//			public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+//
+//				SuBean suBean = new SuBean();
+//
+//				suBean.setSuno(rs.getInt("SUNO"));
+//				suBean.setSuname(rs.getString("SUNAME"));
+//				suBean.setSuinfo(rs.getString("SUINFO"));
+//				suBean.setSuimg(rs.getString("SUIMG"));
+//				suBean.setSuprice(rs.getInt("SUPRICE"));
+//				suBean.setSudate(rs.getDate("SUDATE"));
+//				suBean.setSutemp(rs.getString("SUTEMP"));
+//				suBean.setSucategory(rs.getString("SUCATEGORY"));
+//				
+//				
+//				
+//				return suBean;
+//
+//			}
+//			
+//			
+//		});
+
+		
+		RowMapper<SuBean> rm = 
+				new BeanPropertyRowMapper<SuBean>(SuBean.class);
+		
+		return template.query(sql, rm, num);
+	}
+	
+	
 }

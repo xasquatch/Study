@@ -17,7 +17,9 @@
 				<tr align="center">
 			</c:if>
 					<td width="200" height="300">
-						<img src="img/${subean.suimg}" width="190" height="180">
+						<a href="suinfo.do?suno=${subean.suno}">
+							<img src="img/${subean.suimg}" width="190" height="180">
+						</a>
 						<font color="white" size="2">
 							공구명 : ${subean.suname}<br>
 							판매금액 : ${subean.suprice}원<br>

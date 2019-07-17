@@ -20,6 +20,23 @@
 							
 	<!-- index.do라는 주소로 요청이 들어오면  ShoppingController클래스가 실행되게 선언 -->					
 	<bean id="index" name="/index.do" class="controller.ShoppingController"/>
+
+	<!--SuJakInfo.jsp페이지에서 카트담기 버튼을 눌러서  
+	        카트에 구매할 상품 담기 요청이 들어 오면
+		ShoppingController 클래스가 실행되게 선언
+	  -->
+	<bean id="sutoolcart" 
+	      name="/sutoolcart.do" 
+	      class="controller.ShoppingController"
+	      p:ShoppingDAO-ref="shoppingDAO"></bean>
+    
+    <!-- SujakCenter.jsp에서 이미지 하나를 눌러 상세보기 요청이 들어오면  
+         ShoppingController가 실행되게 선언-->	  
+    <bean id="suinfo" 
+    	  name="/suinfo.do" 
+    	  class="controller.ShoppingController"
+    	  p:ShoppingDAO-ref="shoppingDAO"></bean> 	  
+
 	
 	<!-- 
 		Top.jsp페이지에서 수작업공구메뉴를 클릭하여 sujak.do 주소로 요청이 들어오면
