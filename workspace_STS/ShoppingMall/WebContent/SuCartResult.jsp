@@ -50,7 +50,7 @@
 						<font color="white" size="2">${sucartbean.suprice*sucartbean.suqty}원</font>
 					</td>
 					<td align="center" width="100">
-						<input type="text"
+						<input type="button"
 							 value="카트삭제" onclick="location.href='sucartdel.do?suno=${sucartbean.suno}'">
 					</td>
 				</tr>

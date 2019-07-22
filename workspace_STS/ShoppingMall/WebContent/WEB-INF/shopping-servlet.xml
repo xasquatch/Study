@@ -17,6 +17,24 @@
 	 -->
 	<bean id="hello" name="/hello.do" class="controller.HelloController"/>
 							<!-- ↓스프링 프레임워크 -->
+				
+	<!-- Top.jsp페이지에서 회원가입 버튼을 크릭하여 회원가입 내용 입력 -->
+	<bean id="joinform" name="/joinForm.do" class="controller.ShoppingController"/>
+				
+	<bean id="login" name="/login.do" class="controller.ShoppingController"/>
+				
+	<bean id="joinproc" name="/joinproc.do" class="controller.ShoppingController">
+		<property name="shoppingDAO" ref="shoppingDAO"></property>
+	</bean>
+	
+	<bean id="logout" name="/logout.do" class="controller.ShoppingController"></bean>
+	
+	<bean id="sucartdel" name="/sucartdel.do" class="controller.ShoppingController"
+	 p:shoppingDAO-ref="shoppingDAO"/>
+				
+	<bean id="loginproc" name="/loginproc.do" class="controller.ShoppingController"
+		p:shoppingDAO-ref="shoppingDAO"
+	></bean>
 							
 	<!-- index.do라는 주소로 요청이 들어오면  ShoppingController클래스가 실행되게 선언 -->					
 	<bean id="index" name="/index.do" class="controller.ShoppingController"/>

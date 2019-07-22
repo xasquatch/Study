@@ -53,4 +53,17 @@ public class Cart {
 
 	}
 
+	public void deleteCart(int suno) {
+
+		for (SuCartBean suCartBean : itemlist) {
+
+			if (suCartBean.getSuno() == suno) {
+				itemlist.remove(suCartBean);
+				break;
+			}
+
+		}
+
+	}
+
 }
