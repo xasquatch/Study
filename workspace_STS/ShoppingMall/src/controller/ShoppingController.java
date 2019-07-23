@@ -23,6 +23,27 @@ public class ShoppingController {
 		this.shoppingDAO = shoppingDAO;
 	}
 
+	@RequestMapping("/sutoolbuy.do")
+	public ModelAndView sutoolbuy(SuCartBean bean, HttpSession session) {
+
+		ModelAndView mav = new ModelAndView();
+		MemberBean mbean = (MemberBean) session.getAttribute("mbean");
+
+		if (mbean != null) {
+			mav.addObject("subean", bean);
+			mav.addObject("center", "Sutoolbuy.jsp");
+			mav.addObject("left", "SujakLeft.jsp");
+			mav.setViewName("ShoppingMain");
+		} else {
+			mav.addObject("center", "loginForm.jsp");
+			mav.addObject("left", "SujakLeft.jsp");
+			mav.setViewName("ShoppingMain");
+
+		}
+
+		return mav;
+	}
+
 	@RequestMapping("/loginproc.do")
 	public ModelAndView loginProc(HttpSession session, MemberBean mbean) {
 
@@ -45,19 +66,19 @@ public class ShoppingController {
 		return mav;
 	}
 
-	//로그아웃 처리 메소드
+	// 로그아웃 처리 메소드
 	@RequestMapping("/logout.do")
 	public ModelAndView logout(HttpSession session) {
-		
-		MemberBean mbean = (MemberBean)session.getAttribute("mbean");
-		
+
+		MemberBean mbean = (MemberBean) session.getAttribute("mbean");
+
 //		session.setAttribute("mbean", null);
 //		session.invalidate();
 		session.removeAttribute("mbean");
-		
+
 		return new ModelAndView(new RedirectView("index.do"));
 	}
-	
+
 	@RequestMapping("/joinproc.do")
 	public ModelAndView joinproc(MemberBean mbean, HttpSession session) {
 

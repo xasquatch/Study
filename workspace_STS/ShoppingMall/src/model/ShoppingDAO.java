@@ -178,8 +178,7 @@ public class ShoppingDAO {
 	//검색에 성공하면 1, 실패하면 0을 반환
 	public int getloginproc(MemberBean mbean) {
 		
-		String sql = "SELECT * FROM MEMBER WHRER memid = ?";
-		
+		String sql = "SELECT count(*) FROM MEMBER WHERE memid = ? AND mempasswd1 = ?";
 		return template.queryForInt(sql, mbean.getMemid(), mbean.getMempasswd1());
 	}
 

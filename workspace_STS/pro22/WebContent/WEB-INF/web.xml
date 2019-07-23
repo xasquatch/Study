@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+                             
+<!-- 
+여러 설정 파일을 읽어 들이기 위해 스프링 프레임워크에서 제공해주는 ContextLoaderListener클래스 설정함.
+ -->                             
+	<listener>
+    	<listener-class>
+         org.springframework.web.context.ContextLoaderListener
+    	</listener-class>
+ 	</listener>
+
+   <context-param>
+      <param-name>contextConfigLocation</param-name>
+	  <!-- 애플리케이션 실행시 ContextLoaderListener로 해당 위치의 설정 파일을 읽어 들입니다. -->
+      <param-value>
+          /WEB-INF/config/action-service.xml
+          /WEB-INF/config/action-dataSource.xml
+      </param-value>
+   </context-param>                             
+   
+<!-- 
+   web.xml을 다음과 같이 작성 합니다.
+      웹브라우저에서 *. do로 요청하면 스프링의  DispatcherServlet클래스가 요청을 받을 수 있게 서블릿 매핑을 설정 합니다.
+      또한 <load-on-startup>태그를 이용해 톰캣 실행시 미리 스프링의 DistatcherServlet을 메모리에 로드 합니다. 
+   참고:
+   <load-on-startup>태그영역의 값이 1이상이면 톰캣 실행 시  DispatcherServlet을 미리 메모리에 로드합니다.
+   <load-on-startup>태그영역의 값을 지정 하지 않거나 음수로 지정하면 웹브라우저에서 요청시 메모리에 로드 합니다.
+ -->   
+   
+   <servlet>
+      <servlet-name>action</servlet-name>
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>action</servlet-name>
+      <url-pattern>*.do</url-pattern>
+   </servlet-mapping>
+</web-app>
+
+
+
