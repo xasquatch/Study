@@ -1,6 +1,7 @@
 package com.spring.ex04;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -90,19 +91,79 @@ public class MemberServlet extends HttpServlet{
 			
 			Map memberMap = new HashMap();
 			
-			memberMap.put(id, id);
-			memberMap.put(pwd, pwd);
-			memberMap.put(name, name);
-			memberMap.put(email, email);
+			memberMap.put("id", id);
+			memberMap.put("pwd", pwd);
+			memberMap.put("name", name);
+			memberMap.put("email", email);
 			
 			int result = dao.insertMember2(memberMap);
 			
 			if (result < 1) {
-				nextpage = "test03/memberForm.jsp";
+				nextpage = "/test03/memberForm.jsp";
 			}else {
-				nextpage = "mem4.do?action=listMembers";
+				nextpage = "/mem4.do?action=listMembers";
 			}
+		}else if (action.equals("updateMember")) {
+			
+			String id = request.getParameter("id");
+			String pwd = request.getParameter("pwd");
+			String name = request.getParameter("name");
+			String email = request.getParameter("email");
+
+			vo.setId(id);
+			vo.setPwd(pwd);
+			vo.setName(name);
+			vo.setEmail(email);
+			
+			int result = dao.updateMember(vo);
+			
+			if (result < 1) {
+				nextpage = "/mem4.do?action=updateMember";
+			}else {
+				nextpage = "/mem4.do?action=listMembers";	
+			}
+		}else if (action.equals("deleteMember")) {
+			
+			String id = request.getParameter("id");			
+			
+			int result = dao.deleteMember(id);
+			
+			nextpage = "/mem4.do?action=listMembers";
+		
+		}else if (action.equals("searchMember")) {
+			
+			String name = request.getParameter("name");			
+			String email = request.getParameter("email");
+			
+			vo.setName(name);
+			vo.setEmail(email);
+			
+			List membersList = dao.searchMember(vo);
+			request.setAttribute("membersList", membersList);
+			nextpage = "/mem4.do?action=listMembers";
+
+		}else if (action.equals("foreachSelect")) {
+
+			String name = request.getParameter("name");
+			List<MemberVO> memList = dao.foreachSelect(name);
+			
+			request.setAttribute("memList", memList);
+			
+			nextpage = "test03/listMembers.jsp";
+			
+		}else if (action.equals("foreachInsert")) {
+			
+			List<MemberVO> memList = new ArrayList<MemberVO>();
+			memList.add(new MemberVO("m1","1234","È«±æÀ×µ¿","m1@test.com"));
+			memList.add(new MemberVO("m2","1234","È«À×µ¿","m2@test.com"));
+			memList.add(new MemberVO("m3","1234","±æÀ×µ¿","m3@test.com"));
+			
+			int result = dao.foreachInsert(memList);
+			
+			nextpage = "test03/listMembers.jsp";
 		}
+		
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextpage);
 		dispatcher.forward(request, response);
 		

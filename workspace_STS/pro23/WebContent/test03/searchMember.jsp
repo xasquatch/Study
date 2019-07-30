@@ -15,8 +15,8 @@
 <h1>회원검색</h1>
 <form action="${contextPath}/mem4.do">
           <input  type="hidden" name="action" value="searchMember" />
-   이름 : <input  type="text" name="name" /><br>
-   이메일 : <input  type="text" name="email" /><br>
+   이름 : <input  type="text" name="name" value="foreachSelect"/><br>
+   이메일 : <input  type="text" name="email" value="foreachSelect"/><br>
    <input type="submit" value="검색"  />
 </form> 
 </body>

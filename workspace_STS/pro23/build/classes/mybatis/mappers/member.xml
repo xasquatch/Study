@@ -32,13 +32,13 @@ member.xml파일 전체설명
 	<result property="joinDate" column="joinDate"/>
 </resultMap>
 
+<!-- SQL문의 조건연산자(>=,< 등등) xml파일에서 작성하면 연산자가 아닌 특수문자로 인식하므로 오류가 발생
+이를 방지하기 위해 <![CDATA[ 'contents'  ]]>와 같이 씀 -->
 
 	<select id="selectAllMemberList" resultMap="memResult">
 		<![CDATA[
 	    SELECT * FROM t_member ORDER BY joinDate DESC
 		]]>
-<!-- SQL문의 조건연산자(>=,< 등등) xml파일에서 작성하면 연산자가 아닌 특수문자로 인식하므로 오류가 발생
-이를 방지하기 위해 <![CDATA[ 'contents'  ]]>와 같이 씀 -->
 	</select>
 	
 	<select id="selectName" resultType="String">
@@ -66,10 +66,73 @@ member.xml파일 전체설명
 			INSERT INTO t_member(id,pwd,name,email) VALUES(#{id}, #{pwd}, #{name}, #{email})
 		]]>
 	</insert>
-	<insert id="insertMember2" parameterMap="java.util.HashMap">
+	<insert id="insertMember2" parameterType="java.util.HashMap">
 		<![CDATA[
-			INSERT INTO t_member(id,pwd,name,email) VALUES(#{id}, #{pwd}, #{name}, #{email})
+			INSERT INTO t_member(id, pwd, name, email) VALUES(#{id}, #{pwd}, #{name}, #{email})
 		]]>
 	</insert>
+	<update id="updateMember" parameterType="memberVO">
+		<![CDATA[
+			UPDATE t_member SET pwd = #{pwd}, name = #{name}, email = #{email} WHERE id = #{id}
+		]]>
+	</update>
+	<delete id="deleteMember" parameterType="string">
+		<![CDATA[
+			DELETE FROM t_member WHERE id = #{id}
+		]]>
+	</delete>
+	<select id="searchMember" parameterType="memberVO" resultMap="memResult">
+		<![CDATA[
+			SELECT * FROM t_member WHERE  
+		]]>
+			<where>
+				<if test="name != '' and name != null" >
+					name = #{name} 
+				</if>
+				<if test="email != '' and name != email" >
+					email = #{email} 
+				</if>
+			</where>
+			
+			ORDER BY joinDate DESC
+			
+			
+	</select>
+
+	<select id="foreachSelect" parameterType="java.util.Map" resultMap="memResult">
+		<![CDATA[
+			SELECT * FROM t_member
+		]]>
+		WHERE name in
+		<foreach item="item" collection="list" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</select>
+	
+	<insert id="foreachInsert" parameterType="java.util.Map">
+		<foreach item="item" collection="list"
+				open="INSERT ALL"
+				separator=" "
+				close="SELECT * FROM DUAL">
+				INTO t_member(id, pwd, name, email)
+				VALUES(#{item.id}, #{item.pwd}, #{item.name}, #{item.email})
+		</foreach>
+	</insert>
+	
+	<!-- ▼ mysql만 가능 
+	<insert id="foreachInsert" parameterType="java.util.Map">
+		<![CDATA[
+			INSERT INTO t_member(id, pwd, name, email) VALUES 
+		]]>
+		<foreach item="item" collection="list" open="(" separator="," close=")">
+			(
+			#{item.id},
+			#{item.pwd},
+			#{item.name},
+			#{item.email}
+			)
+		</foreach>
+	</insert>
+	 -->
 	
 </mapper>

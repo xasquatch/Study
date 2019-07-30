@@ -10,8 +10,7 @@
 </head>
 <body>
 	<%
-		response.sendRedirect("mem.do");
+		response.sendRedirect("mem4.do");
 	 %>
-	
 </body>
 </html>

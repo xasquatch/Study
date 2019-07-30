@@ -41,8 +41,6 @@ MemberDAO의 각메소드 호출시 src/mybatis/SqlMapConfig.xml에서
 		}
 		return sqlMapper;
 	}
-
-	
 	
 	public List<MemberVO> selectAllMemberList() {
 		sqlMapper = getInstance();
@@ -73,8 +71,6 @@ MemberDAO의 각메소드 호출시 src/mybatis/SqlMapConfig.xml에서
 		return pwd;
 	}
 
-
-
 	public MemberVO selectMemberById(String value) {
 		
 		sqlMapper = getInstance();
@@ -97,8 +93,6 @@ MemberDAO의 각메소드 호출시 src/mybatis/SqlMapConfig.xml에서
 		return memberList;
 	}
 
-
-
 	public int insertMember(MemberVO vo) {
 		sqlMapper = getInstance();
 		SqlSession session = sqlMapper.openSession(); 
@@ -116,6 +110,63 @@ MemberDAO의 각메소드 호출시 src/mybatis/SqlMapConfig.xml에서
 		SqlSession session = sqlMapper.openSession(); 
 		
 		int result = session.insert("mapper.member.insertMember2",memberMap);
+		
+		session.commit();
+		
+		return result;
+	}
+
+	public int updateMember(MemberVO vo) {
+		int result = 0;		
+		
+		sqlMapper = getInstance();
+		SqlSession session = sqlMapper.openSession();
+		
+		result = session.update("mapper.member.updateMember",vo);
+		
+		session.commit();
+		
+		return result;
+	}
+
+	public int deleteMember(String id) {
+		int result = 0;		
+		
+		sqlMapper = getInstance();
+		SqlSession session = sqlMapper.openSession();
+		
+		result = session.delete("mapper.member.deleteMember", id);
+
+		session.commit();
+		
+		return result;
+	}
+
+	public List searchMember(MemberVO vo) {
+		
+		sqlMapper = getInstance();
+		SqlSession session = sqlMapper.openSession();
+		
+		List list = session.selectList("mapper.member.searchMember",vo);
+		
+		return list;
+	}
+
+	public List<MemberVO> foreachSelect(String name) {
+		sqlMapper = getInstance();
+		SqlSession session = sqlMapper.openSession();
+		
+		List<MemberVO> list = session.selectList("mapper.member.foreachSelect", name);
+		
+		return list;
+		
+	}
+
+	public int foreachInsert(List<MemberVO> memList) {
+		sqlMapper = getInstance();
+		SqlSession session = sqlMapper.openSession();
+		
+		int result = session.insert("mapper.member.foreachInsert",memList);
 		
 		session.commit();
 		

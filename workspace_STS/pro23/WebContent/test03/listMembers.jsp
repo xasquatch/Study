@@ -37,6 +37,6 @@
     </tr>
   </c:forEach>   
 </table>
-<a  href="${contextPath}/member/memberForm.do"><h1 style="text-align:center">회원가입</h1></a>
+<a  href="${contextPath}/test03/memberForm.jsp"><h1 style="text-align:center">회원가입</h1></a>
 </body>
 </html>
