@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- modelConfig.xml 설정파일 역할 : 실행할 SQL문의 ?값 설정을 위해 데이터를 저장 하여 전달 하거나, 
+                                 SQL문을 실행후 그결과를 저장할  MemberVO 빈을 설정하기 위한 설정 파일  -->
+<!-- modelConfig.xml에서는 
+    <typeAliases>태그를 이용해 매퍼 파일에서 긴 이름의 클래스를 별칭으로 사용할수 있게 설정함 -->
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.spring.member.vo.MemberVO"  alias="memberVO" />
+	</typeAliases>
+</configuration>

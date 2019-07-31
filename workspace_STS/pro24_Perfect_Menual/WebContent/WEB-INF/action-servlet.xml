@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+<!-- 
+ action-servlet.xml파일에서는 뷰 관련 빈과 각 URL 요청명에 대해 호출할 메소드를 설정 합니다.
+ -->	
+	
+	
+		
+	<bean id="viewResolver"   
+       class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="viewClass" 
+                          value="org.springframework.web.servlet.view.JstlView"/>
+      <property name="prefix" value="/WEB-INF/views/member/" />  <!-- JSP 파일의 위치를 지정함 -->
+      <property name="suffix" value=".jsp"/>
+   </bean>
+   
+   <!-- 
+		 MemberControllerImpl객체에...  
+		 아래의 id속성값이 methodResolver인? <bean>태그에 대한..
+		 PropertiesMethodNameResolver객체와,
+		 action-service.xml파일에 있는 id속성값이  memberService인? <bean>태그에 대한..
+		 MemberServiceImpl객체를  주입합니다. 
+	 -->
+   <bean id="memberController" 
+     	 class="com.spring.member.controller.MemberControllerImpl">
+      <property name="methodNameResolver">
+         <ref local="memberMethodResolver"/>
+      </property>
+      <property name="memberService" ref="memberService"/>
+   </bean>
+
+<!--  PropertiesMethodNameResolver객체를 이용하여 
+      URL요청 명에 대해 동일한 이름의 메소드를 호출하도록 설정함. -->
+   <bean  id="memberMethodResolver"
+   class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver" >
+      <property  name="mappings" >
+        <props>
+          <prop key="/member/listMembers.do" >listMembers</prop>
+          <prop key="/member/addMember.do" >addMember</prop>
+          <prop key="/member/removeMember.do">removeMember</prop>
+          <prop key="/member/memberForm.do" >form</prop>
+       </props>
+      </property>
+   </bean>
+   
+   
+	<!--클라이언트가  웹브라우저 주소창에  /member/*.do 주소로 요청시 ..  
+	    SimpleUrlHandlerMapping 클래스를 이용해.. 
+		<prop key="/member/*.do">memberController</prop> 중에서..
+		memberController 값과   <bean>태그들 중에서 id속성값이 memberController를 매핑하여
+		MemberControllerImpl클래스가 호출되도록 설정 함.
+	 -->
+   <bean id="memberUrlMapping"
+       class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+      <property name="mappings">
+         <props>
+            <prop key="/member/*.do">memberController</prop>
+         </props>
+      </property>
+   </bean>
+   
+</beans>
