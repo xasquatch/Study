@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+<!-- 
+ action-servlet.xml파일에서는 뷰 관련 빈과 각 URL 요청명에 대해 호출할 메소드를 설정 합니다.
+ -->	
+	
+	
+		
+	<bean id="viewResolver"   
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+ 		<property name="prefix" value="/WEB-INF/views/test/"/>
+ 		
+<!-- 		<property name="prefix" value="/WEB-INF/views/member/" /> -->
+		<property name="suffix" value=".jsp"/>
+	</bean>
+<!-- 
+▼comment: 스프링프레임워크에서 제공하는 DefaultAnnotationHandlerMapping클래스와
+		AnnotationMethodHandlerAdapter클래스의 빈을 설정		
+ -->
+<!-- 클래스 레벨에 @RequestMapping을 처리 -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+<!-- 메서드 레벨에 @RequestMapping을 처리 -->		
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+	
+	
+	
+	<context:component-scan base-package="com.spring.*"/>
+<!--▲
+com.spring에 존재하는 모든 클래스에 어노테이션 기호가 적용되도록 설정
+
+comment 1: <context:component-scan>태그를 사용해 패키지 이름을 지정하면 어플리케이션 실행시
+			해당 패키지에서 어노테이션 기호로 지정된 클래스를 빈으로 생성
+			
+comment 2: <context:component-scan>태그로 지정한 패키지에 위치하는 클래스에 지정하는 여러가지 어노테이션 기호들
+
+					표
+			===================================================================================================
+			어노테이션기호										기능
+			===================================================================================================
+			@Controller										스프링 컨테이너가 component-scan에 의해 지정한 클래스를 
+															컨트롤러빈으로 자동변환
+															
+			@Service										스프링 컨테이너가 component-scan에 의해 지정한 클래스를
+															서비스빈으로 자동변환
+															
+			@Repository										스프링 컨테이너가 component-scan에 의해 지정한 클래스를
+															DAO으로 자동 변환
+															
+			@Component										스프링 컨테이너가 component-scan에 의해 지정한 클래스를
+															빈으로 자동 변환
+			===================================================================================================			
+						
+-->
+</beans>
