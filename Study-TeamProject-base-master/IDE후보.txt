@@ -1,0 +1,18 @@
+◎ IDE
+1. 전자정부 표준프레임워크
+ - 이클립스+스프림프레임워크포함
+  전자정부에서 배포하는 표준프레임워크
+ - 실무학습용으로 아주 적합함
+ - 모든 팀원들이 사용하기에 이해할 수 있는 시간이 적어서 힘듦
+	
+2. STS
+ - 1번후보보다 약간 아래개념
+ - 장단점 모두 1번과 마찬가지
+
+3. 이클립스 + STS플러그인
+ - 모두에게 가장 익숙한 IDE라는게 장점
+ - 기술력을 표현하기에는 가장 효용이 낮음
+ - 일반 웹프로젝트로 프로젝트 진행 시 대안
+  https://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/
+
+

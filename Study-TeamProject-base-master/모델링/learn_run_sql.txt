@@ -1,0 +1,14 @@
+사전에 mysql 접속 후
+root계정 접속 그 후 구문 붙여넣기
+
+	user id = learnrun 
+	pwd = 1234 
+	DB name = learnrun 
+
+
+
+
+create user 'learnrun'@'localhost' identified by '1234';
+create database learnrun;
+grant all privileges on learnrun.* to 'learnrun'@'localhost';
+FLUSH privileges;
