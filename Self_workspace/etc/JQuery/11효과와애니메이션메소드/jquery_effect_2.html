@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- JQuery사용준비를 위한  링크준비 -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	
+	<script type="text/javascript">
+		//fadeOut() : 노출되어 있던 태그가 점점 투명해지면서 숨겨집니다.
+		//fadeInt() : 숨겨져 있던 태그가 점점 선명해지면서 노출됩니다.
+		//fadeToggle() : 노출된 태그는 점점 투명해지면서 숨겨지고,
+		//               숨겨져 있던 태그는 점점 선명해지면서 노출됨
+		
+		$(function(){
+			$("#btn1").on("click",function(){
+				$("h1").fadeOut(1000);//<h1>태그가 1초만에 투명해지면서 숨겨짐
+			});
+			$("#btn2").click(function(){
+				$("h1").fadeIn("slow");//<h1>태그가 천천히 선명해지면서 나타남.
+			});
+			$("#btn3").click(function(){
+				$("h1").fadeToggle(3000);
+			});
+			
+		});
+	</script>
+	
+</head>
+<body>
+	<button id="btn1">fadeOut</button>
+	<button id="btn2">fadeIn</button>
+	<button id="btn3">fadeToggle</button>
+	<h1>내용</h1>
+</body>
+</html>
+
+

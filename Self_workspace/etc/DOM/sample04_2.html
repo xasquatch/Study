@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 	<img alt="" src=""> -->
+
+	<script type="text/javascript">
+		//<img>태그 생성
+		var img = document.createElement("img");
+		//setAttribute(속성명, 속성값) 메소드를 사용하여 <img>태그의 속성과 값을 설정함
+		img.setAttribute("src","window_object_1.jpg");
+			
+		img.setAttribute("width","200");
+		
+		img.setAttribute("height","200");
+		
+		//<body>태그에 생성된 <img>태그를 동적으로 추가한다.
+		document.body.appendChild(img);
+		
+	</script>
+
+</body>
+</html>

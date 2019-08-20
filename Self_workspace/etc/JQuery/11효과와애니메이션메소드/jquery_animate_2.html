@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<style type="text/css">
+		h1{
+			width: 50px;
+			height: 30px;
+			background-color: red;
+			font-size: 100%;
+		}
+		h2{
+			width: 50px;
+			height: 30px;
+			background-color: orange;
+			font-size: 100%;
+		}	
+	</style>
+
+	<!-- JQuery사용준비를 위한  링크준비 -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		$(function(){
+			//<h1>태그를 선택하여 가져와서 animate()메소드를 호출하여 동작효과를 줍시다
+			//animate()메소드를 호출할때 전달값으로  marginLeft를 사용해
+			//<h1>태그의 바깥 왼쪽 여백을 250px만큼 띄어주고 이동되는 동작효과를 3초만에 주기
+			$("h1").animate({marginLeft:"250px"},3000);
+			
+			//<h2>태그에 애니에이션을 적용함
+			//<h2>태그의 바깥 왼쪽 여백을 250px만큼 띄어주고 이동되는 동작효과를 3초만에 주기
+			//단!<h2>에 동작이 1초 후에 실행되도록 지연하기 ~ 
+ 			$("h2").delay(1000).animate({marginLeft:"250px"},3000);
+			
+			
+			//stop버튼을 클릭했을때...
+			$("#stopBtn").click(function(){
+				//h1태그의 모션(동작)효과가 정지되게 하기 
+				$("h1").stop();				
+			});
+			
+		});
+	</script>
+
+</head>
+<body>
+	<button id="stopBtn">stop</button>
+	<h1>1번말</h1>
+	<h2>2번말</h2>
+</body>
+</html>
+
+
+
+
+

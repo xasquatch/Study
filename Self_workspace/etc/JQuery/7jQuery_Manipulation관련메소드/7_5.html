@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>.clone() Traverse 메서드</title>
+<!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+ <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+
+   $(document).ready(function(){
+	   /*
+	    .clone()메소드
+	    - 선택된 요소를 복제 한다.
+	            이때 복제 되는 요소는 모든 하위 요소까지도 포함된다.
+	   */
+	   
+	   //class속성값이 hello인 요소 <div class="hello">이순신</div>를 복제 하여 
+	   //class속성이 goodbye인 요소에 추가 한다.
+	   $( ".hello" ).clone().appendTo( ".goodbye" );
+   });
+
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="goodbye">
+    홍길동
+    <div class="hello">이순신</div>
+  </div>
+</div>
+</body>
+</html>

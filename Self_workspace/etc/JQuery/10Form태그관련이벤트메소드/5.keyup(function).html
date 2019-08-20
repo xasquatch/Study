@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>.keyup() 메서드</title>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		 //<input>태그에 포커스를 지정하고 키보드를 눌렀다 뗴었을때 ...
+		$( "#target" ).keyup(function() {
+			//입력한 문자의 개수를 <div>태그에 출력함.
+		   $("div").text($(":text").val().length);	
+		});
+	});
+</script>
+</head>
+<body>
+<form>
+  <input id="target" type="text" value="">
+</form>
+<div>
+</div>
+</body>
+</html>

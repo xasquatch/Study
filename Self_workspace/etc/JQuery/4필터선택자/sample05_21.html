@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:gt 및 :lt Filter Selector</title>
+<!-- 
+	:gt(index) 필터 선택자
+	 - 지정된index보다 큰 index에 해당하는 요소들을 반환 한다.
+	
+	:lt(index) 필터 선택자 
+	 - 지정된index보다 작은 index에 해당하는 요소들을 반환 한다.
+	 
+	 참고 : 
+	 두 선택자 모두 음수 값 지정이 가능하고 음수 값은 마지막 요소 부터 카운트된다.
+	 (마지막 요소의 index는 -1)부터 카운트 된다.  
+ -->
+
+
+
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		//<td>태그 중에서 index 값이 4보다 큰 요소들을 선택하여 CSS 적용
+		//index값이 0부터 시작 하기 때문에 실제 위치는 6번째 <td>부터 시작 된다.
+		$("td:gt(4)").css("backgroundColor", "yellow");
+		//<td>태그 중에서 index 값이 -2보다 큰 요소들을 선택하여 gt(-2)문자열을 설정함.
+		//음수값은 마지막 요소부터 카운트 되기 때문에, 마지막 요소에 "Hello"
+		//문자열이 설정 됨.
+		$("td:gt(-2)").text("Hello");
+	});
+</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>TD #0</td>
+			<td>TD #1</td>
+			<td>TD #2</td>
+		</tr>
+		<tr>
+			<td>TD #3</td>
+			<td>TD #4</td>
+			<td>TD #5</td>
+		</tr>
+		<tr>
+			<td>TD #6</td>
+			<td>TD #7</td>
+			<td>TD #8</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- jQuery 라이브러리 파일 사용을 위한 CDN링크 주소 작성  -->
+ <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ 
+ <script type="text/javascript">
+ 	//jQuery.map(array, function)메소드는 입력된 배열을 가공하여
+ 	//새로운 배열로 다시 반환하는 메소드이다.
+	//배열에 저장된 값을 대문자 또는 소문자로 모두 변경하거나  값의 일부분만 반환받는 작업 등이 가능 하다
+	
+	//주제 : 배열에 저장된 축약되지 않은 '월' 이름을  3자리로 축약시킨 '월'이름으로 콘솔에 출력하는 예제
+	$(function() {
+		//배열에 축약되지 않은 '월'이름을 1월부터 12월까지 영문으로 저장한다
+		var months = ['January','February', 'March', 'April', 'May',
+					 'June', 'July', 'August', 'September', 'October',
+					 'November', 'December'];		
+		
+		//map()메소드를 사용하여 배열에 저장된 값을 3글자만 부분 문자열로 반환하여 새로운 배열을 만든다음 저장
+		var months2  = jQuery.map(months, function(value, i){return value.substring(0,3);});
+				   //  [Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec];
+		//원래 배열에 저장된값 콘솔창에 출력
+		console.log("months : " + months.join(","));
+		//map()메소드가 반환한한 배열값 콘솔창에 출력
+		console.log("months2 : " + months2.join(","));
+		
+		
+	});
+ 
+ 
+ </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+
+

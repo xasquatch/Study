@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>:has(selector) Filter Selector</title>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+//내용 필터 선택자의 종류
+
+//:has(selector) -> 지정된 selector를 포함하는 모든 요소를 반환 한다
+
+//주제 : <p>태그를 포함하는 <div>태그를 검색하여 배경색을 green으로 설정 하는 예제
+
+   $(document).ready(function(){
+	   //<div>태그 내에 자식 태그로 <p>태그를 포함하는 모든 요소를 선택하여  배경을 green으로 설정
+	   $( "div:has(p)" ).css("background-color","green");
+   });
+</script>
+</head>
+<body>
+<div><p>홍길동</p></div>
+<div>이순신</div>
+</body>
+</html>
+
+
+
+
+
