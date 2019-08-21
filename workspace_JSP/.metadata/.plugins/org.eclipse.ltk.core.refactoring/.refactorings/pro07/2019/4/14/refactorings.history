@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;sec01.ex01.MemberSerblet.java&apos; to &apos;MemberServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;pro07&apos;&#x0D;&#x0A;- Original element: &apos;sec01.ex01.MemberSerblet.java&apos;&#x0D;&#x0A;- Renamed element: &apos;sec01.ex01.MemberServlet.java&apos;" description="Rename compilation unit &apos;MemberSerblet.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;sec01.ex01{MemberSerblet.java" name="MemberServlet.java" references="false" stamp="1554450718133" version="1.0"/>
-</session>
