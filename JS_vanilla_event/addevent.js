@@ -33,12 +33,15 @@ window.onload=function(){
 
     
     function createTag() {
-        const tagEA = document.querySelector('#tagEA').textContent;
+        const tagEA = document.querySelector('#tagEA').value;
         for (let index = 1; index <= tagEA; index++) {
             
-            document.createElement('div').appendChild(document.createTextNode(index));
+            rotation = document.createElement('div').appendChild(document.createTextNode(index));
+            otherRotation = document.createElement('div').appendChild(document.createTextNode(index-1));
             if (index === 1) {
-                document.body.insertBefore
+                document.body.insertBefore(rotation,document.querySelector('#title'));
+            }else {
+                document.body.insertBefore(rotation,otherRotation);
             }
 
         }
