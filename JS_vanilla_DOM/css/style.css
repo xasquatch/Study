@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.noneDisplay{
+    opacity: 0;
+}
+.saveList{
+    border-radius: 10px;
+    background: black;
+    color: white;
+    transition: 0.3s all;
+}
+.saveList:HOVER{
+    background: green;
+}
+.ToDosList-noneDeco{
+    list-style: none;
+}
+
+.pointer:HOVER{
+    cursor: pointer;
+}
+
+.visible{
+    opacity: 1;
+}
+
+.shadow{
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 0.5em;
+}
+
+.deleteIcon{
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray,
+                -2px -2px 2px gray,
+                2px -2px 2px gray,
+                -2px 2px 2px gray;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 1.3em;
+    height: 1.3em;
+}
+.deleteIcon:HOVER{
+    background-color: red;
+    color: black;
+    transition: all 0.3s;
+}
