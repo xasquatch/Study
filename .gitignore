@@ -3,3 +3,10 @@ Z_academy_JSP/.metadata/
 JS_react_App/node_modules/
 JS_vanilla_event/.vscode/
 JS_vanilla_DOM/.vscode/
+.metadata/
+Servers/
+*.project
+*.classpath
+*.MF
+practice1/target/
+practice1/.settings/
