@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.list-inline{
+	list-style: none;
+}
+.list-inline>li{
+	display: inline;
+
+	margin: 20px; 
+}
+ .list-inline>li>a{
+	text-decoration: none;
+	color: black;
+	animation: 반짝 0.5s infinite; 
+	font-weight: bold;
+}
+@keyframes 반짝{
+	0%{
+		color: red;
+	}
+	50%{
+		color: inherit;
+	}
+	100%{
+		color: red;
+	}
+}
